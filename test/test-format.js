@@ -1,19 +1,13 @@
 'use strict';
-const { execSync } = require('child_process');
-const chalk = require('chalk');
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 
-const testFormat = () => {
+const testFormat = async () => {
   try {
-    execSync('npx prettier --list-different "**/*.js" "**/*.ts" "**/*.md"');
+    await exec('npx prettier --list-different "**/*.js" "**/*.ts" "**/*.md"');
   } catch (err) {
-    let errorText = err.stdout.toString();
-    console.error(chalk`{red   Prettier – formatting errors:}`);
-    console.error(chalk`{red.bold → ${errorText}}`);
-    console.error(
-      chalk`{blue Tip: Run {bold npm run fix} to fix formatting automatically}`,
-    );
-
-    return true;
+    // The last char of stdout is '\n', so we need to slice out the empty line
+    return err.stdout.toString().split('\n').slice(0, -1);
   }
 
   return false;

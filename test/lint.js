@@ -142,6 +142,9 @@ function load(...files) {
 }
 
 async function main() {
+  // Call testFormat() in advance to start Prettier in a separate process
+  const testFormatPromise = testFormat();
+
   /** @type {boolean} */
   let hasErrors = argv.files
     ? load.apply(undefined, argv.files)
@@ -161,13 +164,17 @@ async function main() {
       );
   hasErrors = testCompareFeatures() || hasErrors;
   hasErrors = testMigrations() || hasErrors;
-  hasErrors = testFormat() || hasErrors;
+  // Await for Prettier here, after all other tests are done
+  const testFormatErrors = await testFormatPromise;
+  hasErrors = testFormatErrors || hasErrors;
 
   if (hasErrors) {
     console.warn('');
+    const errorCount =
+      filesWithErrors.size + (testFormatErrors ? testFormatErrors.length : 0);
     console.warn(
-      chalk`{red Problems in {bold ${filesWithErrors.size}} ${
-        filesWithErrors.size === 1 ? 'file' : 'files'
+      chalk`{red Problems in {bold ${errorCount}} ${
+        errorCount === 1 ? 'file' : 'files'
       }:}`,
     );
     for (const [fileName, file] of filesWithErrors) {
@@ -190,6 +197,16 @@ async function main() {
       } catch (e) {
         console.error(e);
       }
+    }
+    // Log all Prettier errors in the end
+    if (testFormatErrors) {
+      console.error(chalk`{red   Prettier – formatting errors:}`);
+      testFormatErrors.forEach(file =>
+        console.error(chalk`{red.bold → ${file}}`),
+      );
+      console.error(
+        chalk`{blue Tip: Run {bold npm run fix} to fix formatting automatically}`,
+      );
     }
     process.exit(1);
   }
