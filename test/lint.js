@@ -40,8 +40,8 @@ const argv = yargs
  * @param {string[]} files
  * @return {boolean}
  */
-function load(...files) {
-  return files.reduce((prevHasErrors, file) => {
+async function load(...files) {
+  return files.reduce(async (prevHasErrors, file) => {
     if (file.indexOf(__dirname) !== 0) {
       file = path.resolve(__dirname, '..', file);
     }
@@ -137,7 +137,7 @@ function load(...files) {
       return path.join(file, subfile);
     });
 
-    return load(...subFiles) || prevHasErrors;
+    return (await load(...subFiles)) || prevHasErrors;
   }, false);
 }
 
@@ -147,8 +147,8 @@ async function main() {
 
   /** @type {boolean} */
   let hasErrors = argv.files
-    ? load.apply(undefined, argv.files)
-    : load(
+    ? await load.apply(undefined, argv.files)
+    : await load(
         'api',
         'browsers',
         'css',
