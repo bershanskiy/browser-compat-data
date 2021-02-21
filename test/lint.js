@@ -46,11 +46,14 @@ async function load(...files) {
       file = path.resolve(__dirname, '..', file);
     }
 
-    if (!fs.existsSync(file)) {
+    let stat = null;
+    try {
+      stat = await fs.promises.stat(file);
+    } catch (e) {
       return prevHasErrors; // Ignore non-existent files
     }
 
-    if (fs.statSync(file).isFile()) {
+    if (stat.isFile()) {
       let fileHasErrors = false;
 
       if (path.extname(file) === '.json') {
