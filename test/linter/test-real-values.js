@@ -81,7 +81,7 @@ function checkRealValues(supportData, blockList, relPath, logger) {
 /**
  * @param {string} filename
  */
-function testRealValues(filename) {
+async function testRealValues(filename) {
   const relativePath = path.relative(
     path.resolve(__dirname, '..', '..'),
     filename,

@@ -216,7 +216,7 @@ function processLink(errors, actual, regexp, matchHandler) {
 /**
  * @param {string} filename
  */
-function testLinks(filename) {
+async function testLinks(filename) {
   /** @type {Object[]} */
   let errors = processData(filename);
 

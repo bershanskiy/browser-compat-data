@@ -61,7 +61,7 @@ function processData(data, category) {
 /**
  * @param {string} filename
  */
-function testPrefix(filename) {
+async function testPrefix(filename) {
   const relativePath = path.relative(
     path.resolve(__dirname, '..', '..'),
     filename,

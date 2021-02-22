@@ -356,7 +356,7 @@ class ConsistencyChecker {
 /**
  * @param {string} filename
  */
-function testConsistency(filename) {
+async function testConsistency(filename) {
   /** @type {Identifier} */
   let data = require(filename);
 

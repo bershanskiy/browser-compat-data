@@ -106,7 +106,7 @@ function processData(filename, logger) {
   }
 }
 
-function testStyle(filename) {
+async function testStyle(filename) {
   const logger = new Logger('Style');
 
   processData(filename, logger);

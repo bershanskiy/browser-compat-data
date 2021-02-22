@@ -101,7 +101,7 @@ function hasCorrectPermissionDescription(apiData, apiName, logger) {
 /**
  * @param {string} filename
  */
-function testDescriptions(filename) {
+async function testDescriptions(filename) {
   /** @type {Identifier} */
   const data = require(filename);
 

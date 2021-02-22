@@ -10,7 +10,7 @@ const ajv = new Ajv({ jsonPointers: true, allErrors: true });
  * @param {string} dataFilename
  * @param {string} [schemaFilename]
  */
-function testSchema(
+async function testSchema(
   dataFilename,
   schemaFilename = './../../schemas/compat-data.schema.json',
 ) {

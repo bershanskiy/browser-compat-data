@@ -131,7 +131,7 @@ function checkVersions(supportData, relPath, logger) {
 /**
  * @param {string} filename
  */
-function testVersions(filename) {
+async function testVersions(filename) {
   /** @type {Identifier} */
   const data = require(filename);
 

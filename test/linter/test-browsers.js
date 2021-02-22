@@ -106,7 +106,7 @@ function processData(
  * @param {string} filename
  * @returns {boolean} If the file contains errors
  */
-function testBrowsers(filename) {
+async function testBrowsers(filename) {
   const relativePath = path.relative(
     path.resolve(__dirname, '..', '..'),
     filename,
