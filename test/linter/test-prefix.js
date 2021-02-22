@@ -2,6 +2,8 @@
 const path = require('path');
 const chalk = require('chalk');
 
+const { requireAsync } = require('../utils');
+
 /**
  * @typedef {import('../../types').Identifier} Identifier
  */
@@ -68,7 +70,7 @@ async function testPrefix(filename) {
   );
   const category =
     relativePath.includes(path.sep) && relativePath.split(path.sep)[0];
-  const data = require(filename);
+  const data = await requireAsync(filename);
   const errors = processData(data, category);
 
   if (errors.length) {

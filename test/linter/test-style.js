@@ -57,8 +57,8 @@ function orderFeatures(key, value) {
  * @param {string} filename
  * @param {Logger} logger
  */
-function processData(filename, logger) {
-  let actual = fs.readFileSync(filename, 'utf-8').trim();
+async function processData(filename, logger) {
+  let actual = (await fs.promises.readFile(filename, 'utf-8')).trim();
   /** @type {import('../../types').CompatData} */
   const dataObject = JSON.parse(actual);
   let expected = JSON.stringify(dataObject, null, 2);

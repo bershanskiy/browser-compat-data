@@ -1,6 +1,8 @@
 const chalk = require('chalk');
 const { Logger } = require('./utils.js');
 
+const { requireAsync } = require('../utils');
+
 /**
  * @typedef {import('../../types').Identifier} Identifier
  */
@@ -103,7 +105,7 @@ function hasCorrectPermissionDescription(apiData, apiName, logger) {
  */
 async function testDescriptions(filename) {
   /** @type {Identifier} */
-  const data = require(filename);
+  const data = await requireAsync(filename);
 
   const logger = new Logger('Descriptions');
 

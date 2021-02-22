@@ -108,6 +108,10 @@ function jsonDiff(actual, expected) {
   }
 }
 
+async function requireAsync(filename) {
+  return require(filename);
+}
+
 module.exports = {
   INVISIBLES_MAP,
   IS_CI,
@@ -116,4 +120,5 @@ module.exports = {
   indexToPosRaw,
   indexToPos,
   jsonDiff,
+  requireAsync,
 };

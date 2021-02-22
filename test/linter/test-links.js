@@ -7,10 +7,10 @@ const { IS_WINDOWS, indexToPos, indexToPosRaw } = require('../utils.js');
 /**
  * @param {string} filename
  */
-function processData(filename) {
+async function processData(filename) {
   let errors = [];
 
-  let actual = fs.readFileSync(filename, 'utf-8').trim();
+  let actual = (await fs.promises.readFile(filename, 'utf-8')).trim();
 
   // prevent false positives from git.core.autocrlf on Windows
   if (IS_WINDOWS) {
@@ -218,7 +218,7 @@ function processLink(errors, actual, regexp, matchHandler) {
  */
 async function testLinks(filename) {
   /** @type {Object[]} */
-  let errors = processData(filename);
+  let errors = await processData(filename);
 
   if (errors.length) {
     console.error(
