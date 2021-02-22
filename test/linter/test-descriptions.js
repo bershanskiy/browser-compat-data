@@ -101,12 +101,9 @@ function hasCorrectPermissionDescription(apiData, apiName, logger) {
 }
 
 /**
- * @param {string} filename
+ * @param {Object} data
  */
-async function testDescriptions(filename) {
-  /** @type {Identifier} */
-  const data = await requireAsync(filename);
-
+async function testDescriptions(data) {
   const logger = new Logger('Descriptions');
 
   if (data.api) {

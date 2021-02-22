@@ -82,22 +82,23 @@ async function load(...files) {
         };
 
         try {
+          const data = require(file);
           if (file.indexOf('browsers' + path.sep) !== -1) {
             errorsPromisses.push(
-              testSchema(file, './../../schemas/browsers.schema.json'),
+              testSchema(data, './../../schemas/browsers.schema.json'),
               testLinks(file),
             );
           } else {
             errorsPromisses.push(
-              testSchema(file),
+              testSchema(data),
               testStyle(file),
               testLinks(file),
-              testBrowsers(file),
-              testVersions(file),
-              testConsistency(file),
-              testRealValues(file),
-              testPrefix(file),
-              testDescriptions(file),
+              testBrowsers(data, file),
+              testVersions(data),
+              testConsistency(data),
+              testRealValues(data, file),
+              testPrefix(data, file),
+              testDescriptions(data),
             );
           }
         } catch (e) {
@@ -168,19 +169,20 @@ async function main() {
     for (const [fileName, file] of filesWithErrors) {
       console.warn(chalk`{red.bold ✖ ${fileName}}`);
       try {
+        const data = require(file);
         if (file.indexOf('browsers' + path.sep) !== -1) {
-          testSchema(file, './../../schemas/browsers.schema.json');
+          testSchema(data, './../../schemas/browsers.schema.json');
           testLinks(file);
         } else {
-          testSchema(file);
+          testSchema(data);
           testStyle(file);
           testLinks(file);
-          testVersions(file);
-          testRealValues(file);
-          testBrowsers(file);
-          testConsistency(file);
-          testPrefix(file);
-          testDescriptions(file);
+          testVersions(data);
+          testRealValues(data, file);
+          testBrowsers(data, file);
+          testConsistency(data);
+          testPrefix(data, file);
+          testDescriptions(data);
         }
       } catch (e) {
         console.error(e);

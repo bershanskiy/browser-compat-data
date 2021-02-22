@@ -81,15 +81,13 @@ function checkRealValues(supportData, blockList, relPath, logger) {
 /**
  * @param {string} filename
  */
-async function testRealValues(filename) {
+async function testRealValues(data, filename) {
   const relativePath = path.relative(
     path.resolve(__dirname, '..', '..'),
     filename,
   );
   const category =
     relativePath.includes(path.sep) && relativePath.split(path.sep)[0];
-  /** @type {Identifier} */
-  const data = require(filename);
   const logger = new Logger('Real values');
 
   /**

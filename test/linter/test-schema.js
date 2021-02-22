@@ -11,11 +11,10 @@ const ajv = new Ajv({ jsonPointers: true, allErrors: true });
  * @param {string} [schemaFilename]
  */
 async function testSchema(
-  dataFilename,
+  data,
   schemaFilename = './../../schemas/compat-data.schema.json',
 ) {
   const schema = require(schemaFilename);
-  const data = require(dataFilename);
 
   const valid = ajv.validate(schema, data);
 

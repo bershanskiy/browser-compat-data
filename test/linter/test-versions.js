@@ -129,12 +129,9 @@ function checkVersions(supportData, relPath, logger) {
 }
 
 /**
- * @param {string} filename
+ * @param {Object} data
  */
-async function testVersions(filename) {
-  /** @type {Identifier} */
-  const data = require(filename);
-
+async function testVersions(data) {
   const logger = new Logger('Versions');
 
   /**

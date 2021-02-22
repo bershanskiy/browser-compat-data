@@ -106,15 +106,13 @@ function processData(
  * @param {string} filename
  * @returns {boolean} If the file contains errors
  */
-async function testBrowsers(filename) {
+async function testBrowsers(data, filename) {
   const relativePath = path.relative(
     path.resolve(__dirname, '..', '..'),
     filename,
   );
   const category =
     relativePath.includes(path.sep) && relativePath.split(path.sep)[0];
-  /** @type {Identifier} */
-  const data = require(filename);
 
   if (!category) {
     console.warn(chalk.blackBright('  Browsers – Unknown category'));
