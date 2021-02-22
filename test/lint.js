@@ -82,7 +82,7 @@ async function load(...files) {
         };
 
         try {
-          const data = require(file);
+          const data = JSON.parse(await fs.promises.readFile(file));
           if (file.indexOf('browsers' + path.sep) !== -1) {
             errorsPromisses.push(
               testSchema(data, './../../schemas/browsers.schema.json'),
@@ -169,7 +169,7 @@ async function main() {
     for (const [fileName, file] of filesWithErrors) {
       console.warn(chalk`{red.bold ✖ ${fileName}}`);
       try {
-        const data = require(file);
+        const data = JSON.parse(await fs.promises.readFile(file));
         if (file.indexOf('browsers' + path.sep) !== -1) {
           testSchema(data, './../../schemas/browsers.schema.json');
           testLinks(file);
