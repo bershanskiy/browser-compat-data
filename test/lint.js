@@ -19,6 +19,7 @@ const { IS_CI } = require('./utils.js');
 const testCompareFeatures = require('./test-compare-features');
 const testMigrations = require('./test-migrations');
 const testFormat = require('./test-format');
+const { exit } = require('process');
 
 /** @type {Map<string, string>} */
 const filesWithErrors = new Map();
@@ -136,9 +137,11 @@ async function load(...files) {
       return prevHasErrors || fileHasErrors;
     }
 
-    const subFiles = fs.readdirSync(file).map(subfile => {
-      return path.join(file, subfile);
-    });
+    const subFiles = (await fs.promises.readdir(file))
+      .filter(subfile => subfile !== '.' && subfile !== '..')
+      .map(subfile => {
+        return path.join(file, subfile);
+      });
 
     return (await load(...subFiles)) || prevHasErrors;
   }, false);
@@ -171,10 +174,10 @@ async function main() {
   const testFormatErrors = await testFormatPromise;
   hasErrors = testFormatErrors || hasErrors;
 
-  if (hasErrors) {
+  const errorCount =
+    filesWithErrors.size + (testFormatErrors ? testFormatErrors.length : 0);
+  if (errorCount) {
     console.warn('');
-    const errorCount =
-      filesWithErrors.size + (testFormatErrors ? testFormatErrors.length : 0);
     console.warn(
       chalk`{red Problems in {bold ${errorCount}} ${
         errorCount === 1 ? 'file' : 'files'
