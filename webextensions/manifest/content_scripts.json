@@ -230,7 +230,26 @@
               }
             }
           }
-        }
+        },
+        "world": {
+          "__compat": {
+            "support": {
+              "chrome": {
+                "version_added": "111"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        }        
       }
     }
   }
