@@ -4,7 +4,10 @@
       "line-break": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/line-break",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-text/#line-break-property",
+          "spec_url": "https://drafts.csswg.org/css-text/#line-break-property",
+          "tags": [
+            "web-features:line-break"
+          ],
           "support": {
             "chrome": [
               {
@@ -40,13 +43,13 @@
                 "version_added": "11"
               },
               {
-                "version_added": "3",
-                "prefix": "-webkit-"
+                "prefix": "-webkit-",
+                "version_added": "3"
               },
               {
+                "prefix": "-khtml-",
                 "version_added": "2",
-                "version_removed": "3",
-                "prefix": "-khtml-"
+                "version_removed": "3"
               }
             ],
             "safari_ios": [
@@ -54,25 +57,203 @@
                 "version_added": "11"
               },
               {
-                "version_added": "1",
-                "prefix": "-webkit-"
+                "prefix": "-webkit-",
+                "version_added": "1"
               }
             ],
             "samsunginternet_android": "mirror",
-            "webview_android": [
-              {
-                "version_added": "58"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "≤37"
-              }
-            ]
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "anywhere": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text/#valdef-line-break-anywhere",
+            "tags": [
+              "web-features:line-break"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "83"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "69"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "13"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "auto": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text/#valdef-line-break-auto",
+            "tags": [
+              "web-features:line-break"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "25"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "69"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "7"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "loose": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text/#valdef-line-break-loose",
+            "tags": [
+              "web-features:line-break"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "25"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "69"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "normal": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text/#valdef-line-break-normal",
+            "tags": [
+              "web-features:line-break"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "69"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "strict": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text/#valdef-line-break-strict",
+            "tags": [
+              "web-features:line-break"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "25"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "69"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       }

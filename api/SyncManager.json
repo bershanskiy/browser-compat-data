@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SyncManager",
         "spec_url": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+        "tags": [
+          "web-features:background-sync"
+        ],
         "support": {
           "chrome": {
             "version_added": "49"
@@ -21,14 +24,19 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://webkit.org/b/182565"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": {
+            "version_added": false,
+            "impl_url": "https://crbug.com/40449796"
+          },
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
@@ -36,6 +44,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:background-sync"
+          ],
           "support": {
             "chrome": [
               {
@@ -44,7 +55,7 @@
               {
                 "version_added": "49",
                 "partial_implementation": true,
-                "notes": "Only available in the <code>Window</code> and <code>ServiceWorker</code> global scopes."
+                "notes": "Only available in the `Window` and `ServiceWorker` global scopes."
               }
             ],
             "chrome_android": "mirror",
@@ -70,11 +81,15 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40449796"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
-            "standard_track": false,
+            "experimental": false,
+            "standard_track": true,
             "deprecated": false
           }
         }
@@ -83,6 +98,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SyncManager/getTags",
           "spec_url": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-gettags",
+          "tags": [
+            "web-features:background-sync"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -104,10 +122,14 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40449796"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -117,6 +139,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SyncManager/register",
           "spec_url": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register",
+          "tags": [
+            "web-features:background-sync"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -138,10 +163,14 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40449796"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

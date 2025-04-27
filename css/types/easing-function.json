@@ -3,9 +3,12 @@
     "types": {
       "easing-function": {
         "__compat": {
-          "description": "<code>&lt;easing-function&gt;</code>",
+          "description": "`&lt;easing-function&gt;`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/easing-function",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-easing/#easing-functions",
+          "spec_url": "https://drafts.csswg.org/css-easing/#easing-functions",
+          "tags": [
+            "web-features:cubic-bezier-easing"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -35,7 +38,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -45,7 +49,12 @@
         },
         "cubic-bezier": {
           "__compat": {
-            "description": "<code>cubic-bezier()</code> with ordinate ∉ [0,1]",
+            "description": "`cubic-bezier()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/easing-function/cubic-bezier",
+            "spec_url": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+            "tags": [
+              "web-features:cubic-bezier-easing"
+            ],
             "support": {
               "chrome": {
                 "version_added": "16"
@@ -71,7 +80,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -82,22 +92,20 @@
         },
         "linear-function": {
           "__compat": {
-            "description": "<code>linear()</code>",
+            "description": "`linear()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/easing-function/linear",
+            "spec_url": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
+            "tags": [
+              "web-features:linear-easing"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "113"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": "104",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "layout.css.linear-easing-function.enabled",
-                    "value_to_set": "true"
-                  }
-                ]
+                "version_added": "112"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -107,14 +115,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -122,7 +131,12 @@
         },
         "steps": {
           "__compat": {
-            "description": "<code>steps()</code> with <code>start</code>, <code>end</code> or no direction",
+            "description": "`steps()` with `start`, `end` or no direction",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/easing-function/steps",
+            "spec_url": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+            "tags": [
+              "web-features:steps-easing"
+            ],
             "support": {
               "chrome": {
                 "version_added": "8"
@@ -150,7 +164,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "4"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -160,7 +175,10 @@
           },
           "jump": {
             "__compat": {
-              "description": "<code>jump-</code> keywords for <code>steps()</code>",
+              "description": "`jump-` keywords for `steps()`",
+              "tags": [
+                "web-features:steps-easing"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "77"
@@ -182,7 +200,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,

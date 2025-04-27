@@ -3,7 +3,10 @@
     "CSSCounterStyleRule": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule",
-        "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#the-csscounterstylerule-interface",
+        "spec_url": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "tags": [
+          "web-features:counter-style"
+        ],
         "support": {
           "chrome": {
             "version_added": "91"
@@ -21,12 +24,12 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false,
-            "notes": "See <a href='https://webkit.org/b/167645'>bug 167645</a>."
+            "version_added": "17"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,7 +40,10 @@
       "additiveSymbols": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/additiveSymbols",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-additivesymbols",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-additivesymbols",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -55,11 +61,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -71,7 +78,10 @@
       "fallback": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/fallback",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-fallback",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-fallback",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -89,11 +99,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -105,7 +116,10 @@
       "name": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/name",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-name",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-name",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -123,11 +137,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -139,7 +154,10 @@
       "negative": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/negative",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-negative",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-negative",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -157,11 +175,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -173,7 +192,10 @@
       "pad": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/pad",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-pad",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-pad",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -191,11 +213,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -207,7 +230,10 @@
       "prefix": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/prefix",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-prefix",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-prefix",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -225,11 +251,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -241,7 +268,10 @@
       "range": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/range",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-range",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-range",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -259,11 +289,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -275,7 +306,10 @@
       "speakAs": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/speakAs",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-speakas",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-speakas",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -293,11 +327,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -309,7 +344,10 @@
       "suffix": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/suffix",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-suffix",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-suffix",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -327,11 +365,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -343,7 +382,10 @@
       "symbols": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/symbols",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-symbols",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-symbols",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -361,11 +403,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -377,7 +420,10 @@
       "system": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/system",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-counter-styles/#dom-csscounterstylerule-system",
+          "spec_url": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-system",
+          "tags": [
+            "web-features:counter-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -395,11 +441,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

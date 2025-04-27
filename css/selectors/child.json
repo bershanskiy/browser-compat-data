@@ -3,9 +3,12 @@
     "selectors": {
       "child": {
         "__compat": {
-          "description": "Child combinator (<code>A &gt; B</code>)",
+          "description": "Child combinator (`A &gt; B`)",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/Child_combinator",
-          "spec_url": "https://w3c.github.io/csswg-drafts/selectors/#child-combinators",
+          "spec_url": "https://drafts.csswg.org/selectors/#child-combinators",
+          "tags": [
+            "web-features:selectors"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -34,9 +37,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

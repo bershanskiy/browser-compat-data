@@ -4,15 +4,18 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer",
         "spec_url": "https://w3c.github.io/media-source/#sourcebuffer",
+        "tags": [
+          "web-features:media-source"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "31"
             },
             {
+              "prefix": "WebKit",
               "version_added": "23",
-              "version_removed": "31",
-              "prefix": "WebKit"
+              "version_removed": "31"
             }
           ],
           "chrome_android": "mirror",
@@ -35,6 +38,7 @@
           },
           "safari_ios": {
             "version_added": "13",
+            "impl_url": "https://webkit.org/b/200147",
             "partial_implementation": true,
             "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
           },
@@ -48,7 +52,10 @@
               "version_removed": "3.0"
             }
           ],
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -56,43 +63,13 @@
           "deprecated": false
         }
       },
-      "worker_support": {
-        "__compat": {
-          "description": "Available in workers",
-          "support": {
-            "chrome": {
-              "version_added": "108"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": true,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
       "abort": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/abort",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-abort",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -125,6 +102,9 @@
             },
             "webview_android": {
               "version_added": "4.4.3"
+            },
+            "webview_ios": {
+              "version_added": false
             }
           },
           "status": {
@@ -136,6 +116,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -157,7 +140,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -169,11 +153,13 @@
       },
       "abort_event": {
         "__compat": {
-          "description": "<code>abort</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/abort_event",
+          "description": "`abort` event",
           "spec_url": [
             "https://w3c.github.io/media-source/#dfn-abort",
             "https://w3c.github.io/media-source/#dom-sourcebuffer-onabort"
+          ],
+          "tags": [
+            "web-features:media-source"
           ],
           "support": {
             "chrome": [
@@ -184,7 +170,7 @@
                 "version_added": "31",
                 "version_removed": "53",
                 "partial_implementation": true,
-                "notes": "The <code>onabort</code> event handler property is not supported."
+                "notes": "The `onabort` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -196,7 +182,7 @@
                 "version_added": "12",
                 "version_removed": "17",
                 "partial_implementation": true,
-                "notes": "The <code>onabort</code> event handler property is not supported."
+                "notes": "The `onabort` event handler property is not supported."
               }
             ],
             "firefox": {
@@ -218,7 +204,7 @@
                 "version_added": "8",
                 "version_removed": "10.1",
                 "partial_implementation": true,
-                "notes": "The <code>onabort</code> event handler property is not supported."
+                "notes": "The `onabort` event handler property is not supported."
               }
             ],
             "safari_ios": {
@@ -227,7 +213,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -238,6 +227,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -259,7 +251,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -273,6 +266,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendBuffer",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendbuffer",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -307,7 +303,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -318,6 +317,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -339,7 +341,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -380,7 +383,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -389,47 +393,13 @@
           }
         }
       },
-      "appendStream": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendStream",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "12",
-              "version_removed": "79"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "11",
-              "notes": "Only works on Windows 8+."
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
-          }
-        }
-      },
       "appendWindowEnd": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendWindowEnd",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendwindowend",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -464,7 +434,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -475,6 +448,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -496,7 +472,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -510,6 +487,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendWindowStart",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendwindowstart",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -544,7 +524,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -555,6 +538,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -576,7 +562,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -590,9 +577,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/audioTracks",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-audiotracks",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
-              "version_added": "70"
+              "version_added": "70",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-experimental-web-platform-features",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": [
@@ -631,7 +628,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -642,9 +642,20 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108"
+                "version_added": "108",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features",
+                    "value_to_set": "Enabled"
+                  }
+                ],
+                "notes": "Currently doesn't work, even with the flag set. If invoked from a dedicated worker, Chromium crashes the renderer to avoid undesirable behavior (see [bug 487288](https://crbug.com/40417861#comment25))."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -663,7 +674,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -677,6 +689,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/buffered",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-buffered",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -711,7 +726,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -722,6 +740,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -743,7 +764,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -757,6 +779,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/changeType",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-changetype",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -782,7 +807,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -793,6 +821,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -814,7 +845,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -826,11 +858,13 @@
       },
       "error_event": {
         "__compat": {
-          "description": "<code>error</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/error_event",
+          "description": "`error` event",
           "spec_url": [
             "https://w3c.github.io/media-source/#dfn-error",
             "https://w3c.github.io/media-source/#dom-sourcebuffer-onerror"
+          ],
+          "tags": [
+            "web-features:media-source"
           ],
           "support": {
             "chrome": [
@@ -841,7 +875,7 @@
                 "version_added": "31",
                 "version_removed": "53",
                 "partial_implementation": true,
-                "notes": "The <code>onerror</code> event handler property is not supported."
+                "notes": "The `onerror` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -853,7 +887,7 @@
                 "version_added": "12",
                 "version_removed": "17",
                 "partial_implementation": true,
-                "notes": "The <code>onerror</code> event handler property is not supported."
+                "notes": "The `onerror` event handler property is not supported."
               }
             ],
             "firefox": {
@@ -875,7 +909,7 @@
                 "version_added": "8",
                 "version_removed": "10.1",
                 "partial_implementation": true,
-                "notes": "The <code>onerror</code> event handler property is not supported."
+                "notes": "The `onerror` event handler property is not supported."
               }
             ],
             "safari_ios": {
@@ -884,7 +918,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -895,6 +932,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -916,7 +956,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -930,6 +971,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/mode",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-mode",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -964,7 +1008,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -975,6 +1022,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -996,7 +1046,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1010,6 +1061,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/remove",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-remove",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -1044,7 +1098,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1055,6 +1112,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1076,7 +1136,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1117,7 +1178,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -1130,14 +1192,15 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/textTracks",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-texttracks",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
-              "version_added": "70"
+              "version_added": false
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "18"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": false
             },
@@ -1157,45 +1220,15 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
-            "experimental": false,
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       },
@@ -1203,6 +1236,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/timestampOffset",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-timestampoffset",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -1237,7 +1273,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1248,6 +1287,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1269,7 +1311,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1281,11 +1324,13 @@
       },
       "update_event": {
         "__compat": {
-          "description": "<code>update</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/update_event",
+          "description": "`update` event",
           "spec_url": [
             "https://w3c.github.io/media-source/#dfn-update",
             "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdate"
+          ],
+          "tags": [
+            "web-features:media-source"
           ],
           "support": {
             "chrome": [
@@ -1296,7 +1341,7 @@
                 "version_added": "31",
                 "version_removed": "53",
                 "partial_implementation": true,
-                "notes": "The <code>onupdate</code> event handler property is not supported."
+                "notes": "The `onupdate` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -1308,7 +1353,7 @@
                 "version_added": "12",
                 "version_removed": "17",
                 "partial_implementation": true,
-                "notes": "The <code>onupdate</code> event handler property is not supported."
+                "notes": "The `onupdate` event handler property is not supported."
               }
             ],
             "firefox": {
@@ -1330,7 +1375,7 @@
                 "version_added": "8",
                 "version_removed": "10.1",
                 "partial_implementation": true,
-                "notes": "The <code>onupdate</code> event handler property is not supported."
+                "notes": "The `onupdate` event handler property is not supported."
               }
             ],
             "safari_ios": {
@@ -1339,7 +1384,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1350,6 +1398,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1371,7 +1422,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1383,11 +1435,13 @@
       },
       "updateend_event": {
         "__compat": {
-          "description": "<code>updateend</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/updateend_event",
+          "description": "`updateend` event",
           "spec_url": [
             "https://w3c.github.io/media-source/#dfn-updateend",
             "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdateend"
+          ],
+          "tags": [
+            "web-features:media-source"
           ],
           "support": {
             "chrome": [
@@ -1398,7 +1452,7 @@
                 "version_added": "31",
                 "version_removed": "53",
                 "partial_implementation": true,
-                "notes": "The <code>onupdateend</code> event handler property is not supported."
+                "notes": "The `onupdateend` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -1410,7 +1464,7 @@
                 "version_added": "12",
                 "version_removed": "17",
                 "partial_implementation": true,
-                "notes": "The <code>onupdateend</code> event handler property is not supported."
+                "notes": "The `onupdateend` event handler property is not supported."
               }
             ],
             "firefox": {
@@ -1432,7 +1486,7 @@
                 "version_added": "8",
                 "version_removed": "10.1",
                 "partial_implementation": true,
-                "notes": "The <code>onupdateend</code> event handler property is not supported."
+                "notes": "The `onupdateend` event handler property is not supported."
               }
             ],
             "safari_ios": {
@@ -1441,7 +1495,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1452,6 +1509,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1473,7 +1533,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1485,11 +1546,13 @@
       },
       "updatestart_event": {
         "__compat": {
-          "description": "<code>updatestart</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/updatestart_event",
+          "description": "`updatestart` event",
           "spec_url": [
             "https://w3c.github.io/media-source/#dfn-updatestart",
             "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdatestart"
+          ],
+          "tags": [
+            "web-features:media-source"
           ],
           "support": {
             "chrome": [
@@ -1500,7 +1563,7 @@
                 "version_added": "31",
                 "version_removed": "53",
                 "partial_implementation": true,
-                "notes": "The <code>onupdatestart</code> event handler property is not supported."
+                "notes": "The `onupdatestart` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -1512,7 +1575,7 @@
                 "version_added": "12",
                 "version_removed": "17",
                 "partial_implementation": true,
-                "notes": "The <code>onupdatestart</code> event handler property is not supported."
+                "notes": "The `onupdatestart` event handler property is not supported."
               }
             ],
             "firefox": {
@@ -1534,7 +1597,7 @@
                 "version_added": "8",
                 "version_removed": "10.1",
                 "partial_implementation": true,
-                "notes": "The <code>onupdatestart</code> event handler property is not supported."
+                "notes": "The `onupdatestart` event handler property is not supported."
               }
             ],
             "safari_ios": {
@@ -1543,7 +1606,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1554,6 +1620,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1575,7 +1644,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1589,6 +1659,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/updating",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-updating",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -1623,7 +1696,10 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1634,6 +1710,9 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
                 "version_added": "108"
@@ -1655,7 +1734,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1669,9 +1749,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SourceBuffer/videoTracks",
           "spec_url": "https://w3c.github.io/media-source/#dom-sourcebuffer-videotracks",
+          "tags": [
+            "web-features:media-source"
+          ],
           "support": {
             "chrome": {
-              "version_added": "70"
+              "version_added": "70",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-experimental-web-platform-features",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": [
@@ -1710,7 +1800,10 @@
               "notes": "Exposed in Mobile Safari on iPad but not on iPhone."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -1721,9 +1814,20 @@
         "worker_support": {
           "__compat": {
             "description": "Available in workers",
+            "tags": [
+              "web-features:media-source"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108"
+                "version_added": "108",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features",
+                    "value_to_set": "Enabled"
+                  }
+                ],
+                "notes": "Currently doesn't work, even with the flag set. If invoked from a dedicated worker, Chromium crashes the renderer to avoid undesirable behavior (see [bug 487288](https://crbug.com/40417861#comment25))."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1742,7 +1846,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,

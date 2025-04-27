@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming",
         "spec_url": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "tags": [
+          "web-features:navigation-timing"
+        ],
         "support": {
           "chrome": {
             "version_added": "57"
@@ -13,8 +16,7 @@
             "version_added": "12"
           },
           "firefox": {
-            "version_added": "58",
-            "notes": "You can disable this feature using the <code>dom.enable_performance_navigation_timing</code> preference (see <a href='https://bugzil.la/1403926'>bug 1403926</a>)."
+            "version_added": "58"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -30,7 +32,8 @@
             "version_added": "15.1"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,10 +41,91 @@
           "deprecated": false
         }
       },
+      "activationStart": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/activationStart",
+          "spec_url": "https://wicg.github.io/nav-speculation/prerendering.html#dom-performancenavigationtiming-activationstart",
+          "tags": [
+            "web-features:speculation-rules"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "108"
+            },
+            "chrome_android": {
+              "version_added": "57"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "criticalCHRestart": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/criticalCHRestart",
+          "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-criticalchrestart",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "116"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "domComplete": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domComplete",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcomplete",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -67,7 +151,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,6 +165,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventEnd",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventend",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -105,7 +193,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -118,6 +207,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventStart",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventstart",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -143,7 +235,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -156,6 +249,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domInteractive",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-dominteractive",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -181,7 +277,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -194,6 +291,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventEnd",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventend",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -219,7 +319,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -232,6 +333,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventStart",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventstart",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -257,10 +361,49 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "notRestoredReasons": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/notRestoredReasons",
+          "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-notrestoredreasons",
+          "tags": [
+            "web-features:bfcache-blocking-reasons"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "125"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -270,6 +413,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/redirectCount",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-redirectcount",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -295,7 +441,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -308,6 +455,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/toJSON",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-tojson",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -333,7 +483,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -346,6 +497,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/type",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-type",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -371,7 +525,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -384,6 +539,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventend",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -409,7 +567,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -422,6 +581,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventStart",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventstart",
+          "tags": [
+            "web-features:navigation-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -447,7 +609,8 @@
               "version_added": "15.1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

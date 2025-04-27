@@ -3,7 +3,10 @@
     "DocumentTimeline": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/DocumentTimeline",
-        "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#the-documenttimeline-interface",
+        "spec_url": "https://drafts.csswg.org/web-animations-1/#the-documenttimeline-interface",
+        "tags": [
+          "web-features:web-animations"
+        ],
         "support": {
           "chrome": {
             "version_added": "84"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +39,12 @@
       },
       "DocumentTimeline": {
         "__compat": {
-          "description": "<code>DocumentTimeline()</code> constructor",
+          "description": "`DocumentTimeline()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DocumentTimeline/DocumentTimeline",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-documenttimeline-documenttimeline",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-documenttimeline-documenttimeline",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -59,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

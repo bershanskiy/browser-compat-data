@@ -3,11 +3,14 @@
     "data-url": {
       "__compat": {
         "description": "data URL scheme",
-        "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/URI/Reference/Schemes/data",
         "spec_url": "https://www.rfc-editor.org/rfc/rfc2397#section-2",
+        "tags": [
+          "web-features:data-urls"
+        ],
         "support": {
           "chrome": {
-            "version_added": true
+            "version_added": "≤4"
           },
           "chrome_android": "mirror",
           "edge": {
@@ -15,7 +18,7 @@
             "notes": "Before Edge 79, the maximum size supported is 4GB."
           },
           "firefox": {
-            "version_added": true
+            "version_added": "≤2"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -31,11 +34,12 @@
           },
           "opera_android": "mirror",
           "safari": {
-            "version_added": true
+            "version_added": "≤3.1"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -46,16 +50,19 @@
       "css_files": {
         "__compat": {
           "description": "CSS files",
+          "tags": [
+            "web-features:data-urls"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "≤4"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "12"
             },
             "firefox": {
-              "version_added": true
+              "version_added": "≤2"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -67,11 +74,12 @@
             },
             "opera_android": "mirror",
             "safari": {
-              "version_added": true
+              "version_added": "≤3.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -83,16 +91,17 @@
       "html_files": {
         "__compat": {
           "description": "HTML files",
+          "tags": [
+            "web-features:data-urls"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "≤4"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "79"
-            },
+            "edge": "mirror",
             "firefox": {
-              "version_added": true
+              "version_added": "≤2"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -102,11 +111,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": true
+              "version_added": "≤3.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -118,16 +128,19 @@
       "js_files": {
         "__compat": {
           "description": "JavaScript files",
+          "tags": [
+            "web-features:data-urls"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "≤4"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "12"
             },
             "firefox": {
-              "version_added": true
+              "version_added": "≤2"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -139,11 +152,12 @@
             },
             "opera_android": "mirror",
             "safari": {
-              "version_added": true
+              "version_added": "≤3.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -155,6 +169,9 @@
       "top_level_navigation_blocked": {
         "__compat": {
           "description": "Top-level navigation blocked to data:// URIs",
+          "tags": [
+            "web-features:data-urls"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -180,7 +197,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

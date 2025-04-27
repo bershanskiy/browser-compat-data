@@ -4,7 +4,10 @@
       "background-position-y": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-position-y",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-backgrounds-4/#background-position-longhands",
+          "spec_url": "https://drafts.csswg.org/css-backgrounds-4/#background-position-longhands",
+          "tags": [
+            "web-features:background-position"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -28,9 +31,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -38,9 +40,12 @@
             "deprecated": false
           }
         },
-        "2_value_syntax": {
+        "side-relative_values": {
           "__compat": {
-            "description": "Two-value syntax (support for offsets from any edge)",
+            "description": "Side-relative values (such as `bottom 10%`)",
+            "tags": [
+              "web-features:background-position"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -65,7 +70,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

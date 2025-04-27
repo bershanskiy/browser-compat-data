@@ -3,7 +3,10 @@
     "KeyframeEffect": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect",
-        "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#the-keyframeeffect-interface",
+        "spec_url": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+        "tags": [
+          "web-features:web-animations"
+        ],
         "support": {
           "chrome": {
             "version_added": "75"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +39,12 @@
       },
       "KeyframeEffect": {
         "__compat": {
-          "description": "<code>KeyframeEffect()</code> constructor",
+          "description": "`KeyframeEffect()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/KeyframeEffect",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-keyframeeffect",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -59,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -71,7 +79,10 @@
       "composite": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/composite",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-composite",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -95,7 +106,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -107,7 +119,10 @@
       "getKeyframes": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/getKeyframes",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-getkeyframes",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -131,7 +146,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -143,10 +159,14 @@
       "iterationComposite": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/iterationComposite",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-2/#dom-keyframeeffect-iterationcomposite",
+          "spec_url": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://crbug.com/41133485"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -161,14 +181,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -177,7 +198,10 @@
       "pseudoElement": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/pseudoElement",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-pseudoelement",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudoelement",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -201,7 +225,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -213,7 +238,10 @@
       "setKeyframes": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/setKeyframes",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-setkeyframes",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -237,7 +265,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -249,7 +278,10 @@
       "target": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyframeEffect/target",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-keyframeeffect-target",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-target",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -271,7 +303,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

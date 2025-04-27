@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Scheduler",
         "spec_url": "https://wicg.github.io/scheduling-apis/#scheduler",
+        "tags": [
+          "web-features:scheduler"
+        ],
         "support": {
           "chrome": {
             "version_added": "94"
@@ -18,11 +21,10 @@
                 "name": "dom.enable_web_task_scheduling",
                 "value_to_set": "true"
               }
-            ]
+            ],
+            "impl_url": "https://bugzil.la/1795625"
           },
-          "firefox_android": {
-            "version_added": false
-          },
+          "firefox_android": "mirror",
           "ie": {
             "version_added": false
           },
@@ -34,7 +36,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -46,6 +49,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Scheduler/postTask",
           "spec_url": "https://wicg.github.io/scheduling-apis/#dom-scheduler-posttask",
+          "tags": [
+            "web-features:scheduler"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -62,9 +68,7 @@
                 }
               ]
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -76,10 +80,49 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "yield": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Scheduler/yield",
+          "spec_url": "https://wicg.github.io/scheduling-apis/#dom-scheduler-yield",
+          "tags": [
+            "web-features:scheduler"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "129"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }

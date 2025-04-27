@@ -3,11 +3,14 @@
     "elements": {
       "source": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/source",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/source",
           "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
+          "tags": [
+            "web-features:source"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "3"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -15,7 +18,7 @@
             },
             "firefox": {
               "version_added": "3.5",
-              "notes": "Until Firefox 15, Firefox picked the first source element that has a type matching the MIME-type of a supported media format; see <a href='https://bugzil.la/449363'>bug 449363</a> for details."
+              "notes": "Until Firefox 15, Firefox picked the first source element that has a type matching the MIME-type of a supported media format; see [bug 449363](https://bugzil.la/449363) for details."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -25,11 +28,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": true
+              "version_added": "3.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -37,18 +41,20 @@
             "deprecated": false
           }
         },
-        "media": {
+        "height": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+            "tags": [
+              "web-features:source"
+            ],
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "90"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "12"
-              },
+              "edge": "mirror",
               "firefox": {
-                "version_added": "15"
+                "version_added": "108"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -56,15 +62,55 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": null
-              },
+              "opera_android": "mirror",
               "safari": {
-                "version_added": true
+                "version_added": "15"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "media": {
+          "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media",
+            "tags": [
+              "web-features:source"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "3"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "15",
+                "impl_url": "https://bugzil.la/1836128",
+                "notes": "`media` is supported in `&lt;source&gt;` within `&lt;picture&gt;`, `&lt;audio&gt;`, and `&lt;video&gt;`. In Firefox 53-119, `media` is supported only in `&lt;source&gt;` within `&lt;picture&gt;`."
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "9"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "3.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -75,6 +121,10 @@
         },
         "sizes": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
+            "tags": [
+              "web-features:srcset"
+            ],
             "support": {
               "chrome": [
                 {
@@ -83,19 +133,19 @@
                 {
                   "version_added": "34",
                   "version_removed": "38",
-                  "notes": "Supports a subset of the syntax for resolution switching (using the <code>x</code> descriptor), but not the full syntax that can be used with <code>sizes</code> (using the <code>w</code> descriptor)."
+                  "notes": "Supports a subset of the syntax for resolution switching (using the `x` descriptor), but not the full syntax that can be used with `sizes` (using the `w` descriptor)."
                 }
               ],
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "38"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -105,7 +155,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -116,9 +167,13 @@
         },
         "src": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src",
+            "tags": [
+              "web-features:source"
+            ],
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "3"
               },
               "chrome_android": "mirror",
               "edge": {
@@ -133,15 +188,14 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": null
-              },
+              "opera_android": "mirror",
               "safari": {
-                "version_added": true
+                "version_added": "3.1"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -152,6 +206,10 @@
         },
         "srcset": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset",
+            "tags": [
+              "web-features:srcset"
+            ],
             "support": {
               "chrome": [
                 {
@@ -160,19 +218,19 @@
                 {
                   "version_added": "34",
                   "version_removed": "38",
-                  "notes": "Supports a subset of the syntax for resolution switching (using the <code>x</code> descriptor), but not the full syntax that can be used with <code>sizes</code> (using the <code>w</code> descriptor)."
+                  "notes": "Supports a subset of the syntax for resolution switching (using the `x` descriptor), but not the full syntax that can be used with `sizes` (using the `w` descriptor)."
                 }
               ],
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "38"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -182,7 +240,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -193,9 +252,13 @@
         },
         "type": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type",
+            "tags": [
+              "web-features:source"
+            ],
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "3"
               },
               "chrome_android": "mirror",
               "edge": {
@@ -210,15 +273,51 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": null
-              },
+              "opera_android": "mirror",
               "safari": {
-                "version_added": true
+                "version_added": "3.1"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "width": {
+          "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+            "tags": [
+              "web-features:source"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "90"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "108"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "9"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "15"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

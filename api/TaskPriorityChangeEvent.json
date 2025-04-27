@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent",
         "spec_url": "https://wicg.github.io/scheduling-apis/#sec-task-priority-change-event",
+        "tags": [
+          "web-features:scheduler"
+        ],
         "support": {
           "chrome": {
             "version_added": "94"
@@ -20,9 +23,7 @@
               }
             ]
           },
-          "firefox_android": {
-            "version_added": false
-          },
+          "firefox_android": "mirror",
           "ie": {
             "version_added": false
           },
@@ -34,7 +35,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -44,9 +46,12 @@
       },
       "TaskPriorityChangeEvent": {
         "__compat": {
-          "description": "<code>TaskPriorityChangeEvent()</code> constructor",
+          "description": "`TaskPriorityChangeEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/TaskPriorityChangeEvent",
           "spec_url": "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-taskprioritychangeevent",
+          "tags": [
+            "web-features:scheduler"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -63,9 +68,7 @@
                 }
               ]
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -77,7 +80,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -90,6 +94,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/previousPriority",
           "spec_url": "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-previouspriority",
+          "tags": [
+            "web-features:scheduler"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -106,9 +113,7 @@
                 }
               ]
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -120,7 +125,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

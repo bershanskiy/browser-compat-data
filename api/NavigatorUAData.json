@@ -2,7 +2,11 @@
   "api": {
     "NavigatorUAData": {
       "__compat": {
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData",
         "spec_url": "https://wicg.github.io/ua-client-hints/#navigatoruadata",
+        "tags": [
+          "web-features:ua-client-hints"
+        ],
         "support": {
           "chrome": {
             "version_added": "90"
@@ -23,11 +27,14 @@
             "version_added": false
           },
           "safari_ios": "mirror",
-          "samsunginternet_android": "mirror",
+          "samsunginternet_android": {
+            "version_added": false
+          },
           "webview_android": {
             "version_added": false,
-            "notes": "See <a href='https://crbug.com/921655'>bug 921655</a>."
-          }
+            "impl_url": "https://crbug.com/40609350"
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -37,7 +44,11 @@
       },
       "brands": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData/brands",
           "spec_url": "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-brands",
+          "tags": [
+            "web-features:ua-client-hints"
+          ],
           "support": {
             "chrome": {
               "version_added": "90"
@@ -58,10 +69,13 @@
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
+            "samsunginternet_android": {
+              "version_added": false
+            },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -72,7 +86,11 @@
       },
       "getHighEntropyValues": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData/getHighEntropyValues",
           "spec_url": "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-gethighentropyvalues",
+          "tags": [
+            "web-features:ua-client-hints"
+          ],
           "support": {
             "chrome": {
               "version_added": "90"
@@ -93,10 +111,13 @@
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
+            "samsunginternet_android": {
+              "version_added": false
+            },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -107,7 +128,11 @@
       },
       "mobile": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData/mobile",
           "spec_url": "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-mobile",
+          "tags": [
+            "web-features:ua-client-hints"
+          ],
           "support": {
             "chrome": {
               "version_added": "90"
@@ -128,10 +153,13 @@
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
+            "samsunginternet_android": {
+              "version_added": false
+            },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -142,7 +170,11 @@
       },
       "platform": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData/platform",
           "spec_url": "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-platform",
+          "tags": [
+            "web-features:ua-client-hints"
+          ],
           "support": {
             "chrome": {
               "version_added": "93"
@@ -163,10 +195,13 @@
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
+            "samsunginternet_android": {
+              "version_added": false
+            },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -177,7 +212,11 @@
       },
       "toJSON": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigatorUAData/toJSON",
           "spec_url": "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-tojson",
+          "tags": [
+            "web-features:ua-client-hints"
+          ],
           "support": {
             "chrome": {
               "version_added": "93"
@@ -198,10 +237,13 @@
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
+            "samsunginternet_android": {
+              "version_added": false
+            },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

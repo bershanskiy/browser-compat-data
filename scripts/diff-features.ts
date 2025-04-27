@@ -1,30 +1,43 @@
 /* This file is a part of @mdn/browser-compat-data
  * See LICENSE file for more information. */
 
-import { execSync } from 'node:child_process';
+import { exec, execSync } from 'node:child_process';
 import fs from 'node:fs';
+import { promisify } from 'node:util';
+import path from 'node:path';
 
 import esMain from 'es-main';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
+import { temporaryDirectoryTask } from 'tempy';
+
+/**
+ * Executes a command asynchronously.
+ * @param command The command to execute asynchronously.
+ * @returns The output of the command.
+ */
+const execAsync = async (command: string): Promise<string> => {
+  const result = await promisify(exec)(command, { encoding: 'utf-8' });
+
+  return result.stdout.trim();
+};
 
 /**
  * Compare two references and print diff as Markdown or JSON
- *
- * @param {{ref1: string | undefined, ref2: string | undefined, format: string, github: boolean}} opts Options
- * @param {string} opts.ref1 First reference to compare
- * @param {string} opts.ref2 Second reference to compare
- * @param {string} opts.format Format to export data as (either 'markdown' or 'json', default 'json')
- * @param {boolean} opts.github Whether to obtain artifacts from GitHub
+ * @param opts Options
+ * @param opts.ref1 First reference to compare
+ * @param opts.ref2 Second reference to compare
+ * @param opts.format Format to export data as (either 'markdown' or 'json', default 'json')
+ * @param opts.github Whether to obtain artifacts from GitHub
  */
-const main = (opts: {
+const main = async (opts: {
   ref1: string | undefined;
   ref2: string | undefined;
   format?: string;
   github?: boolean;
-}): void => {
+}): Promise<void> => {
   const { ref1, ref2, format, github } = opts;
-  const results = diff({ ref1, ref2, github });
+  const results = await diff({ ref1, ref2, github });
 
   if (format === 'markdown') {
     printMarkdown(results.added, results.removed);
@@ -35,19 +48,20 @@ const main = (opts: {
 
 /**
  * Compare two references and get feature diff
- *
- * @param {{ref1: string?, ref2: string?, github: boolean}} opts Options
- * @param {string?} opts.ref1 First reference to compare
- * @param {string?} opts.ref2 Second reference to compare
- * @param {boolean} opts.github Whether to obtain artifacts from GitHub
- * @returns {{added: string[], removed: string[]}} Diff between two refs
+ * @param opts Options
+ * @param opts.ref1 First reference to compare
+ * @param opts.ref2 Second reference to compare
+ * @param opts.github Whether to obtain artifacts from GitHub
+ * @param opts.quiet If true, don't log to console
+ * @returns Diff between two refs
  */
-const diff = (opts: {
+const diff = async (opts: {
   ref1?: string;
   ref2?: string;
   github?: boolean;
-}): { added: string[]; removed: string[] } => {
-  const { ref1, ref2, github } = opts;
+  quiet?: boolean;
+}): Promise<{ added: string[]; removed: string[] }> => {
+  const { ref1, ref2, github, quiet } = opts;
   let refA, refB;
 
   if (ref1 === undefined && ref2 === undefined) {
@@ -64,97 +78,84 @@ const diff = (opts: {
     refB = `${ref1}`;
   }
 
-  const aSide = enumerate(refA, github === false);
-  const bSide = enumerate(refB, github === false);
+  const aSide = await enumerate(refA, github === false, quiet);
+  const bSide = await enumerate(refB, github === false, quiet);
 
-  const results = {
+  return {
     added: [...bSide].filter((feature) => !aSide.has(feature)),
     removed: [...aSide].filter((feature) => !bSide.has(feature)),
   };
-
-  return results;
 };
 
 /**
  * Enumerate features from GitHub or local checkout
- *
- * @param {string} ref Reference to obtain features for
- * @param {boolean} skipGitHub Skip fetching artifacts from GitHub
- * @returns {Set<string>} Feature list from reference
+ * @param ref Reference to obtain features for
+ * @param skipGithub Skip fetching artifacts from GitHub
+ * @param quiet If true, don't log to console
+ * @returns Feature list from reference
  */
-const enumerate = (ref: string, skipGitHub: boolean): Set<string> => {
-  if (!skipGitHub) {
+const enumerate = async (
+  ref: string,
+  skipGithub: boolean,
+  quiet = false,
+): Promise<Set<string>> => {
+  if (!skipGithub) {
     try {
-      return new Set(getEnumerationFromGithub(ref));
+      return new Set(await getEnumerationFromGithub(ref));
     } catch (e) {
-      console.error(
-        `Fetching artifact from GitHub failed: ${e} Using fallback.`,
-      );
+      if (!quiet) {
+        console.error(
+          `Fetching artifact from GitHub failed: ${e} Using fallback.`,
+        );
+      }
     }
   }
 
-  return new Set(enumerateFeatures(ref));
+  return new Set(enumerateFeatures(ref, quiet));
 };
 
 /**
  * Enumerate features from GitHub
- *
- * @param {string} ref Reference to obtain features for
- * @returns {string[]} Feature list from reference
+ * @param ref Reference to obtain features for
+ * @returns Feature list from reference
  */
-const getEnumerationFromGithub = (ref: string): string[] => {
+const getEnumerationFromGithub = async (ref: string): Promise<string[]> => {
   const ENUMERATE_WORKFLOW = '15595228';
   const ENUMERATE_WORKFLOW_ARTIFACT = 'enumerate-features';
   const ENUMERATE_WORKFLOW_FILE = 'features.json';
 
-  /**
-   * Unlinks the workflow file
-   */
-  const unlinkFile = () => {
-    try {
-      fs.unlinkSync(ENUMERATE_WORKFLOW_FILE);
-    } catch (err: any) {
-      if (err.code == 'ENOENT') {
-        return;
-      }
-      throw err;
-    }
-  };
-
-  const hash = execSync(`git rev-parse ${ref}`, {
-    encoding: 'utf-8',
-  }).trim();
-  const workflowRun = execSync(
-    `gh api /repos/:owner/:repo/actions/workflows/${ENUMERATE_WORKFLOW}/runs?per_page=100 --jq '[.workflow_runs[] | select(.head_sha=="${hash}") | .id] | first'`,
-    {
-      encoding: 'utf-8',
-    },
-  ).trim();
+  const hash = await execAsync(`git rev-parse ${ref}`);
+  const workflowRun = await execAsync(
+    `gh api /repos/:owner/:repo/actions/workflows/${ENUMERATE_WORKFLOW}/runs\\?head_sha=${hash}\\&per_page=1 --jq '[.workflow_runs[] | select(.head_sha=="${hash}") | .id] | first'`,
+  );
 
   if (!workflowRun) {
     throw Error('No workflow run found for commit.');
   }
 
-  try {
-    unlinkFile();
-    execSync(
-      `gh run download ${workflowRun} -n ${ENUMERATE_WORKFLOW_ARTIFACT}`,
+  return await temporaryDirectoryTask(async (tempdir) => {
+    await execAsync(
+      `gh run download ${workflowRun} -n ${ENUMERATE_WORKFLOW_ARTIFACT} --dir ${tempdir}`,
     );
-    return JSON.parse(
-      fs.readFileSync(ENUMERATE_WORKFLOW_FILE, { encoding: 'utf-8' }),
-    );
-  } finally {
-    unlinkFile();
-  }
+    const file = path.join(tempdir, ENUMERATE_WORKFLOW_FILE);
+
+    return JSON.parse(fs.readFileSync(file, { encoding: 'utf-8' }));
+  });
 };
 
 /**
  * Enumerate features from local checkout
- *
- * @param {string} ref Reference to obtain features for
- * @returns {string[]} Feature list from reference
+ * @param ref Reference to obtain features for
+ * @param quiet If true, don't log to console
+ * @returns Feature list from reference
  */
-const enumerateFeatures = (ref = 'HEAD'): string[] => {
+const enumerateFeatures = (ref = 'HEAD', quiet = false): string[] => {
+  // GitHub API returns wrong merge commit for https://github.com/mdn/browser-compat-data/pull/25668.
+  ref = ref.replace(
+    '19d8ce0fd1016c3cd1cb6f7b98f72e99ae2f3f16',
+    '3af3a24bdf71f5393893f3724bc47acdd23acfe0',
+  );
+
   // Get the short hash for this ref.
   // Most of the time, you check out named references (a branch or a tag).
   // However, if `ref` is already checked out, then `git worktree add` fails. As
@@ -166,7 +167,9 @@ const enumerateFeatures = (ref = 'HEAD'): string[] => {
 
   const worktree = `__enumerating__${hash}`;
 
-  console.error(`Enumerating features for ${ref} (${hash})`);
+  if (!quiet) {
+    console.error(`Enumerating features for ${ref} (${hash})`);
+  }
 
   try {
     execSync(`git worktree add ${worktree} ${hash}`);
@@ -177,7 +180,7 @@ const enumerateFeatures = (ref = 'HEAD'): string[] => {
       // If the clean install fails, proceed anyways
     }
 
-    execSync(`ts-node ./scripts/enumerate-features --data-from=${worktree}`);
+    execSync(`npx tsx ./scripts/enumerate-features.ts --data-from=${worktree}`);
 
     return JSON.parse(fs.readFileSync('.features.json', { encoding: 'utf-8' }));
   } finally {
@@ -187,17 +190,15 @@ const enumerateFeatures = (ref = 'HEAD'): string[] => {
 
 /**
  * Format feature for Markdown printing
- *
- * @param {string} feat Feature
- * @returns {string} Formatted feature
+ * @param feat Feature
+ * @returns Formatted feature
  */
 const fmtFeature = (feat: string) => `- \`${feat}\``;
 
 /**
  * Print feature diff as Markdown
- *
- * @param {Array.<string>} added List of added features
- * @param {Array.<string>} removed List of removed features
+ * @param added List of added features
+ * @param removed List of removed features
  */
 const printMarkdown = (added: string[], removed: string[]): void => {
   if (removed.length) {
@@ -231,7 +232,7 @@ if (esMain(import.meta)) {
           type: 'string',
           nargs: 1,
           choices: ['json', 'markdown'],
-          demand: 'a named format is required',
+          demandOption: 'a named format is required',
           default: 'markdown',
         })
         .option('no-github', {
@@ -244,7 +245,7 @@ if (esMain(import.meta)) {
     },
   );
 
-  main(argv as any);
+  await main(argv as any);
 }
 
 export default diff;

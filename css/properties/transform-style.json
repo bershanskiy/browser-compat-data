@@ -4,7 +4,10 @@
       "transform-style": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform-style",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transforms-2/#transform-style-property",
+          "spec_url": "https://drafts.csswg.org/css-transforms-2/#transform-style-property",
+          "tags": [
+            "web-features:transforms3d"
+          ],
           "support": {
             "chrome": [
               {
@@ -47,7 +50,8 @@
             "opera_android": "mirror",
             "safari": [
               {
-                "version_added": "9"
+                "version_added": "9",
+                "notes": "Before Safari 17, `::before` and `::after` pseudo elements were not included in the 3D rendering context (see [bug 256430](https://webkit.org/b/256430))."
               },
               {
                 "prefix": "-webkit-",
@@ -72,7 +76,8 @@
                 "prefix": "-webkit-",
                 "version_added": "3"
               }
-            ]
+            ],
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

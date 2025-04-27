@@ -4,7 +4,10 @@
       "grid": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-grid/#grid-shorthand",
+          "spec_url": "https://drafts.csswg.org/css-grid/#grid-shorthand",
+          "tags": [
+            "web-features:grid"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -31,7 +34,8 @@
               "version_added": "6.0",
               "notes": "This was added early so is out of sync with the equivalent Chromium version."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

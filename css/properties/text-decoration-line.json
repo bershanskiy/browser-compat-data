@@ -4,7 +4,10 @@
       "text-decoration-line": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-line",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-text-decor/#text-decoration-line-property",
+          "spec_url": "https://drafts.csswg.org/css-text-decor/#text-decoration-line-property",
+          "tags": [
+            "web-features:text-decoration"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -39,7 +42,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -49,17 +53,20 @@
         },
         "blink": {
           "__compat": {
-            "description": "<code>blink</code>",
+            "spec_url": "https://drafts.csswg.org/css-text-decor/#valdef-text-decoration-line-blink",
+            "tags": [
+              "web-features:text-decoration-line-blink"
+            ],
             "support": {
               "chrome": {
                 "version_added": "57",
-                "notes": "The <code>blink</code> value does not have any effect."
+                "notes": "The `blink` value does not have any effect."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
                 "version_added": "26",
-                "notes": "The <code>blink</code> value does not have any effect."
+                "notes": "The `blink` value does not have any effect."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -77,12 +84,235 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
               "standard_track": true,
               "deprecated": true
+            }
+          }
+        },
+        "grammar-error": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-grammar-error",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "121"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "137"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "line-through": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor/#valdef-text-decoration-line-line-through",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "57"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "6"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "none": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor/#valdef-text-decoration-line-none",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "57"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "6"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "overline": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor/#valdef-text-decoration-line-overline",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "57"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "6"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "spelling-error": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-spelling-error",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "121"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "137"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "underline": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-text-decor/#valdef-text-decoration-line-underline",
+            "tags": [
+              "web-features:text-decoration"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "57"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "6"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "8"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
             }
           }
         }

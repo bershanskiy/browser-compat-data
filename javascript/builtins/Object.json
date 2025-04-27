@@ -5,6 +5,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object",
           "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects",
+          "tags": [
+            "web-features:snapshot:ecmascript-1",
+            "web-features:object-object"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -38,7 +42,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": "1"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -48,9 +55,13 @@
         },
         "Object": {
           "__compat": {
-            "description": "<code>Object()</code> constructor",
+            "description": "`Object()` constructor",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/Object",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-constructor",
+            "tags": [
+              "web-features:snapshot:ecmascript-1",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -84,7 +95,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -97,6 +111,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.assign",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "45"
@@ -126,7 +144,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -139,6 +158,9 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.constructor",
+            "tags": [
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -172,7 +194,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -185,6 +208,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/create",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -220,7 +247,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -231,9 +259,12 @@
         },
         "defineGetter": {
           "__compat": {
-            "description": "<code>__defineGetter__</code>",
+            "description": "`__defineGetter__`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__",
-            "spec_url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-object.prototype.__defineGetter__",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineGetter__",
+            "tags": [
+              "web-features:accessor-methods"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -247,7 +278,7 @@
               },
               "firefox": {
                 "version_added": "1",
-                "notes": "Starting with Firefox 48, this method can no longer be called at the global scope without any object. A <code>TypeError</code> will be thrown otherwise. Previously, the global object was used in these cases automatically, but this is no longer the case."
+                "notes": "Starting with Firefox 48, this method can no longer be called at the global scope without any object. A `TypeError` will be thrown otherwise. Previously, the global object was used in these cases automatically, but this is no longer the case."
               },
               "firefox_android": {
                 "version_added": "4"
@@ -272,7 +303,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -285,6 +317,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperties",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -320,7 +356,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -333,6 +370,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -377,7 +418,8 @@
                 "notes": "Also supported in Safari for iOS 4.2, but not on DOM objects."
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -388,9 +430,12 @@
         },
         "defineSetter": {
           "__compat": {
-            "description": "<code>__defineSetter__</code>",
+            "description": "`__defineSetter__`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__",
-            "spec_url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-object.prototype.__defineSetter__",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineSetter__",
+            "tags": [
+              "web-features:accessor-methods"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -404,7 +449,7 @@
               },
               "firefox": {
                 "version_added": "1",
-                "notes": "Starting with Firefox 48, this method can no longer be called at the global scope without any object. A <code>TypeError</code> will be thrown otherwise. Previously, the global object was used in these cases automatically, but this is no longer the case."
+                "notes": "Starting with Firefox 48, this method can no longer be called at the global scope without any object. A `TypeError` will be thrown otherwise. Previously, the global object was used in these cases automatically, but this is no longer the case."
               },
               "firefox_android": {
                 "version_added": "4"
@@ -429,7 +474,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -442,6 +488,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "54"
@@ -460,20 +510,9 @@
               "ie": {
                 "version_added": false
               },
-              "nodejs": [
-                {
-                  "version_added": "7.0.0"
-                },
-                {
-                  "version_added": "6.5.0",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--harmony"
-                    }
-                  ]
-                }
-              ],
+              "nodejs": {
+                "version_added": "7.0.0"
+              },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
@@ -482,7 +521,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -495,6 +535,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.freeze",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -528,7 +572,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -541,6 +586,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.fromentries",
+            "tags": [
+              "web-features:snapshot:ecmascript-2019",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "73"
@@ -568,7 +617,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -581,6 +631,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -623,7 +677,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -636,6 +691,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "54"
@@ -654,20 +713,9 @@
               "ie": {
                 "version_added": false
               },
-              "nodejs": [
-                {
-                  "version_added": "7.0.0"
-                },
-                {
-                  "version_added": "6.5.0",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--harmony"
-                    }
-                  ]
-                }
-              ],
+              "nodejs": {
+                "version_added": "7.0.0"
+              },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
@@ -676,7 +724,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -689,6 +738,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertynames",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -724,7 +777,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -737,6 +791,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "38"
@@ -766,7 +824,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -779,6 +838,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getprototypeof",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -814,7 +877,59 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "groupBy": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy",
+            "spec_url": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-object.groupby",
+            "tags": [
+              "web-features:array-group"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "117"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": "1.37"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "119"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "21.0.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": [
+                {
+                  "version_added": "17.4"
+                },
+                {
+                  "alternative_name": "Array.prototype.groupToMap",
+                  "version_added": "16.4",
+                  "version_removed": "17.4"
+                }
+              ],
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -827,6 +942,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
+            "tags": [
+              "web-features:snapshot:ecmascript-2022",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "93"
@@ -854,7 +973,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -867,6 +987,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.hasownproperty",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -902,7 +1026,10 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -915,6 +1042,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/is",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.is",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "19"
@@ -944,7 +1075,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -957,6 +1089,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -990,7 +1126,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1003,6 +1140,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -1036,7 +1177,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1049,6 +1191,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.isprototypeof",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1084,7 +1230,10 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1097,6 +1246,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -1130,7 +1283,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1143,6 +1297,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/keys",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "5"
@@ -1178,7 +1336,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1189,9 +1348,12 @@
         },
         "lookupGetter": {
           "__compat": {
-            "description": "<code>__lookupGetter__</code>",
+            "description": "`__lookupGetter__`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__",
-            "spec_url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-object.prototype.__lookupGetter__",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupGetter__",
+            "tags": [
+              "web-features:accessor-methods"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1227,7 +1389,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1238,9 +1401,12 @@
         },
         "lookupSetter": {
           "__compat": {
-            "description": "<code>__lookupSetter__</code>",
+            "description": "`__lookupSetter__`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupSetter__",
-            "spec_url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-object.prototype.__lookupSetter__",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupSetter__",
+            "tags": [
+              "web-features:accessor-methods"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1276,7 +1442,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1289,6 +1456,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -1322,7 +1493,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1333,6 +1505,10 @@
           "ES2015_behavior": {
             "__compat": {
               "description": "ES2015 behavior for non-object argument",
+              "tags": [
+                "web-features:snapshot:ecmascript-2015",
+                "web-features:object-object"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "44"
@@ -1362,7 +1538,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -1376,6 +1553,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.propertyisenumerable",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1411,7 +1592,10 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1422,9 +1606,13 @@
         },
         "proto": {
           "__compat": {
-            "description": "<code>__proto__</code>",
+            "description": "`__proto__`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/proto",
-            "spec_url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-properties-of-the-object.prototype-object",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__proto__",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:proto"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1460,7 +1648,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1473,6 +1662,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/seal",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal",
+            "tags": [
+              "web-features:snapshot:ecmascript-5",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
@@ -1506,7 +1699,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1519,6 +1713,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "34"
@@ -1548,7 +1746,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1561,6 +1760,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.tolocalestring",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:intl"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1594,7 +1797,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1605,9 +1811,13 @@
         },
         "toString": {
           "__compat": {
-            "description": "<code>toString()</code>",
+            "description": "`toString()`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/toString",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.tostring",
+            "tags": [
+              "web-features:snapshot:ecmascript-1",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1641,7 +1851,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1654,6 +1867,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.valueof",
+            "tags": [
+              "web-features:snapshot:ecmascript-1",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1687,7 +1904,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": "1"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1700,6 +1920,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:object-object"
+            ],
             "support": {
               "chrome": {
                 "version_added": "54"
@@ -1718,20 +1942,9 @@
               "ie": {
                 "version_added": false
               },
-              "nodejs": [
-                {
-                  "version_added": "7.0.0"
-                },
-                {
-                  "version_added": "6.5.0",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--harmony"
-                    }
-                  ]
-                }
-              ],
+              "nodejs": {
+                "version_added": "7.0.0"
+              },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
@@ -1740,7 +1953,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

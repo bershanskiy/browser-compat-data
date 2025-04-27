@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers",
         "spec_url": "https://fetch.spec.whatwg.org/#headers-class",
+        "tags": [
+          "web-features:fetch"
+        ],
         "support": {
           "chrome": {
             "version_added": "42"
@@ -18,35 +21,13 @@
           "firefox": {
             "version_added": "39"
           },
-          "firefox_android": {
-            "version_added": "44"
-          },
+          "firefox_android": "mirror",
           "ie": {
             "version_added": false
           },
-          "nodejs": [
-            {
-              "version_added": "18.0.0"
-            },
-            {
-              "version_added": "17.5.0",
-              "flags": [
-                {
-                  "name": "--experimental-fetch",
-                  "type": "runtime_flag"
-                }
-              ]
-            },
-            {
-              "version_added": "16.15.0",
-              "flags": [
-                {
-                  "name": "--experimental-fetch",
-                  "type": "runtime_flag"
-                }
-              ]
-            }
-          ],
+          "nodejs": {
+            "version_added": "18.0.0"
+          },
           "oculus": "mirror",
           "opera": "mirror",
           "opera_android": "mirror",
@@ -55,7 +36,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -65,9 +47,12 @@
       },
       "Headers": {
         "__compat": {
-          "description": "<code>Headers()</code> constructor",
+          "description": "`Headers()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/Headers",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -82,11 +67,12 @@
             "firefox": {
               "version_added": "39"
             },
-            "firefox_android": {
-              "version_added": "44"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -96,7 +82,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -109,6 +96,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/append",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers-append①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -123,11 +113,12 @@
             "firefox": {
               "version_added": "39"
             },
-            "firefox_android": {
-              "version_added": "44"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -137,7 +128,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -150,6 +142,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/delete",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers-delete①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -164,11 +159,12 @@
             "firefox": {
               "version_added": "39"
             },
-            "firefox_android": {
-              "version_added": "44"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -178,7 +174,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -190,6 +187,9 @@
       "entries": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/entries",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -208,6 +208,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -216,7 +219,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -227,6 +231,10 @@
       },
       "forEach": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/forEach",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -245,6 +253,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -253,7 +264,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -266,10 +278,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/get",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers-get①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42",
-              "notes": "Before version 57, <code>get()</code> returns only the first value for the specified header."
+              "notes": "Before version 57, `get()` returns only the first value for the specified header."
             },
             "chrome_android": "mirror",
             "deno": {
@@ -280,14 +295,14 @@
             },
             "firefox": {
               "version_added": "39",
-              "notes": "Before version 52, <code>get()</code> returns only the first value for the specified header."
+              "notes": "Before version 52, `get()` returns only the first value for the specified header."
             },
-            "firefox_android": {
-              "version_added": "44",
-              "notes": "Before version 52, <code>get()</code> returns only the first value for the specified header."
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -297,7 +312,52 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "getSetCookie": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/getSetCookie",
+          "spec_url": "https://fetch.spec.whatwg.org/#dom-headers-getsetcookie",
+          "tags": [
+            "web-features:fetch"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "113"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.35"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "112"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": "19.7.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -310,6 +370,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/has",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers-has①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -324,9 +387,52 @@
             "firefox": {
               "version_added": "39"
             },
-            "firefox_android": {
-              "version_added": "44"
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "10.1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "iterate_combined_duplicates": {
+        "__compat": {
+          "description": "Iteration combines duplicate header names",
+          "tags": [
+            "web-features:fetch"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "57"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.0"
+            },
+            "edge": {
+              "version_added": "16"
+            },
+            "firefox": {
+              "version_added": "57"
+            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -338,7 +444,53 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "iterate_lexicographically": {
+        "__compat": {
+          "description": "Iteration is lexicographically sorted",
+          "tags": [
+            "web-features:fetch"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "57"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.0"
+            },
+            "edge": {
+              "version_added": "18"
+            },
+            "firefox": {
+              "version_added": "57"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "10.1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -350,6 +502,9 @@
       "keys": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/keys",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -368,6 +523,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -376,43 +534,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "lexicographical_sorting": {
-        "__compat": {
-          "description": "Lexicographical sorting, and values from duplicate header names combined when iterated.",
-          "support": {
-            "chrome": {
-              "version_added": "57"
-            },
-            "chrome_android": "mirror",
-            "deno": {
-              "version_added": "1.0"
-            },
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "44"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -425,6 +548,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/set",
           "spec_url": "https://fetch.spec.whatwg.org/#ref-for-dom-headers-set①",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -439,11 +565,12 @@
             "firefox": {
               "version_added": "39"
             },
-            "firefox_android": {
-              "version_added": "44"
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
+            },
+            "nodejs": {
+              "version_added": "18.0.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -453,7 +580,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -465,6 +593,9 @@
       "values": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Headers/values",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -483,6 +614,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -491,7 +625,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -502,6 +637,10 @@
       },
       "@@iterator": {
         "__compat": {
+          "description": "[Symbol.iterator]",
+          "tags": [
+            "web-features:fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -520,6 +659,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": "18.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -528,7 +670,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

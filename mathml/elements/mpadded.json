@@ -3,19 +3,14 @@
     "elements": {
       "mpadded": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mpadded",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mpadded",
           "spec_url": "https://w3c.github.io/mathml-core/#adjust-space-around-content-mpadded",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
-              "version_added": "86",
-              "impl_url": "https://crrev.com/c/2288388",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "#enable-experimental-web-platform-features",
-                  "value_to_set": "Enabled"
-                }
-              ]
+              "version_added": "109"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -34,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -44,17 +40,13 @@
         },
         "depth": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mpadded-depth",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "86",
-                "impl_url": "https://crrev.com/c/2288388",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -73,7 +65,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -84,17 +77,13 @@
         },
         "height": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mpadded-height",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "86",
-                "impl_url": "https://crrev.com/c/2288388",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -113,7 +102,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -124,17 +114,13 @@
         },
         "lspace": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mpadded-lspace",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "86",
-                "impl_url": "https://crrev.com/c/2288388",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -153,7 +139,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -164,8 +151,8 @@
         },
         "named_spaces": {
           "__compat": {
-            "description": "Named spaces (e.g. <code>thinmathspace</code> to mean 3/18em)",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "description": "Named spaces (e.g. `thinmathspace` to mean 3/18em)",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -187,7 +174,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -199,7 +187,7 @@
         "nonzero_unitless_values": {
           "__compat": {
             "description": "Nonzero unitless values (e.g. 5 to mean 500%)",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -207,7 +195,8 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": "1"
+                "version_added": "1",
+                "version_removed": "70"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -221,7 +210,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -232,8 +222,8 @@
         },
         "pseudo_units": {
           "__compat": {
-            "description": "Pseudo units (e.g. <code>width</code> to mean content width)",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "description": "Pseudo units (e.g. `width` to mean content width)",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -255,7 +245,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -266,7 +257,10 @@
         },
         "relative_values": {
           "__compat": {
-            "description": "Relative values (e.g. <code>\"+10px\"</code>)",
+            "description": "Relative values (e.g. `\"+10px\"`)",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -288,7 +282,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -299,7 +294,7 @@
         },
         "scale_factor": {
           "__compat": {
-            "description": "<a href='https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#mathml-specific_types'>&lt;unsigned-number&gt;</a> as a scale factor or percent",
+            "description": "[&lt;unsigned-number&gt;](https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#mathml-specific_types) as a scale factor or percent",
             "support": {
               "chrome": {
                 "version_added": false
@@ -321,7 +316,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -332,17 +328,13 @@
         },
         "voffset": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mpadded-voffset",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "86",
-                "impl_url": "https://crrev.com/c/2288388",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -361,7 +353,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -372,17 +365,13 @@
         },
         "width": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mpadded-width",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "86",
-                "impl_url": "https://crrev.com/c/2288388",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -401,7 +390,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

@@ -5,16 +5,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/math-shift",
           "spec_url": "https://w3c.github.io/mathml-core/#the-math-shift",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
-              "version_added": "87",
-              "impl_url": "https://crrev.com/c/2421662",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "#enable-experimental-web-platform-features"
-                }
-              ]
+              "version_added": "109"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -33,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

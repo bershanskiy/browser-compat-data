@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SensorErrorEvent",
         "spec_url": "https://w3c.github.io/sensors/#the-sensor-error-event-interface",
+        "tags": [
+          "web-features:orientation-sensor"
+        ],
         "support": {
           "chrome": {
             "version_added": "67"
@@ -11,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1432631"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -21,11 +25,13 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://webkit.org/b/81352"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +41,12 @@
       },
       "SensorErrorEvent": {
         "__compat": {
-          "description": "<code>SensorErrorEvent()</code> constructor",
+          "description": "`SensorErrorEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/SensorErrorEvent",
           "spec_url": "https://w3c.github.io/sensors/#dom-sensorerrorevent-sensorerrorevent",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -59,7 +68,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -72,6 +82,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/error",
           "spec_url": "https://w3c.github.io/sensors/#dom-sensorerrorevent-error",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -93,7 +106,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

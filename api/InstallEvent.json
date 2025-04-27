@@ -3,6 +3,10 @@
     "InstallEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/InstallEvent",
+        "spec_url": "https://w3c.github.io/ServiceWorker/#installevent",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
@@ -22,22 +26,29 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "11.1"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
-          "standard_track": false,
-          "deprecated": true
+          "standard_track": true,
+          "deprecated": false
         }
       },
       "InstallEvent": {
         "__compat": {
-          "description": "<code>InstallEvent()</code> constructor",
+          "description": "`InstallEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InstallEvent/InstallEvent",
+          "spec_url": "https://w3c.github.io/ServiceWorker/#dom-installevent-installevent",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -45,7 +56,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "44"
+              "version_added": false
             },
             "firefox_android": "mirror",
             "ie": {
@@ -59,28 +70,32 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
           }
         }
       },
-      "activeWorker": {
+      "addRoutes": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/InstallEvent/activeWorker",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/InstallEvent/addRoutes",
+          "spec_url": "https://w3c.github.io/ServiceWorker/#register-router-method",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
-              "version_added": "40"
+              "version_added": "123"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
+            "edge": "mirror",
             "firefox": {
-              "version_added": "44"
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1855580"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -90,16 +105,18 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/269893"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
           }
         }
       }

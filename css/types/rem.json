@@ -3,17 +3,20 @@
     "types": {
       "rem": {
         "__compat": {
-          "description": "<code>rem()</code>",
+          "description": "`rem()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/rem",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-values/#exponent-funcs",
+          "spec_url": "https://drafts.csswg.org/css-values/#funcdef-rem",
+          "tags": [
+            "web-features:round-mod-rem"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "125"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "118"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -27,10 +30,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

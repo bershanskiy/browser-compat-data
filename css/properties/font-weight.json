@@ -4,7 +4,10 @@
       "font-weight": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-weight",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts/#font-weight-prop",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#font-weight-prop",
+          "tags": [
+            "web-features:font-weight"
+          ],
           "support": {
             "chrome": {
               "version_added": "2"
@@ -32,7 +35,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -40,9 +44,168 @@
             "deprecated": false
           }
         },
+        "bold": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-bold",
+            "tags": [
+              "web-features:font-weight"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "2"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "bolder": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-bolder",
+            "tags": [
+              "web-features:font-weight"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "2"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "lighter": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-lighter",
+            "tags": [
+              "web-features:font-weight"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "2"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "normal": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-normal",
+            "tags": [
+              "web-features:font-weight"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "2"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
         "number": {
           "__compat": {
-            "description": "<code>&lt;number&gt;</code> syntax",
+            "description": "`&lt;number&gt;` syntax",
+            "tags": [
+              "web-features:font-weight"
+            ],
             "support": {
               "chrome": {
                 "version_added": "62"
@@ -66,7 +229,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

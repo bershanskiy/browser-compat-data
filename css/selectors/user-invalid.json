@@ -3,13 +3,18 @@
     "selectors": {
       "user-invalid": {
         "__compat": {
-          "description": "<code>:user-invalid</code>",
+          "description": "`:user-invalid`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:user-invalid",
-          "spec_url": "https://w3c.github.io/csswg-drafts/selectors/#user-invalid-pseudo",
+          "spec_url": [
+            "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-user-invalid",
+            "https://drafts.csswg.org/selectors/#user-invalid-pseudo"
+          ],
+          "tags": [
+            "web-features:user-pseudos"
+          ],
           "support": {
             "chrome": {
-              "version_added": false,
-              "notes": "See <a href='https://crbug.com/1156069'>bug 1156069</a>."
+              "version_added": "119"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -18,8 +23,8 @@
                 "version_added": "88"
               },
               {
-                "version_added": "4",
-                "alternative_name": ":-moz-ui-invalid"
+                "alternative_name": ":-moz-ui-invalid",
+                "version_added": "4"
               }
             ],
             "firefox_android": "mirror",
@@ -30,15 +35,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false,
-              "notes": "See <a href='https://webkit.org/b/222267'>bug 222267</a>."
+              "version_added": "16.5"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

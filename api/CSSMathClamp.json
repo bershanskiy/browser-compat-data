@@ -2,7 +2,10 @@
   "api": {
     "CSSMathClamp": {
       "__compat": {
-        "spec_url": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathclamp",
+        "spec_url": "https://drafts.css-houdini.org/css-typed-om/#cssmathclamp",
+        "tags": [
+          "web-features:css-typed-om"
+        ],
         "support": {
           "chrome": {
             "version_added": "100"
@@ -10,7 +13,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1278697"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -20,22 +24,26 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "16.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "CSSMathClamp": {
         "__compat": {
-          "description": "<code>CSSMathClamp()</code> constructor",
-          "spec_url": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathclamp-cssmathclamp",
+          "description": "`CSSMathClamp()` constructor",
+          "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-cssmathclamp",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "100"
@@ -43,7 +51,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -53,14 +62,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -68,7 +78,10 @@
       },
       "lower": {
         "__compat": {
-          "spec_url": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathclamp-lower",
+          "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-lower",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "100"
@@ -76,7 +89,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -86,14 +100,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -101,7 +116,10 @@
       },
       "upper": {
         "__compat": {
-          "spec_url": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathclamp-upper",
+          "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-upper",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "100"
@@ -109,7 +127,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -119,14 +138,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -134,7 +154,10 @@
       },
       "value": {
         "__compat": {
-          "spec_url": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathclamp-value",
+          "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-value",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "100"
@@ -142,7 +165,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -152,14 +176,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

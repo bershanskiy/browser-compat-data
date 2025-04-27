@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap",
         "spec_url": "https://webaudio.github.io/web-audio-api/#audioparammap",
+        "tags": [
+          "web-features:web-audio"
+        ],
         "support": {
           "chrome": {
             "version_added": "66"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,7 +39,9 @@
       },
       "entries": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/entries",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -57,7 +63,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -68,7 +75,9 @@
       },
       "forEach": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/forEach",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -90,7 +99,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -101,7 +111,9 @@
       },
       "get": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/get",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -123,7 +135,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -134,7 +147,9 @@
       },
       "has": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/has",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -156,7 +171,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -167,7 +183,9 @@
       },
       "keys": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/keys",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -189,7 +207,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -200,7 +219,9 @@
       },
       "size": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/size",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -222,7 +243,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -233,7 +255,9 @@
       },
       "values": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AudioParamMap/values",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -255,7 +279,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -266,6 +291,10 @@
       },
       "@@iterator": {
         "__compat": {
+          "description": "[Symbol.iterator]",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -287,7 +316,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

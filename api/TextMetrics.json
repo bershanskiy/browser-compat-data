@@ -4,9 +4,12 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics",
         "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics",
+        "tags": [
+          "web-features:canvas-2d"
+        ],
         "support": {
           "chrome": {
-            "version_added": "1"
+            "version_added": "2"
           },
           "chrome_android": "mirror",
           "edge": {
@@ -33,9 +36,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -47,6 +49,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxAscent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxascent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -68,7 +73,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -81,6 +87,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxDescent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxdescent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -102,7 +111,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -115,6 +125,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxLeft",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxleft-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -136,7 +149,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -149,6 +163,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxRight",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxright-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -170,7 +187,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -183,21 +201,17 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/alphabeticBaseline",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-alphabeticbaseline-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "118"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.baselines.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -211,10 +225,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -224,9 +239,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/emHeightAscent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightascent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": "35",
+              "version_added": "77",
               "flags": [
                 {
                   "type": "preference",
@@ -237,14 +255,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.emHeight.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "118"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -258,10 +269,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -271,9 +283,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/emHeightDescent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightdescent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": "35",
+              "version_added": "77",
               "flags": [
                 {
                   "type": "preference",
@@ -284,14 +299,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.emHeight.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "118"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -305,10 +313,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -318,6 +327,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxAscent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxascent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -325,14 +337,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.fontBoundingBox.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -346,7 +351,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -359,6 +365,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxDescent",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxdescent-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -366,14 +375,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.fontBoundingBox.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -387,7 +389,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -400,21 +403,17 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/hangingBaseline",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-hangingbaseline-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "118"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.baselines.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -428,10 +427,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -441,21 +441,17 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/ideographicBaseline",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-ideographicbaseline-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "118"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "74",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.textMetrics.baselines.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -469,10 +465,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -482,9 +479,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TextMetrics/width",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-width-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -511,7 +511,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

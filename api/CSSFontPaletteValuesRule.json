@@ -2,7 +2,11 @@
   "api": {
     "CSSFontPaletteValuesRule": {
       "__compat": {
-        "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts-4/#om-fontpalettevalues",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule",
+        "spec_url": "https://drafts.csswg.org/css-fonts/#om-fontpalettevalues",
+        "tags": [
+          "web-features:font-palette"
+        ],
         "support": {
           "chrome": {
             "version_added": "101"
@@ -10,7 +14,7 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "107"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -24,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -34,7 +39,11 @@
       },
       "basePalette": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts-4/#dom-cssfontpalettevaluesrule-basepalette",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/basePalette",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-basepalette",
+          "tags": [
+            "web-features:font-palette"
+          ],
           "support": {
             "chrome": {
               "version_added": "101"
@@ -42,7 +51,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "107"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -56,7 +65,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -67,7 +77,11 @@
       },
       "fontFamily": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts-4/#dom-cssfontpalettevaluesrule-fontfamily",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/fontFamily",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-fontfamily",
+          "tags": [
+            "web-features:font-palette"
+          ],
           "support": {
             "chrome": {
               "version_added": "101"
@@ -75,7 +89,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "107"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -89,7 +103,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -100,7 +115,11 @@
       },
       "name": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts-4/#dom-cssfontpalettevaluesrule-name",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/name",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-name",
+          "tags": [
+            "web-features:font-palette"
+          ],
           "support": {
             "chrome": {
               "version_added": "101"
@@ -108,7 +127,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "107"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -122,7 +141,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -133,7 +153,11 @@
       },
       "overrideColors": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts-4/#dom-cssfontpalettevaluesrule-overridecolors",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/overrideColors",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-overridecolors",
+          "tags": [
+            "web-features:font-palette"
+          ],
           "support": {
             "chrome": {
               "version_added": "101"
@@ -141,7 +165,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "107"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -155,7 +179,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

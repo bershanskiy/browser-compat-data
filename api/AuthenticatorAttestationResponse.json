@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse",
         "spec_url": "https://w3c.github.io/webauthn/#authenticatorattestationresponse",
+        "tags": [
+          "web-features:webauthn"
+        ],
         "support": {
           "chrome": {
             "version_added": "67"
@@ -44,7 +47,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": false
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -56,6 +60,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/attestationObject",
           "spec_url": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-attestationobject",
+          "tags": [
+            "web-features:webauthn"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -96,7 +103,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -107,7 +115,11 @@
       },
       "getAuthenticatorData": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getAuthenticatorData",
           "spec_url": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getauthenticatordata",
+          "tags": [
+            "web-features:webauthn-public-key-easy"
+          ],
           "support": {
             "chrome": {
               "version_added": "85"
@@ -115,7 +127,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "119"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -131,7 +143,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -142,7 +155,11 @@
       },
       "getPublicKey": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKey",
           "spec_url": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickey",
+          "tags": [
+            "web-features:webauthn-public-key-easy"
+          ],
           "support": {
             "chrome": {
               "version_added": "85"
@@ -150,7 +167,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "119"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -166,7 +183,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -177,7 +195,11 @@
       },
       "getPublicKeyAlgorithm": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKeyAlgorithm",
           "spec_url": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickeyalgorithm",
+          "tags": [
+            "web-features:webauthn-public-key-easy"
+          ],
           "support": {
             "chrome": {
               "version_added": "85"
@@ -185,7 +207,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "119"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -201,7 +223,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -214,6 +237,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getTransports",
           "spec_url": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-gettransports",
+          "tags": [
+            "web-features:webauthn"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -221,7 +247,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "119"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -237,7 +263,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

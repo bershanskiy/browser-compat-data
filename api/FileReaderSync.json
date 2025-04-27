@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileReaderSync",
         "spec_url": "https://w3c.github.io/FileAPI/#FileReaderSync",
+        "tags": [
+          "web-features:file"
+        ],
         "support": {
           "chrome": {
             "version_added": "7"
@@ -34,7 +37,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -44,7 +48,12 @@
       },
       "FileReaderSync": {
         "__compat": {
-          "description": "<code>FileReaderSync()</code> constructor",
+          "description": "`FileReaderSync()` constructor",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileReaderSync/FileReaderSync",
+          "spec_url": "https://w3c.github.io/FileAPI/#filereadersyncConstrctr",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "7"
@@ -75,7 +84,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -87,6 +97,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "7"
@@ -117,7 +130,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -130,9 +144,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsArrayBuffer",
           "spec_url": "https://w3c.github.io/FileAPI/#readAsArrayBufferSyncSection",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
-              "version_added": "7"
+              "version_added": "9"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -160,7 +177,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -199,7 +217,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -212,6 +231,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsDataURL",
           "spec_url": "https://w3c.github.io/FileAPI/#readAsDataURLSync-section",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "7"
@@ -242,7 +264,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -255,6 +278,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsText",
           "spec_url": "https://w3c.github.io/FileAPI/#readAsTextSync",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "7"
@@ -285,7 +311,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

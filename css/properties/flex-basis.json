@@ -4,7 +4,10 @@
       "flex-basis": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-basis",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-flexbox/#flex-basis-property",
+          "spec_url": "https://drafts.csswg.org/css-flexbox/#flex-basis-property",
+          "tags": [
+            "web-features:flexbox"
+          ],
           "support": {
             "chrome": [
               {
@@ -38,7 +41,7 @@
             "firefox_android": "mirror",
             "ie": {
               "version_added": "11",
-              "notes": "When a non-<code>auto</code> <code>flex-basis</code> is specified, Internet Explorer 10 and 11 always uses a <code>content-box</code> box model to calculate the size of a flex item, even if <a href='https://developer.mozilla.org/docs/Web/CSS/box-sizing'><code>box-sizing: border-box</code></a> is applied to the element. See <a href='https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box'>Flexbug #7</a> for more info."
+              "notes": "When a non-`auto` `flex-basis` is specified, Internet Explorer 10 and 11 always uses a `content-box` box model to calculate the size of a flex item, even if [`box-sizing: border-box`](https://developer.mozilla.org/docs/Web/CSS/box-sizing) is applied to the element. See [Flexbug #7](https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box) for more info."
             },
             "oculus": "mirror",
             "opera": [
@@ -70,15 +73,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": [
-              {
-                "version_added": "4.4"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "≤37"
-              }
-            ]
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -88,7 +84,9 @@
         },
         "auto": {
           "__compat": {
-            "description": "<code>auto</code>",
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "22"
@@ -122,7 +120,8 @@
               ],
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -133,7 +132,9 @@
         },
         "content": {
           "__compat": {
-            "description": "<code>content</code>",
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "94"
@@ -157,15 +158,14 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": false
-              },
+              "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -176,7 +176,9 @@
         },
         "fit-content": {
           "__compat": {
-            "description": "<code>fit-content</code>",
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "94"
@@ -188,8 +190,8 @@
                   "version_added": "94"
                 },
                 {
-                  "version_added": "22",
-                  "prefix": "-moz-"
+                  "prefix": "-moz-",
+                  "version_added": "22"
                 }
               ],
               "firefox_android": "mirror",
@@ -198,15 +200,14 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": false
-              },
+              "opera_android": "mirror",
               "safari": {
                 "version_added": "16"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -217,6 +218,9 @@
         },
         "max-content": {
           "__compat": {
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "94"
@@ -228,8 +232,8 @@
                   "version_added": "66"
                 },
                 {
-                  "version_added": "22",
-                  "prefix": "-moz-"
+                  "prefix": "-moz-",
+                  "version_added": "22"
                 }
               ],
               "firefox_android": "mirror",
@@ -238,15 +242,14 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": false
-              },
+              "opera_android": "mirror",
               "safari": {
                 "version_added": "16"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -257,6 +260,9 @@
         },
         "min-content": {
           "__compat": {
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "94"
@@ -268,8 +274,8 @@
                   "version_added": "66"
                 },
                 {
-                  "version_added": "22",
-                  "prefix": "-moz-"
+                  "prefix": "-moz-",
+                  "version_added": "22"
                 }
               ],
               "firefox_android": "mirror",
@@ -278,15 +284,14 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": false
-              },
+              "opera_android": "mirror",
               "safari": {
                 "version_added": "16"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement",
         "spec_url": "https://drafts.fxtf.org/filter-effects/#InterfaceSVGFETurbulenceElement",
+        "tags": [
+          "web-features:svg-filters"
+        ],
         "support": {
           "chrome": {
             "version_added": "5"
@@ -31,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,7 +45,11 @@
       },
       "baseFrequencyX": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/baseFrequencyX",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-basefrequencyx",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -69,7 +77,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,7 +89,11 @@
       },
       "baseFrequencyY": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/baseFrequencyY",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-basefrequencyy",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -108,7 +121,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -119,7 +133,11 @@
       },
       "height": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/height",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-height",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -147,7 +165,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -158,7 +177,11 @@
       },
       "numOctaves": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/numOctaves",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-numoctaves",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -186,7 +209,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -197,7 +221,11 @@
       },
       "result": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/result",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-result",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -225,7 +253,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -236,7 +265,11 @@
       },
       "seed": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/seed",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-seed",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -264,7 +297,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -275,7 +309,11 @@
       },
       "stitchTiles": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/stitchTiles",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-stitchtiles",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -303,7 +341,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -314,7 +353,11 @@
       },
       "type": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/type",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeturbulenceelement-type",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -342,7 +385,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -353,7 +397,11 @@
       },
       "width": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/width",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-width",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -381,7 +429,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -392,7 +441,11 @@
       },
       "x": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/x",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-x",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -420,7 +473,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -431,7 +485,11 @@
       },
       "y": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/y",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-y",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -459,7 +517,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

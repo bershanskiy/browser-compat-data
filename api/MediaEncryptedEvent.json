@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent",
         "spec_url": "https://w3c.github.io/encrypted-media/#mediaencryptedevent",
+        "tags": [
+          "web-features:encrypted-media-extensions"
+        ],
         "support": {
           "chrome": {
             "version_added": "42"
@@ -29,7 +32,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "43"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,8 +43,12 @@
       },
       "MediaEncryptedEvent": {
         "__compat": {
-          "description": "<code>MediaEncryptedEvent()</code> constructor",
+          "description": "`MediaEncryptedEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/MediaEncryptedEvent",
+          "spec_url": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent",
+          "tags": [
+            "web-features:encrypted-media-extensions"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -66,7 +74,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "43"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -79,6 +88,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initData",
           "spec_url": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdata",
+          "tags": [
+            "web-features:encrypted-media-extensions"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -104,7 +116,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "43"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -117,6 +130,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initDataType",
           "spec_url": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdatatype",
+          "tags": [
+            "web-features:encrypted-media-extensions"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -142,7 +158,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "43"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

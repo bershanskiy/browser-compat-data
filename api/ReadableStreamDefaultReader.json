@@ -4,9 +4,12 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader",
         "spec_url": "https://streams.spec.whatwg.org/#default-reader-class",
+        "tags": [
+          "web-features:streams"
+        ],
         "support": {
           "chrome": {
-            "version_added": "78"
+            "version_added": "43"
           },
           "chrome_android": "mirror",
           "deno": [
@@ -17,7 +20,7 @@
               "version_added": "1.0",
               "version_removed": "1.7",
               "partial_implementation": true,
-              "notes": "<code>ReadableStreamDefaultReader</code> is not exposed on the global scope."
+              "notes": "`ReadableStreamDefaultReader` is not exposed on the global scope."
             }
           ],
           "edge": "mirror",
@@ -34,22 +37,20 @@
             },
             {
               "version_added": "16.5.0",
-              "version_removed": "18.0.0",
-              "notes": [
-                "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                "Experimental implementation."
-              ]
+              "partial_implementation": true,
+              "notes": "Available as a part of the `stream/web` module."
             }
           ],
           "oculus": "mirror",
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "10"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -59,9 +60,12 @@
       },
       "ReadableStreamDefaultReader": {
         "__compat": {
-          "description": "<code>ReadableStreamDefaultReader()</code> constructor",
+          "description": "`ReadableStreamDefaultReader()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/ReadableStreamDefaultReader",
           "spec_url": "https://streams.spec.whatwg.org/#ref-for-default-reader-constructor①",
+          "tags": [
+            "web-features:streams"
+          ],
           "support": {
             "chrome": {
               "version_added": "78"
@@ -72,7 +76,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": "65"
+              "version_added": "100"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -85,11 +89,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -102,9 +107,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/cancel",
           "spec_url": "https://streams.spec.whatwg.org/#ref-for-generic-reader-cancel②",
+          "tags": [
+            "web-features:streams"
+          ],
           "support": {
             "chrome": {
-              "version_added": "78"
+              "version_added": "43"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -125,11 +133,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -142,9 +151,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/closed",
           "spec_url": "https://streams.spec.whatwg.org/#ref-for-generic-reader-closed②",
+          "tags": [
+            "web-features:streams"
+          ],
           "support": {
             "chrome": {
-              "version_added": "78"
+              "version_added": "43"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -165,11 +177,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -182,9 +195,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/read",
           "spec_url": "https://streams.spec.whatwg.org/#ref-for-default-reader-read①",
+          "tags": [
+            "web-features:streams"
+          ],
           "support": {
             "chrome": {
-              "version_added": "78"
+              "version_added": "43"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -205,11 +221,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -222,9 +239,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/releaseLock",
           "spec_url": "https://streams.spec.whatwg.org/#ref-for-default-reader-release-lock②",
+          "tags": [
+            "web-features:streams"
+          ],
           "support": {
             "chrome": {
-              "version_added": "78"
+              "version_added": "43"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -245,11 +265,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "10"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -259,14 +280,18 @@
         },
         "reject_pending_read_request": {
           "__compat": {
+            "description": "`releaseLock()` rejects pending read requests",
+            "tags": [
+              "web-features:streams"
+            ],
             "support": {
               "chrome": {
-                "version_added": false,
-                "notes": "<code>releaseLock()</code> throws if there are pending read requests (rather than pending read requests being rejected)."
+                "version_added": "105",
+                "notes": "Before version 105, `releaseLock()` throws instead of rejecting."
               },
               "chrome_android": "mirror",
               "deno": {
-                "version_added": false
+                "version_added": "1.18"
               },
               "edge": "mirror",
               "firefox": {
@@ -277,20 +302,21 @@
                 "version_added": false
               },
               "nodejs": {
-                "version_added": false
+                "version_added": "18.9.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }

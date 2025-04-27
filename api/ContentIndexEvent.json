@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContentIndexEvent",
         "spec_url": "https://wicg.github.io/content-index/spec/#content-index-event",
+        "tags": [
+          "web-features:content-index"
+        ],
         "support": {
           "chrome": {
             "version_added": false
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -37,9 +41,12 @@
       },
       "ContentIndexEvent": {
         "__compat": {
-          "description": "<code>ContentIndexEvent()</code> constructor",
+          "description": "`ContentIndexEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/ContentIndexEvent",
           "spec_url": "https://wicg.github.io/content-index/spec/#content-index-event",
+          "tags": [
+            "web-features:content-index"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -63,7 +70,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -76,6 +84,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/id",
           "spec_url": "https://wicg.github.io/content-index/spec/#dom-contentindexevent-id",
+          "tags": [
+            "web-features:content-index"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -99,7 +110,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

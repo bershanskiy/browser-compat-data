@@ -2,6 +2,24 @@
   "webextensions": {
     "api": {
       "action": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action",
+          "support": {
+            "chrome": {
+              "version_added": "88"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "109"
+            },
+            "firefox_android": "mirror",
+            "opera": "mirror",
+            "safari": {
+              "version_added": "15.4"
+            },
+            "safari_ios": "mirror"
+          }
+        },
         "ColorArray": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/ColorArray",
@@ -11,12 +29,12 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
             }
@@ -31,7 +49,26 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": "15.4"
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
+        "UserSettingsChange": {
+          "__compat": {
+            "support": {
+              "chrome": {
+                "version_added": "130"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -51,12 +88,12 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
             }
@@ -71,12 +108,12 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
             }
@@ -91,14 +128,36 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4",
+                "partial_implementation": true,
+                "notes": "Always returns a `ColorArray` containing red."
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -111,14 +170,34 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -127,11 +206,11 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/getBadgeTextColor",
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -151,14 +230,34 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -171,7 +270,47 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": "15.4"
+              },
+              "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          }
+        },
+        "getUserSettings": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/getUserSettings",
+            "support": {
+              "chrome": {
+                "version_added": "91"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "116"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -180,6 +319,28 @@
               },
               "safari_ios": "mirror"
             }
+          },
+          "returns_userSettings_isOnToolbar_property": {
+            "__compat": {
+              "description": "`userSettings.isOnToolbar` in returned object",
+              "support": {
+                "chrome": {
+                  "version_added": "91"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "116"
+                },
+                "firefox_android": {
+                  "version_added": false
+                },
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
           }
         },
         "isEnabled": {
@@ -187,18 +348,38 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/isEnabled",
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "108"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -211,7 +392,64 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": "15.4"
+              },
+              "safari_ios": "mirror"
+            }
+          },
+          "OnClickData": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "15.4"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "tab": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "88"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "15.4"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          }
+        },
+        "onUserSettingsChanged": {
+          "__compat": {
+            "support": {
+              "chrome": {
+                "version_added": "130"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -226,19 +464,20 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/openPopup",
             "support": {
-              "chrome": {
-                "version_added": "88",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#extension-apis",
-                    "value_to_set": "Enabled"
-                  }
-                ]
-              },
+              "chrome": [
+                {
+                  "version_added": "127"
+                },
+                {
+                  "version_added": "118",
+                  "version_removed": "127",
+                  "notes": "Is only available to policy installed extensions and dev builds (e.g., Canary)."
+                }
+              ],
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109",
+                "notes": "User interaction is not required to call this API when the `extensions.openPopupWithoutUserGesture.enabled` preference is set ([bug 1799344](https://bugzil.la/1799344))."
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -257,24 +496,78 @@
                 "version_added": "88"
               },
               "edge": "mirror",
-              "firefox": [
-                {
-                  "version_added": "45"
-                },
-                {
-                  "version_added": "45",
-                  "version_removed": "58",
-                  "notes": "Tab-specific badge background color is not cleared when a new page is loaded."
-                }
-              ],
-              "firefox_android": {
-                "version_added": "101"
+              "firefox": {
+                "version_added": "109"
               },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4",
+                "impl_url": "https://webkit.org/b/267662",
+                "partial_implementation": true,
+                "notes": "API exists, but has no effect."
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "null": {
+            "__compat": {
+              "description": "The `color` property of the `details` parameter can be set to `null`.",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "string": {
+            "__compat": {
+              "description": "The `color` property of the `details` parameter can be set to a string.",
+              "support": {
+                "chrome": {
+                  "version_added": "88"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -286,24 +579,55 @@
                 "version_added": "88"
               },
               "edge": "mirror",
-              "firefox": [
-                {
-                  "version_added": "45"
-                },
-                {
-                  "version_added": "45",
-                  "version_removed": "58",
-                  "notes": "Tab-specific badge text is not cleared when a new page is loaded."
-                }
-              ],
-              "firefox_android": {
-                "version_added": "101"
+              "firefox": {
+                "version_added": "109"
               },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "null": {
+            "__compat": {
+              "description": "The `text` property of the `details` parameter can be set to `null`.",
+              "support": {
+                "chrome": {
+                  "version_added": "116"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -312,11 +636,11 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/action/setBadgeTextColor",
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "101"
+                "version_added": "109"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -338,28 +662,79 @@
                 "version_added": "88",
                 "notes": [
                   "This call is not persisted.",
-                  "The <code>imageData</code> parameter is not accepted.",
-                  "The <code>path</code> parameter is required."
+                  "The `imageData` parameter is not accepted.",
+                  "The `path` parameter is required."
                 ]
               },
-              "firefox": [
-                {
-                  "version_added": "45"
-                },
-                {
-                  "version_added": "45",
-                  "version_removed": "58",
-                  "notes": "Tab-specific icons are not cleared when a new page is loaded."
-                }
-              ],
-              "firefox_android": {
-                "version_added": "101"
+              "firefox": {
+                "version_added": "109"
               },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_imageData_parameter": {
+            "__compat": {
+              "description": "`details.imageData` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": "88"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "15.4"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "null": {
+            "__compat": {
+              "description": "The `path` and `imageData` properties of the `details` parameter can be set to `null`.",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -371,31 +746,55 @@
                 "version_added": "88"
               },
               "edge": "mirror",
-              "firefox": [
-                {
-                  "version_added": "45"
-                },
-                {
-                  "version_added": "45",
-                  "version_removed": "58",
-                  "notes": "Tab-specific popups are not cleared when a new page is loaded."
-                }
-              ],
-              "firefox_android": [
-                {
-                  "version_added": "57"
-                },
-                {
-                  "version_added": "57",
-                  "version_removed": "58",
-                  "notes": "Tab-specific popups are not cleared when a new page is loaded."
-                }
-              ],
+              "firefox": {
+                "version_added": "109"
+              },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror"
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "null": {
+            "__compat": {
+              "description": "The `popup` property of the `details` parameter can be set to `null`.",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         },
@@ -407,31 +806,59 @@
                 "version_added": "88"
               },
               "edge": "mirror",
-              "firefox": [
-                {
-                  "version_added": "45"
-                },
-                {
-                  "version_added": "45",
-                  "version_removed": "58",
-                  "notes": "Tab-specific titles are not cleared when a new page is loaded."
-                }
-              ],
-              "firefox_android": [
-                {
-                  "version_added": "55"
-                },
-                {
-                  "version_added": "55",
-                  "version_removed": "58",
-                  "notes": "Tab-specific titles are not cleared when a new page is loaded."
-                }
-              ],
+              "firefox": {
+                "version_added": "109"
+              },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
-              "safari_ios": "mirror"
+              "safari_ios": {
+                "version_added": "15.4",
+                "partial_implementation": true,
+                "notes": "API exists, but the title is not visible in the UI."
+              }
+            }
+          },
+          "details_windowId_parameter": {
+            "__compat": {
+              "description": "`details.windowId` parameter",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "null": {
+            "__compat": {
+              "description": "The `title` property of the `details` parameter can be set to `null`.",
+              "support": {
+                "chrome": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "18"
+                },
+                "safari_ios": "mirror"
+              }
             }
           }
         }

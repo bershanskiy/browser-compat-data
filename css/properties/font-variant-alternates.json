@@ -4,11 +4,13 @@
       "font-variant-alternates": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts/#font-variant-alternates-prop",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#font-variant-alternates-prop",
+          "tags": [
+            "web-features:font-variant-alternates"
+          ],
           "support": {
             "chrome": {
-              "version_added": false,
-              "notes": "See <a href='https://crbug.com/716567'>bug 716567</a>."
+              "version_added": "111"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -27,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -37,11 +40,15 @@
         },
         "annotation": {
           "__compat": {
-            "description": "<code>annotation()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#annotation()",
+            "description": "`annotation()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#annotation",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#annotation",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -56,11 +63,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -71,11 +79,15 @@
         },
         "character_variant": {
           "__compat": {
-            "description": "<code>character-variant()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#character-variant()",
+            "description": "`character-variant()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#character-variant",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#character-variant",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -90,11 +102,86 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "historical-forms": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-alternates-historical-forms",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "111"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "34"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "9.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "normal": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#font-variant-alternates-normal-value",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "111"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "34"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "9.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -105,11 +192,15 @@
         },
         "ornaments": {
           "__compat": {
-            "description": "<code>ornaments()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#ornaments()",
+            "description": "`ornaments()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#ornaments",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#ornaments",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -124,11 +215,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -139,11 +231,15 @@
         },
         "styleset": {
           "__compat": {
-            "description": "<code>styleset()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#styleset()",
+            "description": "`styleset()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#styleset",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#styleset",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -158,11 +254,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -173,11 +270,15 @@
         },
         "stylistic": {
           "__compat": {
-            "description": "<code>stylistic()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#stylistic()",
+            "description": "`stylistic()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#stylistic",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#stylistic",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -192,11 +293,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -207,11 +309,15 @@
         },
         "swash": {
           "__compat": {
-            "description": "<code>swash()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#swash()",
+            "description": "`swash()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates#swash",
+            "spec_url": "https://drafts.csswg.org/css-fonts/#swash",
+            "tags": [
+              "web-features:font-variant-alternates"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "111"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -226,11 +332,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.2"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

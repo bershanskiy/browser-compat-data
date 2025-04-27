@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPoint",
         "spec_url": "https://www.w3.org/TR/SVG11/coords.html#InterfaceSVGPoint",
+        "tags": [
+          "web-features:svg-discouraged"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -33,9 +36,8 @@
             "version_added": "1"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -45,8 +47,10 @@
       },
       "matrixTransform": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPoint/matrixTransform",
           "spec_url": "https://www.w3.org/TR/SVG11/coords.html#__svg__SVGPoint__matrixTransform",
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -76,9 +80,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -89,8 +92,10 @@
       },
       "x": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPoint/x",
           "spec_url": "https://www.w3.org/TR/SVG11/coords.html#__svg__SVGPoint__x",
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -120,9 +125,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -133,8 +137,10 @@
       },
       "y": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPoint/y",
           "spec_url": "https://www.w3.org/TR/SVG11/coords.html#__svg__SVGPoint__y",
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -164,9 +170,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

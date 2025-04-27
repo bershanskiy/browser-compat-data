@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/GamepadEvent",
         "spec_url": "https://w3c.github.io/gamepad/#gamepadevent-interface",
+        "tags": [
+          "web-features:gamepad"
+        ],
         "support": {
           "chrome": {
             "version_added": "21"
@@ -29,7 +32,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,9 +43,12 @@
       },
       "GamepadEvent": {
         "__compat": {
-          "description": "<code>GamepadEvent()</code> constructor",
+          "description": "`GamepadEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/GamepadEvent/GamepadEvent",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepadevent-constructor",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -67,7 +74,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -79,6 +87,9 @@
       "secure_context_required": {
         "__compat": {
           "description": "Secure context required",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "86",
@@ -107,7 +118,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -120,6 +132,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/GamepadEvent/gamepad",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepadevent-gamepad",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -145,7 +160,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

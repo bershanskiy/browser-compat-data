@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement",
         "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement",
+        "tags": [
+          "web-features:dom"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -33,7 +36,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "1"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -45,6 +49,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKey",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-accesskey",
+          "tags": [
+            "web-features:accesskey"
+          ],
           "support": {
             "chrome": {
               "version_added": "17"
@@ -72,7 +79,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -85,10 +93,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKeyLabel",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-accesskeylabel",
+          "tags": [
+            "web-features:accesskey"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
+              "impl_url": "https://crbug.com/41119923"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -107,7 +118,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -116,10 +128,54 @@
           }
         }
       },
+      "anchorElement": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/anchorElement",
+          "support": {
+            "chrome": {
+              "version_added": "preview",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-experimental-web-platform-features",
+                  "value_to_set": "Enabled"
+                }
+              ]
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": false,
+            "deprecated": false
+          }
+        }
+      },
       "attachInternals": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals",
           "spec_url": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-attachinternals",
+          "tags": [
+            "web-features:form-associated-custom-elements"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -137,12 +193,13 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false,
-              "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
+              "version_added": "16.4",
+              "impl_url": "https://webkit.org/b/197960"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -153,7 +210,11 @@
       },
       "attributeStyleMap": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/attributeStyleMap",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-elementcssinlinestyle-attributestylemap",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -161,7 +222,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -171,11 +233,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -186,22 +249,27 @@
       },
       "autocapitalize": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/autocapitalize",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-autocapitalize-dev",
+          "tags": [
+            "web-features:autocapitalize"
+          ],
           "support": {
-            "chrome": {
-              "version_added": "66"
-            },
+            "chrome": [
+              {
+                "version_added": "66"
+              },
+              {
+                "version_added": "43",
+                "version_removed": "66",
+                "partial_implementation": true,
+                "notes": "Supported on `HTMLInputElement` and `HTMLTextAreaElement` only."
+              }
+            ],
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "83",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "dom.forms.autocapitalize",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -213,11 +281,58 @@
             "safari": {
               "version_added": false
             },
-            "safari_ios": {
-              "version_added": "10.3"
-            },
+            "safari_ios": [
+              {
+                "version_added": "10.3"
+              },
+              {
+                "version_added": "≤3",
+                "version_removed": "10.3",
+                "partial_implementation": true,
+                "notes": "Supported on `HTMLFormElement`, `HTMLInputElement`, and `HTMLTextAreaElement` only."
+              }
+            ],
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "autocorrect": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/autocorrect",
+          "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-autocorrect",
+          "tags": [
+            "web-features:autocorrect"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "136"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -228,7 +343,11 @@
       },
       "autofocus": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/autofocus",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-fe-autofocus",
+          "tags": [
+            "web-features:autofocus"
+          ],
           "support": {
             "chrome": [
               {
@@ -238,7 +357,7 @@
                 "version_added": "1",
                 "version_removed": "79",
                 "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
               }
             ],
             "chrome_android": "mirror",
@@ -250,19 +369,25 @@
                 "version_added": "12",
                 "version_removed": "79",
                 "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
               }
             ],
-            "firefox": {
-              "version_added": "1",
-              "partial_implementation": true,
-              "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
-            },
+            "firefox": [
+              {
+                "version_added": "110"
+              },
+              {
+                "version_added": "1",
+                "version_removed": "110",
+                "partial_implementation": true,
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
+              }
+            ],
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10",
               "partial_implementation": true,
-              "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+              "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
             },
             "oculus": "mirror",
             "opera": [
@@ -273,7 +398,7 @@
                 "version_added": "≤12.1",
                 "version_removed": "66",
                 "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
               }
             ],
             "opera_android": [
@@ -284,7 +409,7 @@
                 "version_added": "≤12.1",
                 "version_removed": "57",
                 "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
               }
             ],
             "safari": [
@@ -293,98 +418,138 @@
               },
               {
                 "version_added": "4",
+                "version_removed": "15.4",
                 "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
+                "notes": "Supported for `HTMLButtonElement`, `HTMLInputElement`, `HTMLSelectElement`, and `HTMLTextAreaElement`."
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": [
-              {
-                "version_added": "79"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "beforetoggle_event": {
+        "__compat": {
+          "description": "`beforetoggle` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event",
+          "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-beforetoggle",
+          "tags": [
+            "web-features:popover",
+            "web-features:dialog"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "dialog_elements": {
+          "__compat": {
+            "description": "`beforetoggle` event fires at dialog elements",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event",
+            "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-beforetoggle",
+            "tags": [
+              "web-features:dialog"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "132"
               },
-              {
-                "version_added": "≤37",
-                "version_removed": "79",
-                "partial_implementation": true,
-                "notes": "Supported for <code>HTMLButtonElement</code>, <code>HTMLInputElement</code>, <code>HTMLSelectElement</code>, and <code>HTMLTextAreaElement</code>."
-              }
-            ]
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "133"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
-        }
-      },
-      "beforeinput_event": {
-        "__compat": {
-          "description": "<code>beforeinput</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/beforeinput_event",
-          "spec_url": "https://w3c.github.io/uievents/#event-type-beforeinput",
-          "support": {
-            "chrome": {
-              "version_added": "60"
+        },
+        "popover_elements": {
+          "__compat": {
+            "description": "`beforetoggle` event fires at popover elements",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event",
+            "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-beforetoggle",
+            "tags": [
+              "web-features:popover"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "114"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "125"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "17"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "87"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "10.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "beforematch_event": {
-        "__compat": {
-          "description": "<code>beforematch</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/beforematch_event",
-          "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-beforematch",
-          "support": {
-            "chrome": {
-              "version_added": "102"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": true,
-            "standard_track": true,
-            "deprecated": false
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -392,6 +557,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/blur",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-blur-dev",
+          "tags": [
+            "web-features:focus-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -421,7 +589,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -432,11 +601,14 @@
       },
       "change_event": {
         "__compat": {
-          "description": "<code>change</code> event",
+          "description": "`change` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-change",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onchange"
+          ],
+          "tags": [
+            "web-features:change-event"
           ],
           "support": {
             "chrome": {
@@ -465,7 +637,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -478,10 +651,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/click",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-click-dev",
+          "tags": [
+            "web-features:mouse-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "9",
-              "notes": "Before Chrome 19, <code>click()</code> is only defined on buttons and inputs."
+              "notes": "Before Chrome 19, `click()` is only defined on buttons and inputs."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -490,15 +666,15 @@
             "firefox": {
               "version_added": "3",
               "notes": [
-                "Before Firefox 5, <code>click()</code> is only defined on buttons and inputs, and has no effect on text and file inputs.",
-                "Starting in Firefox 75, the <code>click()</code> function works even when the element is not attached to a DOM tree."
+                "Before Firefox 5, `click()` is only defined on buttons and inputs, and has no effect on text and file inputs.",
+                "Starting in Firefox 75, the `click()` function works even when the element is not attached to a DOM tree."
               ]
             },
             "firefox_android": {
               "version_added": "4",
               "notes": [
-                "Before Firefox 5, <code>click()</code> is only defined on buttons and inputs, and has no effect on text and file inputs.",
-                "Starting in Firefox for Android 79, the <code>click()</code> function works even when the element is not attached to a DOM tree."
+                "Before Firefox 5, `click()` is only defined on buttons and inputs, and has no effect on text and file inputs.",
+                "Starting in Firefox for Android 79, the `click()` function works even when the element is not attached to a DOM tree."
               ]
             },
             "ie": {
@@ -515,14 +691,55 @@
               "version_added": "6"
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": "1.0",
-              "notes": "Before Samsung Internet 1.5, <code>click()</code> is only defined on buttons and inputs."
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "command_event": {
+        "__compat": {
+          "description": "`command` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/command_event",
+          "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-command",
+          "tags": [
+            "web-features:invoker-commands"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "135"
             },
-            "webview_android": {
-              "version_added": "4.4",
-              "notes": "Before Android WebView 4.4, <code>click()</code> is only defined on buttons and inputs."
-            }
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "preview",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.element.invokers.enabled",
+                  "value_to_set": "true"
+                }
+              ]
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "preview"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -535,6 +752,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/contentEditable",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+          "tags": [
+            "web-features:contenteditable"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -564,46 +784,52 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
-        }
-      },
-      "contextMenu": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/contextMenu",
-          "support": {
-            "chrome": {
-              "version_added": false
+        },
+        "plaintext-only": {
+          "__compat": {
+            "description": "`plaintext-only` as a value",
+            "tags": [
+              "web-features:contenteditable-plaintextonly"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "51"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "136"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "5.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "8",
-              "version_removed": "85"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -611,9 +837,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dataset",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-dataset-dev",
+          "tags": [
+            "web-features:dataset"
+          ],
           "support": {
             "chrome": {
-              "version_added": "8"
+              "version_added": "7"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -640,7 +869,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -653,6 +883,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dir",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-dir",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -682,7 +915,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -693,11 +927,14 @@
       },
       "drag_event": {
         "__compat": {
-          "description": "<code>drag</code> event",
+          "description": "`drag` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondrag",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drag"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -726,7 +963,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -737,11 +975,14 @@
       },
       "dragend_event": {
         "__compat": {
-          "description": "<code>dragend</code> event",
+          "description": "`dragend` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondragend",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragend"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -770,7 +1011,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -781,11 +1023,14 @@
       },
       "dragenter_event": {
         "__compat": {
-          "description": "<code>dragenter</code> event",
+          "description": "`dragenter` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondragenter",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragenter"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -814,7 +1059,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -825,8 +1071,7 @@
       },
       "dragexit_event": {
         "__compat": {
-          "description": "<code>dragexit</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragexit_event",
+          "description": "`dragexit` event",
           "support": {
             "chrome": {
               "version_added": false
@@ -855,7 +1100,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -868,9 +1114,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/draggable",
           "spec_url": "https://html.spec.whatwg.org/multipage/dnd.html#dom-draggable",
+          "tags": [
+            "web-features:draganddrop"
+          ],
           "support": {
             "chrome": {
-              "version_added": "3"
+              "version_added": "4"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -897,7 +1146,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -908,11 +1158,14 @@
       },
       "dragleave_event": {
         "__compat": {
-          "description": "<code>dragleave</code> event",
+          "description": "`dragleave` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondragleave",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragleave"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -941,7 +1194,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -952,11 +1206,14 @@
       },
       "dragover_event": {
         "__compat": {
-          "description": "<code>dragover</code> event",
+          "description": "`dragover` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondragover",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -985,7 +1242,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -996,11 +1254,14 @@
       },
       "dragstart_event": {
         "__compat": {
-          "description": "<code>dragstart</code> event",
+          "description": "`dragstart` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondragstart",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -1029,7 +1290,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1040,11 +1302,14 @@
       },
       "drop_event": {
         "__compat": {
-          "description": "<code>drop</code> event",
+          "description": "`drop` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#ix-handler-ondrop",
             "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drop"
+          ],
+          "tags": [
+            "web-features:draganddrop"
           ],
           "support": {
             "chrome": {
@@ -1073,10 +1338,51 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "editContext": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/editContext",
+          "spec_url": "https://w3c.github.io/edit-context/#dom-htmlelement-editcontext",
+          "tags": [
+            "web-features:edit-context"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "121"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1904161"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/269922"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -1086,6 +1392,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/enterKeyHint",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-enterkeyhint",
+          "tags": [
+            "web-features:enterkeyhint"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -1107,7 +1416,53 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "error_event": {
+        "__compat": {
+          "description": "`error` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/error_event",
+          "spec_url": [
+            "https://w3c.github.io/uievents/#event-type-error",
+            "https://html.spec.whatwg.org/multipage/indices.html#event-error"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "12"
+            },
+            "firefox": {
+              "version_added": "1"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "9"
+            },
+            "oculus": "mirror",
+            "opera": {
+              "version_added": "≤12.1"
+            },
+            "opera_android": {
+              "version_added": "≤12.1"
+            },
+            "safari": {
+              "version_added": "1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1120,6 +1475,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/focus",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-focus-dev",
+          "tags": [
+            "web-features:focus-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1146,10 +1504,12 @@
               "version_added": "3"
             },
             "safari_ios": {
-              "version_added": "1"
+              "version_added": "1",
+              "notes": "If there's no hardware keyboard connected and the user has not yet interacted with the page, then calling `focus()` on an `&lt;input&gt;` element has no effect (for example, the element does not match the `:focus` selector)."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1159,7 +1519,10 @@
         },
         "options_focusVisible_parameter": {
           "__compat": {
-            "description": "<code>options.focusVisible</code> parameter",
+            "description": "`options.focusVisible` parameter",
+            "tags": [
+              "web-features:focus-events"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -1177,14 +1540,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "18.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -1192,14 +1556,17 @@
         },
         "options_preventScroll_parameter": {
           "__compat": {
-            "description": "<code>options.preventScroll</code> parameter",
+            "description": "`options.preventScroll` parameter",
+            "tags": [
+              "web-features:focus-events"
+            ],
             "support": {
               "chrome": {
                 "version_added": "64"
               },
               "chrome_android": {
                 "version_added": false,
-                "notes": "See <a href='https://crbug.com/953169'>bug 953169</a>."
+                "impl_url": "https://crbug.com/41453122"
               },
               "edge": {
                 "version_added": "17"
@@ -1209,7 +1576,7 @@
               },
               "firefox_android": {
                 "version_added": false,
-                "notes": "See <a href='https://bugzil.la/1544660'>bug 1544660</a>."
+                "impl_url": "https://bugzil.la/1544660"
               },
               "ie": {
                 "version_added": false
@@ -1224,7 +1591,8 @@
                 "version_added": "15.5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1238,6 +1606,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/hidden",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-hidden",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -1267,7 +1638,46 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "hidePopover": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/hidePopover",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-hidepopover",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1280,6 +1690,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/inert",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-inert",
+          "tags": [
+            "web-features:inert"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -1287,7 +1700,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "112"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -1301,12 +1714,53 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "ignores_find_in_page": {
+          "__compat": {
+            "description": "Element is ignored for the purposes of find-in-page.",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/inert",
+            "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-inert",
+            "tags": [
+              "web-features:inert"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "124"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "120"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false,
+                "impl_url": "https://webkit.org/b/269909"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -1314,6 +1768,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/innerText",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#the-innertext-idl-attribute",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1343,66 +1800,60 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "1"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
-        }
-      },
-      "input_event": {
-        "__compat": {
-          "description": "<code>input</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/input_event",
-          "spec_url": [
-            "https://w3c.github.io/uievents/#event-type-input",
-            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oninput"
-          ],
-          "support": {
-            "chrome": {
-              "version_added": "1"
-            },
-            "chrome_android": "mirror",
-            "edge": [
-              {
-                "version_added": "79"
-              },
-              {
-                "version_added": "12",
-                "version_removed": "79",
-                "partial_implementation": true,
-                "notes": "Not supported on <code>select</code>, <code>checkbox</code>, or <code>radio</code> inputs."
-              }
+        },
+        "scripts_accept_TrustedScript": {
+          "__compat": {
+            "description": "Can be set with `TrustedScript` instances in `HTMLScriptElement`.",
+            "spec_url": "https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-innertext",
+            "tags": [
+              "web-features:trusted-types"
             ],
-            "firefox": {
-              "version_added": "6"
+            "support": {
+              "chrome": {
+                "version_added": "83"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": false
+              },
+              "firefox": {
+                "version_added": "135",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "dom.security.trusted_types.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": "9",
-              "partial_implementation": true,
-              "notes": "Only supports <code>input</code> of type <code>text</code> and <code>password</code>."
-            },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "11.6"
-            },
-            "opera_android": {
-              "version_added": "12"
-            },
-            "safari": {
-              "version_added": "3.1"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -1410,6 +1861,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/inputMode",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-inputmode",
+          "tags": [
+            "web-features:inputmode"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -1433,7 +1887,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1446,6 +1901,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/isContentEditable",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-iscontenteditable-dev",
+          "tags": [
+            "web-features:contenteditable"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1475,7 +1933,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1488,6 +1947,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/lang",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-lang",
+          "tags": [
+            "web-features:lang-attr"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1517,7 +1979,60 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "load_event": {
+        "__compat": {
+          "description": "`load` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/load_event",
+          "spec_url": [
+            "https://w3c.github.io/uievents/#event-type-load",
+            "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onload",
+            "https://html.spec.whatwg.org/multipage/indices.html#event-load"
+          ],
+          "tags": [
+            "web-features:dom"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.0"
+            },
+            "edge": {
+              "version_added": "12"
+            },
+            "firefox": {
+              "version_added": "1"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": "5.5"
+            },
+            "oculus": "mirror",
+            "opera": {
+              "version_added": "8"
+            },
+            "opera_android": {
+              "version_added": "10.1"
+            },
+            "safari": {
+              "version_added": "1.3"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1530,6 +2045,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/nonce",
           "spec_url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#dom-noncedelement-nonce",
+          "tags": [
+            "web-features:csp"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1546,14 +2064,21 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "version_added": "10",
-              "partial_implementation": true,
-              "notes": "The property is defined only for its useful elements: <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code>, and <code>&lt;style&gt;</code>; it is undefined for all other elements."
-            },
+            "safari": [
+              {
+                "version_added": "15.4"
+              },
+              {
+                "version_added": "10",
+                "version_removed": "15.4",
+                "partial_implementation": true,
+                "notes": "The property is defined only for its useful elements: `&lt;link&gt;`, `&lt;script&gt;`, and `&lt;style&gt;`; it is undefined for all other elements."
+              }
+            ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1565,7 +2090,10 @@
       "offsetHeight": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetHeight",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-htmlelement-offsetheight",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetheight",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1595,7 +2123,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1607,7 +2136,10 @@
       "offsetLeft": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetLeft",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-htmlelement-offsetleft",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetleft",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1637,7 +2169,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1649,7 +2182,10 @@
       "offsetParent": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetParent",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-htmlelement-offsetparent",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetparent",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1679,7 +2215,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1691,7 +2228,10 @@
       "offsetTop": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetTop",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-htmlelement-offsettop",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1721,7 +2261,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1733,7 +2274,10 @@
       "offsetWidth": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetWidth",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-htmlelement-offsetwidth",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetwidth",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1763,7 +2307,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1776,6 +2321,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/outerText",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-outertext",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1805,7 +2353,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "1"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1814,10 +2363,217 @@
           }
         }
       },
+      "popover": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/popover",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-popover",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": [
+              {
+                "version_added": "18.3"
+              },
+              {
+                "version_added": "17",
+                "version_removed": "18.3",
+                "partial_implementation": true,
+                "notes": "On iOS and iPadOS, popovers are not dismissed when the user taps outside of the popover area, see [bug 267688](https://webkit.org/b/267688)."
+              }
+            ],
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "hint": {
+          "__compat": {
+            "description": "`hint` value",
+            "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint",
+            "tags": [
+              "web-features:popover-hint"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "133"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      },
+      "showPopover": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/showPopover",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-showpopover",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "source": {
+          "__compat": {
+            "description": "`source` option",
+            "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-showpopoveroptions-source",
+            "tags": [
+              "web-features:popover"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "133",
+                "partial_implementation": true,
+                "notes": "When using this option, the focus order doesn't change, so the popover does not become the next focus element. See [bug 383343310](https://crbug.com/383343310)."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview",
+                "partial_implementation": true,
+                "notes": "When using this option, the focus order doesn't change, so the popover does not become the next focus element. See [bug 286575](https://webkit.org/b/286575)."
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          },
+          "implicit_anchor_reference": {
+            "__compat": {
+              "description": "Implicit anchor reference via `source`",
+              "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#:~:text=Set%20element's%20implicit%20anchor%20element%20to%20invoker.",
+              "tags": [
+                "web-features:anchor-positioning"
+              ],
+              "support": {
+                "chrome": {
+                  "version_added": "133"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                  "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
+              },
+              "status": {
+                "experimental": true,
+                "standard_track": true,
+                "deprecated": false
+              }
+            }
+          }
+        }
+      },
       "spellcheck": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/spellcheck",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-spellcheck-dev",
+          "tags": [
+            "web-features:spellcheck"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -1847,7 +2603,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1859,7 +2616,10 @@
       "style": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/style",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-elementcssinlinestyle-style",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1889,7 +2649,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1902,6 +2663,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/tabIndex",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-tabindex",
+          "tags": [
+            "web-features:tabindex"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1914,7 +2678,7 @@
               {
                 "version_added": "12",
                 "partial_implementation": true,
-                "notes": "Returns incorrect value for elements without an explicit tabindex attribute. See <a href='https://developer.microsoft.com/microsoft-edge/platform/issues/4365703/'>issue 4365703</a> for details."
+                "notes": "Returns incorrect value for elements without an explicit tabindex attribute. See [issue 4365703](https://developer.microsoft.com/microsoft-edge/platform/issues/4365703/) for details."
               }
             ],
             "firefox": {
@@ -1924,7 +2688,7 @@
             "ie": {
               "version_added": "5.5",
               "partial_implementation": true,
-              "notes": "Returns incorrect value for elements without an explicit tabindex attribute. See <a href='https://developer.microsoft.com/microsoft-edge/platform/issues/4365703/'>issue 4365703</a> for details."
+              "notes": "Returns incorrect value for elements without an explicit tabindex attribute. See [issue 4365703](https://developer.microsoft.com/microsoft-edge/platform/issues/4365703/) for details."
             },
             "oculus": "mirror",
             "opera": {
@@ -1938,7 +2702,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1951,6 +2716,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/title",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-title",
+          "tags": [
+            "web-features:title-attr"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1980,7 +2748,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1989,10 +2758,326 @@
           }
         }
       },
+      "toggle_event": {
+        "__compat": {
+          "description": "`toggle` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/toggle_event",
+          "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
+          "tags": [
+            "web-features:popover",
+            "web-features:dialog",
+            "web-features:details"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "36"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "49"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "10.1"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "details_elements": {
+          "__compat": {
+            "description": "`toggle` event fires at details elements",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/toggle_event",
+            "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
+            "tags": [
+              "web-features:details"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "36"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "49"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "10.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "dialog_elements": {
+          "__compat": {
+            "description": "`toggle` event fires at dialog elements",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/toggle_event",
+            "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
+            "tags": [
+              "web-features:dialog"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "132"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "133"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "popover_elements": {
+          "__compat": {
+            "description": "`toggle` event fires at popover elements",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/toggle_event",
+            "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
+            "tags": [
+              "web-features:popover"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "114"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "125"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "17"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      },
+      "togglePopover": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/togglePopover",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-togglepopover",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "returns_boolean": {
+          "__compat": {
+            "description": "Returns `true` or `false`",
+            "tags": [
+              "web-features:popover"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "116"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "125"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "17"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "source": {
+          "__compat": {
+            "description": "`source` option",
+            "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-showpopoveroptions-source",
+            "tags": [
+              "web-features:popover"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "133",
+                "partial_implementation": true,
+                "notes": "When using this option, the focus order doesn't change, so the popover does not become the next focus element. See [bug 383343310](https://crbug.com/383343310)."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview",
+                "partial_implementation": true,
+                "notes": "When using this option, the focus order doesn't change, so the popover does not become the next focus element. See [bug 286575](https://webkit.org/b/286575)."
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          },
+          "implicit_anchor_reference": {
+            "__compat": {
+              "description": "Implicit anchor reference via `source`",
+              "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#:~:text=Set%20element's%20implicit%20anchor%20element%20to%20invoker.",
+              "tags": [
+                "web-features:anchor-positioning"
+              ],
+              "support": {
+                "chrome": {
+                  "version_added": "133"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                  "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
+              },
+              "status": {
+                "experimental": true,
+                "standard_track": true,
+                "deprecated": false
+              }
+            }
+          }
+        }
+      },
       "translate": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/translate",
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-translate",
+          "tags": [
+            "web-features:translate"
+          ],
           "support": {
             "chrome": {
               "version_added": "19"
@@ -2000,7 +3085,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -2014,7 +3099,87 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "virtualKeyboardPolicy": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/virtualKeyboardPolicy",
+          "spec_url": "https://w3c.github.io/virtual-keyboard/#dom-elementcontenteditable-virtualkeyboardpolicy",
+          "tags": [
+            "web-features:virtual-keyboard"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "94"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1730568"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/230225"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "writingSuggestions": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLElement/writingSuggestions",
+          "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-writingsuggestions",
+          "tags": [
+            "web-features:writingsuggestions"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "124"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1871621"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "18"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

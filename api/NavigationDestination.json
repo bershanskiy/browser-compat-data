@@ -2,7 +2,11 @@
   "api": {
     "NavigationDestination": {
       "__compat": {
-        "spec_url": "https://wicg.github.io/navigation-api/#navigationdestination",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination",
+        "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
+        "tags": [
+          "web-features:navigation"
+        ],
         "support": {
           "chrome": {
             "version_added": "102"
@@ -10,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1777171"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -20,11 +25,13 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://webkit.org/b/258384"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -34,7 +41,11 @@
       },
       "getState": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-getstate",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/getState",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-getstate-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -42,7 +53,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -56,7 +68,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -67,7 +80,11 @@
       },
       "id": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-id",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/id",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-id-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -75,7 +92,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -89,7 +107,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -100,7 +119,11 @@
       },
       "index": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-index",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/index",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-index-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -108,7 +131,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -122,7 +146,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -133,7 +158,11 @@
       },
       "key": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-key",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/key",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-key-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -141,7 +170,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -155,7 +185,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -166,7 +197,11 @@
       },
       "sameDocument": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-samedocument",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/sameDocument",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-samedocument-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -174,7 +209,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -188,7 +224,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -199,7 +236,11 @@
       },
       "url": {
         "__compat": {
-          "spec_url": "https://wicg.github.io/navigation-api/#dom-navigationdestination-url",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/NavigationDestination/url",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-url-2",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -207,7 +248,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1777171"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -221,7 +263,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

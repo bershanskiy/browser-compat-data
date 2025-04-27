@@ -4,7 +4,10 @@
       "tab-size": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/tab-size",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-text/#tab-size-property",
+          "spec_url": "https://drafts.csswg.org/css-text/#tab-size-property",
+          "tags": [
+            "web-features:tab-size"
+          ],
           "support": {
             "chrome": {
               "version_added": "21",
@@ -54,7 +57,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -64,9 +68,12 @@
         },
         "length": {
           "__compat": {
-            "description": "<code>&lt;length&gt;</code>",
+            "description": "`&lt;length&gt;`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/length",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-values/#lengths",
+            "spec_url": "https://drafts.csswg.org/css-values/#lengths",
+            "tags": [
+              "web-features:tab-size"
+            ],
             "support": {
               "chrome": {
                 "version_added": "42"
@@ -84,13 +91,14 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "13.1"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "56"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

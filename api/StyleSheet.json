@@ -3,7 +3,10 @@
     "StyleSheet": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet",
-        "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#the-stylesheet-interface",
+        "spec_url": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+        "tags": [
+          "web-features:css-object-model"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -31,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -42,7 +46,10 @@
       "disabled": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/disabled",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-disabled",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-disabled",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -70,7 +77,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -82,7 +90,10 @@
       "href": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/href",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-href",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-href",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -110,7 +121,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -122,7 +134,10 @@
       "media": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/media",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-media",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-media",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -150,7 +165,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -162,7 +178,10 @@
       "ownerNode": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/ownerNode",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-ownernode",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-ownernode",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -190,7 +209,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -202,7 +222,10 @@
       "parentStyleSheet": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/parentStyleSheet",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-parentstylesheet",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-parentstylesheet",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -230,7 +253,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -242,7 +266,10 @@
       "title": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/title",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-title",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-title",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -270,7 +297,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -282,7 +310,10 @@
       "type": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StyleSheet/type",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-stylesheet-type",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-stylesheet-type",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -310,7 +341,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -3,7 +3,10 @@
     "PageTransitionEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PageTransitionEvent",
-        "spec_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-pagetransitionevent-interface",
+        "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagetransitionevent-interface",
+        "tags": [
+          "web-features:page-transition-events"
+        ],
         "support": {
           "chrome": {
             "version_added": "4"
@@ -29,9 +32,8 @@
             "version_added": "4"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,8 +43,12 @@
       },
       "PageTransitionEvent": {
         "__compat": {
-          "description": "<code>PageTransitionEvent()</code> constructor",
-          "spec_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-pagetransitionevent-interface",
+          "description": "`PageTransitionEvent()` constructor",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/PageTransitionEvent",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagetransitionevent-interface",
+          "tags": [
+            "web-features:page-transition-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "16"
@@ -64,7 +70,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -76,7 +83,10 @@
       "persisted": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/persisted",
-          "spec_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#dom-pagetransitionevent-persisted-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pagetransitionevent-persisted-dev",
+          "tags": [
+            "web-features:page-transition-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -91,7 +101,7 @@
             "firefox_android": "mirror",
             "ie": {
               "version_added": "11",
-              "notes": "The <code>persisted</code> property is known to be buggy in Internet Explorer. It is advised to check if <code>window.performance.navigation.type == 2</code> as well."
+              "notes": "The `persisted` property is known to be buggy in Internet Explorer. It is advised to check if `window.performance.navigation.type == 2` as well."
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -103,9 +113,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -3,34 +3,36 @@
     "elements": {
       "feDiffuseLighting": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Element/feDiffuseLighting",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Element/feDiffuseLighting",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#feDiffuseLightingElement",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "5"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "12"
             },
             "firefox": {
-              "version_added": true
+              "version_added": "3"
             },
             "firefox_android": "mirror",
             "ie": {
-              "version_added": true
+              "version_added": "≤11"
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": null
-            },
+            "opera_android": "mirror",
             "safari": {
-              "version_added": null
+              "version_added": "6"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -40,30 +42,34 @@
         },
         "diffuseConstant": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/diffuseConstant",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/diffuseConstant",
             "spec_url": "https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-diffuseconstant",
+            "tags": [
+              "web-features:svg-filters"
+            ],
             "support": {
               "chrome": {
-                "version_added": null
+                "version_added": "5"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": null
+                "version_added": "3"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "6"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -74,34 +80,36 @@
         },
         "in": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/in",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/in",
             "spec_url": "https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-in",
+            "tags": [
+              "web-features:svg-filters"
+            ],
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "5"
               },
               "chrome_android": "mirror",
               "edge": {
                 "version_added": "12"
               },
               "firefox": {
-                "version_added": true
+                "version_added": "3"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": null
-              },
+              "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "6"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -112,30 +120,34 @@
         },
         "kernelUnitLength": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/kernelUnitLength",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/kernelUnitLength",
             "spec_url": "https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-kernelunitlength",
+            "tags": [
+              "web-features:svg-filters"
+            ],
             "support": {
               "chrome": {
-                "version_added": null
+                "version_added": "5"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": null
+                "version_added": "3"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "6"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -146,30 +158,34 @@
         },
         "surfaceScale": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/surfaceScale",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/surfaceScale",
             "spec_url": "https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-surfacescale",
+            "tags": [
+              "web-features:svg-filters"
+            ],
             "support": {
               "chrome": {
-                "version_added": null
+                "version_added": "5"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": null
+                "version_added": "3"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "6"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

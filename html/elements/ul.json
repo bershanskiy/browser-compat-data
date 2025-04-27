@@ -3,11 +3,14 @@
     "elements": {
       "ul": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/ul",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/ul",
           "spec_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
+          "tags": [
+            "web-features:list-elements"
+          ],
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "1"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -18,17 +21,18 @@
             },
             "firefox_android": "mirror",
             "ie": {
-              "version_added": true
+              "version_added": "≤11"
             },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": true
+              "version_added": "≤4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -38,9 +42,10 @@
         },
         "compact": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/obsolete.html#attr-ul-compact",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "1"
               },
               "chrome_android": "mirror",
               "edge": {
@@ -51,30 +56,32 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": true
+                "version_added": "3"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
-              "standard_track": false,
+              "standard_track": true,
               "deprecated": true
             }
           }
         },
         "type": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/obsolete.html#attr-ul-type",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "1"
               },
               "chrome_android": "mirror",
               "edge": {
@@ -85,21 +92,22 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": true
+                "version_added": "≤4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
-              "standard_track": false,
+              "standard_track": true,
               "deprecated": true
             }
           }

@@ -4,7 +4,10 @@
       "place-content": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/place-content",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-align/#place-content",
+          "spec_url": "https://drafts.csswg.org/css-align/#place-content",
+          "tags": [
+            "web-features:flexbox"
+          ],
           "support": {
             "chrome": {
               "version_added": "59"
@@ -26,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -37,6 +41,9 @@
         "flex_context": {
           "__compat": {
             "description": "Supported in Flex Layout",
+            "tags": [
+              "web-features:flexbox"
+            ],
             "support": {
               "chrome": {
                 "version_added": "59"
@@ -45,7 +52,7 @@
               "edge": "mirror",
               "firefox": {
                 "version_added": "45",
-                "notes": "Starting with version 60, you can only specify a single value if it is valid for both <code>align-content</code> and <code>justify-content</code>."
+                "notes": "Starting with version 60, you can only specify a single value if it is valid for both `align-content` and `justify-content`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -59,7 +66,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -71,6 +79,9 @@
         "grid_context": {
           "__compat": {
             "description": "Supported in Grid Layout",
+            "tags": [
+              "web-features:grid"
+            ],
             "support": {
               "chrome": {
                 "version_added": "59"
@@ -79,7 +90,7 @@
               "edge": "mirror",
               "firefox": {
                 "version_added": "53",
-                "notes": "Starting with version 60, you can only specify a single value if it is valid for both <code>align-content</code> and <code>justify-content</code>."
+                "notes": "Starting with version 60, you can only specify a single value if it is valid for both `align-content` and `justify-content`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -93,7 +104,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

@@ -4,15 +4,18 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent",
         "spec_url": "https://w3c.github.io/picture-in-picture/#event-types",
+        "tags": [
+          "web-features:picture-in-picture"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "85"
             },
             {
+              "alternative_name": "EnterPictureInPictureEvent",
               "version_added": "69",
-              "version_removed": "85",
-              "alternative_name": "EnterPictureInPictureEvent"
+              "version_removed": "85"
             }
           ],
           "chrome_android": {
@@ -20,7 +23,8 @@
           },
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1463402"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -34,13 +38,16 @@
               "version_added": "16"
             },
             {
-              "version_added": "13.1",
-              "alternative_name": "EnterPictureInPictureEvent"
+              "alternative_name": "EnterPictureInPictureEvent",
+              "version_added": "13.1"
             }
           ],
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": {
+            "version_added": false
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -50,18 +57,21 @@
       },
       "PictureInPictureEvent": {
         "__compat": {
-          "description": "<code>PictureInPictureEvent()</code> constructor",
+          "description": "`PictureInPictureEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/PictureInPictureEvent",
           "spec_url": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpictureevent",
+          "tags": [
+            "web-features:picture-in-picture"
+          ],
           "support": {
             "chrome": [
               {
                 "version_added": "85"
               },
               {
+                "alternative_name": "EnterPictureInPictureEvent",
                 "version_added": "69",
-                "version_removed": "85",
-                "alternative_name": "EnterPictureInPictureEvent"
+                "version_removed": "85"
               }
             ],
             "chrome_android": {
@@ -69,7 +79,8 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1463402"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -83,13 +94,16 @@
                 "version_added": "16"
               },
               {
-                "version_added": "13.1",
-                "alternative_name": "EnterPictureInPictureEvent"
+                "alternative_name": "EnterPictureInPictureEvent",
+                "version_added": "13.1"
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -102,6 +116,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/pictureInPictureWindow",
           "spec_url": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpicturewindow",
+          "tags": [
+            "web-features:picture-in-picture"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -111,7 +128,8 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1463402"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -125,7 +143,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

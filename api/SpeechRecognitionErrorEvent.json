@@ -3,16 +3,17 @@
     "SpeechRecognitionErrorEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent",
-        "spec_url": "https://wicg.github.io/speech-api/#speechrecognitionerrorevent",
+        "spec_url": "https://webaudio.github.io/web-speech-api/#speechrecognitionerrorevent",
+        "tags": [
+          "web-features:speech-recognition"
+        ],
         "support": {
           "chrome": {
             "alternative_name": "webkitSpeechRecognitionError",
             "version_added": "33"
           },
           "chrome_android": "mirror",
-          "edge": {
-            "version_added": "79"
-          },
+          "edge": "mirror",
           "firefox": {
             "version_added": false
           },
@@ -21,18 +22,15 @@
             "version_added": false
           },
           "oculus": "mirror",
-          "opera": {
-            "version_added": false
-          },
-          "opera_android": {
-            "version_added": false
-          },
+          "opera": "mirror",
+          "opera_android": "mirror",
           "safari": {
             "version_added": "14.1"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -42,17 +40,18 @@
       },
       "SpeechRecognitionErrorEvent": {
         "__compat": {
-          "description": "<code>SpeechRecognitionErrorEvent()</code> constructor",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-speechrecognitionerrorevent",
+          "description": "`SpeechRecognitionErrorEvent()` constructor",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorevent-speechrecognitionerrorevent",
+          "tags": [
+            "web-features:speech-recognition"
+          ],
           "support": {
             "chrome": {
               "alternative_name": "webkitSpeechRecognitionError",
               "version_added": "33"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": false
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": false
             },
@@ -61,18 +60,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "14.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -84,7 +80,10 @@
       "error": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent/error",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-error",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorevent-error",
+          "tags": [
+            "web-features:speech-recognition"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -99,18 +98,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "14.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -122,7 +118,10 @@
       "message": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent/message",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-message",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionerrorevent-message",
+          "tags": [
+            "web-features:speech-recognition"
+          ],
           "support": {
             "chrome": {
               "version_added": "77"
@@ -137,18 +136,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "14.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -4,7 +4,10 @@
       "table-layout": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/table-layout",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css2/#width-layout",
+          "spec_url": "https://drafts.csswg.org/css2/#width-layout",
+          "tags": [
+            "web-features:table"
+          ],
           "support": {
             "chrome": {
               "version_added": "14"
@@ -36,7 +39,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "1.5"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

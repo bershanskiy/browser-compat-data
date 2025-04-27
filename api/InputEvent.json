@@ -7,6 +7,9 @@
           "https://w3c.github.io/input-events/#interface-InputEvent",
           "https://w3c.github.io/uievents/#interface-inputevent"
         ],
+        "tags": [
+          "web-features:input-event"
+        ],
         "support": {
           "chrome": {
             "version_added": "60"
@@ -28,7 +31,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,9 +42,12 @@
       },
       "InputEvent": {
         "__compat": {
-          "description": "<code>InputEvent()</code> constructor",
+          "description": "`InputEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/InputEvent",
           "spec_url": "https://w3c.github.io/uievents/#dom-inputevent-inputevent",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -58,13 +65,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "10.1",
-              "partial_implementation": true,
-              "notes": "The <code>inputEventInit</code> parameter is not supported. See <a href='https://webkit.org/b/170416'>bug 170416</a>."
+              "version_added": "10.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -77,6 +83,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/data",
           "spec_url": "https://w3c.github.io/input-events/#dfn-data",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -98,7 +107,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -111,6 +121,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/dataTransfer",
           "spec_url": "https://w3c.github.io/input-events/#dom-inputevent-datatransfer",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -132,7 +145,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -145,6 +159,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/getTargetRanges",
           "spec_url": "https://w3c.github.io/input-events/#dom-inputevent-gettargetranges",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -166,7 +183,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -179,6 +197,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/inputType",
           "spec_url": "https://w3c.github.io/uievents/#dom-inputevent-inputtype",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -200,7 +221,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -210,7 +232,10 @@
         },
         "insertFromPasteAsQuotation": {
           "__compat": {
-            "description": "<code>insertFromPasteAsQuotation</code> input type",
+            "description": "`insertFromPasteAsQuotation` input type",
+            "tags": [
+              "web-features:input-event"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -232,7 +257,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -246,6 +272,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/InputEvent/isComposing",
           "spec_url": "https://w3c.github.io/uievents/#dom-inputevent-iscomposing",
+          "tags": [
+            "web-features:input-event"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -263,11 +292,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

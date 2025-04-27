@@ -4,11 +4,17 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope",
         "spec_url": "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworkerglobalscope-interface",
+        "tags": [
+          "web-features:shared-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "4"
           },
-          "chrome_android": "mirror",
+          "chrome_android": {
+            "version_added": false,
+            "impl_url": "https://crbug.com/40290702"
+          },
           "edge": "mirror",
           "firefox": {
             "version_added": "29"
@@ -43,9 +49,8 @@
             }
           ],
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -53,93 +58,21 @@
           "deprecated": false
         }
       },
-      "applicationCache": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/applicationCache",
-          "support": {
-            "chrome": {
-              "version_added": "4",
-              "version_removed": "85"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "29",
-              "version_removed": "77"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": {
-              "version_added": "10.6",
-              "version_removed": "71"
-            },
-            "opera_android": {
-              "version_added": "11",
-              "version_removed": "60"
-            },
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "85"
-            }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
-          }
-        },
-        "secure_context_required": {
-          "__compat": {
-            "description": "Secure context required",
-            "support": {
-              "chrome": {
-                "version_added": "70",
-                "version_removed": "85"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": false,
-              "deprecated": true
-            }
-          }
-        }
-      },
       "close": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/close",
           "spec_url": "https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworkerglobalscope-close-dev",
+          "tags": [
+            "web-features:shared-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
             },
-            "chrome_android": "mirror",
+            "chrome_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40290702"
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "29"
@@ -174,7 +107,8 @@
               }
             ],
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -185,21 +119,27 @@
       },
       "connect_event": {
         "__compat": {
-          "description": "<code>connect</code> event",
+          "description": "`connect` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/connect_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-workerglobalscope-connect",
             "https://html.spec.whatwg.org/multipage/workers.html#handler-sharedworkerglobalscope-onconnect"
           ],
+          "tags": [
+            "web-features:shared-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
             },
-            "chrome_android": "mirror",
+            "chrome_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40290702"
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "29",
-              "notes": "Before version 65 the <code>data</code> property of the event object was <code>null</code>; it is now initialized to an empty string, as per spec."
+              "notes": "Before version 65 the `data` property of the event object was `null`; it is now initialized to an empty string, as per spec."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -231,9 +171,8 @@
               }
             ],
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -246,11 +185,17 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/name",
           "spec_url": "https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworkerglobalscope-name-dev",
+          "tags": [
+            "web-features:shared-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
             },
-            "chrome_android": "mirror",
+            "chrome_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40290702"
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "29"
@@ -285,7 +230,8 @@
               }
             ],
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

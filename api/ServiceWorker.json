@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker",
         "spec_url": "https://w3c.github.io/ServiceWorker/#serviceworker-interface",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
@@ -27,7 +30,10 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -35,9 +41,53 @@
           "deprecated": false
         }
       },
+      "ecmascript_modules": {
+        "__compat": {
+          "description": "Support for ECMAScript modules",
+          "tags": [
+            "web-features:js-modules-service-workers"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "91"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1360870"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "15",
+              "notes": [
+                "Nested workers support was introduced in Safari 15.5.",
+                "Script loading in nested workers was introduced in Safari 16.4."
+              ]
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "error_event": {
         "__compat": {
-          "description": "<code>error</code> event",
+          "description": "`error` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker/error_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/workers.html#handler-abstractworker-onerror",
           "support": {
@@ -63,7 +113,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -74,9 +127,13 @@
       },
       "postMessage": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage",
           "spec_url": [
             "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage",
             "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage-message-options"
+          ],
+          "tags": [
+            "web-features:service-workers"
           ],
           "support": {
             "chrome": {
@@ -101,7 +158,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -114,6 +174,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker/scriptURL",
           "spec_url": "https://w3c.github.io/ServiceWorker/#service-worker-url",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -137,7 +200,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -150,6 +216,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker/state",
           "spec_url": "https://w3c.github.io/ServiceWorker/#service-worker-state",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -173,7 +242,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -184,9 +256,12 @@
       },
       "statechange_event": {
         "__compat": {
-          "description": "<code>statechange</code> event",
+          "description": "`statechange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorker/statechange_event",
           "spec_url": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-onstatechange",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -210,7 +285,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,

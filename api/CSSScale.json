@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSScale",
         "spec_url": "https://drafts.css-houdini.org/css-typed-om/#cssscale",
+        "tags": [
+          "web-features:css-typed-om"
+        ],
         "support": {
           "chrome": {
             "version_added": "66"
@@ -21,23 +24,27 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "16.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "CSSScale": {
         "__compat": {
-          "description": "<code>CSSScale()</code> constructor",
+          "description": "`CSSScale()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSScale/CSSScale",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-cssscale",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -45,7 +52,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -55,14 +63,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -72,6 +81,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSScale/x",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-x",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -79,7 +91,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -89,14 +102,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -106,6 +120,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSScale/y",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-y",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -113,7 +130,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -123,14 +141,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -140,6 +159,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSScale/z",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-z",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -147,7 +169,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -157,14 +180,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

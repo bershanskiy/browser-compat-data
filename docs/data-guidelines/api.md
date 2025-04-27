@@ -10,6 +10,12 @@ For example, although the UI Events specification defines a [`DOM_KEY_LOCATION_S
 
 This guideline was proposed in [#7936](https://github.com/mdn/browser-compat-data/issues/7585), based in part on previous discussion in [#7585](https://github.com/mdn/browser-compat-data/issues/7585).
 
+## Dictionaries and enumerations (enums)
+
+[Dictionaries](https://webidl.spec.whatwg.org/#idl-dictionaries) and [enumerations (enums)](https://webidl.spec.whatwg.org/#idl-enums) in Web IDL are used in specifications to define a set of properties that may be reused across various interfaces. For web developers, they aren't observable directly; they act as helpers for web browser engineers to avoid internally repeating API definitions. Add dictionary members and enum values to the appropriate methods and properties when needed.
+
+For example, [`ScrollToOptions`](https://drafts.csswg.org/cssom-view/#dictdef-scrolltooptions) is a dictionary defined in the CSSOM View specification. The properties of this dictionary are available to an argument of various methods, including `Element.scroll()`, `Element.scrollTo()`, `Window.scrollBy()` and more. These properties are added to each of the members as [parameter object features](./index.md#parameters-and-parameter-object-features).
+
 ## Mixins
 
 [Interface mixins](https://webidl.spec.whatwg.org/#idl-interface-mixins) in Web IDL are used in specifications to define Web APIs. For web developers, they aren't observable directly; they act as helpers for web browser engineers to avoid internally repeating API definitions. Add mixin members directly to the corresponding interface they're exposed on.
@@ -19,6 +25,10 @@ For example, [`HTMLHyperlinkElementUtils`](https://html.spec.whatwg.org/multipag
 Members of this mixin are available to `HTMLAnchorElement` and `HTMLAreaElement`, so that's where BCD exposes them. As such, members of `HTMLHyperlinkElementUtils` should be added directly to the `api/HTMLAnchorElement.json` and `api/HTMLAreaElement.json` files as if they were regular members of these interfaces.
 
 This guideline was proposed in [#8929](https://github.com/mdn/browser-compat-data/issues/8929), based in part on previous discussion in [#472](https://github.com/mdn/browser-compat-data/issues/472).
+
+## Namespaces
+
+[Namespaces](https://webidl.spec.whatwg.org/#idl-namespaces) in Web IDL are similar to interfaces. A namespace should only be documented in BCD if it contains properties or functions that would normally be documented. For example, the `console` namespace contains many functions, so it should be documented in BCD. The `GPUBufferUsage` namespace only contains constants, which should not be documented in BCD; thus, the `GPUBufferUsage` namespace should not be documented.
 
 ## Callback interfaces and functions
 
@@ -63,9 +73,9 @@ This guideline is based on a discussion in [#11518](https://github.com/mdn/brows
 
 ## Constructors
 
-Name a constructor for an API feature the same as the parent feature (unless the constructor doesn't share the name of its parent feature) and have a description with text in the form of `<code>Name()</code> constructor`.
+Name a constructor for an API feature the same as the parent feature (unless the constructor doesn't share the name of its parent feature) and have a description with text in the form of `` `Name()` constructor ``.
 
-For example, the `ImageData` constructor, `ImageData()`, is represented as `api.ImageData.ImageData`. It has the description `<code>ImageData()</code> constructor`, like this:
+For example, the `ImageData` constructor, `ImageData()`, is represented as `api.ImageData.ImageData`. It has the description `` `ImageData()` constructor ``, like this:
 
 ```json
 {
@@ -74,7 +84,7 @@ For example, the `ImageData` constructor, `ImageData()`, is represented as `api.
       "__compat": {},
       "ImageData": {
         "__compat": {
-          "description": "<code>ImageData()</code> constructor",
+          "description": "`ImageData()` constructor",
           "support": {}
         }
       }
@@ -85,9 +95,9 @@ For example, the `ImageData` constructor, `ImageData()`, is represented as `api.
 
 ## DOM events (`eventname_event`)
 
-Add DOM events as features of their target interfaces, using the name _eventname_\_event with the description text set to `<code>eventname</code> event`. If an event can be sent to multiple interfaces, add the event as a feature of each interface that can receive it.
+Add DOM events as features of their target interfaces, using the name _eventname_\_event with the description text set to `` `eventname` event ``. If an event can be sent to multiple interfaces, add the event as a feature of each interface that can receive it.
 
-For example, the feature for a `focus` event targeting the `Element` interface would be named `focus_event` with the description text `<code>focus</code> event`, like this:
+For example, the feature for a `focus` event targeting the `Element` interface would be named `focus_event` with the description text `` `focus` event ``, like this:
 
 ```json
 {
@@ -96,7 +106,7 @@ For example, the feature for a `focus` event targeting the `Element` interface w
       "__compat": {},
       "focus_event": {
         "__compat": {
-          "description": "<code>focus</code> event",
+          "description": "`focus` event",
           "support": {}
         }
       }
@@ -105,7 +115,7 @@ For example, the feature for a `focus` event targeting the `Element` interface w
 }
 ```
 
-The event handler `onfocus` is represented by the `focus_event` entry. Don't create features for `on` event handler properties. If an implementation doesn't support the event handler property, use `partial_implementation` with the note `"The <code>onfocus</code> event handler property is not supported."`. If only the `on` event handler property is supported and not the event itself, use `"version_added": false`.
+The event handler `onfocus` is represented by the `focus_event` entry. Don't create features for `on` event handler properties. If an implementation doesn't support the event handler property, use `partial_implementation` with the note ``"The `onfocus` event handler property is not supported."``. If only the `on` event handler property is supported and not the event itself, use `"version_added": false`.
 
 If a specification has two sections (the event handler property and the event name), add both specification links.
 
@@ -119,9 +129,9 @@ This practice emerged through several discussions:
 
 ## Permissions API permissions (`permissionname_permission`)
 
-Add [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) permissions as subfeatures of [`api.Permissions`](https://developer.mozilla.org/en-US/docs/Web/API/Permissions) using the name _permissionname_\_permission with the description text set to `<code>permissionname</code> permission`.
+Add [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) permissions as subfeatures of [`api.Permissions`](https://developer.mozilla.org/en-US/docs/Web/API/Permissions) using the name _permissionname_\_permission with the description text set to `` `permissionname` permission ``.
 
-For example, the Geolocation permission is named `geolocation_permission` with the description text `<code>geolocation</code> permission`, like this:
+For example, the Geolocation permission is named `geolocation_permission` with the description text `` `geolocation` permission ``, like this:
 
 ```json
 {
@@ -130,7 +140,7 @@ For example, the Geolocation permission is named `geolocation_permission` with t
       "__compat": { ... },
       "geolocation_permission": {
         "__compat": {
-          "description": "<code>geolocation</code> permission",
+          "description": "`geolocation` permission",
           "support": { ... }
         }
       }
@@ -143,7 +153,7 @@ This guideline was proposed in [#6156](https://github.com/mdn/browser-compat-dat
 
 ## Methods returning promises (`returns_promise`)
 
-When a method returns a promise in some (but not all) browser releases, use a subfeature named `returns_promise` with description text `Returns a <code>Promise</code>` to record when the method returns a promise.
+When a method returns a promise in some (but not all) browser releases, use a subfeature named `returns_promise` with description text `` Returns a `Promise` `` to record when the method returns a promise.
 
 For example, `HTMLMediaElement`'s `play()` method returns a promise, recorded like this:
 
@@ -156,7 +166,7 @@ For example, `HTMLMediaElement`'s `play()` method returns a promise, recorded li
         "__compat": {},
         "returns_promise": {
           "__compat": {
-            "description": "Returns a <code>Promise</code>",
+            "description": "Returns a `Promise`",
             "support": {}
           }
         }
@@ -214,6 +224,28 @@ For example, the `ImageData` API has worker support, recorded like this:
 
 Formerly named `available_in_workers`, this policy was set in [#2362](https://github.com/mdn/browser-compat-data/pull/2362).
 
+## Stringifier attributes (`toString`)
+
+Interfaces may have an attribute with a [`stringifier` keyword](https://webidl.spec.whatwg.org/#idl-stringifiers) in its IDL definition. When the `stringifier` keyword is present on an attribute, a `toString()` method is generated, which returns the value of that attribute. Record both the attribute and the `toString()` method.
+
+For example, the `MediaList` API has a `mediaText` attribute with the `stringifier` keyword (`stringifier attribute [LegacyNullToEmptyString] CSSOMString mediaText;`). Both are recorded like so:
+
+```json
+{
+  "api": {
+    "MediaList": {
+      "__compat": { ... },
+      "mediaText": {
+        "__compat": { ... }
+      },
+      "toString": {
+        "__compat": { ... }
+      }
+    }
+  }
+}
+```
+
 ## APIs moved on the prototype chain
 
 [Web IDL interfaces](https://webidl.spec.whatwg.org/#idl-interface) (and [JavaScript built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)) form prototype chains, with one type inheriting from another. For example, `AudioContext` inherits from `BaseAudioContext`, and `Element` inherits from `Node`.
@@ -248,3 +280,30 @@ For example, some attributes have moved from `Node` to `Attr` and `Element`. The
 See [#9561](https://github.com/mdn/browser-compat-data/pull/9561) for a part of this data being fixed.
 
 This guideline is based on a discussion in [#3463](https://github.com/mdn/browser-compat-data/issues/3463).
+
+### Static API members
+
+Always append the suffix `_static` to static members of an interface and have a description with text in the form of `` `json()` static method ``.
+
+For example, the `Response` interface has both, a prototype and static method called `json()`. The static method is represented as `api.Response.json_static`. It has the description `` `json()` static method ``. The prototype method is represented as `api.Response.json` without suffix and without description.
+
+```json
+{
+  "api": {
+    "Response": {
+      "__compat": {},
+      "json": {
+        "__compat": {}
+      },
+      "json_static": {
+        "__compat": {
+          "description": "`json()` static method",
+          "support": {}
+        }
+      }
+    }
+  }
+}
+```
+
+This guideline is based on a discussion in [#16613](https://github.com/mdn/browser-compat-data/issues/16613).

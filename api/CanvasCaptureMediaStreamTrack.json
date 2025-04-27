@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack",
         "spec_url": "https://w3c.github.io/mediacapture-fromelement/#the-canvascapturemediastreamtrack",
+        "tags": [
+          "web-features:capture-stream-canvas"
+        ],
         "support": {
           "chrome": {
             "version_added": "51"
@@ -11,14 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": "41",
-            "flags": [
-              {
-                "type": "preference",
-                "name": "canvas.capturestream.enabled",
-                "value_to_set": "true"
-              }
-            ]
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1231131"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -32,7 +29,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -44,6 +42,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/canvas",
           "spec_url": "https://w3c.github.io/mediacapture-fromelement/#dom-canvascapturemediastreamtrack-canvas",
+          "tags": [
+            "web-features:capture-stream-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "51"
@@ -51,14 +52,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "41",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "canvas.capturestream.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": false
             },
             "firefox_android": "mirror",
             "ie": {
@@ -72,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -85,6 +80,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/requestFrame",
           "spec_url": "https://w3c.github.io/mediacapture-fromelement/#dom-canvascapturemediastreamtrack-requestframe",
+          "tags": [
+            "web-features:capture-stream-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "51"
@@ -92,14 +90,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "41",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "canvas.capturestream.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": false
             },
             "firefox_android": "mirror",
             "ie": {
@@ -113,7 +104,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

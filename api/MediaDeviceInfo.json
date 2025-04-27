@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo",
         "spec_url": "https://w3c.github.io/mediacapture-main/#device-info",
+        "tags": [
+          "web-features:media-capture"
+        ],
         "support": {
           "chrome": {
             "version_added": "47"
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,6 +43,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/deviceId",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-deviceid",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -62,7 +69,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -75,6 +83,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/groupId",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-groupid",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -85,7 +96,7 @@
             },
             "firefox": {
               "version_added": "39",
-              "notes": "Before Firefox 67, related devices are not actually grouped together by <code>groupId</code>."
+              "notes": "Before Firefox 67, related devices are not actually grouped together by `groupId`."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -99,7 +110,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -112,6 +124,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/kind",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-kind",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -135,7 +150,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -148,6 +164,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/label",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-label",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -171,7 +190,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -182,8 +202,12 @@
       },
       "toJSON": {
         "__compat": {
-          "description": "<code>toJSON()</code>",
+          "description": "`toJSON()`",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/toJSON",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-tojson",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -207,7 +231,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

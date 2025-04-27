@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement",
         "spec_url": "https://svgwg.org/svg2-draft/paths.html#InterfaceSVGPathElement",
+        "tags": [
+          "web-features:svg"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -35,7 +38,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "3"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -45,6 +49,9 @@
       },
       "createSVGPathSegArcAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -79,10 +86,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -93,6 +98,9 @@
       },
       "createSVGPathSegArcRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -127,10 +135,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -141,6 +147,9 @@
       },
       "createSVGPathSegClosePath": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -175,10 +184,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -189,6 +196,9 @@
       },
       "createSVGPathSegCurvetoCubicAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -223,10 +233,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -237,6 +245,9 @@
       },
       "createSVGPathSegCurvetoCubicRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -271,10 +282,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -285,6 +294,9 @@
       },
       "createSVGPathSegCurvetoCubicSmoothAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -319,10 +331,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -333,6 +343,9 @@
       },
       "createSVGPathSegCurvetoCubicSmoothRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -367,10 +380,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -381,6 +392,9 @@
       },
       "createSVGPathSegCurvetoQuadraticAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -415,10 +429,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -429,6 +441,9 @@
       },
       "createSVGPathSegCurvetoQuadraticRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -463,10 +478,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -477,6 +490,9 @@
       },
       "createSVGPathSegCurvetoQuadraticSmoothAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -511,10 +527,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -525,6 +539,9 @@
       },
       "createSVGPathSegCurvetoQuadraticSmoothRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -559,10 +576,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -573,6 +588,9 @@
       },
       "createSVGPathSegLinetoAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -607,10 +625,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -621,6 +637,9 @@
       },
       "createSVGPathSegLinetoHorizontalAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -655,10 +674,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -669,6 +686,9 @@
       },
       "createSVGPathSegLinetoHorizontalRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -703,10 +723,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -717,6 +735,9 @@
       },
       "createSVGPathSegLinetoRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -751,10 +772,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -765,6 +784,9 @@
       },
       "createSVGPathSegLinetoVerticalAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -799,10 +821,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -813,6 +833,9 @@
       },
       "createSVGPathSegLinetoVerticalRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -847,10 +870,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -861,6 +882,9 @@
       },
       "createSVGPathSegMovetoAbs": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -895,10 +919,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -909,6 +931,9 @@
       },
       "createSVGPathSegMovetoRel": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -943,10 +968,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "48"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -955,8 +978,46 @@
           }
         }
       },
+      "getPathData": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathData",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathData__getPathData",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "137"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "getPathSegAtLength": {
         "__compat": {
+          "tags": [
+            "web-features:svg-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -967,22 +1028,10 @@
               "version_added": "12",
               "version_removed": "79"
             },
-            "firefox": [
-              {
-                "version_added": "97",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "dom.svg.pathSeg.enabled",
-                    "value_to_set": "true"
-                  }
-                ]
-              },
-              {
-                "version_added": "1.5",
-                "version_removed": "97"
-              }
-            ],
+            "firefox": {
+              "version_added": "1.5",
+              "version_removed": "97"
+            },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "9"
@@ -1003,15 +1052,188 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37",
-              "version_removed": "62"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": true
+          }
+        }
+      },
+      "getPathSegmentAtLength": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathSegmentAtLength",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathElement__getPathSegmentAtLength",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "137"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "getPointAtLength": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPointAtLength",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathElement__getPointAtLength",
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "1.5"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "3"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "getTotalLength": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/getTotalLength",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathElement__getTotalLength",
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "1.5"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "3"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "pathLength": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/pathLength",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathElement__pathLength",
+          "support": {
+            "chrome": {
+              "version_added": "1"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "1.5"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "3"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "setPathData": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGPathElement/setPathData",
+          "spec_url": "https://svgwg.org/specs/paths/#__svg__SVGPathData__setPathData",
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "137"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
           }
         }
       }

@@ -2,15 +2,28 @@
   "api": {
     "WebTransportError": {
       "__compat": {
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransportError",
         "spec_url": "https://w3c.github.io/webtransport/#webtransporterror",
+        "tags": [
+          "web-features:webtransport"
+        ],
         "support": {
           "chrome": {
             "version_added": "97"
           },
           "chrome_android": "mirror",
+          "deno": {
+            "version_added": "2.2",
+            "flags": [
+              {
+                "type": "runtime_flag",
+                "name": "--unstable-net"
+              }
+            ]
+          },
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "114"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -24,26 +37,40 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "WebTransportError": {
         "__compat": {
-          "description": "<code>WebTransportError()</code> constructor",
+          "description": "`WebTransportError()` constructor",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransportError/WebTransportError",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransporterror-webtransporterror",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "114"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -57,10 +84,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -68,15 +96,28 @@
       },
       "source": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransportError/source",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransporterror-source",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "114"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -90,10 +131,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -101,15 +143,28 @@
       },
       "streamErrorCode": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransportError/streamErrorCode",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "114"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -123,10 +178,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

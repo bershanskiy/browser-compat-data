@@ -3,12 +3,15 @@
     "selectors": {
       "future": {
         "__compat": {
-          "description": "<code>:future</code>",
+          "description": "`:future`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:future",
-          "spec_url": "https://w3c.github.io/csswg-drafts/selectors/#the-future-pseudo",
+          "spec_url": "https://drafts.csswg.org/selectors/#the-future-pseudo",
+          "tags": [
+            "web-features:time-relative-selectors"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "23"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -27,10 +30,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

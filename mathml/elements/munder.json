@@ -3,19 +3,14 @@
     "elements": {
       "munder": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/munder",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/munder",
           "spec_url": "https://w3c.github.io/mathml-core/#underscripts-and-overscripts-munder-mover-munderover",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
-              "version_added": "84",
-              "impl_url": "https://crrev.com/c/2119538",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "#enable-experimental-web-platform-features",
-                  "value_to_set": "Enabled"
-                }
-              ]
+              "version_added": "109"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -34,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -44,16 +40,13 @@
         },
         "accentunder": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#dfn-accentunder",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": "87",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "109"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -72,7 +65,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

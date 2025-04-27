@@ -3,8 +3,10 @@ __enumerating__*/
 .idea
 *.log
 /node_modules/
-build/
+/build/
+!/scripts/build/
 yarn.lock
+.eslintcache
 .nyc_output/
 coverage.lcov
 coverage/

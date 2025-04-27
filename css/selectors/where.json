@@ -3,9 +3,12 @@
     "selectors": {
       "where": {
         "__compat": {
-          "description": "<code>:where()</code>",
+          "description": "`:where()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:where",
-          "spec_url": "https://w3c.github.io/csswg-drafts/selectors/#zero-matches",
+          "spec_url": "https://drafts.csswg.org/selectors/#zero-matches",
+          "tags": [
+            "web-features:where"
+          ],
           "support": {
             "chrome": {
               "version_added": "88"
@@ -27,7 +30,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -38,7 +42,10 @@
         "forgiving_selector_list": {
           "__compat": {
             "description": "Support for forgiving selector list",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:where#Forgiving_Selector_Parsing",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:where#forgiving_selector_parsing",
+            "tags": [
+              "web-features:where"
+            ],
             "support": {
               "chrome": {
                 "version_added": "88"
@@ -60,7 +67,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

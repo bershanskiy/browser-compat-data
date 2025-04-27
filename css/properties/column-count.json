@@ -4,7 +4,10 @@
       "column-count": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-count",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-multicol/#cc",
+          "spec_url": "https://drafts.csswg.org/css-multicol/#cc",
+          "tags": [
+            "web-features:multi-column"
+          ],
           "support": {
             "chrome": [
               {
@@ -33,41 +36,16 @@
                 "prefix": "-moz-",
                 "version_added": "1.5",
                 "version_removed": "74",
-                "notes": "Before version 37, multiple columns didn't work with <code>display: table-caption</code> elements."
+                "notes": "Before version 37, multiple columns didn't work with `display: table-caption` elements."
               }
             ],
-            "firefox_android": [
-              {
-                "version_added": "52"
-              },
-              {
-                "prefix": "-moz-",
-                "version_added": "4",
-                "notes": "Before version 37, multiple columns didn't work with <code>display: table-caption</code> elements."
-              }
-            ],
+            "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
             "oculus": "mirror",
-            "opera": [
-              {
-                "version_added": "11.1"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "15"
-              }
-            ],
-            "opera_android": [
-              {
-                "version_added": "11.1"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "14"
-              }
-            ],
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": [
               {
                 "version_added": "9"
@@ -77,30 +55,54 @@
                 "version_added": "3"
               }
             ],
-            "safari_ios": [
-              {
-                "version_added": "9"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "1"
-              }
-            ],
+            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": [
-              {
-                "version_added": "50"
-              },
-              {
-                "prefix": "-webkit-",
-                "version_added": "≤37"
-              }
-            ]
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "auto": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-multicol/#valdef-column-count-auto",
+            "tags": [
+              "web-features:multi-column"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1.5"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "3"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       }

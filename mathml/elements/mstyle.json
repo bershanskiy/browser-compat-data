@@ -3,49 +3,29 @@
     "elements": {
       "mstyle": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
           "spec_url": "https://w3c.github.io/mathml-core/#style-change-mstyle",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
-            "chrome": [
-              {
-                "version_added": "88",
-                "impl_url": "https://crrev.com/c/1908533",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
-              },
-              {
-                "version_added": "80",
-                "partial_implementation": true,
-                "impl_url": "https://crrev.com/c/1908533",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ],
-                "notes": "Only basic support with attributes <code>dir</code>, <code>mathbackground</code>, <code>mathcolor</code> and <code>mathsize</code>."
-              }
-            ],
+            "chrome": {
+              "version_added": "109"
+            },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": [
               {
                 "version_added": "6",
                 "notes": [
-                  "In Firefox 29, accepted attributes have been restricted to those actually used in practice: <code>id</code>, <code>class</code>, <code>style</code>, <code>href</code>, <code>mathcolor</code>, <code>mathbackground</code>, <code>scriptlevel</code>, <code>displaystyle</code>, <code>scriptsizemultiplier</code>, <code>scriptminsize</code>, <code>dir</code>, <code>mathsize</code>, <code>mathvariant</code>, <code>fontfamily</code>, <code>fontweight</code>, <code>fontstyle</code>, <code>fontsize</code>, <code>color</code>, <code>background</code>.",
-                  "In Firefox 103, attributes <code>scriptsizemultiplier</code> and <code>scriptminsize</code> have been removed."
+                  "In Firefox 29, accepted attributes have been restricted to those actually used in practice: `id`, `class`, `style`, `href`, `mathcolor`, `mathbackground`, `scriptlevel`, `displaystyle`, `scriptsizemultiplier`, `scriptminsize`, `dir`, `mathsize`, `mathvariant`, `fontfamily`, `fontweight`, `fontstyle`, `fontsize`, `color`, `background`.",
+                  "In Firefox 103, attributes `scriptsizemultiplier` and `scriptminsize` have been removed."
                 ]
               },
               {
                 "version_added": "1",
                 "partial_implementation": true,
-                "notes": "Attributes <code>bevelled</code>, <code>notation</code>, <code>open</code>, <code>close</code>, <code>separators</code>, <code>accent</code>, <code>accentunder</code>, <code>selection</code>, <code>mathvariant</code> are not supported."
+                "notes": "Attributes `bevelled`, `notation`, `open`, `close`, `separators`, `accent`, `accentunder`, `selection`, `mathvariant` are not supported."
               }
             ],
             "firefox_android": "mirror",
@@ -60,7 +40,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -70,11 +51,10 @@
         },
         "background": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-background",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
             "support": {
               "chrome": {
-                "version_added": "24",
-                "version_removed": "25"
+                "version_added": false
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -94,7 +74,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -105,11 +86,10 @@
         },
         "color": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-color",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
             "support": {
               "chrome": {
-                "version_added": "24",
-                "version_removed": "25"
+                "version_added": false
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -129,7 +109,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -140,11 +121,10 @@
         },
         "fontsize": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-fontsize",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
             "support": {
               "chrome": {
-                "version_added": "24",
-                "version_removed": "25"
+                "version_added": false
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -164,7 +144,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -175,11 +156,10 @@
         },
         "fontstyle": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-fontstyle",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
             "support": {
               "chrome": {
-                "version_added": "24",
-                "version_removed": "25"
+                "version_added": false
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -199,7 +179,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -210,11 +191,10 @@
         },
         "fontweight": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-fontweight",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle",
             "support": {
               "chrome": {
-                "version_added": "24",
-                "version_removed": "25"
+                "version_added": false
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -234,77 +214,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": false,
-              "deprecated": true
-            }
-          }
-        },
-        "scriptminsize": {
-          "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-scriptminsize",
-            "support": {
-              "chrome": {
-                "version_added": false
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": "1",
-                "version_removed": "103",
-                "impl_url": "https://bugzil.la/1772697"
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": false,
-              "deprecated": true
-            }
-          }
-        },
-        "scriptsizemultiplier": {
-          "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mstyle#attr-scriptsizemultiplier",
-            "support": {
-              "chrome": {
-                "version_added": false
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": "1",
-                "version_removed": "103",
-                "impl_url": "https://bugzil.la/1772697"
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming",
         "spec_url": "https://w3c.github.io/resource-timing/#resources-included-in-the-performanceresourcetiming-interface",
+        "tags": [
+          "web-features:resource-timing"
+        ],
         "support": {
           "chrome": {
             "version_added": "29"
@@ -13,12 +16,28 @@
             "version_added": "12"
           },
           "firefox": {
-            "version_added": "31"
+            "version_added": "35"
           },
           "firefox_android": "mirror",
           "ie": {
             "version_added": "10"
           },
+          "nodejs": [
+            {
+              "version_added": "19.0.0"
+            },
+            {
+              "version_added": "18.2.0",
+              "partial_implementation": true,
+              "notes": "Available as a part of the `perf_hooks` module."
+            },
+            {
+              "version_added": "16.17.0",
+              "version_removed": "17.0.0",
+              "partial_implementation": true,
+              "notes": "Available as a part of the `perf_hooks` module."
+            }
+          ],
           "oculus": "mirror",
           "opera": "mirror",
           "opera_android": "mirror",
@@ -27,7 +46,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,6 +58,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -53,6 +76,15 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": {
               "version_added": "32"
@@ -67,7 +99,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,6 +113,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/connectEnd",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-connectend",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -89,12 +125,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": {
               "version_added": "32"
@@ -107,7 +152,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -120,6 +166,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/connectStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-connectstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -129,12 +178,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": {
               "version_added": "32"
@@ -147,10 +205,52 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "contentType": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/contentType",
+          "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-contenttype",
+          "tags": [
+            "web-features:resource-timing"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "129"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -160,6 +260,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/decodedBodySize",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-decodedbodysize",
+          "tags": [
+            "web-features:resource-size"
+          ],
           "support": {
             "chrome": {
               "version_added": "54"
@@ -175,15 +278,25 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -192,10 +305,95 @@
           }
         }
       },
+      "deliveryType": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/deliveryType",
+          "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-deliverytype",
+          "tags": [
+            "web-features:resource-timing"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "117"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": "22.2.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "navigational-prefetch": {
+          "__compat": {
+            "description": "`deliveryType=\"navigational-prefetch\"`",
+            "spec_url": "https://wicg.github.io/nav-speculation/prefetch.html#ref-for-navigation-params-delivery-type",
+            "tags": [
+              "web-features:link-rel-prefetch"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "117"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      },
       "domainLookupEnd": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/domainLookupEnd",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-domainlookupend",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -205,12 +403,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -219,7 +426,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -232,6 +440,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/domainLookupStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-domainlookupstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -241,12 +452,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -255,7 +475,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -268,6 +489,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/encodedBodySize",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-encodedbodysize",
+          "tags": [
+            "web-features:resource-size"
+          ],
           "support": {
             "chrome": {
               "version_added": "54"
@@ -283,15 +507,25 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -304,6 +538,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/fetchStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-fetchstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -313,12 +550,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -327,10 +573,89 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "finalResponseHeadersStart": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/finalResponseHeadersStart",
+          "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-finalresponseheadersstart",
+          "support": {
+            "chrome": {
+              "version_added": "133"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1811291"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "firstInterimResponseStart": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/firstInterimResponseStart",
+          "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-firstinterimresponsestart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "115"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1811291"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -340,6 +665,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/initiatorType",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-initiatortype",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -349,12 +677,22 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.6.0",
+                "notes": "Since v18.2.0, the value can be returned by `toJSON()`, but can not accessed via property getter."
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -363,7 +701,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -376,6 +715,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/nextHopProtocol",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-nexthopprotocol",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -391,6 +733,15 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -399,7 +750,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -412,6 +764,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/redirectEnd",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-redirectend",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -421,12 +776,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -435,7 +799,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -448,6 +813,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/redirectStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-redirectstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -457,12 +825,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -471,7 +848,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -484,6 +862,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/renderBlockingStatus",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-renderblockingstatus",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "107"
@@ -497,6 +878,9 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": false
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -505,7 +889,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -518,6 +903,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/requestStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-requeststart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -527,12 +915,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -541,7 +938,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -554,6 +952,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/responseEnd",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-responseend",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -563,12 +964,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -577,7 +987,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -590,6 +1001,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/responseStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-responsestart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -599,12 +1013,21 @@
               "version_added": "12"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10"
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -613,7 +1036,49 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "responseStatus": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/responseStatus",
+          "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-responsestatus",
+          "tags": [
+            "web-features:resource-timing"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "109"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "129"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": "22.2.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -626,6 +1091,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-secureconnectionstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -635,12 +1103,21 @@
               "version_added": "18"
             },
             "firefox": {
-              "version_added": "31"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -649,7 +1126,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -662,6 +1140,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/serverTiming",
           "spec_url": "https://w3c.github.io/server-timing/#servertiming-attribute",
+          "tags": [
+            "web-features:server-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "65"
@@ -675,15 +1156,19 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": {
+              "version_added": false
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -696,21 +1181,33 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/toJSON",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-tojson",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
-              "version_added": "43"
+              "version_added": "45"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "16"
             },
             "firefox": {
-              "version_added": "34"
+              "version_added": "35"
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -719,7 +1216,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -732,6 +1230,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/transferSize",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize",
+          "tags": [
+            "web-features:resource-size"
+          ],
           "support": {
             "chrome": {
               "version_added": "54"
@@ -747,15 +1248,25 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -768,9 +1279,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/workerStart",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-workerstart",
+          "tags": [
+            "web-features:resource-timing"
+          ],
           "support": {
             "chrome": {
-              "version_added": "43"
+              "version_added": "46"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -783,6 +1297,15 @@
             "ie": {
               "version_added": false
             },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": {
               "version_added": "32"
@@ -795,7 +1318,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

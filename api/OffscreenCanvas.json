@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
         "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+        "tags": [
+          "web-features:offscreen-canvas"
+        ],
         "support": {
           "chrome": {
             "version_added": "69"
@@ -21,11 +24,12 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "16.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +39,12 @@
       },
       "OffscreenCanvas": {
         "__compat": {
-          "description": "<code>OffscreenCanvas()</code> constructor",
+          "description": "`OffscreenCanvas()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/OffscreenCanvas",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -55,11 +62,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -70,10 +78,14 @@
       },
       "contextlost_event": {
         "__compat": {
-          "description": "<code>contextlost</code> event",
+          "description": "`contextlost` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/contextlost_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-contextlost",
             "https://html.spec.whatwg.org/multipage/canvas.html#handler-offscreencanvas-oncontextlost"
+          ],
+          "tags": [
+            "web-features:canvas-context-lost"
           ],
           "support": {
             "chrome": {
@@ -82,7 +94,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "105"
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -96,7 +108,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -107,10 +120,14 @@
       },
       "contextrestored_event": {
         "__compat": {
-          "description": "<code>contextrestored</code> event",
+          "description": "`contextrestored` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/contextrestored_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
             "https://html.spec.whatwg.org/multipage/canvas.html#handler-offscreencanvas-oncontextrestored"
+          ],
+          "tags": [
+            "web-features:canvas-context-lost"
           ],
           "support": {
             "chrome": {
@@ -119,7 +136,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "105"
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -133,7 +150,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -146,16 +164,24 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/convertToBlob",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-converttoblob-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
-            "firefox": {
-              "version_added": "105",
-              "alternative_name": "toBlob"
-            },
+            "firefox": [
+              {
+                "version_added": "105"
+              },
+              {
+                "alternative_name": "toBlob",
+                "version_added": "105"
+              }
+            ],
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
@@ -164,11 +190,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -178,7 +205,10 @@
         },
         "option_type_parameter_webp": {
           "__compat": {
-            "description": "<code>option.type</code> parameter supports <code>\"image/webp\"</code>",
+            "description": "`option.type` parameter supports `\"image/webp\"`",
+            "tags": [
+              "web-features:offscreen-canvas"
+            ],
             "support": {
               "chrome": {
                 "version_added": "69"
@@ -200,9 +230,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": false
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -216,6 +245,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/getContext",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-getcontext-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -233,11 +265,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -247,7 +280,10 @@
         },
         "bitmaprenderer_context": {
           "__compat": {
-            "description": "<code>bitmaprenderer</code> context",
+            "description": "`bitmaprenderer` context",
+            "tags": [
+              "web-features:offscreen-canvas"
+            ],
             "support": {
               "chrome": {
                 "version_added": "76"
@@ -265,13 +301,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": false
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -282,7 +317,10 @@
         },
         "webgl_context": {
           "__compat": {
-            "description": "<code>webgl</code> context",
+            "description": "`webgl` context",
+            "tags": [
+              "web-features:offscreen-canvas"
+            ],
             "support": {
               "chrome": {
                 "version_added": "69"
@@ -300,13 +338,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": false
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -317,7 +354,10 @@
         },
         "webgl2_context": {
           "__compat": {
-            "description": "<code>webgl2</code> context",
+            "description": "`webgl2` context",
+            "tags": [
+              "web-features:offscreen-canvas"
+            ],
             "support": {
               "chrome": {
                 "version_added": "69"
@@ -335,13 +375,57 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "webgpu_context": {
+          "__compat": {
+            "description": "`webgpu` context",
+            "spec_url": "https://gpuweb.github.io/gpuweb/#canvas-getcontext",
+            "tags": [
+              "web-features:webgpu"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "113",
+                "notes": "Currently supported on ChromeOS, macOS, and Windows only."
+              },
+              "chrome_android": {
+                "version_added": "121"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "105",
+                "partial_implementation": true,
+                "notes": "Currently supported on Linux and Windows only."
+              },
+              "firefox_android": {
                 "version_added": false
-              }
+              },
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -352,7 +436,10 @@
         },
         "2d_context": {
           "__compat": {
-            "description": "<code>2d</code> context",
+            "description": "`2d` context",
+            "tags": [
+              "web-features:offscreen-canvas"
+            ],
             "support": {
               "chrome": {
                 "version_added": "69"
@@ -370,13 +457,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": false
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -390,6 +476,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/height",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-height-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -407,11 +496,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -424,6 +514,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/transferToImageBitmap",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-transfertoimagebitmap-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -441,11 +534,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -458,6 +552,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/width",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-width-dev",
+          "tags": [
+            "web-features:offscreen-canvas"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -475,11 +572,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

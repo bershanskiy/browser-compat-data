@@ -3,9 +3,15 @@
     "selectors": {
       "placeholder-shown": {
         "__compat": {
-          "description": "<code>:placeholder-shown</code>",
+          "description": "`:placeholder-shown`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:placeholder-shown",
-          "spec_url": "https://w3c.github.io/csswg-drafts/selectors/#placeholder",
+          "spec_url": [
+            "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-placeholder-shown",
+            "https://drafts.csswg.org/selectors/#placeholder-shown-pseudo"
+          ],
+          "tags": [
+            "web-features:placeholder-shown"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -24,8 +30,8 @@
             ],
             "firefox_android": "mirror",
             "ie": {
-              "version_added": "10",
-              "alternative_name": ":-ms-input-placeholder"
+              "alternative_name": ":-ms-input-placeholder",
+              "version_added": "10"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -35,7 +41,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -45,7 +52,10 @@
         },
         "non_text_types": {
           "__compat": {
-            "description": "Support on non-<code>type=&quot;text&quot;</code> elements (such as <code>type=&quot;number&quot;</code> or <code>type=&quot;time&quot;</code>)",
+            "description": "Support on non-`type=&quot;text&quot;` elements (such as `type=&quot;number&quot;` or `type=&quot;time&quot;`)",
+            "tags": [
+              "web-features:placeholder-shown"
+            ],
             "support": {
               "chrome": {
                 "version_added": "47"
@@ -67,7 +77,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

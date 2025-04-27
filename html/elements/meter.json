@@ -3,15 +3,18 @@
     "elements": {
       "meter": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/meter",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/meter",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element",
+          "tags": [
+            "web-features:meter"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
             },
             "chrome_android": "mirror",
             "edge": {
-              "version_added": "≤18"
+              "version_added": "13"
             },
             "firefox": {
               "version_added": "16"
@@ -36,7 +39,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -44,57 +48,19 @@
             "deprecated": false
           }
         },
-        "form": {
-          "__compat": {
-            "support": {
-              "chrome": {
-                "version_added": "6"
-              },
-              "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤18"
-              },
-              "firefox": {
-                "version_added": "16"
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": {
-                "version_added": "11"
-              },
-              "opera_android": {
-                "version_added": "11"
-              },
-              "safari": {
-                "version_added": "6"
-              },
-              "safari_ios": {
-                "version_added": "10.3"
-              },
-              "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": false
-              }
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": true,
-              "deprecated": false
-            }
-          }
-        },
         "high": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -119,7 +85,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -130,13 +97,17 @@
         },
         "low": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -161,7 +132,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -172,15 +144,18 @@
         },
         "max": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Attributes/max",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/max",
             "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -205,7 +180,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -216,15 +192,18 @@
         },
         "min": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Attributes/min",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/min",
             "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -249,7 +228,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -260,13 +240,17 @@
         },
         "optimum": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -291,7 +275,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -302,13 +287,17 @@
         },
         "value": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value",
+            "tags": [
+              "web-features:meter"
+            ],
             "support": {
               "chrome": {
                 "version_added": "6"
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤18"
+                "version_added": "13"
               },
               "firefox": {
                 "version_added": "16"
@@ -333,7 +322,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

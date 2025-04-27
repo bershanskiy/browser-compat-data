@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushEvent",
         "spec_url": "https://w3c.github.io/push-api/#pushevent-interface",
+        "tags": [
+          "web-features:push"
+        ],
         "support": {
           "chrome": {
             "version_added": "42"
@@ -30,16 +33,19 @@
           },
           "safari": {
             "version_added": "16",
-            "partial_implementation": true,
-            "notes": "Supported on macOS 13 and later"
+            "notes": "Notifications are supported on macOS Ventura and later."
           },
           "safari_ios": {
-            "version_added": false
+            "version_added": "16.4",
+            "notes": "Notifications are supported in web apps saved to the home screen."
           },
           "samsunginternet_android": "mirror",
           "webview_android": {
+            "version_added": false
+          },
+          "webview_ios": {
             "version_added": false,
-            "notes": "See <a href='https://crbug.com/421921'>bug 421921</a>."
+            "notes": "Notifications are supported in web apps saved to the home screen."
           }
         },
         "status": {
@@ -50,9 +56,12 @@
       },
       "PushEvent": {
         "__compat": {
-          "description": "<code>PushEvent()</code> constructor",
+          "description": "`PushEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushEvent/PushEvent",
           "spec_url": "https://w3c.github.io/push-api/#dom-pushevent-constructor",
+          "tags": [
+            "web-features:push"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -79,15 +88,19 @@
             },
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
+            },
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {
@@ -101,6 +114,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushEvent/data",
           "spec_url": "https://w3c.github.io/push-api/#dom-pushevent-data",
+          "tags": [
+            "web-features:push"
+          ],
           "support": {
             "chrome": {
               "version_added": "50"
@@ -123,15 +139,19 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
+            },
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {

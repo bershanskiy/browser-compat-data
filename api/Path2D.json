@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Path2D",
         "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#path2d-objects",
+        "tags": [
+          "web-features:canvas-2d"
+        ],
         "support": {
           "chrome": {
             "version_added": "36"
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,9 +41,12 @@
       },
       "Path2D": {
         "__compat": {
-          "description": "<code>Path2D()</code> constructor",
+          "description": "`Path2D()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Path2D/Path2D",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -47,7 +54,7 @@
             "chrome_android": "mirror",
             "edge": {
               "version_added": "14",
-              "notes": "Before Edge 79, the constructor for <code>Path2D</code> objects does not support invocation with a string consisting of SVG path data."
+              "notes": "Before Edge 79, the constructor for `Path2D` objects does not support invocation with a string consisting of SVG path data."
             },
             "firefox": {
               "version_added": "31"
@@ -64,7 +71,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -77,6 +85,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Path2D/addPath",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-addpath-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "68"
@@ -98,7 +109,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -109,7 +121,11 @@
       },
       "arc": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/arc",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-arc-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -133,7 +149,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -144,7 +161,11 @@
       },
       "arcTo": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/arcTo",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-arcto-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -168,7 +189,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -179,7 +201,11 @@
       },
       "bezierCurveTo": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-beziercurveto-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -203,7 +229,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -214,7 +241,11 @@
       },
       "closePath": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/closePath",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-closepath-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -238,7 +269,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -249,7 +281,11 @@
       },
       "ellipse": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/ellipse",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ellipse-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -273,7 +309,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -284,7 +321,11 @@
       },
       "lineTo": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineTo",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-lineto-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -308,7 +349,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -319,7 +361,11 @@
       },
       "moveTo": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/moveTo",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-moveto-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -343,7 +389,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -354,7 +401,11 @@
       },
       "quadraticCurveTo": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-quadraticcurveto-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -378,7 +429,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -389,7 +441,11 @@
       },
       "rect": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/rect",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-rect-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "36"
@@ -413,7 +469,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -424,7 +481,11 @@
       },
       "roundRect": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/roundRect",
           "spec_url": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect-dev",
+          "tags": [
+            "web-features:canvas-2d"
+          ],
           "support": {
             "chrome": {
               "version_added": "99"
@@ -432,7 +493,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "112"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -446,7 +507,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

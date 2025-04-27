@@ -3,7 +3,10 @@
     "ResizeObserverEntry": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry",
-        "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#resize-observer-entry-interface",
+        "spec_url": "https://drafts.csswg.org/resize-observer/#resize-observer-entry-interface",
+        "tags": [
+          "web-features:resize-observer"
+        ],
         "support": {
           "chrome": {
             "version_added": "64"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -36,7 +40,10 @@
       "borderBoxSize": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/borderBoxSize",
-          "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#dom-resizeobserverentry-borderboxsize",
+          "spec_url": "https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-borderboxsize",
+          "tags": [
+            "web-features:resize-observer"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -66,7 +73,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -78,7 +86,10 @@
       "contentBoxSize": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentBoxSize",
-          "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#dom-resizeobserverentry-contentboxsize",
+          "spec_url": "https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-contentboxsize",
+          "tags": [
+            "web-features:resize-observer"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -108,7 +119,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -120,7 +132,10 @@
       "contentRect": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentRect",
-          "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#dom-resizeobserverentry-contentrect",
+          "spec_url": "https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-contentrect",
+          "tags": [
+            "web-features:resize-observer"
+          ],
           "support": {
             "chrome": {
               "version_added": "64"
@@ -142,7 +157,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -153,7 +169,11 @@
       },
       "devicePixelContentBoxSize": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#dom-resizeobserverentry-devicepixelcontentboxsize",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/devicePixelContentBoxSize",
+          "spec_url": "https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-devicepixelcontentboxsize",
+          "tags": [
+            "web-features:resize-observer"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -175,7 +195,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -187,7 +208,10 @@
       "target": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/target",
-          "spec_url": "https://w3c.github.io/csswg-drafts/resize-observer/#dom-resizeobserverentry-target",
+          "spec_url": "https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-target",
+          "tags": [
+            "web-features:resize-observer"
+          ],
           "support": {
             "chrome": {
               "version_added": "64"
@@ -209,7 +233,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -4,15 +4,18 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange",
         "spec_url": "https://w3c.github.io/IndexedDB/#keyrange",
+        "tags": [
+          "web-features:indexeddb"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "24"
             },
             {
+              "prefix": "webkit",
               "version_added": "23",
-              "version_removed": "57",
-              "prefix": "webkit"
+              "version_removed": "57"
             }
           ],
           "chrome_android": "mirror",
@@ -24,9 +27,9 @@
               "version_added": "16"
             },
             {
+              "prefix": "moz",
               "version_added": "10",
-              "version_removed": "16",
-              "prefix": "moz"
+              "version_removed": "16"
             }
           ],
           "firefox_android": {
@@ -42,9 +45,9 @@
               "version_added": "14"
             },
             {
+              "prefix": "webkit",
               "version_added": "14",
-              "version_removed": "44",
-              "prefix": "webkit"
+              "version_removed": "44"
             }
           ],
           "safari": {
@@ -52,16 +55,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": [
-            {
-              "version_added": "4.4"
-            },
-            {
-              "version_added": "≤37",
-              "version_removed": "57",
-              "prefix": "webkit"
-            }
-          ]
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -72,6 +67,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -95,7 +93,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -104,10 +103,14 @@
           }
         }
       },
-      "bound": {
+      "bound_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound",
+          "description": "`bound()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound_static",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-bound①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -133,7 +136,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -146,6 +150,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-includes①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "52"
@@ -167,7 +174,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -180,6 +188,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-lower①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -205,7 +216,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -214,10 +226,14 @@
           }
         }
       },
-      "lowerBound": {
+      "lowerBound_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound",
+          "description": "`lowerBound()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound_static",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-lowerbound①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -243,7 +259,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -256,6 +273,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerOpen",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-loweropen①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -281,7 +301,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -290,10 +311,14 @@
           }
         }
       },
-      "only": {
+      "only_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only",
+          "description": "`lowerBound()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only_static",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-only①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -319,7 +344,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -332,6 +358,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upper①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -357,7 +386,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -366,10 +396,14 @@
           }
         }
       },
-      "upperBound": {
+      "upperBound_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound",
+          "description": "`upperBound()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound_static",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upperbound①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -395,7 +429,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -408,6 +443,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen",
           "spec_url": "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upperopen①",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -433,7 +471,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

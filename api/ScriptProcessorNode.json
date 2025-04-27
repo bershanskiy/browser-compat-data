@@ -5,7 +5,7 @@
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode",
         "support": {
           "chrome": {
-            "version_added": "14"
+            "version_added": "24"
           },
           "chrome_android": "mirror",
           "edge": {
@@ -22,13 +22,12 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": "6"
+            "version_added": "7"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,11 +37,11 @@
       },
       "audioprocess_event": {
         "__compat": {
-          "description": "<code>audioprocess</code> event",
+          "description": "`audioprocess` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/audioprocess_event",
           "support": {
             "chrome": {
-              "version_added": "14"
+              "version_added": "24"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -59,13 +58,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "6"
+              "version_added": "7"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,7 +78,7 @@
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-scriptprocessornode-buffersize",
           "support": {
             "chrome": {
-              "version_added": "14"
+              "version_added": "24"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -97,13 +95,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "6"
+              "version_added": "7"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

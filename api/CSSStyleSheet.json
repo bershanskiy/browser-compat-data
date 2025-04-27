@@ -3,7 +3,10 @@
     "CSSStyleSheet": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet",
-        "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#the-cssstylesheet-interface",
+        "spec_url": "https://drafts.csswg.org/cssom/#the-cssstylesheet-interface",
+        "tags": [
+          "web-features:css-object-model"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -31,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,9 +45,12 @@
       },
       "CSSStyleSheet": {
         "__compat": {
-          "description": "<code>CSSStyleSheet()</code> constructor",
+          "description": "`CSSStyleSheet()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/CSSStyleSheet",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-cssstylesheet",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssstylesheet",
+          "tags": [
+            "web-features:constructed-stylesheets"
+          ],
           "support": {
             "chrome": {
               "version_added": "73"
@@ -58,33 +65,67 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": "53"
-            },
-            "opera_android": {
-              "version_added": "47"
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": "9.0"
-            },
-            "webview_android": "mirror"
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
+        },
+        "options_baseURL_parameter": {
+          "__compat": {
+            "description": "`options.baseURL` parameter",
+            "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheetinit-baseurl",
+            "tags": [
+              "web-features:constructed-stylesheets"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": false,
+                "impl_url": "https://crbug.com/40207149"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "101"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "16.4"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
         }
       },
       "addRule": {
         "__compat": {
-          "description": "<code>addRule()</code>",
+          "description": "`addRule()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/addRule",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-addrule",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-addrule",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -108,7 +149,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -120,7 +162,10 @@
       "cssRules": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/cssRules",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-cssrules",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssrules",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -148,7 +193,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -159,9 +205,12 @@
       },
       "deleteRule": {
         "__compat": {
-          "description": "<code>deleteRule()</code>",
+          "description": "`deleteRule()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/deleteRule",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-deleterule",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-deleterule",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -189,7 +238,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -200,9 +250,12 @@
       },
       "insertRule": {
         "__compat": {
-          "description": "<code>insertRule()</code>",
+          "description": "`insertRule()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/insertRule",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-insertrule",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -230,7 +283,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -240,7 +294,10 @@
         },
         "index_parameter_optional": {
           "__compat": {
-            "description": "<code>index</code> parameter is optional",
+            "description": "`index` parameter is optional",
+            "tags": [
+              "web-features:css-object-model"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -264,7 +321,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -277,7 +335,10 @@
       "ownerRule": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/ownerRule",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-ownerrule",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-ownerrule",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -305,7 +366,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -316,9 +378,9 @@
       },
       "removeRule": {
         "__compat": {
-          "description": "<code>removeRule()</code>",
+          "description": "`removeRule()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/removeRule",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-removerule",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-removerule",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -344,7 +406,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -356,7 +419,10 @@
       "replace": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/replace",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-replace",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replace",
+          "tags": [
+            "web-features:constructed-stylesheets"
+          ],
           "support": {
             "chrome": {
               "version_added": "73"
@@ -374,11 +440,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -390,7 +457,10 @@
       "replaceSync": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/replaceSync",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-replacesync",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replacesync",
+          "tags": [
+            "web-features:constructed-stylesheets"
+          ],
           "support": {
             "chrome": {
               "version_added": "73"
@@ -408,11 +478,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -424,7 +495,7 @@
       "rules": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/rules",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom/#dom-cssstylesheet-rules",
+          "spec_url": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-rules",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -448,7 +519,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

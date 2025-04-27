@@ -3,6 +3,9 @@
     "CSSValueList": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSValueList",
+        "tags": [
+          "web-features:css-object-model-discouraged"
+        ],
         "support": {
           "chrome": {
             "version_added": false
@@ -27,7 +30,8 @@
             "version_added": "1"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,6 +42,9 @@
       "item": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSValueList/item",
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -62,7 +69,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -74,6 +82,9 @@
       "length": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSValueList/length",
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -96,7 +107,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody",
         "spec_url": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody",
+        "tags": [
+          "web-features:reporting"
+        ],
         "support": {
           "chrome": {
             "version_added": "74"
@@ -11,7 +14,14 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "130",
+            "flags": [
+              {
+                "type": "preference",
+                "name": "dom.reporting.enabled",
+                "value_to_set": "true"
+              }
+            ]
           },
           "firefox_android": "mirror",
           "ie": {
@@ -25,13 +35,14 @@
             "version_added": "48"
           },
           "safari": {
-            "version_added": false
+            "version_added": "18.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": {
             "version_added": "10.0"
           },
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,6 +54,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/blockedURL",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-blockedurl",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -64,13 +78,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -83,6 +98,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/columnNumber",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-columnnumber",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -104,13 +122,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -123,6 +142,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/disposition",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -144,13 +166,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -163,6 +186,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/documentURL",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -184,13 +210,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -203,6 +230,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/effectiveDirective",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -224,13 +254,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -243,6 +274,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/lineNumber",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -264,13 +298,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -283,6 +318,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/originalPolicy",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -304,13 +342,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -323,6 +362,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/referrer",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -344,13 +386,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -363,6 +406,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/sample",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -384,13 +430,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -403,6 +450,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/sourceFile",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sourcefile",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -424,13 +474,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -443,6 +494,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/statusCode",
           "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -464,13 +518,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -481,9 +536,14 @@
       },
       "toJSON": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/toJSON",
+          "spec_url": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-tojson",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
-              "version_added": "74"
+              "version_added": "80"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -502,13 +562,14 @@
               "version_added": "48"
             },
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "10.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

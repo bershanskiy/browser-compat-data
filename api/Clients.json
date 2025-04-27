@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Clients",
         "spec_url": "https://w3c.github.io/ServiceWorker/#clients-interface",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
@@ -27,7 +30,10 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -39,6 +45,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Clients/claim",
           "spec_url": "https://w3c.github.io/ServiceWorker/#clients-claim",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -62,7 +71,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -75,6 +87,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Clients/get",
           "spec_url": "https://w3c.github.io/ServiceWorker/#clients-get",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "51"
@@ -98,7 +113,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -111,15 +129,18 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Clients/matchAll",
           "spec_url": "https://w3c.github.io/ServiceWorker/#clients-matchall",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "42",
-              "notes": "<code>Client</code> objects returned in most recent focus order."
+              "notes": "`Client` objects returned in most recent focus order."
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "17",
-              "notes": "<code>Client</code> objects returned in most recent focus order."
+              "notes": "`Client` objects returned in most recent focus order."
             },
             "firefox": [
               {
@@ -129,7 +150,7 @@
                 "version_added": "44",
                 "version_removed": "54",
                 "partial_implementation": true,
-                "notes": "Before Firefox 54, <code>Client</code> objects were not returned in the most recent focus order as required by the specification."
+                "notes": "Before Firefox 54, `Client` objects were not returned in the most recent focus order as required by the specification."
               }
             ],
             "firefox_android": "mirror",
@@ -148,7 +169,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -158,21 +182,23 @@
         },
         "options_includeUncontrolled_parameter": {
           "__compat": {
-            "description": "<code>options.includeUncontrolled</code> parameter",
+            "description": "`options.includeUncontrolled` parameter",
             "spec_url": "https://w3c.github.io/ServiceWorker/#dom-clientqueryoptions-includeuncontrolled",
+            "tags": [
+              "web-features:service-workers"
+            ],
             "support": {
               "chrome": {
-                "version_added": "47",
-                "notes": "<code>Client</code> objects returned in most recent focus order."
+                "version_added": "42",
+                "notes": "`Client` objects returned in most recent focus order."
               },
               "chrome_android": "mirror",
               "edge": {
-                "version_added": "≤79",
-                "notes": "<code>Client</code> objects returned in most recent focus order."
+                "version_added": "17",
+                "notes": "`Client` objects returned in most recent focus order."
               },
               "firefox": {
-                "version_added": "45",
-                "notes": "<code>includeUncontrolled</code> support."
+                "version_added": "44"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -190,7 +216,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": {
+                "version_added": false
+              }
             },
             "status": {
               "experimental": false,
@@ -204,6 +233,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Clients/openWindow",
           "spec_url": "https://w3c.github.io/ServiceWorker/#clients-openwindow",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40",
@@ -235,7 +267,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,

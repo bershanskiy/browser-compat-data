@@ -3,15 +3,16 @@
     "CSSTransition": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSTransition",
-        "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions-2/#the-CSSTransition-interface",
+        "spec_url": "https://drafts.csswg.org/css-transitions-2/#the-CSSTransition-interface",
+        "tags": [
+          "web-features:transitions"
+        ],
         "support": {
           "chrome": {
-            "version_added": "78"
-          },
-          "chrome_android": "mirror",
-          "edge": {
             "version_added": "84"
           },
+          "chrome_android": "mirror",
+          "edge": "mirror",
           "firefox": {
             "version_added": "75"
           },
@@ -27,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,7 +40,10 @@
       "transitionProperty": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CSSTransition/transitionProperty",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions-2/#dom-csstransition-transitionproperty",
+          "spec_url": "https://drafts.csswg.org/css-transitions-2/#dom-csstransition-transitionproperty",
+          "tags": [
+            "web-features:transitions"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -60,7 +65,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

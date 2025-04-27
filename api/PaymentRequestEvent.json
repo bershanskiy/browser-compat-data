@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent",
         "spec_url": "https://w3c.github.io/payment-handler/#the-paymentrequestevent",
+        "tags": [
+          "web-features:payment-handler"
+        ],
         "support": {
           "chrome": {
             "version_added": "70"
@@ -11,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1465682"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -27,7 +31,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": false
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -37,9 +42,12 @@
       },
       "PaymentRequestEvent": {
         "__compat": {
-          "description": "<code>PaymentRequestEvent()</code> constructor",
+          "description": "`PaymentRequestEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/PaymentRequestEvent",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-constructor",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -63,7 +71,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -74,7 +83,11 @@
       },
       "changePaymentMethod": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/changePaymentMethod",
           "spec_url": "https://w3c.github.io/payment-handler/#changepaymentmethod-method",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "76"
@@ -98,7 +111,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -107,12 +121,15 @@
           }
         }
       },
-      "instrumentKey": {
+      "changeShippingAddress": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/instrumentKey",
+          "spec_url": "https://w3c.github.io/payment-handler/#changeshippingaddress-method",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
-              "version_added": "70"
+              "version_added": "80"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -133,12 +150,52 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "changeShippingOption": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/payment-handler/#changeshippingoption-method",
+          "tags": [
+            "web-features:payment-handler"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "80"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
           }
         }
       },
@@ -146,6 +203,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-methoddata",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -169,7 +229,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -182,6 +243,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/modifiers",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-modifiers",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -205,7 +269,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -216,9 +281,12 @@
       },
       "openWindow": {
         "__compat": {
-          "description": "<code>openWindow()</code>",
+          "description": "`openWindow()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/openWindow",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-openwindow",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -242,7 +310,47 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "paymentOptions": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/payment-handler/#paymentoptions-attribute",
+          "tags": [
+            "web-features:payment-handler"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "80"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -255,6 +363,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/paymentRequestId",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestid",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -278,7 +389,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -291,6 +403,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/paymentRequestOrigin",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestorigin",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -314,7 +429,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -325,9 +441,12 @@
       },
       "respondWith": {
         "__compat": {
-          "description": "<code>respondWith()</code",
+          "description": "`respondWith()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/respondWith",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-respondwith",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -351,7 +470,47 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "shippingOptions": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/payment-handler/#shippingoptions-attribute",
+          "tags": [
+            "web-features:payment-handler"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "80"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -364,6 +523,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/topOrigin",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-toporigin",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -387,7 +549,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -400,6 +563,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-total",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -423,7 +589,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

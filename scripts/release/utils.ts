@@ -1,17 +1,50 @@
 /* This file is a part of @mdn/browser-compat-data
  * See LICENSE file for more information. */
 
-import { execSync } from 'node:child_process';
+import {
+  execSync,
+  ExecSyncOptionsWithStringEncoding,
+  spawnSync,
+  SpawnSyncOptionsWithStringEncoding,
+} from 'node:child_process';
 
 /**
  * Execute a command
- *
- * @param {string} command The command to execute
- * @param {any} opts The options to pass to execSync
- * @returns {string} The output from the command
+ * @param command The command to execute
+ * @param opts The options to pass to execSync
+ * @returns The output from the command
  */
-export const exec = (command: string, opts?: any): string =>
-  execSync(command, { encoding: 'utf8', ...opts }).trim();
+export const exec = (
+  command: string,
+  opts?: ExecSyncOptionsWithStringEncoding,
+): string => execSync(command, { encoding: 'utf8', ...opts }).trim();
+
+/**
+ * Execute a command
+ * @param command The command to execute
+ * @param args The arguments to pass
+ * @param opts The options to pass to spawnSync
+ * @returns The output from the command
+ */
+export const spawn = (
+  command: string,
+  args: readonly string[],
+  opts?: SpawnSyncOptionsWithStringEncoding,
+): string => {
+  const result = spawnSync(command, args, { encoding: 'utf8', ...opts });
+
+  if (result.error) {
+    throw result.error;
+  }
+
+  if (result.status !== 0) {
+    throw new Error(
+      `The command '${command}' returned non-zero exit status ${result.status}: ${result.stderr}`,
+    );
+  }
+
+  return result.stdout.trim();
+};
 
 /**
  * Check for GitHub CLI and exit the program if it's not existent
@@ -46,18 +79,16 @@ export const requireWriteAccess = () => {
 
 /**
  * Run a query on the GitHub API using the GitHub CLI
- *
- * @param {string} endpoint The API endpoint to query
- * @returns {any} The response from the API
+ * @param endpoint The API endpoint to query
+ * @returns The response from the API
  */
 export const githubAPI = (endpoint: string): any =>
   JSON.parse(exec(`gh api /repos/mdn/browser-compat-data${endpoint}`));
 
 /**
  * Query pull requests
- *
- * @param {string} queryArgs The CLI arguments for the query
- * @returns {any} The response from the API
+ * @param queryArgs The CLI arguments for the query
+ * @returns The response from the API
  */
 export const queryPRs = (queryArgs: any): any => {
   const searchDetails = {
@@ -74,31 +105,37 @@ export const queryPRs = (queryArgs: any): any => {
 };
 
 /**
+ * Ensures main is fetched.
+ */
+export const fetchMain = (): void => {
+  exec('git fetch origin main');
+};
+
+/**
  * Get the latest Git tag
- *
- * @returns {string} The latest Git tag
+ * @returns The latest Git tag
  */
 export const getLatestTag = (): string =>
   exec('git describe --abbrev=0 --tags');
 
 /**
  * Get the date of a specified ref
- *
- * @param {string} ref The ref to check
- * @param {boolean} querySafe Format the string for HTML
- * @returns {string} The ref date
+ * @param ref The ref to check
+ * @param querySafe Format the string for HTML
+ * @returns The ref date
  */
 export const getRefDate = (ref: string, querySafe = false): string => {
   const rawDateString = exec(`git log -1 --format=%aI ${ref}`);
 
   if (querySafe) {
-    return rawDateString.replace('+', '%2B');
+    return rawDateString.replaceAll('+', '%2B');
   }
   return rawDateString;
 };
 
 /**
  * Wait for a key press
+ * @returns Once the key is pressed, return
  */
 export const keypress = async () => {
   process.stdin.setRawMode(true);

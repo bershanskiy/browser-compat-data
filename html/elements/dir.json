@@ -3,7 +3,7 @@
     "elements": {
       "dir": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/dir",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/dir",
           "spec_url": "https://html.spec.whatwg.org/multipage/obsolete.html#dir",
           "support": {
             "chrome": {
@@ -32,7 +32,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -69,7 +70,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

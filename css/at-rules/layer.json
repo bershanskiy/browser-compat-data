@@ -3,9 +3,12 @@
     "at-rules": {
       "layer": {
         "__compat": {
-          "description": "<code>@layer</code>",
+          "description": "`@layer`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@layer",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade-5/#layering",
+          "spec_url": "https://drafts.csswg.org/css-cascade-5/#layering",
+          "tags": [
+            "web-features:cascade-layers"
+          ],
           "support": {
             "chrome": {
               "version_added": "99"
@@ -27,7 +30,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

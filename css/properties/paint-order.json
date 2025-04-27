@@ -4,15 +4,23 @@
       "paint-order": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/paint-order",
-          "spec_url": "https://svgwg.org/svg2-draft/painting.html#PaintOrder",
+          "spec_url": "https://svgwg.org/svg2-draft/painting.html#PaintOrderProperty",
+          "tags": [
+            "web-features:paint-order"
+          ],
           "support": {
-            "chrome": {
-              "version_added": "35"
-            },
+            "chrome": [
+              {
+                "version_added": "123"
+              },
+              {
+                "version_added": "35",
+                "partial_implementation": true,
+                "notes": "Does not affect stroked HTML text, see [bug 41372165](https://crbug.com/41372165)"
+              }
+            ],
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "17"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": "60"
             },
@@ -23,12 +31,20 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "version_added": "8"
-            },
+            "safari": [
+              {
+                "version_added": "11"
+              },
+              {
+                "version_added": "8",
+                "partial_implementation": true,
+                "notes": "Does not affect stroked HTML text, see [bug 168601](https://webkit.org/b/168601)"
+              }
+            ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

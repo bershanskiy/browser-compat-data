@@ -4,6 +4,9 @@
       "global_keywords": {
         "__compat": {
           "description": "Global keywords",
+          "tags": [
+            "web-features:inherit-value"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -31,7 +34,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -42,7 +46,10 @@
         "inherit": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/inherit",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade/#inherit",
+            "spec_url": "https://drafts.csswg.org/css-cascade/#inherit",
+            "tags": [
+              "web-features:inherit-value"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -68,7 +75,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -80,7 +88,10 @@
         "initial": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/initial",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade/#initial",
+            "spec_url": "https://drafts.csswg.org/css-cascade/#initial",
+            "tags": [
+              "web-features:initial-value"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -111,7 +122,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -123,7 +135,10 @@
         "revert": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/revert",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade/#default",
+            "spec_url": "https://drafts.csswg.org/css-cascade/#default",
+            "tags": [
+              "web-features:revert-value"
+            ],
             "support": {
               "chrome": {
                 "version_added": "84"
@@ -145,7 +160,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -157,10 +173,13 @@
         "revert-layer": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/revert-layer",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade-5/#revert-layer",
+            "spec_url": "https://drafts.csswg.org/css-cascade-5/#revert-layer",
+            "tags": [
+              "web-features:cascade-layers"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "99"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -175,14 +194,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -191,7 +211,10 @@
         "unset": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/unset",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-cascade/#inherit-initial",
+            "spec_url": "https://drafts.csswg.org/css-cascade/#inherit-initial",
+            "tags": [
+              "web-features:unset-value"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -215,7 +238,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

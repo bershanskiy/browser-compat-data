@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate",
         "spec_url": "https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface",
+        "tags": [
+          "web-features:webrtc"
+        ],
         "support": {
           "chrome": {
             "version_added": "23"
@@ -41,7 +44,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -51,9 +55,12 @@
       },
       "RTCIceCandidate": {
         "__compat": {
-          "description": "<code>RTCIceCandidate()</code> constructor",
+          "description": "`RTCIceCandidate()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/RTCIceCandidate",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-constructor",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -65,23 +72,23 @@
             "firefox": [
               {
                 "version_added": "44",
-                "notes": "Before Firefox 68, the constructor's <code>candidateInfo</code> parameter is required and the <code>candidateInfo</code> object must have a <code>candidate</code> property."
+                "notes": "Before Firefox 68, the constructor's `candidateInfo` parameter is required and the `candidateInfo` object must have a `candidate` property."
               },
               {
                 "prefix": "moz",
                 "version_added": "22",
-                "notes": "Before Firefox 68, the constructor's <code>candidateInfo</code> parameter is required and the <code>candidateInfo</code> object must have a <code>candidate</code> property."
+                "notes": "Before Firefox 68, the constructor's `candidateInfo` parameter is required and the `candidateInfo` object must have a `candidate` property."
               }
             ],
             "firefox_android": [
               {
                 "version_added": "44",
-                "notes": "Before Firefox 68, the constructor's <code>candidateInfo</code> parameter is required and the <code>candidateInfo</code> object must have a <code>candidate</code> property."
+                "notes": "Before Firefox 68, the constructor's `candidateInfo` parameter is required and the `candidateInfo` object must have a `candidate` property."
               },
               {
                 "prefix": "moz",
                 "version_added": "24",
-                "notes": "Before Firefox 68, the constructor's <code>candidateInfo</code> parameter is required and the <code>candidateInfo</code> object must have a <code>candidate</code> property."
+                "notes": "Before Firefox 68, the constructor's `candidateInfo` parameter is required and the `candidateInfo` object must have a `candidate` property."
               }
             ],
             "ie": {
@@ -95,7 +102,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -108,6 +116,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/address",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-address",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -115,7 +126,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -129,7 +140,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -142,6 +154,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/candidate",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-candidate",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -151,10 +166,12 @@
               "version_added": "15"
             },
             "firefox": {
-              "version_added": "22"
+              "version_added": "22",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "24",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "ie": {
               "version_added": false
@@ -167,7 +184,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -180,6 +198,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/component",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-component",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -187,7 +208,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -201,7 +222,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -214,6 +236,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/foundation",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-foundation",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -221,7 +246,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -235,7 +260,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -248,6 +274,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/port",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-port",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -255,7 +284,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -269,7 +298,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -282,6 +312,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/priority",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-priority",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -289,7 +322,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -303,7 +336,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -316,6 +350,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/protocol",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-protocol",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -323,7 +360,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -337,7 +374,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -350,6 +388,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/relatedAddress",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedaddress",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -357,7 +398,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -371,7 +412,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -384,6 +426,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/relatedPort",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedport",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -391,7 +436,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -405,10 +450,49 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "relayProtocol": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relayprotocol",
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "124"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "notes": "See [bug 1886013](https://bugzil.la/1886013)."
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -418,6 +502,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/sdpMid",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmid",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -427,10 +514,12 @@
               "version_added": "15"
             },
             "firefox": {
-              "version_added": "22"
+              "version_added": "22",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "24",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "ie": {
               "version_added": false
@@ -443,7 +532,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -456,6 +546,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/sdpMLineIndex",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmlineindex",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -465,10 +558,12 @@
               "version_added": "15"
             },
             "firefox": {
-              "version_added": "22"
+              "version_added": "22",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "firefox_android": {
-              "version_added": "24"
+              "version_added": "24",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "ie": {
               "version_added": false
@@ -481,7 +576,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -494,6 +590,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/tcpType",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tcptype",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -501,7 +600,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -515,7 +614,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -528,6 +628,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/toJSON",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tojson",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "43"
@@ -551,7 +654,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -564,6 +668,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/type",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-type",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -571,7 +678,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "126"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -585,10 +692,49 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "url": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-url",
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "124"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "notes": "See [bug 1886013](https://bugzil.la/1886013)."
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
             "standard_track": true,
             "deprecated": false
           }
@@ -598,6 +744,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/usernameFragment",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-usernamefragment",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -605,7 +754,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "67"
+              "version_added": "67",
+              "notes": "Before Firefox 126, the property was not read-only."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -619,7 +769,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

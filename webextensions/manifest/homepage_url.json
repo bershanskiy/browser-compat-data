@@ -6,23 +6,21 @@
           "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/homepage_url",
           "support": {
             "chrome": {
-              "version_added": true
+              "version_added": "≤54"
             },
-            "edge": {
-              "version_added": "79"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": "48"
             },
             "firefox_android": "mirror",
             "opera": "mirror",
             "safari": {
-              "notes": "Not displayed in Safari Extensions settings.",
-              "version_added": "14"
+              "version_added": "14",
+              "notes": "Not displayed in Safari Extensions settings."
             },
             "safari_ios": {
-              "notes": "Not displayed in Safari Extensions settings.",
-              "version_added": "15"
+              "version_added": "15",
+              "notes": "Not displayed in Safari Extensions settings."
             }
           }
         }

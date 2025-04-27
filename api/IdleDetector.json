@@ -4,15 +4,23 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector",
         "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector",
+        "tags": [
+          "web-features:idle-detection"
+        ],
         "support": {
           "chrome": {
             "version_added": "94"
           },
           "chrome_android": "mirror",
-          "edge": {
-            "version_added": "94",
-            "version_removed": "96"
-          },
+          "edge": [
+            {
+              "version_added": "114"
+            },
+            {
+              "version_added": "94",
+              "version_removed": "96"
+            }
+          ],
           "firefox": {
             "version_added": false
           },
@@ -28,7 +36,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -38,18 +47,26 @@
       },
       "IdleDetector": {
         "__compat": {
-          "description": "<code>IdleDetector()</code> constructor",
+          "description": "`IdleDetector()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/IdleDetector",
           "spec_url": "https://wicg.github.io/idle-detection/#dom-idledetector-idledetector",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -65,7 +82,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -76,18 +94,26 @@
       },
       "change_event": {
         "__compat": {
-          "description": "<code>change</code> event",
+          "description": "`change` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/change_event",
           "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector-onchange",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -103,7 +129,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -112,19 +139,28 @@
           }
         }
       },
-      "requestPermission": {
+      "requestPermission_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/requestPermission",
+          "description": "`requestPermission()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/requestPermission_static",
           "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector-requestpermission",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -140,7 +176,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -153,15 +190,23 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/screenState",
           "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector-screenstate",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -177,7 +222,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -190,15 +236,23 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/start",
           "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector-start",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -214,7 +268,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -227,15 +282,23 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/IdleDetector/userState",
           "spec_url": "https://wicg.github.io/idle-detection/#api-idledetector-userstate",
+          "tags": [
+            "web-features:idle-detection"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "94",
-              "version_removed": "96"
-            },
+            "edge": [
+              {
+                "version_added": "114"
+              },
+              {
+                "version_added": "94",
+                "version_removed": "96"
+              }
+            ],
             "firefox": {
               "version_added": false
             },
@@ -251,7 +314,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

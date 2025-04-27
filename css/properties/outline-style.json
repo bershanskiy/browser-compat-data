@@ -4,7 +4,10 @@
       "outline-style": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline-style",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-ui/#outline-style",
+          "spec_url": "https://drafts.csswg.org/css-ui/#outline-style",
+          "tags": [
+            "web-features:outlines"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -16,7 +19,7 @@
             "firefox": [
               {
                 "version_added": "1.5",
-                "notes": "Before Firefox 88, an outline does not follow the shape of <code>border-radius</code>."
+                "notes": "Before Firefox 88, an outline does not follow the shape of `border-radius`."
               },
               {
                 "prefix": "-moz-",
@@ -42,7 +45,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "2"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -52,19 +56,24 @@
         },
         "auto": {
           "__compat": {
-            "description": "<code>auto</code>",
+            "spec_url": "https://drafts.csswg.org/css-ui/#outline-style",
+            "tags": [
+              "web-features:outlines"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
               },
               "chrome_android": "mirror",
-              "edge": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
               "firefox": {
                 "version_added": "1.5"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": false
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -74,9 +83,359 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "dashed": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-dashed",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "dotted": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-dotted",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "double": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-double",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "groove": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-groove",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "inset": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-inset",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "none": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-none",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "outset": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-outset",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "ridge": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-ridge",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "solid": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-solid",
+            "tags": [
+              "web-features:outlines"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "1"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "1"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "1.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

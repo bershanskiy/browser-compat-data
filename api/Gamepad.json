@@ -7,6 +7,9 @@
           "https://w3c.github.io/gamepad/#gamepad-interface",
           "https://w3c.github.io/gamepad/extensions.html#partial-gamepad-interface"
         ],
+        "tags": [
+          "web-features:gamepad"
+        ],
         "support": {
           "chrome": {
             "version_added": "21"
@@ -32,7 +35,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,6 +47,9 @@
       "secure_context_required": {
         "__compat": {
           "description": "Secure context required",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "86",
@@ -71,7 +78,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -84,6 +92,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/axes",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-axes",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -109,7 +120,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -122,6 +134,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/buttons",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-buttons",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -147,7 +162,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -160,6 +176,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/connected",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-connected",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "25"
@@ -185,7 +204,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -197,6 +217,9 @@
       "displayId": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/displayId",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -206,22 +229,10 @@
               "version_removed": "80",
               "notes": "Currently supported only by Google Daydream."
             },
-            "edge": [
-              {
-                "version_added": "15",
-                "version_removed": "79"
-              },
-              {
-                "version_added": "79",
-                "version_removed": "80",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "WebVR"
-                  }
-                ]
-              }
-            ],
+            "edge": {
+              "version_added": "15",
+              "version_removed": "79"
+            },
             "firefox": [
               {
                 "version_added": "98",
@@ -245,7 +256,8 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": "55",
+              "version_removed": "98"
             },
             "ie": {
               "version_added": false
@@ -260,7 +272,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -273,6 +286,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/hand",
           "spec_url": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hand",
+          "tags": [
+            "web-features:gamepad-vr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -297,7 +313,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -310,6 +327,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/hapticActuators",
           "spec_url": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hapticactuators",
+          "tags": [
+            "web-features:gamepad-haptics"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -334,7 +354,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -347,6 +368,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/id",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-id",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -372,7 +396,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -385,6 +410,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/index",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-index",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -410,7 +438,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -423,6 +452,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/mapping",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-mapping",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -448,7 +480,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -461,6 +494,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/pose",
           "spec_url": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-pose",
+          "tags": [
+            "web-features:gamepad-vr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -485,7 +521,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -498,6 +535,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/timestamp",
           "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-timestamp",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "21"
@@ -523,7 +563,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -534,6 +575,11 @@
       },
       "vibrationActuator": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Gamepad/vibrationActuator",
+          "spec_url": "https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator",
+          "tags": [
+            "web-features:gamepad-haptics"
+          ],
           "support": {
             "chrome": {
               "version_added": "68"
@@ -551,17 +597,20 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "16.4"
+            },
+            "safari_ios": {
               "version_added": false
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
-            "standard_track": false,
+            "experimental": false,
+            "standard_track": true,
             "deprecated": false
           }
         }

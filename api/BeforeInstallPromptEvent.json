@@ -3,6 +3,9 @@
     "BeforeInstallPromptEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent",
+        "tags": [
+          "web-features:beforeinstallprompt"
+        ],
         "support": {
           "chrome": {
             "version_added": "44"
@@ -26,7 +29,8 @@
           "samsunginternet_android": {
             "version_added": "5.0"
           },
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -36,8 +40,11 @@
       },
       "BeforeInstallPromptEvent": {
         "__compat": {
-          "description": "<code>BeforeInstallPromptEvent()</code> constructor",
+          "description": "`BeforeInstallPromptEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/BeforeInstallPromptEvent",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": {
               "version_added": "44"
@@ -61,7 +68,8 @@
             "samsunginternet_android": {
               "version_added": "5.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -73,6 +81,9 @@
       "platforms": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/platforms",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": {
               "version_added": "44"
@@ -96,7 +107,8 @@
             "samsunginternet_android": {
               "version_added": "5.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -108,13 +120,13 @@
       "prompt": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/prompt",
-          "spec_url": "https://wicg.github.io/manifest-incubations/#dom-beforeinstallpromptevent-prompt",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": [
               {
-                "version_added": "76",
-                "notes": "The object returned by the promise returns a property called <code>outcome</code> instead of <code>userChoice</code>.",
-                "partial_implementation": true
+                "version_added": "76"
               },
               {
                 "version_added": "44",
@@ -142,11 +154,12 @@
             "samsunginternet_android": {
               "version_added": "5.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
-            "standard_track": true,
+            "standard_track": false,
             "deprecated": false
           }
         }
@@ -154,6 +167,9 @@
       "userChoice": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/userChoice",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": {
               "version_added": "44"
@@ -177,7 +193,8 @@
             "samsunginternet_android": {
               "version_added": "5.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

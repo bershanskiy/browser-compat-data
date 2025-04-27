@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement",
         "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement",
+        "tags": [
+          "web-features:button"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -34,8 +37,9 @@
           },
           "samsunginternet_android": "mirror",
           "webview_android": {
-            "version_added": "≤37"
-          }
+            "version_added": "3"
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -45,7 +49,11 @@
       },
       "checkValidity": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/checkValidity",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-checkvalidity-dev",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -75,9 +83,145 @@
               "version_added": "5"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "command": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/command",
+          "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-button-command",
+          "tags": [
+            "web-features:invoker-commands"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "135"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "preview",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.element.invokers.enabled",
+                  "value_to_set": "true"
+                }
+              ]
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "preview"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "request-close": {
+          "__compat": {
+            "description": "`request-close` value",
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close",
+            "tags": [
+              "web-features:invoker-commands"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "enable-experimental-web-platform-features",
+                    "value_to_set": "enabled"
+                  }
+                ]
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false,
+                "impl_url": "https://bugzil.la/1950359"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false,
+                "impl_url": "https://webkit.org/b/288476"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
             }
+          }
+        }
+      },
+      "commandForElement": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/commandForElement",
+          "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-button-commandforelement",
+          "tags": [
+            "web-features:invoker-commands"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "135"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "preview",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.element.invokers.enabled",
+                  "value_to_set": "true"
+                }
+              ]
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "preview"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -90,6 +234,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/disabled",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-disabled",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -119,7 +266,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -132,6 +280,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/form",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fae-form-dev",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -161,7 +312,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -174,6 +326,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/formAction",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formaction",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -184,7 +339,7 @@
             },
             "firefox": {
               "version_added": "4",
-              "notes": "In Firefox 56, the implementation has been updated so that the <code>formAction</code> property returns the correct form submission URL, as per spec, when the associated button is being used to submit a form (<a href='https://bugzil.la/1366361'>bug 1366361</a>)."
+              "notes": "In Firefox 56, the implementation has been updated so that the `formAction` property returns the correct form submission URL, as per spec, when the associated button is being used to submit a form ([bug 1366361](https://bugzil.la/1366361))."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -204,7 +359,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -217,6 +373,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/formEnctype",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formenctype",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -246,7 +405,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -259,6 +419,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/formMethod",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formmethod",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -288,7 +451,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -301,6 +465,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/formNoValidate",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formnovalidate",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -330,9 +497,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -345,6 +511,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/formTarget",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formtarget",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -374,7 +543,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -387,6 +557,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/labels",
           "spec_url": "https://html.spec.whatwg.org/multipage/forms.html#dom-lfe-labels-dev",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -416,7 +589,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -429,6 +603,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/name",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-name",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -458,7 +635,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -467,10 +645,126 @@
           }
         }
       },
+      "popoverTargetAction": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/popoverTargetAction",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-popovertargetaction",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "popoverTargetElement": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/popoverTargetElement",
+          "spec_url": "https://html.spec.whatwg.org/multipage/popover.html#dom-popovertargetelement",
+          "tags": [
+            "web-features:popover"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "114"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "implicit_anchor_reference": {
+          "__compat": {
+            "description": "Implicit anchor reference via `popoverTargetElement`",
+            "tags": [
+              "web-features:anchor-positioning"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "133"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      },
       "reportValidity": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/reportValidity",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-reportvalidity-dev",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -496,7 +790,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -507,10 +802,15 @@
       },
       "setCustomValidity": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/setCustomValidity",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity-dev",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
-              "version_added": "4"
+              "version_added": "4",
+              "notes": "This method only updates the validation error popup, not the tooltip that appears when hovering the mouse over the element, see [bug 41380670](https://crbug.com/41380670)."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -537,9 +837,8 @@
               "version_added": "5"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -552,6 +851,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/type",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-button-type",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -581,7 +883,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -594,6 +897,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/validationMessage",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-validationmessage-dev",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -623,9 +929,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -638,9 +943,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/validity",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api:dom-cva-validity",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
-              "version_added": "3"
+              "version_added": "4"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -667,9 +975,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -682,6 +989,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/value",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-button-value",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -711,7 +1021,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -724,9 +1035,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/willValidate",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-willvalidate-dev",
+          "tags": [
+            "web-features:constraint-validation"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -753,9 +1067,8 @@
               "version_added": "3"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

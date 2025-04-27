@@ -1,21 +1,11 @@
 # Data guidelines
 
 This folder contains guidelines to help you record data in a consistent and understandable way. It covers the project's requirements for the way features should be represented, including requirements that are not coded into the linter or schema.
-
-<!-- BEGIN TEMPLATE --
-
-## Short title in sentence case
-
-A description of what to do, preferably in the imperative. If applicable, include an example to illustrate the rule.
-
-If it's helpful to understanding the rule, summarize the rationale. Definitely cite the issue or pull request where this was decided (it may be the PR that merges the policy).
-
--- END TEMPLATE -->
-
 This file contains general guidelines that apply to all features added to BCD. For guidelines that apply to specific categories of data, check out their respective files within this folder.
 
 - [API](./api.md)
 - [Browsers](./browsers.md)
+- [Tagging BCD features](./tags.md)
 
 ## Choosing a version number
 
@@ -27,7 +17,7 @@ This decision was made in [#3953, under the expectation that most users are like
 
 ### Backported releases
 
-Some browsers have backport releases, where a feature is added or removed in two or more versions at once that do not follow a linear semantic versioning bump (ex. Safari 6.0 was released, then Safari 7.0, and then Safari 6.1). If not otherwise covered by this guideline, use the earliest applicable version (as described in the [Release lines](#release-lines) guideline). In some cases, however, you must set the version number to the following major version. For example, if a new feature was added in Safari 7.0 and in Safari 6.1, then the supported version is 7.0 (not 6 or 6.1).
+Some browsers have backport releases, where a feature is added or removed in two or more versions at once that do not follow a linear semantic versioning bump (ex. Safari 6.0 was released, then Safari 7.0, and then Safari 6.1). If not otherwise covered by this guideline, use the earliest applicable version (as described in the [Choosing a version number](#choosing-a-version-number) guideline). In some cases, however, you must set the version number to the following major version. For example, if a new feature was added in Safari 7.0 and in Safari 6.1, then the supported version is 7.0 (not 6 or 6.1).
 
 | If the browser and its version is... | then set the version to... |
 | ------------------------------------ | -------------------------- |
@@ -89,14 +79,15 @@ This guideline was proposed in [#6906](https://github.com/mdn/browser-compat-dat
 Features can be removed from BCD if it is considered irrelevant. A feature can be considered irrelevant if any of these conditions are met:
 
 - a feature was never implemented in any browser.
+- a feature is not available behind a flag in the latest stable browser release.
 - a feature was implemented and has since been removed from all browsers dating back two or more years ago.
 - a feature is unsupported in all releases in the past five years.
 
-This guideline was proposed in [#6018](https://github.com/mdn/browser-compat-data/pull/6018) and updated in [#10619](https://github.com/mdn/browser-compat-data/pull/10619).
+This guideline was proposed in [#6018](https://github.com/mdn/browser-compat-data/pull/6018) and updated in [#10619](https://github.com/mdn/browser-compat-data/pull/10619) and [#21521](https://github.com/mdn/browser-compat-data/pull/21521).
 
 ## Removal of irrelevant flag data
 
-Flag data is helpful for developers who may wish to test features before they are included in a stable release. However, once a feature has landed in a stable browser release, the flag data quickly becomes irrelevant and may be removed from BCD. To be considered irrelevant, the flag support statement must meet these conditions:
+Flag data is helpful for developers who may wish to test features before they are included in a stable release. However, once a feature has landed in a stable browser release, the flag data quickly becomes irrelevant and may be removed from BCD. To be considered irrelevant, the flag support statement must meet _any_ of these conditions:
 
 - The browser has supported the feature by default.
 - The feature can no longer be enabled by toggling the flag.
@@ -108,7 +99,7 @@ This guideline was proposed in [#6670](https://github.com/mdn/browser-compat-dat
 
 ## Features with no browser support
 
-Browser features that have not been implemented (or planned to be implemented) in any browser, should not be added to BCD. A feature should not be added if all of the following conditions are met:
+Browser features that have not been implemented (or planned to be implemented) in any browser, should not be added to BCD. A feature should not be added if _all_ of the following conditions are met:
 
 - The feature has not been included in a stable browser release.
 - The feature is not implemented behind a current flag (or Chrome origin trial).
@@ -173,17 +164,17 @@ This guideline was proposed in [#15703](https://github.com/mdn/browser-compat-da
 
 Sometimes it's useful to represent support for specific parameters (also known as arguments) of a function or method, as a subfeature of the function itself. To record data about whether a specific parameter is supported by a function or method, use the following naming conventions:
 
-- For named parameters, use a subfeature named `paramname_parameter` with description text `<code>paramname</code> parameter`. Where _paramname_ is the name of the parameter as it appears on the corresponding function's MDN page (or specification, if no MDN page is available).
+- For named parameters, use a subfeature named `paramname_parameter` with description text `` `paramname` parameter ``. Where _paramname_ is the name of the parameter as it appears on the corresponding function's MDN page (or specification, if no MDN page is available).
 
-  For example, to represent support for the `firstName` parameter of a method `hello(firstName, familyName)`, use a subfeature of `hello` named `firstName_parameter` with the description text `<code>firstName</code> parameter`.
+  For example, to represent support for the `firstName` parameter of a method `hello(firstName, familyName)`, use a subfeature of `hello` named `firstName_parameter` with the description text `` `firstName` parameter ``.
 
 - For unnamed parameters, use a subfeature named `ordinal_parameter` with description text `ordinal parameter` where _ordinal_ is the ordinal number position of the parameter.
 
   For example, to represent support for the second parameter of a method `count()`, use a subfeature of `count` named `second_parameter` and description text `Second parameter`.
 
-- For properties of parameter objects, use a subfeature named `paramname_prop_parameter` with description text `<code>paramname.prop</code> parameter`, where _paramname_ is the name of the parameter object and _prop_ is the name of the property.
+- For properties of parameter objects, use a subfeature named `paramname_prop_parameter` with description text `` `paramname.prop` parameter ``, where _paramname_ is the name of the parameter object and _prop_ is the name of the property.
 
-  For example, to represent support for the `year` property of the `date` parameter to a method `schedule(date)` (as in `schedule({"year": 1970 })`), use a subfeature of `schedule` named `date_year_parameter` with description text `<code>date.year</code> parameter`.
+  For example, to represent support for the `year` property of the `date` parameter to a method `schedule(date)` (as in `schedule({"year": 1970 })`), use a subfeature of `schedule` named `date_year_parameter` with description text `` `date.year` parameter ``.
 
 For existing data which does not follow this guideline, you may modify it to conform with this data, if you are you otherwise updating the data (or data related to it).
 

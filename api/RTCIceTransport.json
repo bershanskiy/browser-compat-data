@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport",
         "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport",
+        "tags": [
+          "web-features:webrtc"
+        ],
         "support": {
           "chrome": {
             "version_added": "75"
@@ -13,7 +16,7 @@
             "version_added": "13"
           },
           "firefox": {
-            "version_added": false
+            "version_added": "125"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,118 +39,13 @@
           "deprecated": false
         }
       },
-      "RTCIceTransport": {
-        "__compat": {
-          "description": "<code>RTCIceTransport()</code> constructor",
-          "support": {
-            "chrome": {
-              "version_added": "75"
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "13"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "addRemoteCandidate": {
-        "__compat": {
-          "spec_url": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-addremotecandidate",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "13",
-              "version_removed": "79"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "component": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/component",
-          "spec_url": "https://w3c.github.io/webrtc-pc/#dom-icetransport-component",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "13",
-              "version_removed": "79"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
       "gatheringState": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/gatheringState",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-icetransport-gatheringstate",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -154,7 +53,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -168,7 +67,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -179,11 +79,52 @@
       },
       "gatheringstatechange_event": {
         "__compat": {
-          "description": "<code>gatheringstatechange</code> event",
+          "description": "`gatheringstatechange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/gatheringstatechange_event",
           "spec_url": [
             "https://w3c.github.io/webrtc-pc/#event-icetransport-gatheringstatechange",
             "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-ongatheringstatechange"
+          ],
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "75"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "125"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "15.4"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "getLocalCandidates": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalCandidates",
+          "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalcandidates",
+          "tags": [
+            "web-features:webrtc"
           ],
           "support": {
             "chrome": {
@@ -202,45 +143,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "15.4"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "getLocalCandidates": {
-        "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalCandidates",
-          "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalcandidates",
-          "support": {
-            "chrome": {
-              "version_added": "75"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -253,6 +161,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalParameters",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalparameters",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -274,7 +185,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -287,6 +199,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteCandidates",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremotecandidates",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -310,7 +225,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -323,6 +239,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteParameters",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremoteparameters",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -346,7 +265,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -359,6 +279,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getSelectedCandidatePair",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getselectedcandidatepair",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -385,11 +308,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -402,6 +326,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/role",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-icetransport-role",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -425,7 +352,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -436,11 +364,14 @@
       },
       "selectedcandidatepairchange_event": {
         "__compat": {
-          "description": "<code>selectedcandidatepairchange</code> event",
+          "description": "`selectedcandidatepairchange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/selectedcandidatepairchange_event",
           "spec_url": [
             "https://w3c.github.io/webrtc-pc/#event-icetransport-selectedcandidatepairchange",
             "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onselectedcandidatepairchange"
+          ],
+          "tags": [
+            "web-features:webrtc"
           ],
           "support": {
             "chrome": {
@@ -459,47 +390,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "start": {
-        "__compat": {
-          "spec_url": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-start",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "13",
-              "version_removed": "79"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -512,6 +408,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/state",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-icetransport-state",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -521,7 +420,7 @@
               "version_added": "13"
             },
             "firefox": {
-              "version_added": false
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -535,7 +434,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -546,11 +446,14 @@
       },
       "statechange_event": {
         "__compat": {
-          "description": "<code>statechange</code> event",
+          "description": "`statechange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport/statechange_event",
           "spec_url": [
             "https://w3c.github.io/webrtc-pc/#event-icetransport-statechange",
             "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onstatechange"
+          ],
+          "tags": [
+            "web-features:webrtc"
           ],
           "support": {
             "chrome": {
@@ -559,7 +462,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -573,43 +476,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "stop": {
-        "__compat": {
-          "spec_url": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-stop",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": {
-              "version_added": "13",
-              "version_removed": "79"
-            },
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

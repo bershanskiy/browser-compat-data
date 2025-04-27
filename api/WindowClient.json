@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient",
         "spec_url": "https://w3c.github.io/ServiceWorker/#windowclient",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "42"
@@ -27,7 +30,10 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -35,10 +41,53 @@
           "deprecated": false
         }
       },
+      "ancestorOrigins": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient/ancestorOrigins",
+          "spec_url": "https://w3c.github.io/ServiceWorker/#client-ancestororigins",
+          "tags": [
+            "web-features:service-workers"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "16"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "focus": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient/focus",
           "spec_url": "https://w3c.github.io/ServiceWorker/#client-focus",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -62,7 +111,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -75,6 +127,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient/focused",
           "spec_url": "https://w3c.github.io/ServiceWorker/#client-focused",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -98,7 +153,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -111,6 +169,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient/navigate",
           "spec_url": "https://w3c.github.io/ServiceWorker/#client-navigate",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -129,17 +190,26 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "version_added": "11.1",
-              "partial_implementation": true,
-              "notes": "This method exists, but always throws <code>NotSupportedError</code>."
-            },
+            "safari": [
+              {
+                "version_added": "16"
+              },
+              {
+                "version_added": "11.1",
+                "version_removed": "16",
+                "partial_implementation": true,
+                "notes": "This method exists, but always throws `NotSupportedError`."
+              }
+            ],
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "4.0"
             },
             "webview_android": {
               "version_added": "42"
+            },
+            "webview_ios": {
+              "version_added": false
             }
           },
           "status": {
@@ -153,6 +223,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WindowClient/visibilityState",
           "spec_url": "https://w3c.github.io/ServiceWorker/#client-visibilitystate",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -176,7 +249,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,

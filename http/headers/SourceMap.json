@@ -3,16 +3,20 @@
     "headers": {
       "SourceMap": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Headers/SourceMap",
-          "spec_url": "https://sourcemaps.info/spec.html#h.lmz475t4mvbx",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/SourceMap",
+          "spec_url": "https://tc39.es/ecma426/#sec-linking-http-header",
+          "tags": [
+            "web-features:sourcemap-header"
+          ],
           "support": {
             "chrome": [
               {
-                "version_added": true
+                "version_added": "18",
+                "notes": "Not supported for ECMAScript Modules (`<script type=\"module\">`). See [bug 40854862](https://crbug.com/40854862)."
               },
               {
                 "prefix": "X-",
-                "version_added": true
+                "version_added": "18"
               }
             ],
             "chrome_android": "mirror",
@@ -36,23 +40,24 @@
             ],
             "firefox_android": "mirror",
             "ie": {
-              "version_added": null
+              "version_added": false
             },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": [
               {
-                "version_added": true
+                "version_added": "7"
               },
               {
                 "prefix": "X-",
-                "version_added": true
+                "version_added": "6"
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

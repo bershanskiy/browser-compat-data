@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality",
         "spec_url": "https://w3c.github.io/media-playback-quality/#videoplaybackquality-interface",
+        "tags": [
+          "web-features:media-playback-quality"
+        ],
         "support": {
           "chrome": {
             "version_added": "23"
@@ -27,50 +30,18 @@
             "version_added": "8"
           },
           "safari_ios": {
-            "version_added": false
+            "version_added": "12.2"
           },
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "4.4.3"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
           "standard_track": true,
           "deprecated": false
-        }
-      },
-      "worker_support": {
-        "__compat": {
-          "description": "Available in workers",
-          "support": {
-            "chrome": {
-              "version_added": "108"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": false
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": true,
-            "standard_track": true,
-            "deprecated": false
-          }
         }
       },
       "corruptedVideoFrames": {
@@ -89,9 +60,7 @@
               "version_added": "42",
               "version_removed": "73"
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": "11",
               "notes": "Only works on Windows 8+."
@@ -103,48 +72,16 @@
               "version_added": "8"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "12.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": true
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       },
@@ -152,6 +89,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/creationTime",
           "spec_url": "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-creationtime",
+          "tags": [
+            "web-features:media-playback-quality"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -175,50 +115,18 @@
               "version_added": "8"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "12.2"
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       },
@@ -226,6 +134,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames",
           "spec_url": "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-droppedvideoframes",
+          "tags": [
+            "web-features:media-playback-quality"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -249,50 +160,18 @@
               "version_added": "8"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "12.2"
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       },
@@ -301,11 +180,12 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalFrameDelay",
           "support": {
             "chrome": {
-              "version_added": "23"
+              "version_added": false
             },
             "chrome_android": "mirror",
             "edge": {
-              "version_added": "12"
+              "version_added": "12",
+              "version_removed": "79"
             },
             "firefox": {
               "version_added": false
@@ -322,50 +202,16 @@
               "version_added": "8"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "12.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "4.4.3"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": false,
             "deprecated": true
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       },
@@ -373,6 +219,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames",
           "spec_url": "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-totalvideoframes",
+          "tags": [
+            "web-features:media-playback-quality"
+          ],
           "support": {
             "chrome": {
               "version_added": "23"
@@ -396,50 +245,18 @@
               "version_added": "8"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "12.2"
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
-          }
-        },
-        "worker_support": {
-          "__compat": {
-            "description": "Available in workers",
-            "support": {
-              "chrome": {
-                "version_added": "108"
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": false
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": "mirror",
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": true,
-              "standard_track": true,
-              "deprecated": false
-            }
           }
         }
       }

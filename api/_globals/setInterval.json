@@ -2,8 +2,11 @@
   "api": {
     "setInterval": {
       "__compat": {
-        "mdn_url": "https://developer.mozilla.org/docs/Web/API/setInterval",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/setInterval",
         "spec_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval-dev",
+        "tags": [
+          "web-features:setinterval"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -26,8 +29,8 @@
             "version_added": "0.10.0",
             "partial_implementation": true,
             "notes": [
-              "Returns a <code>Timeout</code> object instead of the <code>intervalID</code>.",
-              "Does not support passing a <code>code</code> string and throws when the first parameter is not a function."
+              "Returns a `Timeout` object instead of the `intervalID`.",
+              "Does not support passing a `code` string and throws when the first parameter is not a function."
             ]
           },
           "oculus": "mirror",
@@ -42,7 +45,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -53,13 +57,16 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:setinterval"
+          ],
           "support": {
             "chrome": {
               "version_added": "3"
             },
             "chrome_android": "mirror",
             "deno": {
-              "version_added": true
+              "version_added": "1.0"
             },
             "edge": {
               "version_added": "12"
@@ -72,7 +79,7 @@
               "version_added": "10"
             },
             "nodejs": {
-              "version_added": "10.5.0"
+              "version_added": "11.7.0"
             },
             "oculus": "mirror",
             "opera": {
@@ -88,7 +95,53 @@
               "version_added": "5"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "code_param_accepts_trustedScript": {
+        "__compat": {
+          "description": "`code` parameter can be set with a `TrustedScript` instance",
+          "spec_url": "https://w3c.github.io/trusted-types/dist/spec/#dom-xss-injection-sinks",
+          "tags": [
+            "web-features:trusted-types"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "83"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "135",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.security.trusted_types.enabled",
+                  "value_to_set": "true"
+                }
+              ]
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "preview"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -133,9 +186,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -3,8 +3,11 @@
     "elements": {
       "symbol": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Element/symbol",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Element/symbol",
           "spec_url": "https://svgwg.org/svg2-draft/struct.html#SymbolElement",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -25,16 +28,17 @@
               "version_added": "9"
             },
             "opera_android": {
-              "version_added": true
+              "version_added": "10.1"
             },
             "safari": {
-              "version_added": "3.1"
+              "version_added": "3"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -44,28 +48,32 @@
         },
         "preserveAspectRatio": {
           "__compat": {
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
-                "version_added": null
+                "version_added": "1"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": null
+                "version_added": "1.5"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "3"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -76,28 +84,32 @@
         },
         "viewBox": {
           "__compat": {
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
-                "version_added": null
+                "version_added": "1"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": null
+                "version_added": "1.5"
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": null
+                "version_added": "3"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

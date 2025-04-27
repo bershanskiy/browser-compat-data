@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly",
         "spec_url": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+        "tags": [
+          "web-features:dom-geometry"
+        ],
         "support": {
           "chrome": {
             "version_added": "61"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +39,12 @@
       },
       "DOMMatrixReadOnly": {
         "__compat": {
-          "description": "<code>DOMMatrixReadOnly()</code> constructor",
+          "description": "`DOMMatrixReadOnly()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/DOMMatrixReadOnly",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-dommatrixreadonly",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -59,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -71,6 +79,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -92,7 +103,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -103,8 +115,11 @@
       },
       "a": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/a",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-a",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -126,7 +141,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -137,8 +153,11 @@
       },
       "b": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/b",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-b",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -160,7 +179,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -171,8 +191,11 @@
       },
       "c": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/c",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-c",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -194,7 +217,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -205,8 +229,11 @@
       },
       "d": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/d",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-d",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -228,7 +255,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -239,8 +267,11 @@
       },
       "e": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/e",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-e",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -262,7 +293,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -273,8 +305,11 @@
       },
       "f": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/f",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-f",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -296,7 +331,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -307,9 +343,12 @@
       },
       "flipX": {
         "__compat": {
-          "description": "<code>flipX()</code>",
+          "description": "`flipX()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/flipX",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-flipx",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -331,7 +370,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -342,9 +382,12 @@
       },
       "flipY": {
         "__compat": {
-          "description": "<code>flipY()</code>",
+          "description": "`flipY()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/flipY",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-flipy",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -366,7 +409,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -375,10 +419,13 @@
           }
         }
       },
-      "fromFloat32Array": {
+      "fromFloat32Array_static": {
         "__compat": {
-          "description": "<code>fromFloat32Array()</code> static method",
+          "description": "`fromFloat32Array()` static method",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-fromfloat32array",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -400,7 +447,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -409,10 +457,13 @@
           }
         }
       },
-      "fromFloat64Array": {
+      "fromFloat64Array_static": {
         "__compat": {
-          "description": "<code>fromFloat64Array()</code> static method",
+          "description": "`fromFloat64Array()` static method",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-fromfloat64array",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -434,7 +485,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -443,10 +495,13 @@
           }
         }
       },
-      "fromMatrix": {
+      "fromMatrix_static": {
         "__compat": {
-          "description": "<code>fromMatrix()</code> static method",
+          "description": "`fromMatrix()` static method",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-frommatrix",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -468,7 +523,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -479,9 +535,12 @@
       },
       "inverse": {
         "__compat": {
-          "description": "<code>inverse()</code>",
+          "description": "`inverse()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/inverse",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-inverse",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -503,7 +562,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -516,6 +576,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/is2D",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-is2d",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -537,7 +600,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -550,6 +614,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/isIdentity",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-isidentity",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -571,7 +638,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -582,8 +650,11 @@
       },
       "m11": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m11",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m11",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -605,7 +676,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -616,8 +688,11 @@
       },
       "m12": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m12",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m12",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -639,7 +714,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -650,8 +726,11 @@
       },
       "m13": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m13",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m13",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -673,7 +752,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -684,8 +764,11 @@
       },
       "m14": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m14",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m14",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -707,7 +790,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -718,8 +802,11 @@
       },
       "m21": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m21",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m21",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -741,7 +828,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -752,8 +840,11 @@
       },
       "m22": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m22",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m22",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -775,7 +866,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -786,8 +878,11 @@
       },
       "m23": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m23",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m23",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -809,7 +904,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -820,8 +916,11 @@
       },
       "m24": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m24",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m24",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -843,7 +942,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -854,8 +954,11 @@
       },
       "m31": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m31",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m31",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -877,7 +980,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -888,8 +992,11 @@
       },
       "m32": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m32",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m32",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -911,7 +1018,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -922,8 +1030,11 @@
       },
       "m33": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m33",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m33",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -945,7 +1056,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -956,8 +1068,11 @@
       },
       "m34": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m34",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m34",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -979,7 +1094,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -990,8 +1106,11 @@
       },
       "m41": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m41",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m41",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1013,7 +1132,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1024,8 +1144,11 @@
       },
       "m42": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m42",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m42",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1047,7 +1170,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1058,8 +1182,11 @@
       },
       "m43": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m43",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m43",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1081,7 +1208,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1092,8 +1220,11 @@
       },
       "m44": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/m44",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly#instance_properties",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-m44",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1115,7 +1246,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1126,9 +1258,12 @@
       },
       "multiply": {
         "__compat": {
-          "description": "<code>multiply()</code>",
+          "description": "`multiply()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/multiply",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-multiply",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1150,7 +1285,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1161,9 +1297,12 @@
       },
       "rotate": {
         "__compat": {
-          "description": "<code>rotate()</code>",
+          "description": "`rotate()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/rotate",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotate",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1185,7 +1324,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1196,9 +1336,12 @@
       },
       "rotateAxisAngle": {
         "__compat": {
-          "description": "<code>rotateAxisAngle()</code>",
+          "description": "`rotateAxisAngle()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/rotateAxisAngle",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotateaxisangle",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1220,7 +1363,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1231,9 +1375,12 @@
       },
       "rotateFromVector": {
         "__compat": {
-          "description": "<code>rotateFromVector()</code>",
+          "description": "`rotateFromVector()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/rotateFromVector",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotatefromvector",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1255,7 +1402,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1266,9 +1414,12 @@
       },
       "scale": {
         "__compat": {
-          "description": "<code>scale()</code>",
+          "description": "`scale()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/scale",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-scale",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1277,12 +1428,9 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "33",
-              "notes": "Firefox 69 introduced support for the modern six-parameter syntax for <code>scale()</code>. Previously, it only supported the older three-parameter syntax: <code>scale(<em>scaleX</em>[, <em>originX</em>][, <em>originY</em>]]])</code>."
+              "notes": "Firefox 69 introduced support for the modern six-parameter syntax for `scale()`. Previously, it only supported the older three-parameter syntax: `scale(scaleX[, originX][, originY]]])`."
             },
-            "firefox_android": {
-              "version_added": "33",
-              "notes": "Firefox for Android 79 introduced support for the modern six-parameter syntax for <code>scale()</code>. Previously, it only supported the older three-parameter syntax: <code>scale(<em>scaleX</em>[, <em>originX</em>][, <em>originY</em>]]])</code>."
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -1294,7 +1442,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1305,9 +1454,12 @@
       },
       "scale3d": {
         "__compat": {
-          "description": "<code>scale3d()</code>",
+          "description": "`scale3d()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/scale3d",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-scale3d",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1316,12 +1468,9 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "33",
-              "notes": "Starting in Firefox 69, the first parameter (<code>scale</code>) is now optional with a default value of 1, per the specification. Previously it was required."
+              "notes": "Starting in Firefox 69, the first parameter (`scale`) is now optional with a default value of 1, per the specification. Previously it was required."
             },
-            "firefox_android": {
-              "version_added": "33",
-              "notes": "Starting in Firefox for Android 79, the first parameter (<code>scale</code>) is now optional with a default value of 1, per the specification. Previously it was required."
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -1333,7 +1482,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1344,8 +1494,7 @@
       },
       "scaleNonUniform": {
         "__compat": {
-          "description": "<code>scaleNonUniform()</code>",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/scaleNonUniform",
+          "description": "`scaleNonUniform()`",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-scalenonuniform",
           "support": {
             "chrome": {
@@ -1364,46 +1513,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": true
-          }
-        }
-      },
-      "scaleNonUniformSelf": {
-        "__compat": {
-          "description": "<code>scaleNonUniformSelf()</code>",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/scaleNonUniformSelf",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "33",
-              "version_removed": "69"
-            },
-            "firefox_android": "mirror",
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1414,9 +1529,12 @@
       },
       "skewX": {
         "__compat": {
-          "description": "<code>skewX()</code>",
+          "description": "`skewX()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/skewX",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-skewx",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1425,12 +1543,9 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "33",
-              "notes": "Before Firefox 69, the <code>sx</code> parameter was required; you may now call <code>skewX()</code> with no inputs. A value of 0 is correctly assumed."
+              "notes": "Before Firefox 69, the `sx` parameter was required; you may now call `skewX()` with no inputs. A value of 0 is correctly assumed."
             },
-            "firefox_android": {
-              "version_added": "33",
-              "notes": "Before Firefox for Android 79, the <code>sx</code> parameter was required; you may now call <code>skewX()</code> with no inputs. A value of 0 is correctly assumed."
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -1442,7 +1557,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1453,9 +1569,12 @@
       },
       "skewY": {
         "__compat": {
-          "description": "<code>skewY()</code>",
+          "description": "`skewY()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/skewY",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-skewy",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1464,12 +1583,9 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "33",
-              "notes": "Before Firefox 69, the <code>sy</code> parameter was required; you may now call <code>skewY()</code> with no inputs. A value of 0 is correctly assumed."
+              "notes": "Before Firefox 69, the `sy` parameter was required; you may now call `skewY()` with no inputs. A value of 0 is correctly assumed."
             },
-            "firefox_android": {
-              "version_added": "33",
-              "notes": "Before Firefox for Android 79, the <code>sy</code> parameter was required; you may now call <code>skewY()</code> with no inputs. A value of 0 is correctly assumed."
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -1481,7 +1597,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1492,9 +1609,12 @@
       },
       "toFloat32Array": {
         "__compat": {
-          "description": "<code>toFloat32Array()</code>",
+          "description": "`toFloat32Array()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/toFloat32Array",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-tofloat32array",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1516,7 +1636,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1527,9 +1648,12 @@
       },
       "toFloat64Array": {
         "__compat": {
-          "description": "<code>toFloat64Array()</code>",
+          "description": "`toFloat64Array()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/toFloat64Array",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-tofloat64array",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1551,7 +1675,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1562,8 +1687,12 @@
       },
       "toJSON": {
         "__compat": {
-          "description": "<code>toJSON()</code>",
+          "description": "`toJSON()`",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/toJSON",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-tojson",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1585,7 +1714,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1596,8 +1726,11 @@
       },
       "toString": {
         "__compat": {
-          "description": "<code>toString()</code>",
+          "description": "`toString()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/toString",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1619,45 +1752,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": false
-          }
-        }
-      },
-      "transform": {
-        "__compat": {
-          "description": "<code>transform()</code>",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/transform",
-          "support": {
-            "chrome": {
-              "version_added": "61"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "33",
-              "notes": "Before Firefox 69, the <code>tx</code> and <code>ty</code> parameters were required; they are now correctly optional, each defaulting to a value of 0."
-            },
-            "firefox_android": {
-              "version_added": "33",
-              "notes": "Before Firefox for Android 79, the <code>tx</code> and <code>ty</code> parameters were required; they are now correctly optional, each defaulting to a value of 0."
-            },
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": "11"
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1668,9 +1764,12 @@
       },
       "transformPoint": {
         "__compat": {
-          "description": "<code>transformPoint()</code>",
+          "description": "`transformPoint()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/transformPoint",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-transformpoint",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1692,7 +1791,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1703,9 +1803,12 @@
       },
       "translate": {
         "__compat": {
-          "description": "<code>translate()</code>",
+          "description": "`translate()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/translate",
           "spec_url": "https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-translate",
+          "tags": [
+            "web-features:dom-geometry"
+          ],
           "support": {
             "chrome": {
               "version_added": "61"
@@ -1727,7 +1830,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

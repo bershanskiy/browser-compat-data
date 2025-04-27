@@ -4,14 +4,17 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream",
         "spec_url": "https://w3c.github.io/mediacapture-main/#mediastream",
+        "tags": [
+          "web-features:media-capture"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "55"
             },
             {
-              "version_added": "21",
-              "prefix": "webkit"
+              "prefix": "webkit",
+              "version_added": "21"
             }
           ],
           "chrome_android": "mirror",
@@ -20,8 +23,8 @@
               "version_added": "12"
             },
             {
-              "version_added": "79",
-              "prefix": "webkit"
+              "prefix": "webkit",
+              "version_added": "79"
             }
           ],
           "firefox": {
@@ -39,7 +42,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -49,17 +53,20 @@
       },
       "MediaStream": {
         "__compat": {
-          "description": "<code>MediaStream()</code> constructor",
+          "description": "`MediaStream()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-constructor",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": [
               {
                 "version_added": "55"
               },
               {
-                "version_added": "21",
-                "prefix": "webkit"
+                "prefix": "webkit",
+                "version_added": "21"
               }
             ],
             "chrome_android": "mirror",
@@ -68,8 +75,8 @@
                 "version_added": "12"
               },
               {
-                "version_added": "79",
-                "prefix": "webkit"
+                "prefix": "webkit",
+                "version_added": "79"
               }
             ],
             "firefox": {
@@ -89,7 +96,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -102,6 +110,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/active",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-active",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "42"
@@ -125,7 +136,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -136,8 +148,7 @@
       },
       "active_event": {
         "__compat": {
-          "description": "<code>active</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/active_event",
+          "description": "`active` event",
           "support": {
             "chrome": {
               "version_added": "42"
@@ -161,11 +172,12 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
-            "standard_track": true,
+            "standard_track": false,
             "deprecated": false
           }
         }
@@ -174,6 +186,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/addTrack",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-addtrack",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -185,19 +200,13 @@
             "firefox": {
               "version_added": "44"
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
@@ -205,7 +214,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -216,9 +226,12 @@
       },
       "addtrack_event": {
         "__compat": {
-          "description": "<code>addtrack</code> event",
+          "description": "`addtrack` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/addtrack_event",
           "spec_url": "https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -235,18 +248,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -259,6 +269,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/clone",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-clone",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -282,7 +295,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -295,6 +309,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/getAudioTracks",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-getaudiotracks",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -305,7 +322,7 @@
             },
             "firefox": {
               "version_added": "22",
-              "notes": "Before Firefox 64, this method returned an array of <code>AudioStreamTrack</code> objects. However, <code>MediaStreamTrack</code> has now subsumed that interface's functionality."
+              "notes": "Before Firefox 64, this method returned an array of `AudioStreamTrack` objects. However, `MediaStreamTrack` has now subsumed that interface's functionality."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -313,9 +330,7 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
@@ -323,7 +338,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -336,6 +352,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/getTrackById",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-gettrackbyid",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -352,12 +371,8 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
@@ -365,7 +380,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -378,6 +394,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/getTracks",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-gettracks",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "38"
@@ -401,7 +420,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -414,6 +434,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/getVideoTracks",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-getvideotracks",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -424,7 +447,7 @@
             },
             "firefox": {
               "version_added": "22",
-              "notes": "Before Firefox 64, this method returned an array of <code>VideoStreamTrack</code> objects. However, <code>MediaStreamTrack</code> has now subsumed that interface's functionality."
+              "notes": "Before Firefox 64, this method returned an array of `VideoStreamTrack` objects. However, `MediaStreamTrack` has now subsumed that interface's functionality."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -432,9 +455,7 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
@@ -442,7 +463,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -455,6 +477,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/id",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-id",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -478,7 +503,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -489,7 +515,7 @@
       },
       "inactive_event": {
         "__compat": {
-          "description": "<code>inactive</code> event",
+          "description": "`inactive` event",
           "support": {
             "chrome": {
               "version_added": "42"
@@ -513,11 +539,12 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
-            "standard_track": true,
+            "standard_track": false,
             "deprecated": false
           }
         }
@@ -526,6 +553,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/removeTrack",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediastream-removetrack",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -543,9 +573,7 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
@@ -553,7 +581,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -564,9 +593,12 @@
       },
       "removetrack_event": {
         "__compat": {
-          "description": "<code>removetrack</code> event",
+          "description": "`removetrack` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStream/removetrack_event",
           "spec_url": "https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "26"
@@ -591,18 +623,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
-            "opera_android": {
-              "version_added": false
-            },
+            "opera": "mirror",
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

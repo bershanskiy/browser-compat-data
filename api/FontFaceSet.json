@@ -3,10 +3,14 @@
     "FontFaceSet": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet",
-        "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#FontFaceSet-interface",
+        "spec_url": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "tags": [
+          "web-features:font-loading"
+        ],
         "support": {
           "chrome": {
-            "version_added": "35"
+            "version_added": "35",
+            "notes": "Chrome does not expose the `FontFaceSet` interface directly, and is only available through [`Document.fonts`](https://developer.mozilla.org/docs/Web/API/Document/fonts) or [`WorkerGlobalScope.fonts`](https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/fonts)."
           },
           "chrome_android": "mirror",
           "edge": "mirror",
@@ -25,7 +29,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,11 +40,11 @@
       },
       "FontFaceSet": {
         "__compat": {
-          "description": "<code>FontFaceSet()</code> constructor",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-fontfaceset",
+          "description": "`FontFaceSet()` constructor",
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://crbug.com/40287940"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -54,22 +59,27 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "10"
+              "version_added": "10",
+              "notes": "Will be removed, see [bug 276794](https://webkit.org/b/276794)"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
-            "standard_track": true,
-            "deprecated": false
+            "standard_track": false,
+            "deprecated": true
           }
         }
       },
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -91,7 +101,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -103,7 +114,10 @@
       "add": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/add",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-add",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-add",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -125,7 +139,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -137,13 +152,21 @@
       "check": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/check",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-check",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-check",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
-            "chrome": {
-              "version_added": "35",
-              "partial_implementation": true,
-              "notes": "The method returns <code>false</code> instead of <code>true</code> for nonexistent or locally installed fonts. See <a href='https://crbug.com/591602'>bug 591602</a>."
-            },
+            "chrome": [
+              {
+                "version_added": "120"
+              },
+              {
+                "version_added": "35",
+                "partial_implementation": true,
+                "notes": "Prior to version 120, this method returned `false` instead of `true` for nonexistent or locally installed fonts. See [bug 40893726](https://crbug.com/40893726)."
+              }
+            ],
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
@@ -161,7 +184,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -173,7 +197,10 @@
       "clear": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/clear",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-clear",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-clear",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -195,7 +222,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -207,7 +235,10 @@
       "delete": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/delete",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-delete",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-delete",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -229,7 +260,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -241,6 +273,9 @@
       "entries": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/entries",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "48"
@@ -262,7 +297,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -274,6 +310,9 @@
       "forEach": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/forEach",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -295,7 +334,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -307,6 +347,9 @@
       "has": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/has",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -328,7 +371,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -340,6 +384,9 @@
       "keys": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/keys",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "48"
@@ -361,7 +408,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -373,7 +421,10 @@
       "load": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/load",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-load",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-load",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -395,7 +446,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -406,9 +458,12 @@
       },
       "loading_event": {
         "__compat": {
-          "description": "<code>loading</code> event",
+          "description": "`loading` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/loading_event",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-onloading",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloading",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -430,7 +485,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -441,9 +497,12 @@
       },
       "loadingdone_event": {
         "__compat": {
-          "description": "<code>loadingdone</code> event",
+          "description": "`loadingdone` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/loadingdone_event",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-onloadingdone",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloadingdone",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -465,7 +524,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -476,9 +536,12 @@
       },
       "loadingerror_event": {
         "__compat": {
-          "description": "<code>loadingerror</code> event",
+          "description": "`loadingerror` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/loadingerror_event",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-onloadingerror",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloadingerror",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -500,7 +563,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -512,7 +576,10 @@
       "ready": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/ready",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-ready",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-ready",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -534,7 +601,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -546,6 +614,9 @@
       "size": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/size",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -567,7 +638,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -579,7 +651,10 @@
       "status": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/status",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-font-loading/#dom-fontfaceset-status",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-status",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "35"
@@ -601,7 +676,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -613,6 +689,9 @@
       "values": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FontFaceSet/values",
+          "tags": [
+            "web-features:font-loading"
+          ],
           "support": {
             "chrome": {
               "version_added": "48"
@@ -634,7 +713,46 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "@@iterator": {
+        "__compat": {
+          "description": "[Symbol.iterator]",
+          "spec_url": "https://drafts.csswg.org/css-font-loading/#fontfaceset",
+          "tags": [
+            "web-features:font-loading"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "48"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "41"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "10"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

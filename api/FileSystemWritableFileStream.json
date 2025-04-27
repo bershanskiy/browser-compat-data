@@ -4,16 +4,19 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream",
         "spec_url": "https://fs.spec.whatwg.org/#api-filesystemwritablefilestream",
+        "tags": [
+          "web-features:file-system-access"
+        ],
         "support": {
           "chrome": {
             "version_added": "86"
           },
           "chrome_android": {
-            "version_added": false
+            "version_added": "109"
           },
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "111"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -23,14 +26,16 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://webkit.org/b/231706"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
@@ -39,16 +44,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/seek",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemwritablefilestream-seek",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "109"
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -58,14 +66,16 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/231706"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -75,16 +85,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/truncate",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemwritablefilestream-truncate",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "109"
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -94,14 +107,16 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/231706"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -111,16 +126,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/write",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemwritablefilestream-write",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "109"
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -134,10 +152,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

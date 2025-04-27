@@ -2,16 +2,33 @@
   "webextensions": {
     "api": {
       "browsingData": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData",
+          "support": {
+            "chrome": {
+              "version_added": "19"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "53"
+            },
+            "firefox_android": "mirror",
+            "opera": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror"
+          }
+        },
         "DataTypeSet": {
           "cache": {
             "__compat": {
+              "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/DataTypeSet",
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
@@ -36,11 +53,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
@@ -65,18 +80,21 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
-                "firefox_android": {
-                  "version_added": "56",
-                  "version_removed": "79"
-                },
+                "firefox_android": [
+                  {
+                    "version_added": "85"
+                  },
+                  {
+                    "version_added": "56",
+                    "version_removed": "79"
+                  }
+                ],
                 "opera": "mirror",
                 "safari": {
                   "version_added": false
@@ -89,11 +107,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },
@@ -110,18 +126,21 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
-                "firefox_android": {
-                  "version_added": "56",
-                  "version_removed": "79"
-                },
+                "firefox_android": [
+                  {
+                    "version_added": "85"
+                  },
+                  {
+                    "version_added": "56",
+                    "version_removed": "79"
+                  }
+                ],
                 "opera": "mirror",
                 "safari": {
                   "version_added": false
@@ -134,18 +153,21 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
-                "firefox_android": {
-                  "version_added": "56",
-                  "version_removed": "79"
-                },
+                "firefox_android": [
+                  {
+                    "version_added": "85"
+                  },
+                  {
+                    "version_added": "56",
+                    "version_removed": "79"
+                  }
+                ],
                 "opera": "mirror",
                 "safari": {
                   "version_added": false
@@ -158,11 +180,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "57"
                 },
@@ -181,11 +201,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "57"
                 },
@@ -204,16 +222,14 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
                 "firefox_android": {
-                  "version_added": false
+                  "version_added": "85"
                 },
                 "opera": "mirror",
                 "safari": {
@@ -227,11 +243,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
@@ -250,11 +264,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },
@@ -271,11 +283,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "38"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "53"
                 },
@@ -294,6 +304,7 @@
         "RemovalOptions": {
           "cookieStoreId": {
             "__compat": {
+              "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/RemovalOptions",
               "support": {
                 "chrome": {
                   "version_added": false
@@ -303,8 +314,28 @@
                   "version_added": "84"
                 },
                 "firefox_android": {
+                  "version_added": "84",
+                  "notes": "This option is currently limited to the `firefox-default` and `firefox-private` values."
+                },
+                "opera": "mirror",
+                "safari": {
                   "version_added": false
                 },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "excludeOrigin": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "74"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
                 "opera": "mirror",
                 "safari": {
                   "version_added": false
@@ -338,15 +369,32 @@
               }
             }
           },
+          "origin": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "74"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
           "originTypes": {
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "21"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },
@@ -362,11 +410,9 @@
               "__compat": {
                 "support": {
                   "chrome": {
-                    "version_added": true
+                    "version_added": "21"
                   },
-                  "edge": {
-                    "version_added": "79"
-                  },
+                  "edge": "mirror",
                   "firefox": {
                     "version_added": false
                   },
@@ -383,11 +429,9 @@
               "__compat": {
                 "support": {
                   "chrome": {
-                    "version_added": true
+                    "version_added": "21"
                   },
-                  "edge": {
-                    "version_added": "79"
-                  },
+                  "edge": "mirror",
                   "firefox": {
                     "version_added": false
                   },
@@ -405,24 +449,22 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "19"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
-                  "notes": "<code>since</code> is not supported with the following data types: <code>cache</code>, <code>indexedDB</code>, <code>localStorage</code>, and <code>serviceWorkers</code>.",
-                  "version_added": "53"
+                  "version_added": "53",
+                  "notes": "`since` is not supported with the following data types: `cache`, `indexedDB`, `localStorage`, and `serviceWorkers`."
                 },
                 "firefox_android": [
                   {
-                    "notes": "<code>since</code> is not supported with the following data types: <code>cache</code>, <code>indexedDB</code>, <code>localStorage</code>, and <code>serviceWorkers</code>.",
-                    "version_added": "85"
+                    "version_added": "85",
+                    "notes": "`since` is not supported with the following data types: `cache`, `indexedDB`, `localStorage`, and `serviceWorkers`."
                   },
                   {
-                    "notes": "<code>since</code> is not supported with the following data types: <code>cache</code>, <code>indexedDB</code>, <code>localStorage</code>, and <code>serviceWorkers</code>.",
                     "version_added": "56",
-                    "version_removed": "79"
+                    "version_removed": "79",
+                    "notes": "`since` is not supported with the following data types: `cache`, `indexedDB`, `localStorage`, and `serviceWorkers`."
                   }
                 ],
                 "opera": "mirror",
@@ -439,24 +481,22 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/remove",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "Specifying <code>dataTypes.history</code> will also remove download history and service workers.",
-                "version_added": "53"
+                "version_added": "53",
+                "notes": "Specifying `dataTypes.history` will also remove download history and service workers."
               },
               "firefox_android": [
                 {
-                  "notes": "Specifying <code>dataTypes.history</code> will also remove download history and service workers.",
-                  "version_added": "85"
+                  "version_added": "85",
+                  "notes": "Specifying `dataTypes.history` will also remove download history and service workers."
                 },
                 {
-                  "notes": "Specifying <code>dataTypes.history</code> will also remove download history and service workers.",
                   "version_added": "57",
-                  "version_removed": "79"
+                  "version_removed": "79",
+                  "notes": "Specifying `dataTypes.history` will also remove download history and service workers."
                 }
               ],
               "opera": "mirror",
@@ -472,24 +512,22 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeCache",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "<code>removalOptions.since</code> is not supported.",
-                "version_added": "53"
+                "version_added": "53",
+                "notes": "`removalOptions.since` is not supported."
               },
               "firefox_android": [
                 {
-                  "notes": "<code>removalOptions.since</code> is not supported.",
-                  "version_added": "85"
+                  "version_added": "85",
+                  "notes": "`removalOptions.since` is not supported."
                 },
                 {
-                  "notes": "<code>removalOptions.since</code> is not supported.",
                   "version_added": "57",
-                  "version_removed": "79"
+                  "version_removed": "79",
+                  "notes": "`removalOptions.since` is not supported."
                 }
               ],
               "opera": "mirror",
@@ -505,11 +543,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeCookies",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },
@@ -535,11 +571,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeDownloads",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },
@@ -560,11 +594,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeFormData",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },
@@ -585,18 +617,15 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeHistory",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "This function also removes download history and service workers.",
-                "version_added": "53"
+                "version_added": "53",
+                "notes": "This function also removes download history and service workers."
               },
               "firefox_android": {
-                "notes": "See <a href='https://bugzil.la/1363010'>bug 1363010</a>. Before Firefox for Android 79, <a href='https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/remove'><code>browser.history.remove(options, {history:true})</code></a> can be used instead.",
-                "version_added": false
+                "version_added": "85"
               },
               "opera": "mirror",
               "safari": {
@@ -611,18 +640,16 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removeLocalStorage",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "<code>removalOptions.since</code> is not supported.",
-                "version_added": "57"
+                "version_added": "57",
+                "notes": "`removalOptions.since` is not supported."
               },
               "firefox_android": {
-                "notes": "<code>removalOptions.since</code> is not supported.",
-                "version_added": "85"
+                "version_added": "85",
+                "notes": "`removalOptions.since` is not supported."
               },
               "opera": "mirror",
               "safari": {
@@ -660,21 +687,20 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removePasswords",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },
               "firefox_android": {
-                "version_added": false
+                "version_added": "85"
               },
               "opera": "mirror",
               "safari": {
                 "version_added": false
-              }
+              },
+              "safari_ios": "mirror"
             }
           }
         },
@@ -683,11 +709,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/removePluginData",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "19"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },
@@ -707,11 +731,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/settings",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "26"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "53"
               },

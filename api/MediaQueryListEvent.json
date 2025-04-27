@@ -3,7 +3,10 @@
     "MediaQueryListEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent",
-        "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#the-mediaquerylist-interface",
+        "spec_url": "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+        "tags": [
+          "web-features:matchmedia"
+        ],
         "support": {
           "chrome": {
             "version_added": "39"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +39,12 @@
       },
       "MediaQueryListEvent": {
         "__compat": {
-          "description": "<code>MediaQueryListEvent()</code> constructor",
+          "description": "`MediaQueryListEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-mediaquerylistevent-mediaquerylistevent",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-mediaquerylistevent",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -59,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -71,7 +79,10 @@
       "matches": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/matches",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-mediaquerylistevent-matches",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-matches",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -93,7 +104,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -105,7 +117,10 @@
       "media": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/media",
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-mediaquerylistevent-media",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-media",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -127,7 +142,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

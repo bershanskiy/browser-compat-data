@@ -4,13 +4,16 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Magnetometer",
         "spec_url": "https://w3c.github.io/magnetometer/#magnetometer-interface",
+        "tags": [
+          "web-features:magnetometer"
+        ],
         "support": {
           "chrome": {
             "version_added": "56",
             "flags": [
               {
                 "type": "preference",
-                "name": "#enable-experimental-web-platform-features",
+                "name": "#enable-generic-sensor-extra-classes",
                 "value_to_set": "Enabled"
               }
             ]
@@ -32,7 +35,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -42,12 +46,22 @@
       },
       "Magnetometer": {
         "__compat": {
-          "description": "<code>Magnetometer()</code> constructor",
+          "description": "`Magnetometer()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Magnetometer/Magnetometer",
           "spec_url": "https://w3c.github.io/magnetometer/#dom-magnetometer-magnetometer",
+          "tags": [
+            "web-features:magnetometer"
+          ],
           "support": {
             "chrome": {
-              "version_added": "56"
+              "version_added": "56",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-generic-sensor-extra-classes",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -60,19 +74,14 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": false
-            },
-            "webview_android": {
-              "version_added": false
-            }
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -85,9 +94,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Magnetometer/x",
           "spec_url": "https://w3c.github.io/magnetometer/#magnetometer-x",
+          "tags": [
+            "web-features:magnetometer"
+          ],
           "support": {
             "chrome": {
-              "version_added": "56"
+              "version_added": "56",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-generic-sensor-extra-classes",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -100,19 +119,14 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": false
-            },
-            "webview_android": {
-              "version_added": false
-            }
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -125,9 +139,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Magnetometer/y",
           "spec_url": "https://w3c.github.io/magnetometer/#magnetometer-y",
+          "tags": [
+            "web-features:magnetometer"
+          ],
           "support": {
             "chrome": {
-              "version_added": "56"
+              "version_added": "56",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-generic-sensor-extra-classes",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -140,19 +164,14 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": false
-            },
-            "webview_android": {
-              "version_added": false
-            }
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -165,9 +184,19 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Magnetometer/z",
           "spec_url": "https://w3c.github.io/magnetometer/#magnetometer-z",
+          "tags": [
+            "web-features:magnetometer"
+          ],
           "support": {
             "chrome": {
-              "version_added": "56"
+              "version_added": "56",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "#enable-generic-sensor-extra-classes",
+                  "value_to_set": "Enabled"
+                }
+              ]
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -180,19 +209,14 @@
             },
             "oculus": "mirror",
             "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": false
-            },
-            "webview_android": {
-              "version_added": false
-            }
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

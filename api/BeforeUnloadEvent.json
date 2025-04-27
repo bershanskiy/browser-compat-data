@@ -3,7 +3,10 @@
     "BeforeUnloadEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeUnloadEvent",
-        "spec_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-beforeunloadevent-interface",
+        "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface",
+        "tags": [
+          "web-features:beforeunload"
+        ],
         "support": {
           "chrome": {
             "version_added": "30"
@@ -32,9 +35,8 @@
           "samsunginternet_android": {
             "version_added": "3.0"
           },
-          "webview_android": {
-            "version_added": "≤37"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -44,11 +46,20 @@
       },
       "returnValue": {
         "__compat": {
-          "spec_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#dom-beforeunloadevent-returnvalue",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/BeforeUnloadEvent/returnValue",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-beforeunloadevent-returnvalue",
           "support": {
-            "chrome": {
-              "version_added": "30"
-            },
+            "chrome": [
+              {
+                "version_added": "119"
+              },
+              {
+                "version_added": "30",
+                "version_removed": "119",
+                "partial_implementation": true,
+                "notes": "Before Chrome 119, an empty string incorrectly activated the confirmation dialog."
+              }
+            ],
             "chrome_android": "mirror",
             "deno": {
               "version_added": false
@@ -73,20 +84,22 @@
             "samsunginternet_android": {
               "version_added": "3.0"
             },
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
-            "deprecated": false
+            "deprecated": true
           }
         }
       },
       "user_interaction": {
         "__compat": {
           "description": "User interaction required for dialog box",
+          "tags": [
+            "web-features:beforeunload"
+          ],
           "support": {
             "chrome": {
               "version_added": "60"
@@ -95,9 +108,7 @@
             "deno": {
               "version_added": false
             },
-            "edge": {
-              "version_added": "18"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": "44"
             },
@@ -113,7 +124,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

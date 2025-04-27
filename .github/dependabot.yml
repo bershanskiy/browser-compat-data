@@ -7,11 +7,11 @@ updates:
       time: "11:00"
     open-pull-requests-limit: 10
     labels:
-      - "infra :building_construction:"
-      - "dependencies :chains:"
+      - "infra"
+      - "dependencies"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
     labels:
-      - "infra :building_construction:"
+      - "infra"

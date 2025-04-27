@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement",
         "spec_url": "https://drafts.fxtf.org/filter-effects/#InterfaceSVGFEConvolveMatrixElement",
+        "tags": [
+          "web-features:svg-filters"
+        ],
         "support": {
           "chrome": {
             "version_added": "6"
@@ -31,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,7 +45,11 @@
       },
       "bias": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/bias",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-bias",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -69,7 +77,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,7 +89,11 @@
       },
       "divisor": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/divisor",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-divisor",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -108,7 +121,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -119,7 +133,11 @@
       },
       "edgeMode": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/edgeMode",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-edgemode",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -147,7 +165,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -158,7 +177,11 @@
       },
       "height": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/height",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-height",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -186,7 +209,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -197,7 +221,11 @@
       },
       "in1": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/in1",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-in1",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -225,7 +253,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -236,7 +265,11 @@
       },
       "kernelMatrix": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelMatrix",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-kernelmatrix",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -264,7 +297,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -275,7 +309,11 @@
       },
       "kernelUnitLengthX": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthX",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-kernelunitlengthx",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -303,7 +341,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -314,7 +353,11 @@
       },
       "kernelUnitLengthY": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthY",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-kernelunitlengthy",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -342,7 +385,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -353,7 +397,11 @@
       },
       "orderX": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/orderX",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-orderx",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -381,7 +429,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -392,7 +441,11 @@
       },
       "orderY": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/orderY",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-ordery",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -420,7 +473,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -431,7 +485,11 @@
       },
       "preserveAlpha": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/preserveAlpha",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-preservealpha",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -459,7 +517,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -470,7 +529,11 @@
       },
       "result": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/result",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-result",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -498,7 +561,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -509,7 +573,11 @@
       },
       "targetX": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/targetX",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-targetx",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -537,7 +605,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -548,7 +617,11 @@
       },
       "targetY": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/targetY",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfeconvolvematrixelement-targety",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -576,7 +649,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -587,7 +661,11 @@
       },
       "width": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/width",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-width",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -615,7 +693,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -626,7 +705,11 @@
       },
       "x": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/x",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-x",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -654,7 +737,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -665,7 +749,11 @@
       },
       "y": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/y",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfilterprimitivestandardattributes-y",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -693,7 +781,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

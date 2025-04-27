@@ -4,9 +4,12 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode",
         "spec_url": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioSourceNode",
+        "tags": [
+          "web-features:web-audio"
+        ],
         "support": {
           "chrome": {
-            "version_added": "23"
+            "version_added": "22"
           },
           "chrome_android": "mirror",
           "edge": {
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,17 +41,18 @@
       },
       "MediaStreamAudioSourceNode": {
         "__compat": {
-          "description": "<code>MediaStreamAudioSourceNode()</code> constructor",
+          "description": "`MediaStreamAudioSourceNode()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "55"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "79"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": "53"
             },
@@ -63,7 +68,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -76,9 +82,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/mediaStream",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastream",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
-              "version_added": "23"
+              "version_added": "22"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -97,7 +106,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

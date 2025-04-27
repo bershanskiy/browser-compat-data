@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder",
         "spec_url": "https://w3c.github.io/webcodecs/#imagedecoder-interface",
+        "tags": [
+          "web-features:webcodecs"
+        ],
         "support": {
           "chrome": {
             "version_added": "94"
@@ -11,7 +14,7 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "133"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -25,19 +28,23 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "ImageDecoder": {
         "__compat": {
-          "description": "<code>ImageDecoder()</code> constructor",
+          "description": "`ImageDecoder()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/ImageDecoder",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-imagedecoder",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -45,7 +52,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -59,10 +66,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -72,6 +80,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/close",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-close",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -79,7 +90,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -93,10 +104,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -106,6 +118,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/complete",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-complete",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -113,7 +128,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -127,10 +142,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -140,6 +156,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/completed",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-completed",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -147,7 +166,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -161,10 +180,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -172,7 +192,11 @@
       },
       "decode": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/decode",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-decode",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -180,7 +204,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -194,18 +218,24 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
         }
       },
-      "isTypeSupported": {
+      "isTypeSupported_static": {
         "__compat": {
+          "description": "`isTypeSupported()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/isTypeSupported_static",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-istypesupported",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -213,7 +243,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -227,10 +257,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -240,6 +271,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/reset",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-reset",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -247,7 +281,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -261,10 +295,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -274,6 +309,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/tracks",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -281,7 +319,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -295,10 +333,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -306,7 +345,11 @@
       },
       "type": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ImageDecoder/type",
           "spec_url": "https://w3c.github.io/webcodecs/#dom-imagedecoder-type",
+          "tags": [
+            "web-features:webcodecs"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -314,7 +357,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "133"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -328,10 +371,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

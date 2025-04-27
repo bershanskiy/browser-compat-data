@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode",
         "spec_url": "https://webaudio.github.io/web-audio-api/#BiquadFilterNode",
+        "tags": [
+          "web-features:web-audio"
+        ],
         "support": {
           "chrome": {
             "version_added": "14"
@@ -27,9 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": {
-            "version_added": "4.4.3"
-          }
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,17 +41,18 @@
       },
       "BiquadFilterNode": {
         "__compat": {
-          "description": "<code>BiquadFilterNode()</code> constructor",
+          "description": "`BiquadFilterNode()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/BiquadFilterNode",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-biquadfilternode-context-options",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "55"
             },
             "chrome_android": "mirror",
-            "edge": {
-              "version_added": "79"
-            },
+            "edge": "mirror",
             "firefox": {
               "version_added": "53"
             },
@@ -65,7 +68,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -78,6 +82,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/Q",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-q",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "14"
@@ -103,7 +110,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -116,9 +124,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/detune",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-detune",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
-              "version_added": "14"
+              "version_added": "25"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -139,9 +150,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -154,6 +164,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/frequency",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-frequency",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "14"
@@ -179,7 +192,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -192,6 +206,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/gain",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-gain",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "14"
@@ -217,7 +234,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -230,9 +248,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/getFrequencyResponse",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-getfrequencyresponse",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
-              "version_added": "14"
+              "version_added": "17"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -255,7 +276,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -268,6 +290,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/type",
           "spec_url": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-type",
+          "tags": [
+            "web-features:web-audio"
+          ],
           "support": {
             "chrome": {
               "version_added": "14"
@@ -293,7 +318,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

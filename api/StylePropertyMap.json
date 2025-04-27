@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap",
         "spec_url": "https://drafts.css-houdini.org/css-typed-om/#the-stylepropertymap",
+        "tags": [
+          "web-features:css-typed-om"
+        ],
         "support": {
           "chrome": {
             "version_added": "66"
@@ -11,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1278697"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -21,14 +25,15 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "16.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
@@ -37,6 +42,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap/append",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-append",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -44,7 +52,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -54,14 +63,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -71,6 +81,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap/clear",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-clear",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -78,7 +91,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -88,14 +102,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -105,6 +120,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap/delete",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-delete",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -112,7 +130,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -122,14 +141,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -139,6 +159,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap/set",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-set",
+          "tags": [
+            "web-features:css-typed-om"
+          ],
           "support": {
             "chrome": {
               "version_added": "66"
@@ -146,7 +169,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1278697"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -156,14 +180,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

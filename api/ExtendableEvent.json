@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ExtendableEvent",
         "spec_url": "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
@@ -31,7 +34,10 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -41,12 +47,15 @@
       },
       "ExtendableEvent": {
         "__compat": {
-          "description": "<code>ExtendableEvent()</code> constructor",
+          "description": "`ExtendableEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ExtendableEvent/ExtendableEvent",
           "spec_url": "https://w3c.github.io/ServiceWorker/#dom-extendableevent-extendableevent",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
-              "version_added": "40"
+              "version_added": "41"
             },
             "chrome_android": "mirror",
             "edge": {
@@ -71,7 +80,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -84,6 +96,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ExtendableEvent/waitUntil",
           "spec_url": "https://w3c.github.io/ServiceWorker/#dom-extendableevent-waituntil",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -111,7 +126,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -121,7 +139,10 @@
         },
         "async_waitUntil": {
           "__compat": {
-            "description": "<code>waitUntil</code> may be called asynchronously",
+            "description": "`waitUntil` may be called asynchronously",
+            "tags": [
+              "web-features:service-workers"
+            ],
             "support": {
               "chrome": {
                 "version_added": "60"
@@ -145,7 +166,10 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": {
+                "version_added": false
+              }
             },
             "status": {
               "experimental": false,

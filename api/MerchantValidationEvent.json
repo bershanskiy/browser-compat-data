@@ -10,15 +10,15 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": "64",
-            "notes": "Available only in Nightly builds.",
+            "version_added": "preview",
             "flags": [
               {
                 "name": "dom.payments.request.supportedRegions",
                 "type": "preference",
                 "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
               }
-            ]
+            ],
+            "notes": "Available only in Nightly builds."
           },
           "firefox_android": "mirror",
           "ie": {
@@ -32,7 +32,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -42,7 +43,7 @@
       },
       "MerchantValidationEvent": {
         "__compat": {
-          "description": "<code>MerchantValidationEvent()</code> constructor",
+          "description": "`MerchantValidationEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MerchantValidationEvent/MerchantValidationEvent",
           "support": {
             "chrome": {
@@ -51,12 +52,17 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "64",
+              "version_added": "preview",
+              "flags": [
+                {
+                  "name": "dom.payments.request.supportedRegions",
+                  "type": "preference",
+                  "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
+                }
+              ],
               "notes": "Available only in Nightly builds."
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -68,7 +74,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -79,7 +86,7 @@
       },
       "complete": {
         "__compat": {
-          "description": "<code>complete()</code>",
+          "description": "`complete()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MerchantValidationEvent/complete",
           "support": {
             "chrome": {
@@ -88,12 +95,17 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "64",
+              "version_added": "preview",
+              "flags": [
+                {
+                  "name": "dom.payments.request.supportedRegions",
+                  "type": "preference",
+                  "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
+                }
+              ],
               "notes": "Available only in Nightly builds."
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -105,7 +117,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -124,12 +137,17 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "64",
+              "version_added": "preview",
+              "flags": [
+                {
+                  "name": "dom.payments.request.supportedRegions",
+                  "type": "preference",
+                  "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
+                }
+              ],
               "notes": "Available only in Nightly builds."
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -141,7 +159,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -160,12 +179,17 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "64",
+              "version_added": "preview",
+              "flags": [
+                {
+                  "name": "dom.payments.request.supportedRegions",
+                  "type": "preference",
+                  "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
+                }
+              ],
               "notes": "Available only in Nightly builds."
             },
-            "firefox_android": {
-              "version_added": false
-            },
+            "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
@@ -177,7 +201,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

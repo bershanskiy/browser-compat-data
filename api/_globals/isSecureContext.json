@@ -2,8 +2,11 @@
   "api": {
     "isSecureContext": {
       "__compat": {
-        "mdn_url": "https://developer.mozilla.org/docs/Web/API/isSecureContext",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/isSecureContext",
         "spec_url": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-issecurecontext-dev",
+        "tags": [
+          "web-features:is-secure-context"
+        ],
         "support": {
           "chrome": {
             "version_added": "47"
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,6 +42,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:is-secure-context"
+          ],
           "support": {
             "chrome": {
               "version_added": "55"
@@ -65,7 +72,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

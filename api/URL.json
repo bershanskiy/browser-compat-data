@@ -3,15 +3,18 @@
     "URL": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL",
-        "spec_url": "https://url.spec.whatwg.org/#api",
+        "spec_url": "https://url.spec.whatwg.org/#url",
+        "tags": [
+          "web-features:url"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "32"
             },
             {
-              "version_added": "19",
-              "prefix": "webkit"
+              "prefix": "webkit",
+              "version_added": "19"
             }
           ],
           "chrome_android": "mirror",
@@ -23,7 +26,7 @@
           },
           "firefox": {
             "version_added": "19",
-            "notes": "Before version 57, Firefox had a bug whereby single quotes contained in URLs are escaped when accessed via URL APIs (see <a href='https://bugzil.la/1386683'>bug 1386683</a>)."
+            "notes": "Before version 57, Firefox had a bug whereby single quotes contained in URLs are escaped when accessed via URL APIs (see [bug 1386683](https://bugzil.la/1386683))."
           },
           "firefox_android": "mirror",
           "ie": {
@@ -34,10 +37,9 @@
               "version_added": "10.0.0"
             },
             {
-              "version_added": "7.0.0",
-              "version_removed": "10.0.0",
+              "version_added": "6.13.0",
               "partial_implementation": true,
-              "notes": "Available as a part of the <code>URL</code> module."
+              "notes": "Available as a part of the `url` module."
             }
           ],
           "oculus": "mirror",
@@ -48,8 +50,8 @@
               "version_added": "7"
             },
             {
-              "version_added": "6",
-              "prefix": "webkit"
+              "prefix": "webkit",
+              "version_added": "6"
             }
           ],
           "safari_ios": "mirror",
@@ -59,10 +61,11 @@
               "version_added": "4.4"
             },
             {
-              "version_added": "4",
-              "prefix": "webkit"
+              "prefix": "webkit",
+              "version_added": "4"
             }
-          ]
+          ],
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -72,9 +75,12 @@
       },
       "URL": {
         "__compat": {
-          "description": "<code>URL()</code> constructor",
+          "description": "`URL()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/URL",
-          "spec_url": "https://url.spec.whatwg.org/#constructors",
+          "spec_url": "https://url.spec.whatwg.org/#dom-url-url",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "19"
@@ -85,26 +91,19 @@
             },
             "edge": {
               "version_added": "12",
-              "notes": "Before Edge 79, query arguments in the base URL argument are removed when calling the <code>URL</code> constructor."
+              "notes": "Before Edge 79, query arguments in the base URL argument are removed when calling the `URL` constructor."
             },
             "firefox": {
-              "version_added": "26"
+              "version_added": "26",
+              "notes": "Before version 122, `host`, `hostname`, and `port` were not parsed for unknown protocols/schemes."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
-            "nodejs": [
-              {
-                "version_added": "10.0.0"
-              },
-              {
-                "version_added": "7.0.0",
-                "version_removed": "10.0.0",
-                "partial_implementation": true,
-                "notes": "Available as a part of the <code>URL</code> module."
-              }
-            ],
+            "nodejs": {
+              "version_added": "6.13.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -115,12 +114,13 @@
               {
                 "version_added": "6",
                 "partial_implementation": true,
-                "notes": "In Safari 14 and earlier, calling the <code>URL</code> constructor with a base URL whose value is <code>undefined</code> causes Safari to throw a <code>TypeError</code>; see <a href='https://webkit.org/b/216841'>WebKit bug 216841</a>."
+                "notes": "Before Safari 14.1, calling the `URL` constructor with a base URL whose value is `undefined` caused Safari to throw a `TypeError`, see [bug 216841](https://webkit.org/b/216841)."
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -129,10 +129,65 @@
           }
         }
       },
-      "createObjectURL": {
+      "canParse_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/createObjectURL",
+          "description": "`canParse()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/canParse_static",
+          "spec_url": "https://url.spec.whatwg.org/#dom-url-canparse",
+          "tags": [
+            "web-features:url-canparse"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "120"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.33"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "115"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": [
+              {
+                "version_added": "19.9.0"
+              },
+              {
+                "version_added": "18.17.0",
+                "version_removed": "19.0.0"
+              }
+            ],
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "17"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "createObjectURL_static": {
+        "__compat": {
+          "description": "`createObjectURL()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/createObjectURL_static",
           "spec_url": "https://w3c.github.io/FileAPI/#dfn-createObjectURL",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "19"
@@ -146,12 +201,12 @@
             },
             "firefox": {
               "version_added": "19",
-              "notes": "<code>createObjectURL()</code> is no longer available within the context of a <code>ServiceWorker</code>."
+              "notes": "`createObjectURL()` is no longer available within the context of a `ServiceWorker`."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "10",
-              "notes": "If the underlying object does not have a content type set, using this URL as the <code>src</code> of an <code>img</code> tag fails intermittently with error DOM7009."
+              "notes": "If the underlying object does not have a content type set, using this URL as the `src` of an `img` tag fails intermittently with error DOM7009."
             },
             "nodejs": {
               "version_added": "16.7.0"
@@ -164,60 +219,13 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
-          }
-        },
-        "MediaStream_support": {
-          "__compat": {
-            "description": "Support for <code>MediaStream</code> objects",
-            "support": {
-              "chrome": {
-                "version_added": "19",
-                "version_removed": "71"
-              },
-              "chrome_android": "mirror",
-              "deno": {
-                "version_added": false
-              },
-              "edge": {
-                "version_added": "12",
-                "version_removed": "79"
-              },
-              "firefox": {
-                "version_added": "19",
-                "version_removed": "62"
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": "10"
-              },
-              "nodejs": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": {
-                "version_added": "15",
-                "version_removed": "60"
-              },
-              "opera_android": "mirror",
-              "safari": {
-                "version_added": "6",
-                "version_removed": "11"
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": false,
-              "deprecated": true
-            }
           }
         }
       },
@@ -225,6 +233,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/hash",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-hash",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -244,7 +255,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -254,7 +265,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -267,6 +279,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/host",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-host",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -286,7 +301,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -296,7 +311,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -309,6 +325,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/hostname",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-hostname",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -328,7 +347,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -338,7 +357,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -351,6 +371,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/href",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-href",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -370,7 +393,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -380,7 +403,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -393,6 +417,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/origin",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-origin",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -411,7 +438,7 @@
               {
                 "version_added": "26",
                 "version_removed": "49",
-                "notes": "Results for <code>URL</code> using the <code>blob</code> scheme incorrectly returned <code>null</code>."
+                "notes": "Results for `URL` using the `blob` scheme incorrectly returned `null`."
               }
             ],
             "firefox_android": "mirror",
@@ -419,7 +446,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -431,7 +458,53 @@
             "samsunginternet_android": {
               "version_added": "6.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "parse_static": {
+        "__compat": {
+          "description": "`parse()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/parse_static",
+          "spec_url": "https://url.spec.whatwg.org/#dom-url-parse",
+          "tags": [
+            "web-features:url"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "126"
+            },
+            "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.43"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "126"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "nodejs": {
+              "version_added": "22.1.0"
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "18"
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -444,6 +517,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/password",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-password",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -463,7 +539,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -475,7 +551,8 @@
             "samsunginternet_android": {
               "version_added": "6.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -488,6 +565,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/pathname",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-pathname",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -501,14 +581,14 @@
             },
             "firefox": {
               "version_added": "22",
-              "notes": "Before Firefox 53, <code>pathname</code> and <code>search</code> returned wrong values for custom protocols. Given <code>protocol:host/x?a=true&amp;b=false</code>, <code>pathname</code> would return \"/x?a=true&amp;b=false\" and <code>search</code> would return \"\", rather than \"/x\" and \"?a=true&amp;b=false\" respectively. See <a href='https://bugzil.la/1310483'>bug 1310483</a>."
+              "notes": "Before Firefox 53, `pathname` and `search` returned wrong values for custom protocols. Given `protocol:host/x?a=true&amp;b=false`, `pathname` would return \"/x?a=true&amp;b=false\" and `search` would return \"\", rather than \"/x\" and \"?a=true&amp;b=false\" respectively. See [bug 1310483](https://bugzil.la/1310483)."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -518,7 +598,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -531,6 +612,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/port",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-port",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -550,7 +634,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -560,7 +644,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -573,6 +658,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/protocol",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-protocol",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -592,7 +680,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -602,7 +690,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -611,10 +700,14 @@
           }
         }
       },
-      "revokeObjectURL": {
+      "revokeObjectURL_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/revokeObjectURL",
+          "description": "`revokeObjectURL()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/revokeObjectURL_static",
           "spec_url": "https://w3c.github.io/FileAPI/#dfn-revokeObjectURL",
+          "tags": [
+            "web-features:file"
+          ],
           "support": {
             "chrome": {
               "version_added": "19"
@@ -628,7 +721,7 @@
             },
             "firefox": {
               "version_added": "19",
-              "notes": "<code>revokeObjectURL()</code> is no longer available within the context of a <code>ServiceWorker</code>."
+              "notes": "`revokeObjectURL()` is no longer available within the context of a `ServiceWorker`."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -645,7 +738,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -658,6 +752,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/search",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-search",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -671,14 +768,14 @@
             },
             "firefox": {
               "version_added": "22",
-              "notes": "Before Firefox 53, <code>pathname</code> and <code>search</code> returned wrong values for custom protocols. Given <code>protocol:host/x?a=true&amp;b=false</code>, <code>pathname</code> would return \"/x?a=true&amp;b=false\" and <code>search</code> would return \"\", rather than \"/x\" and \"?a=true&amp;b=false\" respectively. See <a href='https://bugzil.la/1310483'>bug 1310483</a>."
+              "notes": "Before Firefox 53, `pathname` and `search` returned wrong values for custom protocols. Given `protocol:host/x?a=true&amp;b=false`, `pathname` would return \"/x?a=true&amp;b=false\" and `search` would return \"\", rather than \"/x\" and \"?a=true&amp;b=false\" respectively. See [bug 1310483](https://bugzil.la/1310483)."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -688,7 +785,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -701,6 +799,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/searchParams",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-searchparams",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "51"
@@ -721,24 +822,29 @@
             },
             "nodejs": [
               {
-                "version_added": "7.5.0"
+                "version_added": "7.3.0"
               },
               {
                 "version_added": "7.0.0",
-                "version_removed": "7.5.0",
+                "version_removed": "7.3.0",
                 "partial_implementation": true,
-                "notes": "An object matching the <code>URLSearchParams</code> interface is returned, but it contains no data."
+                "notes": "An object matching the `URLSearchParams` interface is returned, but it contains no data."
+              },
+              {
+                "version_added": "6.13.0",
+                "version_removed": "7.0.0"
               }
             ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "10"
+              "version_added": "10.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -751,6 +857,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/toJSON",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-tojson",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "71"
@@ -769,9 +878,15 @@
             "ie": {
               "version_added": false
             },
-            "nodejs": {
-              "version_added": "7.7.0"
-            },
+            "nodejs": [
+              {
+                "version_added": "7.7.0"
+              },
+              {
+                "version_added": "6.13.0",
+                "version_removed": "7.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -780,7 +895,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -793,6 +909,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/toString",
           "spec_url": "https://url.spec.whatwg.org/#URL-stringification-behavior",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "19"
@@ -812,7 +931,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -824,7 +943,8 @@
             "samsunginternet_android": {
               "version_added": "6.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -837,6 +957,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/URL/username",
           "spec_url": "https://url.spec.whatwg.org/#dom-url-username",
+          "tags": [
+            "web-features:url"
+          ],
           "support": {
             "chrome": {
               "version_added": "32"
@@ -856,7 +979,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": "7.0.0"
+              "version_added": "6.13.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -868,7 +991,8 @@
             "samsunginternet_android": {
               "version_added": "6.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

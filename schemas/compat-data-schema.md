@@ -18,6 +18,8 @@ Compatibility data is organized in top-level directories for each broad area cov
 
 - [javascript/](../javascript) contains data for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) built-in Objects, statement, operators, and other ECMAScript language features.
 
+- [manifests/](../manifests) contains data for various manifests, such as the [Web Application Manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/manifest).
+
 - [mathml/](../mathml) contains data for [MathML](https://developer.mozilla.org/docs/Web/MathML) elements, attributes, and global attributes.
 
 - [svg/](../svg) contains data for [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) elements, attributes, and global attributes.
@@ -26,15 +28,17 @@ Compatibility data is organized in top-level directories for each broad area cov
 
 - [webextensions/](../webextensions) contains data for [WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) JavaScript APIs and manifest keys.
 
+- [webassembly/](../webassembly) contains data for [Web Assembly](https://webassembly.org/specs/) features.
+
 ### File and folder breakdown
 
-The JSON files contain [feature identifiers](#feature-identifiers), which are relevant for accessing the data. Except for the top-level directories, the file and sub-folder hierarchies aren't of any meaning for the exports. Compatibility data can be stored in a single large file or might be divided in smaller files and put into sub folders.
+The JSON files contain [feature identifiers](#features), which are relevant for accessing the data. Except for the top-level directories, the file and sub-folder hierarchies aren't of any meaning for the exports. Compatibility data can be stored in a single large file or might be divided in smaller files and placed into subfolders.
 
 ## Understanding the schema
 
 ### Feature hierarchies
 
-Each feature is identified by a unique hierarchy of strings, e.g the `text-align` property is identified by `css.properties.text-align`.
+Each feature is identified by a unique hierarchy of strings, e.g. the `text-align` property is identified by `css.properties.text-align`.
 
 In the JSON file it looks like this:
 
@@ -64,13 +68,13 @@ The hierarchy of identifiers is not defined by the schema and is a convention of
 
 A feature is described by an identifier containing the `__compat` property. In other words, identifiers without `__compat` aren't necessarily features, but help to nest the features properly.
 
-When an identifier has a `__compat` block, it represents its basic support, indicating that a minimal implementation of a functionality is included. What it represents exactly depends of the evolution of the feature over time, both in terms of specifications and of browser support.
+When an identifier has a `__compat` block, it represents its basic support, indicating that a minimal implementation of a functionality is included. What it represents exactly depends on the evolution of the feature over time, both in terms of specifications and of browser support.
 
 #### Sub-features
 
 To add a sub-feature, a new identifier is added below the main feature at the level of a `__compat` object (see the sub-features "start" and "end" above). The same could be done for sub-sub-features. There is no depth limit.
 
-See [Data guidelines](/docs/data-guidelines/index.md) for more information about feature naming conventions and other best practices.
+See [Data guidelines](../docs/data-guidelines/index.md) for more information about feature naming conventions and other best practices.
 
 ### The `__compat` object
 
@@ -78,73 +82,83 @@ In BCD, every feature is defined using a `__compat` object, which contains infor
 
 Here is an example of a `__compat` statement, with all of the properties and the common possible support statements.
 
-```js
+```jsonc
 {
   "api": {
     "Document": {
       "fake_event": {
-        "__compat": { // <---
-          "description": "<code>fake</code> event", // A friendly description of the feature
+        // ↓↓↓↓↓↓
+        "__compat": {
+          "description": "`fake` event", // A friendly description of the feature
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Document/fake_event", // The associated MDN article
-          "spec_url": [ // The spec URL(s) for the feature if applicable, may be one or many
+          "spec_url": [
+            // The spec URL(s) for the feature if applicable, may be one or many
             "https://example.com/a-fake-spec#fake-event",
-            "https://example.com/a-fake-spec#onfake"
+            "https://example.com/a-fake-spec#onfake",
           ],
-          "support": { // The support data for each browser
-            "chrome": { // Supported since Chrome 57 on
-              "version_added": "57"
+          "support": {
+            // The support data for each browser
+            "chrome": {
+              // Supported since Chrome 57 on
+              "version_added": "57",
             },
-            "chrome_android": "mirror", // Mirrors from Chrome Desktop, so "57"
-            "edge": {  // Supported since Edge 12, with a note about a difference in behavior
+            "chrome_android": "mirror", // Mirrors from the upstream browser -- in this case, it is Chrome Desktop, so the data becomes "57"
+            "edge": {
+              // Supported since Edge 12, with a note about a difference in behavior
               "version_added": "12",
-              "notes": "Before Edge 79, the event interface included additional proprietary properties."
+              "notes": "Before Edge 79, the event interface included additional proprietary properties.",
             },
-            "firefox": { // Added in Firefox 59, then removed in Firefox 80 (AKA supported from 59 until 79)
+            "firefox": {
+              // Added in Firefox 59, then removed in Firefox 80 (AKA supported from 59 until 79)
               "version_added": "59",
-              "version_removed": "80"
+              "version_removed": "80",
             },
-            "firefox_android": { // Supported in Firefox Android, we just don't know what version it was added in
-              "version_added": true
+            "firefox_android": {
+              // Support is known to be in at least Firefox Android 50, but it could have been added earlier
+              "version_added": "≤50",
             },
-            "ie": { // Supported since IE 10, but has a caveat that impacts compatibility
+            "ie": {
+              // Supported since IE 10, but has a caveat that impacts compatibility
               "version_added": "10",
               "partial_implementation": true,
-              "notes": "The <code>onfake</code> event handler property is not supported."
+              "notes": "The `onfake` event handler property is not supported.",
             },
             "oculus": "mirror",
-            "opera": { // Not supported at all in Opera
-              "version_added": false
+            "opera": {
+              // Not supported at all in Opera
+              "version_added": false,
             },
-            "opera_android": { // We don't know if Opera Android supports this or not
-              "version_added": null
-            },
-            "safari": [ // A support statement can be an array of multiple statements to better describe the compatibility story
+            "opera_android": "mirror",
+            "safari": [
+              // A support statement can be an array of multiple statements to better describe the compatibility story
               {
-                "version_added": "13" // Supported since Safari 13...
+                "version_added": "13", // Supported since Safari 13...
               },
               {
                 "version_added": "10.1", // ...but also supported since Safari 10.1 with the "webkit" prefix (AKA "webkitfake")...
-                "prefix": "webkit"
+                "prefix": "webkit",
               },
               {
                 "version_added": "4", // ...and supported between Safari 4 (inclusive) and 10.1 (exclusive) as "webkitnonreal"
                 "version_removed": "10.1",
-                "alternative_name": "webkitnonreal"
-              }
+                "alternative_name": "webkitnonreal",
+              },
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            // If a browser is not defined, it means we don't have support information for that browser (or for web extensions, the browser has no support at all)
           },
-          "status": { // Standards track, deprecation and experimental status
+          "status": {
+            // Standards track, deprecation and experimental status
             "experimental": false,
             "standard_track": true,
-            "deprecated": false
-          }
-        }
-      }
-    }
-  }
+            "deprecated": false,
+          },
+        },
+      },
+    },
+  },
 }
 ```
 
@@ -160,7 +174,7 @@ The `__compat` object consists of the following:
 - An optional `description` property to **describe the feature**.
   A string containing a human-readable description of the feature.
   It is intended to be used as a caption or title and should be kept short.
-  The `<code>`, `<kbd>`, `<em>`, and `<strong>` HTML elements may be used.
+  This property may be formatted using Markdown, see the rules for `notes`.
 
 - An automated `source_file` property containing the path to the source file containing the feature. This is used to create links to the repository source (in the form of `https://github.com/mdn/browser-compat-data/blob/main/<source_file>`). For example, `api.History.forward` will contain a `source_file` property of `api/History.json` since the feature is defined in that file.
 
@@ -170,6 +184,13 @@ The `__compat` object consists of the following:
 - An optional `spec_url` property as a URL or an array of URLs, each of which is for a specific part of a specification in which this feature is defined.
   Each URL must either contain a fragment identifier (e.g. `https://tc39.es/proposal-promise-allSettled/#sec-promise.allsettled`), or else must match the regular-expression pattern `^https://registry.khronos.org/webgl/extensions/[^/]+/` (e.g. `https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/`).
   Each URL must link to a specification published by a standards body or a formal proposal that may lead to such publication.
+
+- An optional `tags` property which is an array of strings allowing to assign tags to the feature.
+  Each tag in the array must be namespaced. The currently allowed namespaces are:
+
+  - `web-features`: A namespace to tag features belonging to a web platform feature group as defined by [web-platform-dx/web-features](https://github.com/web-platform-dx/web-features/blob/main/features/README.md).
+
+  For more information, see the [tagging data guidelines](../docs/data-guidelines/tags.md).
 
 #### Browser identifiers
 
@@ -189,7 +210,8 @@ The currently accepted browser identifiers should be declared in alphabetical or
 - `safari`, Safari on macOS
 - `safari_ios`, Safari on iOS, based on the iOS version
 - `samsunginternet_android`, the Samsung Internet browser (Android version)
-- `webview_android`, WebView, the built-in browser for Android
+- `webview_android`, WebView, the embedded browser for Android applications
+- `webview_ios`, WebKit WebView, the embedded browser for iOS applications, based on the iOS version
 
 Desktop browser identifiers are mandatory, with the `version_added` property set to `null` if support is unknown.
 
@@ -230,7 +252,7 @@ Most of the browsers are derivatives of other browsers, such as mobile counterpa
 
 An example of this would be the following:
 
-```js
+```jsonc
 "support": {
   "chrome": {
     "version_added": "66"
@@ -243,7 +265,7 @@ This also helps with maintaining derivatives with a different release schedule t
 
 ### Compat data in support statements
 
-The `simple_support_statement` object is the core object containing the compatibility information for a browser. It consist of the following properties:
+The `simple_support_statement` object is the core object containing the compatibility information for a browser. It consists of the following properties:
 
 #### `version_added`
 
@@ -257,11 +279,19 @@ This is the only mandatory property and it contains a string with the version nu
 }
 ```
 
-- Supported, but version unknown:
+- Support in version 79, but possibly supported earlier:
 
 ```json
 {
-  "version_added": true
+  "version_added": "≤79"
+}
+```
+
+- Support in latest beta/preview release:
+
+```json
+{
+  "version_added": "preview"
 }
 ```
 
@@ -273,69 +303,39 @@ This is the only mandatory property and it contains a string with the version nu
 }
 ```
 
-- Support unknown (default value, if browser omitted):
-
-```json
-{
-  "version_added": null
-}
-```
-
-Note: many data categories no longer allow for `version_added` to be set to `true` or `null`, as we are working to [improve the quality of the compatibility data](https://github.com/mdn/browser-compat-data/issues/3555).
-
 #### `version_removed`
 
 Contains a string with the version number the sub-feature was removed in. It may also be `true`, meaning that it is unknown in which version support was removed. If the feature has not been removed from the browser, this property is omitted, rather than being set to `false`.
 
-Default values:
-
-- If `version_added` is set to `true`, `false`, or a string, `version_removed` defaults to `false`.
-- If `version_added` is set to `null`, the default value of `version_removed` is also `null`.
-
 Examples:
 
-- Removed in version 10 (added in 3.5):
+- Removed in version 10 (added in 4 and supported up until 9):
 
 ```json
 {
-  "version_added": "3.5",
+  "version_added": "4",
   "version_removed": "10"
 }
 ```
 
-- Removed in some version after 3.5:
+#### `version_last`
+
+> [!NOTE]
+> This property is automatically generated at build time.
+
+If `version_removed` is present, a `version_last` is automatically generated during build time, which will be set to the version number of the last browser version that supported the feature. For example, assuming the browser version only incremented in whole numbers, if a feature was added in version 20 and supported until 29, then was no longer supported in 30, `version_removed` would be `30` and `version_last` will be `29`:
 
 ```json
 {
-  "version_added": "3.5",
-  "version_removed": true
+  "version_added": "20",
+  "version_removed": "30",
+  "version_last": "29"
 }
 ```
 
-Note: many data categories no longer allow for `version_removed` to be set to `true`, as we are working to [improve the quality of the compatibility data](https://github.com/mdn/browser-compat-data/issues/3555).
+### Ranged versions (≤)
 
-### Ranged versions
-
-For certain browsers, ranged versions are allowed as it is sometimes impractical to find out in which early version of a browser a feature shipped. Ranged versions should be used sparingly and only when it is impossible to find out the version number a feature initially shipped in. The following ranged version values are allowed:
-
-- Edge
-  - "≤18" (the last EdgeHTML-based Edge and possibly earlier)
-  - "≤79" (the first Chromium-based Edge and possibly in EdgeHTML-based Edge)
-- Internet Explorer
-  - "≤6" (the earliest IE version testable in BrowserStack and possibly earlier)
-  - "≤11" (the last IE version and possibly earlier)
-- Opera
-  - "≤12.1" (the last Presto-based Opera and possibly earlier)
-  - "≤15" (the first Chromium-based Opera and possibly in Presto-based Opera)
-- Opera Android
-  - "≤12.1" (the last Presto-based Opera and possibly earlier)
-  - "≤14" (the first Chromium-based Opera and possibly in Presto-based Opera)
-- Safari
-  - "≤4" (the earliest Safari version testable in BrowserStack and possibly earlier)
-- Safari iOS
-  - "≤3" (the earliest Safari iOS version testable in BrowserStack and possibly earlier)
-- WebView Android
-  - "≤37" (the first Chrome-based WebView and possibly previous Android versions)
+For certain browser versions, ranged versions (also called "ranged values") are allowed as it is sometimes impractical to find out in which early version of a browser a feature shipped. Ranged versions are a way to include some version data in BCD, while also stating the version number may not be accurate. These values state that the feature has been confirmed to be supported in at least a certain version of the browser, but may have been added in an earlier release. Ranged versions are indicated by the `Less Than or Equal To (U+2264)` (`≤`) symbol before the version number.
 
 For example, the statement below means, "supported in at least version 37 and possibly in earlier versions as well".
 
@@ -344,6 +344,8 @@ For example, the statement below means, "supported in at least version 37 and po
   "version_added": "≤37"
 }
 ```
+
+Ranged versions should be used sparingly and only when it is impossible or highly impractical to find out the version number a feature initially shipped in. Ranged versions are allowed for browser releases dating back two years or earlier. Contributors are encouraged to eliminate ranged versions and replace them with exact version numbers whenever possible.
 
 #### `prefix`
 
@@ -394,13 +396,13 @@ An optional array of objects describing flags that must be configured for this b
   - `preference` a flag the user can set (like in `about:config` in Firefox).
   - `runtime_flag` a flag to be set before starting the browser.
 - `name` (mandatory): a string giving the value which the specified flag must be set to for this feature to work.
-- `value_to_set` (optional): representing the actual value to set the flag to. It is a string, that may be converted to the right type (that is `true` or `false` for Boolean value, or `4` for an integer value). It doesn't need to be enclosed in `<code>` tags.
+- `value_to_set` (optional): representing the actual value to set the flag to. It is a string, that may be converted to the right type (that is `true` or `false` for Boolean value, or `4` for an integer value). It doesn't need to be enclosed in backticks.
 
 Example for one flag required:
 
 ```json
 {
-  "version_added": true,
+  "version_added": "40",
   "flags": [
     {
       "type": "preference",
@@ -415,7 +417,7 @@ Example for two flags required:
 
 ```json
 {
-  "version_added": true,
+  "version_added": "40",
   "flags": [
     {
       "type": "preference",
@@ -450,16 +452,16 @@ Example:
   "version_added": "3.5",
   "notes": [
     "Does not work on ::first-letter pseudo-elements.",
-    "Has not been updated to the latest specification, see <a href='https://bugzil.la/1234567'>bug 1234567</a>."
+    "Has not been updated to the latest specification, see [bug 1234567](https://bugzil.la/1234567)."
   ]
 }
 ```
 
-The `<code>`, `<kbd>`, `<em>`, and `<strong>` HTML elements may be used. In addition, `<a>` tags may be used, such as to link to a browser's bug report, or MDN documentation. Do not format `notes` as Markdown.
+Notes may be formatted in Markdown. Only links, bold, italics, codeblocks, and `<kbd>` may be used. Headers, tables and other Markdown features or HTML elements may not be used.
 
 #### `partial_implementation`
 
-A `boolean` value indicating whether or not the implementation of the sub-feature deviates from the specification in a way that may cause significant compatibility problems. It defaults to `false` (no interoperability problems expected). If set to `true`, it is [required](../docs/data-guidelines/index.md#partial_implementation-requires-a-note). that you add a note explaining how it diverges from the standard (such as that it implements an old version of the standard).
+A `boolean` value indicating whether or not the implementation of the sub-feature deviates from the specification in a way that may cause significant compatibility problems. It defaults to `false` (no interoperability problems expected). If set to `true`, it is [required](../docs/data-guidelines/index.md#partial_implementation-requires-a-note) that you add a note explaining how it diverges from the standard (such as that it implements an old version of the standard).
 
 ```json
 {
@@ -475,9 +477,9 @@ The mandatory status property contains information about stability of the featur
 
 - `experimental`: a `boolean` value.
 
-  If `experimental` is `true`, it means that Web developers should experiment with this feature and provide feedback to browser vendors and standards authors about this feature. It also means that Web developers _should not_ rely on the feature's continued existence in its current (or potentially any) form in future browser releases.
+  If `experimental` is `true`, it means the feature was implemented in only one browser engine and was implemented recently. It also means that Web developers _should not_ rely on the feature's continued existence in its current (or potentially any) form in future browser releases.
 
-  If `experimental` is `false`, it means the functionality is mature and no significant changes are expected in the future.
+  If `experimental` is `false`, it means the feature was implemented in multiple browser engines, or the feature had been implemented over two years ago in any one browser engine.
 
 - `standard_track`: a `boolean` value.
 

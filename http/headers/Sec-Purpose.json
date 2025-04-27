@@ -1,0 +1,132 @@
+{
+  "http": {
+    "headers": {
+      "Sec-Purpose": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Purpose",
+          "spec_url": [
+            "https://fetch.spec.whatwg.org/#sec-purpose-header",
+            "https://wicg.github.io/nav-speculation/prefetch.html#sec-purpose-header"
+          ],
+          "tags": [
+            "web-features:link-rel-prefetch"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "110"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "115"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": {
+              "version_added": false
+            },
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": true,
+            "deprecated": false
+          }
+        },
+        "prefetch": {
+          "__compat": {
+            "description": "`Sec-Purpose` for `&lt;link rel=\"prefetch\"&gt;` prefetch",
+            "tags": [
+              "web-features:link-rel-prefetch"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": false,
+                "notes": "Doesn't support `Sec-Purpose` for `&lt;link rel=\"prefetch\"&gt;`. In Chrome, the legacy `Purpose: prefetch` header is used to indicate a `link` request is a prefetch. See [bug 40236973](https://crbug.com/40236973)."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "115",
+                "notes": [
+                  "`Sec-Purpose: prefetch` replaces the non-standard `X-moz: prefetch` header that was used to indicate a `link` prefetch request in earlier versions.",
+                  "Prefetch requests should also include the header `Accept` header string for navigations, but `Accept: */*` is sent instead."
+                ]
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": {
+                "version_added": false
+              },
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "speculationrules": {
+          "__compat": {
+            "description": "`Sec-Purpose` for `&lt;script type=\"speculationrules\"&gt;` prefetch",
+            "tags": [
+              "web-features:speculation-rules"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "110"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": {
+                "version_added": false
+              },
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error",
           "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects",
+          "tags": [
+            "web-features:snapshot:ecmascript-3",
+            "web-features:javascript"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -38,7 +42,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -48,9 +53,13 @@
         },
         "Error": {
           "__compat": {
-            "description": "<code>Error()</code> constructor",
+            "description": "`Error()` constructor",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/Error",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-constructor",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:javascript"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -84,7 +93,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -94,7 +104,7 @@
           },
           "fileName_parameter": {
             "__compat": {
-              "description": "<code>fileName</code> parameter",
+              "description": "`fileName` parameter",
               "support": {
                 "chrome": {
                   "version_added": false
@@ -122,7 +132,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -133,7 +144,7 @@
           },
           "lineNumber_parameter": {
             "__compat": {
-              "description": "<code>lineNumber</code> parameter",
+              "description": "`lineNumber` parameter",
               "support": {
                 "chrome": {
                   "version_added": false
@@ -161,7 +172,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -172,8 +184,12 @@
           },
           "options_cause_parameter": {
             "__compat": {
-              "description": "<code>options.cause</code> parameter",
+              "description": "`options.cause` parameter",
               "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
+              "tags": [
+                "web-features:snapshot:ecmascript-2022",
+                "web-features:error-cause"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "93"
@@ -195,15 +211,14 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                  "version_added": false
-                },
+                "opera_android": "mirror",
                 "safari": {
                   "version_added": "15"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -213,12 +228,59 @@
             }
           }
         },
-        "cause": {
+        "captureStackTrace": {
           "__compat": {
-            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/captureStackTrace",
+            "spec_url": "https://github.com/tc39/proposal-error-capturestacktrace?tab=readme-ov-file#errorcapturestacktrace-1",
             "support": {
               "chrome": {
-                "version_added": "93"
+                "version_added": "3"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "138"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "0.10.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "17.3"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "cause": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/cause",
+            "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
+            "tags": [
+              "web-features:snapshot:ecmascript-2022",
+              "web-features:error-cause"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "93",
+                "notes": "Before version 125, default console logging for `Error` objects does not print the cause."
               },
               "chrome_android": "mirror",
               "deno": {
@@ -236,18 +298,16 @@
                 "version_added": "16.9.0"
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": false
-              },
-              "opera_android": {
-                "version_added": false
-              },
+              "opera": "mirror",
+              "opera_android": "mirror",
               "safari": {
-                "version_added": "15"
+                "version_added": "15",
+                "notes": "Default console logging for `Error` objects does not print the cause."
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -286,7 +346,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -325,11 +386,58 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
               "standard_track": false,
+              "deprecated": false
+            }
+          }
+        },
+        "isError": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/isError",
+            "spec_url": "https://tc39.es/proposal-is-error/#sec-error.iserror",
+            "tags": [
+              "web-features:is-error"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "134"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": "2.2"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "138"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "18.4",
+                "partial_implementation": true,
+                "notes": "Returns `false` for `DOMException` instances."
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
               "deprecated": false
             }
           }
@@ -364,7 +472,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -377,6 +486,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/message",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.message",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:javascript"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -410,7 +523,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -423,6 +537,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/name",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.name",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:javascript"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -456,7 +574,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -467,9 +586,12 @@
         },
         "serializable_object": {
           "__compat": {
-            "description": "<code>Error</code> is serializable",
+            "description": "`Error` is serializable",
             "mdn_url": "https://developer.mozilla.org/docs/Glossary/Serializable_object",
             "spec_url": "https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects",
+            "tags": [
+              "web-features:serializable-errors"
+            ],
             "support": {
               "chrome": {
                 "version_added": "77"
@@ -482,8 +604,9 @@
               "firefox": {
                 "version_added": "103",
                 "notes": [
-                  "Version 103 serialized properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                  "Version 104 additionally supports serialization of <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                  "Version 103 serialized properties: `name`, `message`, `cause`, `fileName`, `lineNumber` and `columnNumber`.",
+                  "Version 104 adds serialization of `stack` in the main thread ([`window.postMessage()`](https://developer.mozilla.org/docs/Web/API/Window/postMessage) and [`structuredClone()`](https://developer.mozilla.org/docs/Web/API/structuredClone)).",
+                  "Version 110 adds serialization of `stack` in workers ([`worker.postMessage()`](https://developer.mozilla.org/docs/Web/API/Worker/postMessage) and [`structuredClone()`](https://developer.mozilla.org/docs/Web/API/structuredClone))."
                 ]
               },
               "firefox_android": "mirror",
@@ -501,7 +624,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -546,9 +670,48 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": false,
+              "deprecated": false
+            }
+          }
+        },
+        "stackTraceLimit": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/stackTraceLimit",
+            "support": {
+              "chrome": {
+                "version_added": "3"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "16.17.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "11.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -561,6 +724,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/toString",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.tostring",
+            "tags": [
+              "web-features:snapshot:ecmascript-3",
+              "web-features:javascript"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -594,7 +761,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

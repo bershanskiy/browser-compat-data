@@ -3,19 +3,14 @@
     "elements": {
       "mtd": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mtd",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtd",
           "spec_url": "https://w3c.github.io/mathml-core/#entry-in-table-or-matrix-mtd",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
-              "version_added": "104",
-              "impl_url": "https://crrev.com/c/3657309",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "#enable-experimental-web-platform-features",
-                  "value_to_set": "Enabled"
-                }
-              ]
+              "version_added": "109"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -32,11 +27,10 @@
             "safari": {
               "version_added": "5.1"
             },
-            "safari_ios": {
-              "version_added": false
-            },
+            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -46,6 +40,9 @@
         },
         "columnalign": {
           "__compat": {
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -65,11 +62,10 @@
               "safari": {
                 "version_added": "5.1"
               },
-              "safari_ios": {
-                "version_added": false
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -80,9 +76,13 @@
         },
         "columnspan": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#dfn-columnspan",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "117"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -99,11 +99,10 @@
               "safari": {
                 "version_added": "5.1"
               },
-              "safari_ios": {
-                "version_added": false
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -114,6 +113,9 @@
         },
         "rowalign": {
           "__compat": {
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -133,11 +135,10 @@
               "safari": {
                 "version_added": "5.1"
               },
-              "safari_ios": {
-                "version_added": false
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -148,9 +149,13 @@
         },
         "rowspan": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#dfn-rowspan",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "117"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -167,11 +172,10 @@
               "safari": {
                 "version_added": "5.1"
               },
-              "safari_ios": {
-                "version_added": false
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

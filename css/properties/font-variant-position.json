@@ -4,11 +4,14 @@
       "font-variant-position": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-position",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-fonts/#font-variant-position-prop",
+          "spec_url": "https://drafts.csswg.org/css-fonts/#font-variant-position-prop",
+          "tags": [
+            "web-features:font-variant-position"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/1212668'>bug 1212668</a>."
+              "notes": "The property is recognized, but has no effect."
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -27,12 +30,127 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "normal": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#font-variant-position-normal-value",
+            "tags": [
+              "web-features:font-variant-position"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": false,
+                "notes": "The property is recognized, but has no effect."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "34"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "9.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "sub": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-position-sub",
+            "tags": [
+              "web-features:font-variant-position"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": false,
+                "notes": "The property is recognized, but has no effect."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "34"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "9.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "super": {
+          "__compat": {
+            "spec_url": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-position-super",
+            "tags": [
+              "web-features:font-variant-position"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": false,
+                "notes": "The property is recognized, but has no effect."
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "34"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "9.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       }

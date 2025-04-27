@@ -3,9 +3,15 @@
     "types": {
       "counters": {
         "__compat": {
-          "description": "<code>counters()</code>",
+          "description": "`counters()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/counters",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-lists/#counter-functions",
+          "spec_url": [
+            "https://drafts.csswg.org/css-lists/#counter-functions",
+            "https://drafts.csswg.org/css-counter-styles/#extending-css2"
+          ],
+          "tags": [
+            "web-features:counters"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -35,7 +41,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

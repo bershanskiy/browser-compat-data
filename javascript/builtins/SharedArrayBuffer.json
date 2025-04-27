@@ -5,6 +5,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
           "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects",
+          "tags": [
+            "web-features:snapshot:ecmascript-2017",
+            "web-features:shared-memory"
+          ],
           "support": {
             "chrome": {
               "version_added": "68"
@@ -17,7 +21,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": "78"
+              "version_added": "79"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -34,7 +38,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -44,9 +51,13 @@
         },
         "SharedArrayBuffer": {
           "__compat": {
-            "description": "<code>SharedArrayBuffer()</code> constructor",
+            "description": "`SharedArrayBuffer()` constructor",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer",
             "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-constructor",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:shared-memory"
+            ],
             "support": {
               "chrome": {
                 "version_added": "68"
@@ -59,7 +70,7 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "78"
+                "version_added": "79"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -76,7 +87,106 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          },
+          "maxByteLength_option": {
+            "__compat": {
+              "description": "`maxByteLength` option",
+              "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-constructor",
+              "tags": [
+                "web-features:snapshot:ecmascript-2024",
+                "web-features:resizable-buffers"
+              ],
+              "support": {
+                "chrome": {
+                  "version_added": "111"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                  "version_added": "1.33"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "128"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                  "version_added": false
+                },
+                "nodejs": {
+                  "version_added": "20.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                  "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                  "version_added": false
+                },
+                "webview_ios": "mirror"
+              },
+              "status": {
+                "experimental": false,
+                "standard_track": true,
+                "deprecated": false
+              }
+            }
+          }
+        },
+        "byteLength": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength",
+            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.bytelength",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:shared-memory"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "68"
+              },
+              "chrome_android": {
+                "version_added": "89"
+              },
+              "deno": {
+                "version_added": "1.0"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "79"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "8.10.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "15.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -85,40 +195,139 @@
             }
           }
         },
-        "byteLength": {
+        "grow": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength",
-            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.bytelength",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/grow",
+            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.grow",
+            "tags": [
+              "web-features:snapshot:ecmascript-2024",
+              "web-features:resizable-buffers"
+            ],
             "support": {
               "chrome": {
-                "version_added": "68"
+                "version_added": "111"
               },
-              "chrome_android": {
-                "version_added": "89"
-              },
+              "chrome_android": "mirror",
               "deno": {
-                "version_added": "1.0"
+                "version_added": "1.33"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "78"
+                "version_added": "128"
               },
               "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
               "nodejs": {
-                "version_added": "8.10.0"
+                "version_added": "20.0.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": "15.2"
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "growable": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/growable",
+            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable",
+            "tags": [
+              "web-features:snapshot:ecmascript-2024",
+              "web-features:resizable-buffers"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "111"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": "1.33"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "128"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "20.0.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "16.4"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "maxByteLength": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/maxByteLength",
+            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.maxbytelength",
+            "tags": [
+              "web-features:snapshot:ecmascript-2024",
+              "web-features:resizable-buffers"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "111"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": "1.33"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "128"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "20.0.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "16.4"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -131,6 +340,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
             "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.slice",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:shared-memory"
+            ],
             "support": {
               "chrome": {
                 "version_added": "68"
@@ -143,7 +356,7 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": "78"
+                "version_added": "79"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -160,7 +373,60 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "@@species": {
+          "__compat": {
+            "description": "[Symbol.species]",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Symbol.species",
+            "spec_url": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-%symbol.species%",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:shared-memory"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "68"
+              },
+              "chrome_android": {
+                "version_added": "89"
+              },
+              "deno": {
+                "version_added": "1.0"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "79"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": "8.10.0"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "15.2"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

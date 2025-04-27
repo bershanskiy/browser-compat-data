@@ -3,15 +3,16 @@
     "elements": {
       "output": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/output",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/output",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element",
+          "tags": [
+            "web-features:output"
+          ],
           "support": {
             "chrome": {
               "version_added": "10"
             },
-            "chrome_android": {
-              "version_added": true
-            },
+            "chrome_android": "mirror",
             "edge": {
               "version_added": "≤18"
             },
@@ -27,16 +28,15 @@
               "version_added": "11"
             },
             "opera_android": {
-              "version_added": null
+              "version_added": "11"
             },
             "safari": {
               "version_added": "7"
             },
-            "safari_ios": {
-              "version_added": true
-            },
+            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -46,15 +46,16 @@
         },
         "for": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Attributes/for",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/for",
             "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for",
+            "tags": [
+              "web-features:output"
+            ],
             "support": {
               "chrome": {
                 "version_added": "10"
               },
-              "chrome_android": {
-                "version_added": true
-              },
+              "chrome_android": "mirror",
               "edge": {
                 "version_added": "≤18"
               },
@@ -70,16 +71,15 @@
                 "version_added": "11"
               },
               "opera_android": {
-                "version_added": null
+                "version_added": "11"
               },
               "safari": {
                 "version_added": "7"
               },
-              "safari_ios": {
-                "version_added": true
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -90,13 +90,15 @@
         },
         "form": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+            "tags": [
+              "web-features:output"
+            ],
             "support": {
               "chrome": {
                 "version_added": "10"
               },
-              "chrome_android": {
-                "version_added": true
-              },
+              "chrome_android": "mirror",
               "edge": {
                 "version_added": "≤18"
               },
@@ -112,16 +114,15 @@
                 "version_added": "11"
               },
               "opera_android": {
-                "version_added": null
+                "version_added": "11"
               },
               "safari": {
                 "version_added": "7"
               },
-              "safari_ios": {
-                "version_added": true
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -132,13 +133,15 @@
         },
         "name": {
           "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+            "tags": [
+              "web-features:output"
+            ],
             "support": {
               "chrome": {
                 "version_added": "10"
               },
-              "chrome_android": {
-                "version_added": true
-              },
+              "chrome_android": "mirror",
               "edge": {
                 "version_added": "≤18"
               },
@@ -154,16 +157,15 @@
                 "version_added": "11"
               },
               "opera_android": {
-                "version_added": null
+                "version_added": "11"
               },
               "safari": {
                 "version_added": "7"
               },
-              "safari_ios": {
-                "version_added": true
-              },
+              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

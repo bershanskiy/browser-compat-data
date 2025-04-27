@@ -3,6 +3,9 @@
     "VRDisplayCapabilities": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities",
+        "tags": [
+          "web-features:webvr"
+        ],
         "support": {
           "chrome": {
             "version_added": false
@@ -52,7 +55,8 @@
             "version_added": "6.0",
             "notes": "Google Cardboard supported in Samsung Internet 7.0."
           },
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -63,6 +67,9 @@
       "canPresent": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities/canPresent",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -112,7 +119,8 @@
               "version_added": "6.0",
               "notes": "Google Cardboard supported in Samsung Internet 7.0."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -124,6 +132,9 @@
       "hasExternalDisplay": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities/hasExternalDisplay",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -173,7 +184,8 @@
               "version_added": "6.0",
               "notes": "Google Cardboard supported in Samsung Internet 7.0."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -185,6 +197,9 @@
       "hasOrientation": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities/hasOrientation",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -234,7 +249,8 @@
               "version_added": "6.0",
               "notes": "Google Cardboard supported in Samsung Internet 7.0."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -246,6 +262,9 @@
       "hasPosition": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities/hasPosition",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -295,7 +314,8 @@
               "version_added": "6.0",
               "notes": "Google Cardboard supported in Samsung Internet 7.0."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -307,6 +327,9 @@
       "maxLayers": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VRDisplayCapabilities/maxLayers",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -356,7 +379,8 @@
               "version_added": "6.0",
               "notes": "Google Cardboard supported in Samsung Internet 7.0."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

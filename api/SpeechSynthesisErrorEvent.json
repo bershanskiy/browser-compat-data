@@ -3,7 +3,10 @@
     "SpeechSynthesisErrorEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent",
-        "spec_url": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent",
+        "spec_url": "https://webaudio.github.io/web-speech-api/#speechsynthesiserrorevent",
+        "tags": [
+          "web-features:speech-synthesis"
+        ],
         "support": {
           "chrome": {
             "version_added": "33"
@@ -37,8 +40,9 @@
           },
           "webview_android": {
             "version_added": false,
-            "notes": "See <a href='https://crbug.com/487255'>bug 487255</a>."
-          }
+            "impl_url": "https://crbug.com/40417848"
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -48,8 +52,12 @@
       },
       "SpeechSynthesisErrorEvent": {
         "__compat": {
-          "description": "<code>SpeechSynthesisErrorEvent()</code> constructor",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent",
+          "description": "`SpeechSynthesisErrorEvent()` constructor",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/SpeechSynthesisErrorEvent",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "71"
@@ -77,7 +85,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -89,7 +98,10 @@
       "error": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/error",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-error",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesiserrorevent-error",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -123,7 +135,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

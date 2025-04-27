@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGScriptElement",
         "spec_url": "https://svgwg.org/svg2-draft/interact.html#InterfaceSVGScriptElement",
+        "tags": [
+          "web-features:svg"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -35,7 +38,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "3"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,9 +47,48 @@
           "deprecated": false
         }
       },
+      "async": {
+        "__compat": {
+          "tags": [
+            "web-features:svg"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "117"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "crossOrigin": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/interact.html#__svg__SVGScriptElement__crossOrigin",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -67,7 +110,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -76,9 +120,49 @@
           }
         }
       },
+      "defer": {
+        "__compat": {
+          "tags": [
+            "web-features:svg"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "117"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "href": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGScriptElement/href",
           "spec_url": "https://svgwg.org/svg2-draft/types.html#__svg__SVGURIReference__href",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -110,7 +194,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -121,7 +206,11 @@
       },
       "type": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGScriptElement/type",
           "spec_url": "https://svgwg.org/svg2-draft/interact.html#__svg__SVGScriptElement__type",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -153,7 +242,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

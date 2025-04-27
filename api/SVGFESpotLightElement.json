@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement",
         "spec_url": "https://drafts.fxtf.org/filter-effects/#InterfaceSVGFESpotLightElement",
+        "tags": [
+          "web-features:svg-filters"
+        ],
         "support": {
           "chrome": {
             "version_added": "5"
@@ -31,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,7 +45,11 @@
       },
       "limitingConeAngle": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/limitingConeAngle",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-limitingconeangle",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -69,7 +77,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,7 +89,11 @@
       },
       "pointsAtX": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtX",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-pointsatx",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -108,7 +121,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -119,7 +133,11 @@
       },
       "pointsAtY": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtY",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-pointsaty",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -147,7 +165,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -158,7 +177,11 @@
       },
       "pointsAtZ": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtZ",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-pointsatz",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -186,7 +209,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -197,7 +221,11 @@
       },
       "specularExponent": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/specularExponent",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-specularexponent",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -225,7 +253,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -236,7 +265,11 @@
       },
       "x": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/x",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-x",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -264,7 +297,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -275,7 +309,11 @@
       },
       "y": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/y",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-y",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -303,7 +341,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -314,7 +353,11 @@
       },
       "z": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/z",
           "spec_url": "https://drafts.fxtf.org/filter-effects/#dom-svgfespotlightelement-z",
+          "tags": [
+            "web-features:svg-filters"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
@@ -342,7 +385,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

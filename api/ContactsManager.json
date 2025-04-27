@@ -3,7 +3,10 @@
     "ContactsManager": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContactsManager",
-        "spec_url": "https://w3c.github.io/contact-api/spec/#contacts-manager",
+        "spec_url": "https://w3c.github.io/contact-picker/#contacts-manager",
+        "tags": [
+          "web-features:contact-picker"
+        ],
         "support": {
           "chrome": {
             "version_added": false
@@ -13,7 +16,8 @@
           },
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1756767"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -34,8 +38,14 @@
               }
             ]
           },
-          "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "samsunginternet_android": {
+            "version_added": "14.0",
+            "version_removed": "22.0",
+            "partial_implementation": true,
+            "notes": "This API was exposed but failed upon opening a contact selector."
+          },
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -46,7 +56,10 @@
       "getProperties": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContactsManager/getProperties",
-          "spec_url": "https://w3c.github.io/contact-api/spec/#contacts-manager-getproperties",
+          "spec_url": "https://w3c.github.io/contact-picker/#contacts-manager-getproperties",
+          "tags": [
+            "web-features:contact-picker"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -56,7 +69,8 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1756767"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -77,8 +91,14 @@
                 }
               ]
             },
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "samsunginternet_android": {
+              "version_added": "14.0",
+              "version_removed": "22.0",
+              "partial_implementation": true,
+              "notes": "This API was exposed but failed upon opening a contact selector."
+            },
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -90,7 +110,10 @@
       "select": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ContactsManager/select",
-          "spec_url": "https://w3c.github.io/contact-api/spec/#contacts-manager-select",
+          "spec_url": "https://w3c.github.io/contact-picker/#contacts-manager-select",
+          "tags": [
+            "web-features:contact-picker"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -100,7 +123,8 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1756767"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -121,8 +145,14 @@
                 }
               ]
             },
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "samsunginternet_android": {
+              "version_added": "14.0",
+              "version_removed": "22.0",
+              "partial_implementation": true,
+              "notes": "This API was exposed but failed upon opening a contact selector."
+            },
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

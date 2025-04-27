@@ -2,8 +2,11 @@
   "api": {
     "indexedDB": {
       "__compat": {
-        "mdn_url": "https://developer.mozilla.org/docs/Web/API/indexedDB",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/indexedDB",
         "spec_url": "https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb",
+        "tags": [
+          "web-features:indexeddb"
+        ],
         "support": {
           "chrome": {
             "version_added": "24"
@@ -20,8 +23,8 @@
               "version_added": "16"
             },
             {
-              "version_added": "10",
-              "prefix": "moz"
+              "prefix": "moz",
+              "version_added": "10"
             }
           ],
           "firefox_android": {
@@ -38,7 +41,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -49,6 +53,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:indexeddb"
+          ],
           "support": {
             "chrome": {
               "version_added": "24"
@@ -75,7 +82,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

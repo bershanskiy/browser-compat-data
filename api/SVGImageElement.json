@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement",
         "spec_url": "https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGImageElement",
+        "tags": [
+          "web-features:svg"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -35,7 +38,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "3"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -45,17 +49,19 @@
       },
       "crossOrigin": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/HTMLImageElement/crossOrigin",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/crossOrigin",
           "spec_url": "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__crossOrigin",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
-              "version_added": false,
-              "notes": "See <a href='https://crbug.com/842321'>bug 842321</a>."
+              "version_added": "118"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "114"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -65,11 +71,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "17.2"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -80,9 +87,12 @@
       },
       "decode": {
         "__compat": {
-          "description": "<code>decode()</code>",
+          "description": "`decode()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/decode",
           "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode-dev",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "64"
@@ -100,11 +110,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -117,6 +128,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/decoding",
           "spec_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decoding",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "65"
@@ -138,7 +152,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -151,6 +166,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/height",
           "spec_url": "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__height",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -182,7 +200,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -195,6 +214,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/href",
           "spec_url": "https://svgwg.org/svg2-draft/types.html#__svg__SVGURIReference__href",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -226,7 +248,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -239,6 +262,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/preserveAspectRatio",
           "spec_url": "https://svgwg.org/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -270,7 +296,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -283,6 +310,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/width",
           "spec_url": "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__width",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -314,7 +344,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -327,6 +358,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/x",
           "spec_url": "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__x",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -358,7 +392,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -371,6 +406,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGImageElement/y",
           "spec_url": "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__y",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -402,7 +440,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

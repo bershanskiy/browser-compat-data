@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReportingObserver",
         "spec_url": "https://w3c.github.io/reporting/#interface-reporting-observer",
+        "tags": [
+          "web-features:reporting"
+        ],
         "support": {
           "chrome": {
             "version_added": "69"
@@ -11,7 +14,14 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "65",
+            "flags": [
+              {
+                "type": "preference",
+                "name": "dom.reporting.enabled",
+                "value_to_set": "true"
+              }
+            ]
           },
           "firefox_android": "mirror",
           "ie": {
@@ -21,23 +31,27 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "16.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "ReportingObserver": {
         "__compat": {
-          "description": "<code>ReportingObserver()</code> constructor",
+          "description": "`ReportingObserver()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReportingObserver/ReportingObserver",
           "spec_url": "https://w3c.github.io/reporting/#dom-reportingobserver-reportingobserver",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -45,7 +59,14 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "65",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.reporting.enabled",
+                  "value_to_set": "true"
+                }
+              ]
             },
             "firefox_android": "mirror",
             "ie": {
@@ -55,14 +76,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -71,6 +93,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -78,7 +103,14 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "77",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.reporting.enabled",
+                  "value_to_set": "true"
+                }
+              ]
             },
             "firefox_android": "mirror",
             "ie": {
@@ -97,7 +129,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -110,6 +143,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReportingObserver/disconnect",
           "spec_url": "https://w3c.github.io/reporting/#dom-reportingobserver-disconnect",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -117,7 +153,14 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "65",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.reporting.enabled",
+                  "value_to_set": "true"
+                }
+              ]
             },
             "firefox_android": "mirror",
             "ie": {
@@ -127,14 +170,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -144,6 +188,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReportingObserver/observe",
           "spec_url": "https://w3c.github.io/reporting/#dom-reportingobserver-observe",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -151,7 +198,14 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "65",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.reporting.enabled",
+                  "value_to_set": "true"
+                }
+              ]
             },
             "firefox_android": "mirror",
             "ie": {
@@ -161,14 +215,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -178,6 +233,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ReportingObserver/takeRecords",
           "spec_url": "https://w3c.github.io/reporting/#dom-reportingobserver-takerecords",
+          "tags": [
+            "web-features:reporting"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -185,7 +243,14 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "65",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "dom.reporting.enabled",
+                  "value_to_set": "true"
+                }
+              ]
             },
             "firefox_android": "mirror",
             "ie": {
@@ -195,14 +260,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

@@ -4,7 +4,10 @@
       "grid-column": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-column",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-grid/#placement-shorthands",
+          "spec_url": "https://drafts.csswg.org/css-grid/#placement-shorthands",
+          "tags": [
+            "web-features:grid"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -30,7 +33,8 @@
             "samsunginternet_android": {
               "version_added": "6.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

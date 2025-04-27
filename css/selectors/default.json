@@ -3,11 +3,14 @@
     "selectors": {
       "default": {
         "__compat": {
-          "description": "<code>:default</code>",
+          "description": "`:default`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:default",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-default",
-            "https://w3c.github.io/csswg-drafts/selectors/#default-pseudo"
+            "https://drafts.csswg.org/selectors/#default-pseudo"
+          ],
+          "tags": [
+            "web-features:default"
           ],
           "support": {
             "chrome": {
@@ -38,7 +41,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

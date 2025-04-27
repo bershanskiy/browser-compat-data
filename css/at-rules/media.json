@@ -3,11 +3,14 @@
     "at-rules": {
       "media": {
         "__compat": {
-          "description": "<code>@media</code>",
+          "description": "`@media`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media",
           "spec_url": [
-            "https://w3c.github.io/csswg-drafts/mediaqueries/#media-descriptor-table",
-            "https://w3c.github.io/csswg-drafts/css-conditional-3/#at-media"
+            "https://drafts.csswg.org/mediaqueries/#media-descriptor-table",
+            "https://drafts.csswg.org/css-conditional-3/#at-media"
+          ],
+          "tags": [
+            "web-features:media-queries"
           ],
           "support": {
             "chrome": {
@@ -39,8 +42,9 @@
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
-              "version_added": "≤37"
-            }
+              "version_added": "2"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -50,9 +54,12 @@
         },
         "any-hover": {
           "__compat": {
-            "description": "<code>any-hover</code> media feature",
+            "description": "`any-hover` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/any-hover",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#any-input",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#any-input",
+            "tags": [
+              "web-features:interaction"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -78,7 +85,8 @@
               "samsunginternet_android": {
                 "version_added": "5.0"
               },
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -89,9 +97,12 @@
         },
         "any-pointer": {
           "__compat": {
-            "description": "<code>any-pointer</code> media feature",
+            "description": "`any-pointer` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/any-pointer",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#any-input",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#any-input",
+            "tags": [
+              "web-features:interaction"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -115,7 +126,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -126,9 +138,12 @@
         },
         "aspect-ratio": {
           "__compat": {
-            "description": "<code>aspect-ratio</code> media feature",
+            "description": "`aspect-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/aspect-ratio",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#aspect-ratio",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#aspect-ratio",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "3"
@@ -156,9 +171,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -169,9 +183,12 @@
         },
         "calc": {
           "__compat": {
-            "description": "<code>calc()</code> expressions",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/calc()",
-            "spec_url": "https://w3c.github.io/csswg-drafts/css-values/#calc-notation",
+            "description": "`calc()` expressions",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/calc",
+            "spec_url": "https://drafts.csswg.org/css-values/#calc-notation",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "66"
@@ -193,7 +210,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -204,9 +222,12 @@
         },
         "color": {
           "__compat": {
-            "description": "<code>color</code> media feature",
+            "description": "`color` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/color",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#color",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#color",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -236,9 +257,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -249,9 +269,12 @@
         },
         "color-gamut": {
           "__compat": {
-            "description": "<code>color-gamut</code> media feature",
+            "description": "`color-gamut` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/color-gamut",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#color-gamut",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#color-gamut",
+            "tags": [
+              "web-features:color-gamut"
+            ],
             "support": {
               "chrome": {
                 "version_added": "58"
@@ -259,7 +282,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "110"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -273,7 +296,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -284,9 +308,12 @@
         },
         "color-index": {
           "__compat": {
-            "description": "<code>color-index</code> media feature",
+            "description": "`color-index` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/color-index",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#color-index",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#color-index",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "29"
@@ -308,7 +335,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -319,9 +347,12 @@
         },
         "device-aspect-ratio": {
           "__compat": {
-            "description": "<code>device-aspect-ratio</code> media feature",
+            "description": "`device-aspect-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/device-aspect-ratio",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#device-aspect-ratio",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#device-aspect-ratio",
+            "tags": [
+              "web-features:device-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -351,9 +382,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -364,9 +394,12 @@
         },
         "device-height": {
           "__compat": {
-            "description": "<code>device-height</code> media feature",
+            "description": "`device-height` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/device-height",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#device-height",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#device-height",
+            "tags": [
+              "web-features:device-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -396,9 +429,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -407,11 +439,55 @@
             }
           }
         },
+        "device-posture": {
+          "__compat": {
+            "description": "`device-posture` media feature",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/device-posture",
+            "spec_url": "https://w3c.github.io/device-posture/#the-device-posture-media-feature",
+            "tags": [
+              "web-features:device-posture"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "132"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": {
+                "version_added": "16.2"
+              },
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
         "device-width": {
           "__compat": {
-            "description": "<code>device-width</code> media feature",
+            "description": "`device-width` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/device-width",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#device-width",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#device-width",
+            "tags": [
+              "web-features:device-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -441,9 +517,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -454,9 +529,12 @@
         },
         "display-mode": {
           "__compat": {
-            "description": "<code>display-mode</code> media feature",
+            "description": "`display-mode` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/display-mode",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#display-mode",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#display-modes",
+            "tags": [
+              "web-features:display-mode"
+            ],
             "support": {
               "chrome": {
                 "version_added": "42"
@@ -465,9 +543,13 @@
               "edge": "mirror",
               "firefox": {
                 "version_added": "47",
-                "notes": "Firefox 47 and later support <code>display-mode</code> values <code>fullscreen</code> and <code>browser</code>. Firefox 57 added support for <code>minimal-ui</code> and <code>standalone</code> values."
+                "notes": "Firefox 47 and later support `display-mode` values `fullscreen` and `browser`. Firefox 57 added support for `minimal-ui` and `standalone` values."
               },
-              "firefox_android": "mirror",
+              "firefox_android": {
+                "version_added": "47",
+                "partial_implementation": true,
+                "notes": "Only supports the `browser` value, which always reports `true`."
+              },
               "ie": {
                 "version_added": false
               },
@@ -481,20 +563,64 @@
                 "version_added": "12.2"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
+          },
+          "picture-in-picture": {
+            "__compat": {
+              "description": "`picture-in-picture` value",
+              "spec_url": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+              "tags": [
+                "web-features:display-mode"
+              ],
+              "support": {
+                "chrome": {
+                  "version_added": "123"
+                },
+                "chrome_android": {
+                  "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                  "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
+              },
+              "status": {
+                "experimental": true,
+                "standard_track": true,
+                "deprecated": false
+              }
+            }
           }
         },
         "dynamic-range": {
           "__compat": {
-            "description": "<code>dynamic-range</code> media feature",
+            "description": "`dynamic-range` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/dynamic-range",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#dynamic-range",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#dynamic-range",
+            "tags": [
+              "web-features:dynamic-range"
+            ],
             "support": {
               "chrome": {
                 "version_added": "98"
@@ -516,7 +642,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -527,17 +654,17 @@
         },
         "forced-colors": {
           "__compat": {
-            "description": "<code>forced-colors</code> media feature",
+            "description": "`forced-colors` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/forced-colors",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#forced-colors",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#forced-colors",
+            "tags": [
+              "web-features:forced-colors"
+            ],
             "support": {
               "chrome": {
                 "version_added": "89"
               },
-              "chrome_android": {
-                "version_added": false,
-                "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-              },
+              "chrome_android": "mirror",
               "edge": {
                 "version_added": "79"
               },
@@ -549,18 +676,15 @@
                 "version_added": false
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": false
-              },
-              "opera_android": {
-                "version_added": false
-              },
+              "opera": "mirror",
+              "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -571,9 +695,12 @@
         },
         "grid": {
           "__compat": {
-            "description": "<code>grid</code> media feature",
+            "description": "`grid` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/grid",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#grid",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#grid",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -603,9 +730,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -616,9 +742,12 @@
         },
         "height": {
           "__compat": {
-            "description": "<code>height</code> media feature",
+            "description": "`height` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/height",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#height",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#height",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -648,9 +777,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -661,16 +789,20 @@
         },
         "hover": {
           "__compat": {
-            "description": "<code>hover</code> media feature",
+            "description": "`hover` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/hover",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#hover",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#hover",
+            "tags": [
+              "web-features:interaction"
+            ],
             "support": {
               "chrome": {
                 "version_added": "38",
-                "notes": "Before Chrome 41, the implementation was buggy and reported <code>(hover: none)</code> on non-touch-based computers with a mouse/trackpad. See <a href='https://crbug.com/441613'>bug 441613</a>."
+                "notes": "Before Chrome 41, the implementation was buggy and reported `(hover: none)` on non-touch-based computers with a mouse/trackpad. See [bug 40397980](https://crbug.com/40397980)."
               },
               "chrome_android": {
-                "version_added": "50"
+                "version_added": "50",
+                "notes": "On some Android devices, such as certain Samsung models, the `(hover: hover)` media query may incorrectly match. See [bug 41445959](https://crbug.com/41445959)."
               },
               "edge": {
                 "version_added": "12"
@@ -683,21 +815,15 @@
                 "version_added": false
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": "28"
-              },
-              "opera_android": {
-                "version_added": "28"
-              },
+              "opera": "mirror",
+              "opera_android": "mirror",
               "safari": {
                 "version_added": "9"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "38",
-                "notes": "Before Chrome 41, the implementation was buggy and reported <code>(hover: none)</code> on non-touch-based computers with a mouse/trackpad. See <a href='https://crbug.com/441613'>bug 441613</a>."
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -708,9 +834,12 @@
         },
         "inverted-colors": {
           "__compat": {
-            "description": "<code>inverted-colors</code> media feature",
+            "description": "`inverted-colors` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/inverted-colors",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#inverted",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#inverted",
+            "tags": [
+              "web-features:inverted-colors"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -718,7 +847,14 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "114",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "layout.css.inverted-colors.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
               },
               "firefox_android": "mirror",
               "ie": {
@@ -734,7 +870,8 @@
                 "version_added": "10"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -746,6 +883,9 @@
         "media_features": {
           "__compat": {
             "description": "Media feature expressions",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -775,7 +915,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -787,6 +928,9 @@
         "media_query_values": {
           "__compat": {
             "description": "Media query value support",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "66"
@@ -808,7 +952,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -819,9 +964,12 @@
         },
         "monochrome": {
           "__compat": {
-            "description": "<code>monochrome</code> media feature",
+            "description": "`monochrome` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/monochrome",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#monochrome",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#monochrome",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -849,9 +997,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -863,6 +1010,9 @@
         "nested-queries": {
           "__compat": {
             "description": "Nested media queries",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "26"
@@ -890,7 +1040,46 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "or_syntax": {
+          "__compat": {
+            "description": "`or` syntax from Media Queries Level 4",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries#testing_for_multiple_features_with_or",
+            "tags": [
+              "web-features:media-queries"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "104"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "64"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "16.4"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -901,9 +1090,12 @@
         },
         "orientation": {
           "__compat": {
-            "description": "<code>orientation</code> media feature",
+            "description": "`orientation` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/orientation",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#orientation",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#orientation",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "3"
@@ -931,9 +1123,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -944,12 +1135,15 @@
         },
         "overflow-block": {
           "__compat": {
-            "description": "<code>overflow-block</code> media feature",
+            "description": "`overflow-block` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/overflow-block",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#mf-overflow-block",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#mf-overflow-block",
+            "tags": [
+              "web-features:overflow"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "113"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -964,11 +1158,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -979,12 +1174,15 @@
         },
         "overflow-inline": {
           "__compat": {
-            "description": "<code>overflow-inline</code> media feature",
+            "description": "`overflow-inline` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/overflow-inline",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#mf-overflow-inline",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#mf-overflow-inline",
+            "tags": [
+              "web-features:overflow"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "113"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -999,11 +1197,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1014,9 +1213,12 @@
         },
         "pointer": {
           "__compat": {
-            "description": "<code>pointer</code> media feature",
+            "description": "`pointer` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/pointer",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#pointer",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#pointer",
+            "tags": [
+              "web-features:interaction"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -1046,7 +1248,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "41"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1057,9 +1260,12 @@
         },
         "prefers-color-scheme": {
           "__compat": {
-            "description": "<code>prefers-color-scheme</code> media feature",
+            "description": "`prefers-color-scheme` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#prefers-color-scheme",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
+            "tags": [
+              "web-features:prefers-color-scheme"
+            ],
             "support": {
               "chrome": {
                 "version_added": "76"
@@ -1087,7 +1293,8 @@
               "samsunginternet_android": {
                 "version_added": "14.2"
               },
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1097,7 +1304,10 @@
           },
           "no-preference": {
             "__compat": {
-              "description": "<code>no-preference</code> value",
+              "description": "`no-preference` value",
+              "tags": [
+                "web-features:prefers-color-scheme"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "76",
@@ -1122,15 +1332,18 @@
                   "version_added": "54"
                 },
                 "safari": {
-                  "version_added": "12.1"
+                  "version_added": "12.1",
+                  "version_removed": "15"
                 },
                 "safari_ios": {
-                  "version_added": "13"
+                  "version_added": "13",
+                  "version_removed": "15"
                 },
                 "samsunginternet_android": {
                   "version_added": "14.2"
                 },
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -1141,11 +1354,21 @@
           },
           "respects-inherited-scheme": {
             "__compat": {
-              "description": "Respects <code>color-scheme</code> inherited from parent",
+              "description": "Respects `color-scheme` inherited from parent",
+              "tags": [
+                "web-features:prefers-color-scheme"
+              ],
               "support": {
-                "chrome": {
-                  "version_added": false
-                },
+                "chrome": [
+                  {
+                    "version_added": "129"
+                  },
+                  {
+                    "version_added": "111",
+                    "partial_implementation": true,
+                    "notes": "Only supports SVG images, not iframes."
+                  }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -1156,22 +1379,15 @@
                   "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                  "version_added": false
-                },
-                "opera_android": {
-                  "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                   "version_added": false
                 },
-                "safari_ios": {
-                  "version_added": false
-                },
-                "samsunginternet_android": {
-                  "version_added": false
-                },
-                "webview_android": "mirror"
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -1183,9 +1399,12 @@
         },
         "prefers-contrast": {
           "__compat": {
-            "description": "<code>prefers-contrast</code> media feature",
+            "description": "`prefers-contrast` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-contrast",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#prefers-contrast",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#prefers-contrast",
+            "tags": [
+              "web-features:prefers-contrast"
+            ],
             "support": {
               "chrome": {
                 "version_added": "96"
@@ -1209,7 +1428,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1220,20 +1440,23 @@
         },
         "prefers-reduced-data": {
           "__compat": {
-            "description": "<code>prefers-reduced-data</code> media feature",
+            "description": "`prefers-reduced-data` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-data",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#prefers-reduced-data",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-data",
+            "tags": [
+              "web-features:prefers-reduced-data"
+            ],
             "support": {
               "chrome": {
                 "version_added": "85",
-                "notes": "See <a href='https://crbug.com/1051189'>bug 1051189</a>.",
                 "flags": [
                   {
                     "type": "preference",
                     "name": "#enable-experimental-web-platform-features",
                     "value_to_set": "Enabled"
                   }
-                ]
+                ],
+                "impl_url": "https://crbug.com/40118365"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1254,8 +1477,9 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false,
-                "notes": "See <a href='https://crbug.com/1051189'>bug 1051189</a>."
-              }
+                "impl_url": "https://crbug.com/40118365"
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -1266,9 +1490,12 @@
         },
         "prefers-reduced-motion": {
           "__compat": {
-            "description": "<code>prefers-reduced-motion</code> media feature",
+            "description": "`prefers-reduced-motion` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#prefers-reduced-motion",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
+            "tags": [
+              "web-features:prefers-reduced-motion"
+            ],
             "support": {
               "chrome": {
                 "version_added": "74"
@@ -1292,7 +1519,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1301,36 +1529,90 @@
             }
           }
         },
-        "range_syntax": {
+        "prefers-reduced-transparency": {
           "__compat": {
-            "description": "Range syntax from Media Queries Level 4",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries#syntax_improvements_in_level_4",
+            "description": "`prefers-reduced-transparency` media feature",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-transparency",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency",
+            "tags": [
+              "web-features:prefers-reduced-transparency"
+            ],
             "support": {
               "chrome": {
-                "version_added": "104"
+                "version_added": "118"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": false
-              },
+              "edge": "mirror",
               "firefox": {
-                "version_added": "63"
+                "version_added": "113",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "layout.css.prefers-reduced-transparency.enabled",
+                    "value_to_set": "true"
+                  }
+                ],
+                "impl_url": "https://bugzil.la/1736914"
               },
               "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": false
-              },
+              "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": false,
+                "impl_url": "https://webkit.org/b/175497"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "range_syntax": {
+          "__compat": {
+            "description": "Range syntax from Media Queries Level 4",
+            "tags": [
+              "web-features:media-query-range-syntax"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "104"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": [
+                {
+                  "version_added": "102"
+                },
+                {
+                  "version_added": "63",
+                  "partial_implementation": true,
+                  "notes": "Only supports range notations where the feature name comes before any value `(width &#62; 500px)`"
+                }
+              ],
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "16.4"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1341,9 +1623,12 @@
         },
         "resolution": {
           "__compat": {
-            "description": "<code>resolution</code> media feature",
+            "description": "`resolution` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/resolution",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#resolution",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#resolution",
+            "tags": [
+              "web-features:resolution"
+            ],
             "support": {
               "chrome": {
                 "version_added": "29"
@@ -1357,9 +1642,9 @@
                   "version_added": "8"
                 },
                 {
-                  "partial_implementation": true,
                   "version_added": "3.5",
-                  "notes": "Supports <a href='https://developer.mozilla.org/docs/Web/CSS/integer'><code>&lt;integer&gt;</code></a> values only."
+                  "partial_implementation": true,
+                  "notes": "Supports [`&lt;integer&gt;`](https://developer.mozilla.org/docs/Web/CSS/integer) values only."
                 }
               ],
               "firefox_android": "mirror",
@@ -1386,12 +1671,12 @@
                 }
               ],
               "safari": {
-                "version_added": false,
-                "notes": "See <a href='https://webkit.org/b/78087'>bug 78087</a>."
+                "version_added": "16"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1402,37 +1687,35 @@
         },
         "scripting": {
           "__compat": {
-            "description": "<code>scripting</code> media feature",
+            "description": "`scripting` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/scripting",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#scripting",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#scripting",
+            "tags": [
+              "web-features:scripting"
+            ],
             "support": {
               "chrome": {
-                "version_added": false,
-                "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
+                "version_added": "120"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false,
-                "notes": "See <a href='https://bugzil.la/1166581'>bug 1166581</a>."
+                "version_added": "113"
               },
               "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": false
-              },
-              "opera_android": {
-                "version_added": false
-              },
+              "opera": "mirror",
+              "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1443,12 +1726,15 @@
         },
         "update": {
           "__compat": {
-            "description": "<code>update</code> media feature",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/update-frequency",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#update",
+            "description": "`update` media feature",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/update",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#update",
+            "tags": [
+              "web-features:update"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "113"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1463,14 +1749,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -1478,12 +1765,22 @@
         },
         "video-dynamic-range": {
           "__compat": {
-            "description": "<code>video-dynamic-range</code> media feature",
+            "description": "`video-dynamic-range` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/video-dynamic-range",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries-5/#video-dynamic-range",
+            "spec_url": "https://drafts.csswg.org/mediaqueries-5/#video-dynamic-range",
+            "tags": [
+              "web-features:video-dynamic-range"
+            ],
             "support": {
               "chrome": {
-                "version_added": "98"
+                "version_added": "98",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "#enable-experimental-web-platform-features",
+                    "value_to_set": "Enabled"
+                  }
+                ]
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1498,11 +1795,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": "13.1"
+                "version_added": false
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1513,9 +1811,12 @@
         },
         "width": {
           "__compat": {
-            "description": "<code>width</code> media feature",
+            "description": "`width` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/width",
-            "spec_url": "https://w3c.github.io/csswg-drafts/mediaqueries/#width",
+            "spec_url": "https://drafts.csswg.org/mediaqueries/#width",
+            "tags": [
+              "web-features:media-queries"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1545,9 +1846,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1558,7 +1858,7 @@
         },
         "-moz-device-pixel-ratio": {
           "__compat": {
-            "description": "<code>-moz-device-pixel-ratio</code> media feature",
+            "description": "`-moz-device-pixel-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-moz-device-pixel-ratio",
             "support": {
               "chrome": {
@@ -1581,7 +1881,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1592,7 +1893,7 @@
         },
         "-webkit-animation": {
           "__compat": {
-            "description": "<code>-webkit-animation</code> media feature",
+            "description": "`-webkit-animation` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-animation",
             "support": {
               "chrome": {
@@ -1619,7 +1920,8 @@
               "webview_android": {
                 "version_added": "2",
                 "version_removed": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1630,9 +1932,12 @@
         },
         "-webkit-device-pixel-ratio": {
           "__compat": {
-            "description": "<code>-webkit-device-pixel-ratio</code> media feature",
+            "description": "`-webkit-device-pixel-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio",
             "spec_url": "https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio",
+            "tags": [
+              "web-features:resolution-compat"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1643,7 +1948,7 @@
               },
               "firefox": {
                 "version_added": "63",
-                "notes": "Implemented as an alias for <code>-moz-device-pixel-ratio</code>."
+                "notes": "Implemented as an alias for `-moz-device-pixel-ratio`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -1659,9 +1964,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1672,9 +1976,12 @@
         },
         "-webkit-max-device-pixel-ratio": {
           "__compat": {
-            "description": "<code>-webkit-max-device-pixel-ratio</code> media feature",
+            "description": "`-webkit-max-device-pixel-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio",
             "spec_url": "https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio",
+            "tags": [
+              "web-features:resolution-compat"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1685,7 +1992,7 @@
               },
               "firefox": {
                 "version_added": "63",
-                "notes": "Implemented as an alias for <code>max--moz-device-pixel-ratio</code>."
+                "notes": "Implemented as an alias for `max--moz-device-pixel-ratio`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -1701,9 +2008,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1714,9 +2020,12 @@
         },
         "-webkit-min-device-pixel-ratio": {
           "__compat": {
-            "description": "<code>-webkit-min-device-pixel-ratio</code> media feature",
+            "description": "`-webkit-min-device-pixel-ratio` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio",
             "spec_url": "https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio",
+            "tags": [
+              "web-features:resolution-compat"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -1727,7 +2036,7 @@
               },
               "firefox": {
                 "version_added": "63",
-                "notes": "Implemented as an alias for <code>min--moz-device-pixel-ratio</code>."
+                "notes": "Implemented as an alias for `min--moz-device-pixel-ratio`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -1743,9 +2052,8 @@
                 "version_added": "1"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": {
-                "version_added": "≤37"
-              }
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1756,7 +2064,7 @@
         },
         "-webkit-transform-2d": {
           "__compat": {
-            "description": "<code>-webkit-transform-2d</code> media feature",
+            "description": "`-webkit-transform-2d` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-transform-2d",
             "support": {
               "chrome": {
@@ -1783,7 +2091,8 @@
               "webview_android": {
                 "version_added": "2",
                 "version_removed": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1794,9 +2103,12 @@
         },
         "-webkit-transform-3d": {
           "__compat": {
-            "description": "<code>-webkit-transform-3d</code> media feature",
+            "description": "`-webkit-transform-3d` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-transform-3d",
             "spec_url": "https://compat.spec.whatwg.org/#css-media-queries-webkit-transform-3d",
+            "tags": [
+              "web-features:supports-compat"
+            ],
             "support": {
               "chrome": {
                 "version_added": "2"
@@ -1820,7 +2132,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1831,7 +2144,7 @@
         },
         "-webkit-transition": {
           "__compat": {
-            "description": "<code>-webkit-transition</code> media feature",
+            "description": "`-webkit-transition` media feature",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-transition",
             "support": {
               "chrome": {
@@ -1858,7 +2171,8 @@
               "webview_android": {
                 "version_added": "2",
                 "version_removed": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

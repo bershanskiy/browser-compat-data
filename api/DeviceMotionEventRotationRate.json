@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate",
         "spec_url": "https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate",
+        "tags": [
+          "web-features:device-orientation-events"
+        ],
         "support": {
           "chrome": {
             "version_added": "31"
@@ -29,7 +32,10 @@
             "version_added": "4.2"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -41,6 +47,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/alpha",
           "spec_url": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-alpha",
+          "tags": [
+            "web-features:device-orientation-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "31"
@@ -66,7 +75,10 @@
               "version_added": "4.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -79,6 +91,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/beta",
           "spec_url": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-beta",
+          "tags": [
+            "web-features:device-orientation-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "31"
@@ -104,7 +119,10 @@
               "version_added": "4.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -117,6 +135,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/gamma",
           "spec_url": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-gamma",
+          "tags": [
+            "web-features:device-orientation-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "31"
@@ -142,7 +163,10 @@
               "version_added": "4.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,

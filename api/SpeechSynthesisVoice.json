@@ -3,7 +3,10 @@
     "SpeechSynthesisVoice": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice",
-        "spec_url": "https://wicg.github.io/speech-api/#speechsynthesisvoice",
+        "spec_url": "https://webaudio.github.io/web-speech-api/#speechsynthesisvoice",
+        "tags": [
+          "web-features:speech-synthesis"
+        ],
         "support": {
           "chrome": {
             "version_added": "33"
@@ -13,7 +16,8 @@
             "version_added": "14"
           },
           "firefox": {
-            "version_added": "49"
+            "version_added": "49",
+            "notes": "In Firefox, speech synthesis voices do not start loading until after the first call to `window.speechSynthesis.getVoices()`. A way to mitigate this issue is to call the method at the beginning of page load, then wait a few seconds before calling the method again. Voices will remain loaded until all tabs that have called this method have been closed."
           },
           "firefox_android": {
             "version_added": "62"
@@ -37,8 +41,9 @@
           },
           "webview_android": {
             "version_added": false,
-            "notes": "See <a href='https://crbug.com/487255'>bug 487255</a>."
-          }
+            "impl_url": "https://crbug.com/40417848"
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -49,7 +54,10 @@
       "default": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/default",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-default",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-default",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -83,7 +91,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -95,7 +104,10 @@
       "lang": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/lang",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-lang",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-lang",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -129,7 +141,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -141,7 +154,10 @@
       "localService": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/localService",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-localservice",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-localservice",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -175,7 +191,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -187,7 +204,10 @@
       "name": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/name",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-name",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-name",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -221,7 +241,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -233,7 +254,10 @@
       "voiceURI": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/voiceURI",
-          "spec_url": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-voiceuri",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-voiceuri",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -267,7 +291,8 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

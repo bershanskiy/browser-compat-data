@@ -2,15 +2,18 @@
   "api": {
     "caches": {
       "__compat": {
-        "mdn_url": "https://developer.mozilla.org/docs/Web/API/caches",
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/caches",
         "spec_url": "https://w3c.github.io/ServiceWorker/#self-caches",
+        "tags": [
+          "web-features:service-workers"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
           },
           "chrome_android": "mirror",
           "deno": {
-            "version_added": false
+            "version_added": "1.26"
           },
           "edge": {
             "version_added": "16"
@@ -30,7 +33,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -41,6 +45,9 @@
       "secure_context_required": {
         "__compat": {
           "description": "Secure context required",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "65"
@@ -65,7 +72,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -77,13 +85,16 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:service-workers"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
             },
             "chrome_android": "mirror",
             "deno": {
-              "version_added": false
+              "version_added": "1.26"
             },
             "edge": {
               "version_added": "16"
@@ -103,7 +114,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

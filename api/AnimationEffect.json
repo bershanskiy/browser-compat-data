@@ -3,7 +3,10 @@
     "AnimationEffect": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/AnimationEffect",
-        "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#the-animationeffect-interface",
+        "spec_url": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+        "tags": [
+          "web-features:web-animations"
+        ],
         "support": {
           "chrome": {
             "version_added": "75"
@@ -15,9 +18,9 @@
               "version_added": "63"
             },
             {
+              "alternative_name": "AnimationEffectReadOnly",
               "version_added": "48",
-              "version_removed": "63",
-              "alternative_name": "AnimationEffectReadOnly"
+              "version_removed": "63"
             }
           ],
           "firefox_android": "mirror",
@@ -32,7 +35,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,7 +47,10 @@
       "getComputedTiming": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/AnimationEffect/getComputedTiming",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-animationeffect-getcomputedtiming",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -65,7 +72,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -77,7 +85,10 @@
       "getTiming": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/AnimationEffect/getTiming",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-animationeffect-gettiming",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-gettiming",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -99,7 +110,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -111,7 +123,10 @@
       "updateTiming": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/AnimationEffect/updateTiming",
-          "spec_url": "https://w3c.github.io/csswg-drafts/web-animations-1/#dom-animationeffect-updatetiming",
+          "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "75"
@@ -133,7 +148,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

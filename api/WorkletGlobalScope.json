@@ -2,7 +2,11 @@
   "api": {
     "WorkletGlobalScope": {
       "__compat": {
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope",
         "spec_url": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope",
+        "tags": [
+          "web-features:audio-worklet"
+        ],
         "support": {
           "chrome": {
             "version_added": "65"
@@ -24,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,

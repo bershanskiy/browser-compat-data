@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor",
         "spec_url": "https://w3c.github.io/sensors/#the-sensor-interface",
+        "tags": [
+          "web-features:orientation-sensor"
+        ],
         "support": {
           "chrome": {
             "version_added": "67"
@@ -11,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://bugzil.la/1432631"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -21,11 +25,13 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://webkit.org/b/81352"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,9 +41,12 @@
       },
       "activate_event": {
         "__compat": {
-          "description": "<code>activate</code> event",
+          "description": "`activate` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/activate_event",
           "spec_url": "https://w3c.github.io/sensors/#sensor-onactivate",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -59,7 +68,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -72,6 +82,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/activated",
           "spec_url": "https://w3c.github.io/sensors/#sensor-activated",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -93,7 +106,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -104,9 +118,12 @@
       },
       "error_event": {
         "__compat": {
-          "description": "<code>error</code> event",
+          "description": "`error` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/error_event",
           "spec_url": "https://w3c.github.io/sensors/#sensor-onerror",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -128,7 +145,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -141,6 +159,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/hasReading",
           "spec_url": "https://w3c.github.io/sensors/#sensor-has-reading",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -162,7 +183,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -173,9 +195,12 @@
       },
       "reading_event": {
         "__compat": {
-          "description": "<code>reading</code> event",
+          "description": "`reading` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/reading_event",
           "spec_url": "https://w3c.github.io/sensors/#sensor-onreading",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -197,7 +222,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -210,6 +236,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/start",
           "spec_url": "https://w3c.github.io/sensors/#sensor-start",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -231,7 +260,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -244,6 +274,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/stop",
           "spec_url": "https://w3c.github.io/sensors/#sensor-stop",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -265,7 +298,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -278,6 +312,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Sensor/timestamp",
           "spec_url": "https://w3c.github.io/sensors/#sensor-timestamp",
+          "tags": [
+            "web-features:orientation-sensor"
+          ],
           "support": {
             "chrome": {
               "version_added": "67"
@@ -299,7 +336,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

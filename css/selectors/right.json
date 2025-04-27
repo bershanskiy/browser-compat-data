@@ -3,9 +3,12 @@
     "selectors": {
       "right": {
         "__compat": {
-          "description": "Right-hand page pseudo-class (<code>:right</code>)",
+          "description": "Right-hand page pseudo-class (`:right`)",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/:right",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-page/#left-right-first",
+          "spec_url": "https://drafts.csswg.org/css-page/#left-right-first",
+          "tags": [
+            "web-features:page-selectors"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -33,9 +36,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

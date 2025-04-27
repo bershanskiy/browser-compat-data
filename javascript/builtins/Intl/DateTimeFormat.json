@@ -6,6 +6,9 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
             "spec_url": "https://tc39.es/ecma402/#datetimeformat-objects",
+            "tags": [
+              "web-features:intl"
+            ],
             "support": {
               "chrome": {
                 "version_added": "24"
@@ -28,7 +31,7 @@
               },
               "nodejs": {
                 "version_added": "0.12.0",
-                "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -38,7 +41,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -48,9 +52,12 @@
           },
           "DateTimeFormat": {
             "__compat": {
-              "description": "<code>DateTimeFormat()</code> constructor",
+              "description": "`DateTimeFormat()` constructor",
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat",
               "spec_url": "https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "24"
@@ -78,7 +85,7 @@
                   {
                     "version_added": "0.12.0",
                     "partial_implementation": true,
-                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>DateTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. When other locales are specified, the `DateTimeFormat` instance silently falls back to `en-US`. To make full ICU (locale) data available before version 13, see [Node.js documentation on the `--with-intl` option](https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js) and how to provide the data."
                   }
                 ],
                 "oculus": "mirror",
@@ -89,7 +96,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -99,7 +107,12 @@
             },
             "IntlLegacyConstructedSymbol": {
               "__compat": {
-                "description": "Supports normative optional <code>ChainDateTimeFormat</code> behavior",
+                "description": "Supports normative optional `ChainDateTimeFormat` behavior",
+                "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#return_value",
+                "spec_url": "https://tc39.es/ecma402/#sec-chaindatetimeformat",
+                "tags": [
+                  "web-features:intl"
+                ],
                 "support": {
                   "chrome": [
                     {
@@ -108,10 +121,13 @@
                     {
                       "version_added": "57",
                       "partial_implementation": true,
-                      "notes": "The fallback symbol property has description <code>IntlFallback</code>."
+                      "notes": "The fallback symbol property has description `IntlFallback`."
                     }
                   ],
                   "chrome_android": "mirror",
+                  "deno": {
+                    "version_added": "1.8"
+                  },
                   "edge": "mirror",
                   "firefox": {
                     "version_added": "54"
@@ -129,7 +145,7 @@
                     {
                       "version_added": "8.0.0",
                       "partial_implementation": true,
-                      "notes": "The fallback symbol property has description <code>IntlFallback</code>."
+                      "notes": "The fallback symbol property has description `IntlFallback`."
                     }
                   ],
                   "oculus": "mirror",
@@ -140,18 +156,22 @@
                   },
                   "safari_ios": "mirror",
                   "samsunginternet_android": "mirror",
-                  "webview_android": "mirror"
+                  "webview_android": "mirror",
+                  "webview_ios": "mirror"
                 },
                 "status": {
                   "experimental": false,
                   "standard_track": true,
-                  "deprecated": true
+                  "deprecated": false
                 }
               }
             },
             "locales_parameter": {
               "__compat": {
-                "description": "<code>locales</code> parameter",
+                "description": "`locales` parameter",
+                "tags": [
+                  "web-features:intl"
+                ],
                 "support": {
                   "chrome": {
                     "version_added": "24"
@@ -179,7 +199,7 @@
                     {
                       "version_added": "0.12.0",
                       "partial_implementation": true,
-                      "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>DateTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                      "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. When other locales are specified, the `DateTimeFormat` instance silently falls back to `en-US`. To make full ICU (locale) data available before version 13, see [Node.js documentation on the `--with-intl` option](https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js) and how to provide the data."
                     }
                   ],
                   "oculus": "mirror",
@@ -190,7 +210,8 @@
                   },
                   "safari_ios": "mirror",
                   "samsunginternet_android": "mirror",
-                  "webview_android": "mirror"
+                  "webview_android": "mirror",
+                  "webview_ios": "mirror"
                 },
                 "status": {
                   "experimental": false,
@@ -201,7 +222,10 @@
             },
             "options_parameter": {
               "__compat": {
-                "description": "<code>options</code> parameter",
+                "description": "`options` parameter",
+                "tags": [
+                  "web-features:intl"
+                ],
                 "support": {
                   "chrome": {
                     "version_added": "24"
@@ -233,7 +257,8 @@
                   },
                   "safari_ios": "mirror",
                   "samsunginternet_android": "mirror",
-                  "webview_android": "mirror"
+                  "webview_android": "mirror",
+                  "webview_ios": "mirror"
                 },
                 "status": {
                   "experimental": false,
@@ -241,9 +266,55 @@
                   "deprecated": false
                 }
               },
+              "options_calendar_parameter": {
+                "__compat": {
+                  "description": "`options.calendar` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
+                  "support": {
+                    "chrome": {
+                      "version_added": "80"
+                    },
+                    "chrome_android": "mirror",
+                    "deno": {
+                      "version_added": "1.8"
+                    },
+                    "edge": "mirror",
+                    "firefox": {
+                      "version_added": "76"
+                    },
+                    "firefox_android": "mirror",
+                    "ie": {
+                      "version_added": false
+                    },
+                    "nodejs": {
+                      "version_added": "14.0.0"
+                    },
+                    "oculus": "mirror",
+                    "opera": "mirror",
+                    "opera_android": "mirror",
+                    "safari": {
+                      "version_added": "14.1"
+                    },
+                    "safari_ios": "mirror",
+                    "samsunginternet_android": "mirror",
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
+                  },
+                  "status": {
+                    "experimental": false,
+                    "standard_track": true,
+                    "deprecated": false
+                  }
+                }
+              },
               "options_dateStyle_parameter": {
                 "__compat": {
-                  "description": "<code>options.dateStyle</code> parameter",
+                  "description": "`options.dateStyle` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "76"
@@ -271,7 +342,8 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -282,7 +354,10 @@
               },
               "options_dayPeriod_parameter": {
                 "__compat": {
-                  "description": "<code>options.dayPeriod</code> parameter",
+                  "description": "`options.dayPeriod` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "92"
@@ -304,15 +379,14 @@
                     },
                     "oculus": "mirror",
                     "opera": "mirror",
-                    "opera_android": {
-                      "version_added": false
-                    },
+                    "opera_android": "mirror",
                     "safari": {
                       "version_added": "14.1"
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -323,7 +397,10 @@
               },
               "options_fractionalSecondDigits_parameter": {
                 "__compat": {
-                  "description": "<code>options.fractionalSecondDigits</code> parameter",
+                  "description": "`options.fractionalSecondDigits` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "84"
@@ -351,7 +428,8 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -362,7 +440,10 @@
               },
               "options_hourCycle_parameter": {
                 "__compat": {
-                  "description": "<code>options.hourCycle</code> parameter",
+                  "description": "`options.hourCycle` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "73"
@@ -392,7 +473,51 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
+                  },
+                  "status": {
+                    "experimental": false,
+                    "standard_track": true,
+                    "deprecated": false
+                  }
+                }
+              },
+              "options_numberingSystem_parameter": {
+                "__compat": {
+                  "description": "`options.numberingSystem` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
+                  "support": {
+                    "chrome": {
+                      "version_added": "80"
+                    },
+                    "chrome_android": "mirror",
+                    "deno": {
+                      "version_added": "1.8"
+                    },
+                    "edge": "mirror",
+                    "firefox": {
+                      "version_added": "76"
+                    },
+                    "firefox_android": "mirror",
+                    "ie": {
+                      "version_added": false
+                    },
+                    "nodejs": {
+                      "version_added": "14.0.0"
+                    },
+                    "oculus": "mirror",
+                    "opera": "mirror",
+                    "opera_android": "mirror",
+                    "safari": {
+                      "version_added": "14.1"
+                    },
+                    "safari_ios": "mirror",
+                    "samsunginternet_android": "mirror",
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -403,7 +528,10 @@
               },
               "options_timeStyle_parameter": {
                 "__compat": {
-                  "description": "<code>options.timeStyle</code> parameter",
+                  "description": "`options.timeStyle` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "76"
@@ -431,7 +559,8 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -442,7 +571,10 @@
               },
               "options_timeZone_parameter": {
                 "__compat": {
-                  "description": "<code>options.timeZone</code> parameter",
+                  "description": "`options.timeZone` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "24"
@@ -474,7 +606,8 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -482,9 +615,12 @@
                     "deprecated": false
                   }
                 },
-                "options_timeZone_parameter_iana": {
+                "iana_time_zones": {
                   "__compat": {
-                    "description": "IANA time zone names in <code>options.timeZone</code> option",
+                    "description": "IANA time zone names in `options.timeZone` option",
+                    "tags": [
+                      "web-features:intl"
+                    ],
                     "support": {
                       "chrome": {
                         "version_added": "24"
@@ -518,7 +654,8 @@
                       "samsunginternet_android": "mirror",
                       "webview_android": {
                         "version_added": "37"
-                      }
+                      },
+                      "webview_ios": "mirror"
                     },
                     "status": {
                       "experimental": false,
@@ -530,7 +667,10 @@
               },
               "options_timeZoneName_parameter": {
                 "__compat": {
-                  "description": "<code>options.timeZoneName</code> parameter",
+                  "description": "`options.timeZoneName` parameter",
+                  "tags": [
+                    "web-features:intl"
+                  ],
                   "support": {
                     "chrome": {
                       "version_added": "24"
@@ -562,7 +702,8 @@
                     },
                     "safari_ios": "mirror",
                     "samsunginternet_android": "mirror",
-                    "webview_android": "mirror"
+                    "webview_android": "mirror",
+                    "webview_ios": "mirror"
                   },
                   "status": {
                     "experimental": false,
@@ -570,12 +711,15 @@
                     "deprecated": false
                   }
                 },
-                "options_timeZoneName_parameter_iana": {
+                "extended_values": {
                   "__compat": {
-                    "description": "IANA time zone names in <code>options.timeZoneName</code> option",
+                    "description": "`shortGeneric`/`longGeneric`/`shortOffset`/`longOffset` as `options.timeZoneName` option",
+                    "tags": [
+                      "web-features:intl"
+                    ],
                     "support": {
                       "chrome": {
-                        "version_added": false
+                        "version_added": "95"
                       },
                       "chrome_android": "mirror",
                       "deno": {
@@ -590,7 +734,7 @@
                         "version_added": false
                       },
                       "nodejs": {
-                        "version_added": false
+                        "version_added": "17.0.0"
                       },
                       "oculus": "mirror",
                       "opera": "mirror",
@@ -600,7 +744,8 @@
                       },
                       "safari_ios": "mirror",
                       "samsunginternet_android": "mirror",
-                      "webview_android": "mirror"
+                      "webview_android": "mirror",
+                      "webview_ios": "mirror"
                     },
                     "status": {
                       "experimental": false,
@@ -616,6 +761,9 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/format",
               "spec_url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "24"
@@ -638,7 +786,7 @@
                 },
                 "nodejs": {
                   "version_added": "0.12.0",
-                  "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                  "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -648,7 +796,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -661,6 +810,9 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange",
               "spec_url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "76"
@@ -679,7 +831,7 @@
                 },
                 "nodejs": {
                   "version_added": "12.9.0",
-                  "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                  "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -689,7 +841,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -702,6 +855,9 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRangeToParts",
               "spec_url": "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "76"
@@ -720,7 +876,7 @@
                 },
                 "nodejs": {
                   "version_added": "12.9.0",
-                  "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                  "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -730,7 +886,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -743,10 +900,13 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts",
               "spec_url": "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "57",
-                  "notes": "Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>."
+                  "notes": "Before version 71, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 71 and later use the specification defined `dayPeriod`. See [bug 41402623](https://crbug.com/41402623)."
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -767,18 +927,18 @@
                 "nodejs": {
                   "version_added": "8.0.0",
                   "notes": [
-                    "Before version 12.0.0, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 12.0.0 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>.",
-                    "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                    "Before version 12.0.0, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 12.0.0 and later use the specification defined `dayPeriod`. See [bug 41402623](https://crbug.com/41402623).",
+                    "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
                   ]
                 },
                 "oculus": "mirror",
                 "opera": {
                   "version_added": "44",
-                  "notes": "Before version 58, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 58 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>."
+                  "notes": "Before version 58, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 58 and later use the specification defined `dayPeriod`. See [bug 41402623](https://crbug.com/41402623)."
                 },
                 "opera_android": {
                   "version_added": "43",
-                  "notes": "Before version 50, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 50 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>."
+                  "notes": "Before version 50, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 50 and later use the specification defined `dayPeriod`. See [bug 41402623](https://crbug.com/41402623)."
                 },
                 "safari": {
                   "version_added": "11"
@@ -786,9 +946,10 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": {
                   "version_added": "7.0",
-                  "notes": "Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>."
+                  "notes": "Before version 71, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 71 and later use the specification defined `dayPeriod`. See [bug 41402623](https://crbug.com/41402623)."
                 },
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -801,6 +962,9 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/resolvedOptions",
               "spec_url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.resolvedoptions",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "24"
@@ -823,7 +987,7 @@
                 },
                 "nodejs": {
                   "version_added": "0.12.0",
-                  "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
+                  "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. See [the `DateTimeFormat()` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) for more details."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -833,7 +997,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -843,7 +1008,10 @@
             },
             "computed_timezone": {
               "__compat": {
-                "description": "computed <code>timeZone</code>",
+                "description": "computed `timeZone`",
+                "tags": [
+                  "web-features:intl"
+                ],
                 "support": {
                   "chrome": {
                     "version_added": "35"
@@ -877,7 +1045,8 @@
                   },
                   "safari_ios": "mirror",
                   "samsunginternet_android": "mirror",
-                  "webview_android": "mirror"
+                  "webview_android": "mirror",
+                  "webview_ios": "mirror"
                 },
                 "status": {
                   "experimental": false,
@@ -891,6 +1060,9 @@
             "__compat": {
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/supportedLocalesOf",
               "spec_url": "https://tc39.es/ecma402/#sec-intl.datetimeformat.supportedlocalesof",
+              "tags": [
+                "web-features:intl"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "24"
@@ -918,7 +1090,7 @@
                   {
                     "version_added": "0.12.0",
                     "partial_implementation": true,
-                    "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
+                    "notes": "Before version 13.0.0, only the locale data for `en-US` is available by default. To make full ICU (locale) data available before version 13, see [Node.js documentation on the `--with-intl` option](https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js) and how to provide the data."
                   }
                 ],
                 "oculus": "mirror",
@@ -929,7 +1101,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,

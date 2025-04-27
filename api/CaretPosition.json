@@ -3,10 +3,13 @@
     "CaretPosition": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CaretPosition",
-        "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#caret-position",
+        "spec_url": "https://drafts.csswg.org/cssom-view/#caret-position",
+        "tags": [
+          "web-features:document-caretpositionfrompoint"
+        ],
         "support": {
           "chrome": {
-            "version_added": false
+            "version_added": "128"
           },
           "chrome_android": "mirror",
           "edge": "mirror",
@@ -21,24 +24,28 @@
           "opera": "mirror",
           "opera_android": "mirror",
           "safari": {
-            "version_added": false
+            "version_added": "18.4"
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
-          "experimental": true,
+          "experimental": false,
           "standard_track": true,
           "deprecated": false
         }
       },
       "getClientRect": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-caretposition-getclientrect",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-caretposition-getclientrect",
+          "tags": [
+            "web-features:document-caretpositionfrompoint"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "128"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -53,14 +60,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -68,10 +76,13 @@
       },
       "offset": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-caretposition-offset",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-caretposition-offset",
+          "tags": [
+            "web-features:document-caretpositionfrompoint"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "128"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -86,14 +97,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -101,10 +113,13 @@
       },
       "offsetNode": {
         "__compat": {
-          "spec_url": "https://w3c.github.io/csswg-drafts/cssom-view/#dom-caretposition-offsetnode",
+          "spec_url": "https://drafts.csswg.org/cssom-view/#dom-caretposition-offsetnode",
+          "tags": [
+            "web-features:document-caretpositionfrompoint"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "128"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -119,14 +134,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }

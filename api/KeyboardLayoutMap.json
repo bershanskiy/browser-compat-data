@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap",
         "spec_url": "https://wicg.github.io/keyboard-map/#keyboardlayoutmap-interface",
+        "tags": [
+          "web-features:keyboard-map"
+        ],
         "support": {
           "chrome": {
             "version_added": "69"
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -38,6 +42,9 @@
       "entries": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/entries",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -59,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -71,6 +79,9 @@
       "forEach": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/forEach",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -92,7 +103,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -104,6 +116,9 @@
       "get": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/get",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -125,7 +140,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -137,6 +153,9 @@
       "has": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/has",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -158,7 +177,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -170,6 +190,9 @@
       "keys": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/keys",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -191,7 +214,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -203,6 +227,9 @@
       "size": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/size",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -224,7 +251,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -236,6 +264,9 @@
       "values": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/values",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -257,7 +288,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -268,6 +300,10 @@
       },
       "@@iterator": {
         "__compat": {
+          "description": "[Symbol.iterator]",
+          "tags": [
+            "web-features:keyboard-map"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -289,7 +325,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

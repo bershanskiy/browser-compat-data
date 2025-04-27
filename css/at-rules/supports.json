@@ -3,11 +3,14 @@
     "at-rules": {
       "supports": {
         "__compat": {
-          "description": "<code>@supports</code>",
+          "description": "`@supports`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/@supports",
           "spec_url": [
-            "https://w3c.github.io/csswg-drafts/css-conditional-4/#at-supports-ext",
-            "https://w3c.github.io/csswg-drafts/css-conditional-3/#at-supports"
+            "https://drafts.csswg.org/css-conditional-4/#at-supports-ext",
+            "https://drafts.csswg.org/css-conditional-3/#at-supports"
+          ],
+          "tags": [
+            "web-features:supports"
           ],
           "support": {
             "chrome": {
@@ -36,7 +39,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -46,15 +50,16 @@
         },
         "font-format": {
           "__compat": {
-            "description": "<code>font-format()</code>",
+            "description": "`font-format()`",
+            "tags": [
+              "web-features:supports"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "108"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": false
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "106"
               },
@@ -66,11 +71,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -81,15 +87,16 @@
         },
         "font-tech": {
           "__compat": {
-            "description": "<code>font-tech()</code>",
+            "description": "`font-tech()`",
+            "tags": [
+              "web-features:supports"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "108"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": false
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "106"
               },
@@ -101,11 +108,12 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -116,7 +124,10 @@
         },
         "selector": {
           "__compat": {
-            "description": "<code>selector()</code>",
+            "description": "`selector()`",
+            "tags": [
+              "web-features:supports"
+            ],
             "support": {
               "chrome": {
                 "version_added": "83"
@@ -134,14 +145,15 @@
               "opera": "mirror",
               "opera_android": {
                 "version_added": false,
-                "notes": "See <a href='https://crbug.com/979041'>bug 979041</a>."
+                "impl_url": "https://crbug.com/40633900"
               },
               "safari": {
                 "version_added": "14.1"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

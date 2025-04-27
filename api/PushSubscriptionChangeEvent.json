@@ -2,11 +2,14 @@
   "api": {
     "PushSubscriptionChangeEvent": {
       "__compat": {
-        "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushSubscriptionChangeEvent",
         "spec_url": "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+        "tags": [
+          "web-features:push"
+        ],
         "support": {
           "chrome": {
-            "version_added": false
+            "version_added": false,
+            "impl_url": "https://crbug.com/41275327"
           },
           "chrome_android": "mirror",
           "edge": {
@@ -14,7 +17,8 @@
             "version_removed": "79"
           },
           "firefox": {
-            "version_added": false
+            "version_added": false,
+            "notes": "The `pushsubscriptionchange` event is fired but does not have the `oldSubscription` and `newSubscription` properties. See [bug 1497429](https://bugzil.la/1497429)."
           },
           "firefox_android": "mirror",
           "ie": {
@@ -25,14 +29,18 @@
           "opera_android": "mirror",
           "safari": {
             "version_added": "16",
-            "partial_implementation": true,
-            "notes": "Supported on macOS 13 and later"
+            "notes": "Notifications are supported on macOS Ventura and later."
           },
           "safari_ios": {
-            "version_added": false
+            "version_added": "16.4",
+            "notes": "Notifications are supported in web apps saved to the home screen."
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false,
+            "notes": "Notifications are supported in web apps saved to the home screen."
+          }
         },
         "status": {
           "experimental": false,
@@ -40,10 +48,59 @@
           "deprecated": false
         }
       },
+      "PushSubscriptionChangeEvent": {
+        "__compat": {
+          "description": "`PushSubscriptionChangeEvent()` constructor",
+          "spec_url": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-constructor",
+          "tags": [
+            "web-features:push"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": "mirror",
+            "edge": {
+              "version_added": "17",
+              "version_removed": "79"
+            },
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": "16.1"
+            },
+            "safari_ios": {
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
+            },
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
+            }
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "newSubscription": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushSubscriptionChangeEvent/newSubscription",
           "spec_url": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-newsubscription",
+          "tags": [
+            "web-features:push"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -65,14 +122,18 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
+            }
           },
           "status": {
             "experimental": false,
@@ -83,8 +144,10 @@
       },
       "oldSubscription": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/PushSubscriptionChangeEvent/oldSubscription",
           "spec_url": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-oldsubscription",
+          "tags": [
+            "web-features:push"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -106,14 +169,18 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
+            }
           },
           "status": {
             "experimental": false,

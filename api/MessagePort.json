@@ -4,9 +4,12 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort",
         "spec_url": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+        "tags": [
+          "web-features:channel-messaging"
+        ],
         "support": {
           "chrome": {
-            "version_added": "1"
+            "version_added": "2"
           },
           "chrome_android": "mirror",
           "deno": {
@@ -24,12 +27,21 @@
           },
           "nodejs": [
             {
-              "version_added": "14.7.0"
+              "version_added": "15.0.0"
             },
             {
-              "version_added": "10.5.0",
+              "version_added": "14.7.0",
+              "partial_implementation": true,
+              "notes": "Available as a part of the `worker_threads` module."
+            },
+            {
+              "version_added": "11.7.0",
               "version_removed": "14.7.0",
-              "notes": "Is a Node <code>EventEmitter</code> instead of DOM <code>EventTarget</code>."
+              "partial_implementation": true,
+              "notes": [
+                "Available as a part of the `worker_threads` module.",
+                "Inherits from Node `EventEmitter` instead of DOM `EventTarget`."
+              ]
             }
           ],
           "oculus": "mirror",
@@ -44,7 +56,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -55,6 +68,9 @@
       "worker_support": {
         "__compat": {
           "description": "Available in workers",
+          "tags": [
+            "web-features:channel-messaging"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -74,7 +90,7 @@
               "version_added": "10"
             },
             "nodejs": {
-              "version_added": "10.5.0"
+              "version_added": "11.7.0"
             },
             "oculus": "mirror",
             "opera": {
@@ -86,13 +102,10 @@
             "safari": {
               "version_added": "5"
             },
-            "safari_ios": {
-              "version_added": "5"
-            },
+            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -105,9 +118,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort/close",
           "spec_url": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-close-dev",
+          "tags": [
+            "web-features:channel-messaging"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -123,17 +139,9 @@
             "ie": {
               "version_added": "10"
             },
-            "nodejs": [
-              {
-                "version_added": "14.7.0"
-              },
-              {
-                "version_added": "10.5.0",
-                "version_removed": "14.7.0",
-                "partial_implementation": true,
-                "notes": "Supports the event, but only via Node <code>EventEmitter</code>."
-              }
-            ],
+            "nodejs": {
+              "version_added": "11.7.0"
+            },
             "oculus": "mirror",
             "opera": {
               "version_added": "10.6"
@@ -146,7 +154,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -157,15 +166,18 @@
       },
       "message_event": {
         "__compat": {
-          "description": "<code>message</code> event",
+          "description": "`message` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort/message_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-message",
             "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessage"
           ],
+          "tags": [
+            "web-features:channel-messaging"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -186,10 +198,10 @@
                 "version_added": "14.7.0"
               },
               {
-                "version_added": "10.5.0",
+                "version_added": "11.7.0",
                 "version_removed": "14.7.0",
                 "partial_implementation": true,
-                "notes": "Supports the event, but only via Node <code>EventEmitter</code>."
+                "notes": "Supports the event, but only via Node `EventEmitter`."
               }
             ],
             "oculus": "mirror",
@@ -204,9 +216,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -217,11 +228,14 @@
       },
       "messageerror_event": {
         "__compat": {
-          "description": "<code>messageerror</code> event",
+          "description": "`messageerror` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort/messageerror_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror",
             "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessageerror"
+          ],
+          "tags": [
+            "web-features:messageerror"
           ],
           "support": {
             "chrome": {
@@ -249,7 +263,13 @@
                 "version_added": "14.5.0",
                 "version_removed": "14.7.0",
                 "partial_implementation": true,
-                "notes": "Supports the event, but only via Node <code>EventEmitter</code>."
+                "notes": "Supports the event, but only via Node `EventEmitter`."
+              },
+              {
+                "version_added": "12.19.0",
+                "version_removed": "13.0.0",
+                "partial_implementation": true,
+                "notes": "Supports the event, but only via Node `EventEmitter`."
               }
             ],
             "oculus": "mirror",
@@ -258,12 +278,12 @@
               "version_added": "47"
             },
             "safari": {
-              "version_added": false,
-              "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -276,23 +296,26 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort/postMessage",
           "spec_url": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage-dev",
+          "tags": [
+            "web-features:channel-messaging"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "deno": [
               {
                 "version_added": "1.14",
-                "notes": "The <code>message</code> parameter does not support cloning <code>Blob</code> values."
+                "notes": "The `message` parameter does not support cloning `Blob` values."
               },
               {
                 "version_added": "1.12",
                 "version_removed": "1.14",
                 "partial_implementation": true,
                 "notes": [
-                  "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
-                  "The <code>transfer</code> parameter does not accept <code>ArrayBuffer</code> items. Passing an <code>ArrayBuffer</code> results in an error being thrown."
+                  "The `message` parameter does not support cloning `Blob` values.",
+                  "The `transfer` parameter does not accept `ArrayBuffer` items. Passing an `ArrayBuffer` results in an error being thrown."
                 ]
               }
             ],
@@ -307,7 +330,7 @@
               "version_added": "10"
             },
             "nodejs": {
-              "version_added": "10.5.0"
+              "version_added": "11.7.0"
             },
             "oculus": "mirror",
             "opera": {
@@ -321,12 +344,53 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "options_includeUserActivation_parameter": {
+          "__compat": {
+            "description": "`options.includeUserActivation` parameter",
+            "support": {
+              "chrome": {
+                "version_added": "72"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": false,
+              "deprecated": false
+            }
           }
         }
       },
@@ -334,9 +398,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MessagePort/start",
           "spec_url": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-start-dev",
+          "tags": [
+            "web-features:channel-messaging"
+          ],
           "support": {
             "chrome": {
-              "version_added": "1"
+              "version_added": "2"
             },
             "chrome_android": "mirror",
             "deno": {
@@ -353,7 +420,7 @@
               "version_added": "10"
             },
             "nodejs": {
-              "version_added": "10.5.0"
+              "version_added": "11.7.0"
             },
             "oculus": "mirror",
             "opera": {
@@ -367,7 +434,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

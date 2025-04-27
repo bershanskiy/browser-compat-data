@@ -4,7 +4,13 @@
       "text-decoration": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-text-decor/#text-decoration-property",
+          "spec_url": [
+            "https://drafts.csswg.org/css-text-decor/#text-decoration-property",
+            "https://svgwg.org/svg2-draft/text.html#TextDecorationProperties"
+          ],
+          "tags": [
+            "web-features:text-decoration"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -32,9 +38,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": {
-              "version_added": "≤37"
-            }
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -42,49 +47,12 @@
             "deprecated": false
           }
         },
-        "blink": {
+        "includes_color-and-style": {
           "__compat": {
-            "description": "<code>blink</code>",
-            "support": {
-              "chrome": {
-                "version_added": false
-              },
-              "chrome_android": "mirror",
-              "edge": "mirror",
-              "firefox": {
-                "version_added": "1",
-                "version_removed": "23"
-              },
-              "firefox_android": "mirror",
-              "ie": {
-                "version_added": false
-              },
-              "oculus": "mirror",
-              "opera": {
-                "version_added": "4",
-                "version_removed": "15"
-              },
-              "opera_android": {
-                "version_added": "10.1",
-                "version_removed": "14"
-              },
-              "safari": {
-                "version_added": false
-              },
-              "safari_ios": "mirror",
-              "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
-            },
-            "status": {
-              "experimental": false,
-              "standard_track": true,
-              "deprecated": true
-            }
-          }
-        },
-        "shorthand": {
-          "__compat": {
-            "description": "Shorthand",
+            "description": "`text-decoration-color` and `text-decoration-style` included in shorthand",
+            "tags": [
+              "web-features:text-decoration"
+            ],
             "support": {
               "chrome": {
                 "version_added": "57"
@@ -107,7 +75,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -116,9 +85,12 @@
             }
           }
         },
-        "text-decoration-thickness": {
+        "includes_thickness": {
           "__compat": {
-            "description": "<code>text-decoration-thickness</code> included in shorthand",
+            "description": "`text-decoration-thickness` included in shorthand",
+            "tags": [
+              "web-features:text-decoration"
+            ],
             "support": {
               "chrome": {
                 "version_added": "87"
@@ -128,9 +100,7 @@
               "firefox": {
                 "version_added": "70"
               },
-              "firefox_android": {
-                "version_added": false
-              },
+              "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
@@ -142,11 +112,12 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
-              "standard_track": false,
+              "standard_track": true,
               "deprecated": false
             }
           }

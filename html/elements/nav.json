@@ -3,15 +3,16 @@
     "elements": {
       "nav": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/nav",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/nav",
           "spec_url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
+          "tags": [
+            "web-features:nav"
+          ],
           "support": {
             "chrome": {
               "version_added": "5"
             },
-            "chrome_android": {
-              "version_added": true
-            },
+            "chrome_android": "mirror",
             "edge": {
               "version_added": "12"
             },
@@ -34,7 +35,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

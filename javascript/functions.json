@@ -4,6 +4,10 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions",
         "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions",
+        "tags": [
+          "web-features:snapshot:ecmascript-1",
+          "web-features:functions"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -37,7 +41,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -49,6 +54,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments",
           "spec_url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects",
+          "tags": [
+            "web-features:snapshot:ecmascript-1",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -82,7 +91,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -94,6 +104,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments/callee",
             "spec_url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects",
+            "tags": [
+              "web-features:snapshot:ecmascript-1",
+              "web-features:arguments-callee"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -127,12 +141,13 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
               "standard_track": true,
-              "deprecated": false
+              "deprecated": true
             }
           }
         },
@@ -140,6 +155,10 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments/length",
             "spec_url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects",
+            "tags": [
+              "web-features:snapshot:ecmascript-1",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -173,7 +192,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -184,10 +204,15 @@
         },
         "@@iterator": {
           "__compat": {
-            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments/@@iterator",
+            "description": "[Symbol.iterator]",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments/Symbol.iterator",
             "spec_url": [
               "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createunmappedargumentsobject",
               "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createmappedargumentsobject"
+            ],
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
             ],
             "support": {
               "chrome": {
@@ -218,7 +243,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -233,6 +259,10 @@
           "description": "Arrow functions",
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-arrow-function-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-2015",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "45"
@@ -247,30 +277,17 @@
             "firefox": {
               "version_added": "22",
               "notes": [
-                "The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of <code>'use strict';</code> is now required.",
-                "Before Firefox 39, a line terminator (<code>\\n</code>) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like <code>() \\n =&gt; {}</code> will now throw a <code>SyntaxError</code> in this and later versions."
+                "The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.",
+                "Before Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n =&gt; {}` will now throw a `SyntaxError` in this and later versions."
               ]
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
-            "nodejs": [
-              {
-                "version_added": "4.0.0"
-              },
-              {
-                "version_added": "0.12.0",
-                "flags": [
-                  {
-                    "type": "runtime_flag",
-                    "name": "--harmony"
-                  }
-                ],
-                "partial_implementation": true,
-                "notes": "The arrow function syntax is supported, but not the correct lexical binding of the <code>this</code> value."
-              }
-            ],
+            "nodejs": {
+              "version_added": "4.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -279,7 +296,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -290,6 +308,10 @@
         "trailing_comma": {
           "__compat": {
             "description": "Trailing comma in parameters",
+            "tags": [
+              "web-features:snapshot:ecmascript-2017",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "58"
@@ -319,7 +341,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -332,6 +355,10 @@
       "block_level_functions": {
         "__compat": {
           "description": "Block-level functions",
+          "tags": [
+            "web-features:snapshot:ecmascript-2015",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -350,20 +377,9 @@
             "ie": {
               "version_added": "11"
             },
-            "nodejs": [
-              {
-                "version_added": "4.0.0"
-              },
-              {
-                "version_added": "0.10.0",
-                "flags": [
-                  {
-                    "type": "runtime_flag",
-                    "name": "--harmony"
-                  }
-                ]
-              }
-            ],
+            "nodejs": {
+              "version_added": "4.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -372,7 +388,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -386,6 +403,10 @@
           "description": "Default parameters",
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Default_parameters",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-2015",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -415,7 +436,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -426,6 +448,10 @@
         "destructured_parameter_with_default_value_assignment": {
           "__compat": {
             "description": "Destructured parameter with default value assignment",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "49"
@@ -455,7 +481,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -467,6 +494,10 @@
         "parameters_without_defaults_after_default_parameters": {
           "__compat": {
             "description": "Parameters without defaults after default parameters",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "49"
@@ -496,7 +527,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -510,6 +542,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/get",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-method-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-5",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -543,7 +579,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -554,6 +591,10 @@
         "computed_property_names": {
           "__compat": {
             "description": "Computed property names",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "46"
@@ -585,7 +626,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -600,6 +642,10 @@
           "description": "Method definitions",
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Method_definitions",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-method-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-2015",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -629,7 +675,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -640,6 +687,9 @@
         "async_generator_methods": {
           "__compat": {
             "description": "Async generator methods",
+            "tags": [
+              "web-features:async-generators"
+            ],
             "support": {
               "chrome": {
                 "version_added": "63"
@@ -656,20 +706,9 @@
               "ie": {
                 "version_added": false
               },
-              "nodejs": [
-                {
-                  "version_added": "10.0.0"
-                },
-                {
-                  "version_added": "8.10.0",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--harmony"
-                    }
-                  ]
-                }
-              ],
+              "nodejs": {
+                "version_added": "10.0.0"
+              },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
@@ -678,7 +717,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -690,6 +730,9 @@
         "async_methods": {
           "__compat": {
             "description": "Async methods",
+            "tags": [
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "55"
@@ -708,20 +751,9 @@
               "ie": {
                 "version_added": false
               },
-              "nodejs": [
-                {
-                  "version_added": "7.6.0"
-                },
-                {
-                  "version_added": "7.0.0",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--harmony"
-                    }
-                  ]
-                }
-              ],
+              "nodejs": {
+                "version_added": "7.6.0"
+              },
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
@@ -730,7 +762,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -742,6 +775,9 @@
         "generator_methods_not_constructable": {
           "__compat": {
             "description": "Generator methods are not constructable (ES2016)",
+            "tags": [
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "42"
@@ -771,7 +807,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -786,6 +823,10 @@
           "description": "Rest parameters",
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/rest_parameters",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-2015",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -804,20 +845,9 @@
             "ie": {
               "version_added": false
             },
-            "nodejs": [
-              {
-                "version_added": "6.0.0"
-              },
-              {
-                "version_added": "4.0.0",
-                "flags": [
-                  {
-                    "type": "runtime_flag",
-                    "name": "--harmony"
-                  }
-                ]
-              }
-            ],
+            "nodejs": {
+              "version_added": "6.0.0"
+            },
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -826,7 +856,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -837,6 +868,10 @@
         "destructuring": {
           "__compat": {
             "description": "Destructuring rest parameters",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "49"
@@ -864,7 +899,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -878,6 +914,10 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/set",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-method-definitions",
+          "tags": [
+            "web-features:snapshot:ecmascript-5",
+            "web-features:functions"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -911,7 +951,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -922,6 +963,10 @@
         "computed_property_names": {
           "__compat": {
             "description": "Computed property names",
+            "tags": [
+              "web-features:snapshot:ecmascript-2015",
+              "web-features:functions"
+            ],
             "support": {
               "chrome": {
                 "version_added": "46"
@@ -953,7 +998,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

@@ -5,9 +5,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/break-inside",
           "spec_url": [
-            "https://w3c.github.io/csswg-drafts/css-break/#break-within",
-            "https://w3c.github.io/csswg-drafts/css-regions/#region-flow-break",
-            "https://w3c.github.io/csswg-drafts/css-multicol/#break-before-break-after-break-inside"
+            "https://drafts.csswg.org/css-break/#break-within",
+            "https://drafts.csswg.org/css-regions/#region-flow-break",
+            "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
+          ],
+          "tags": [
+            "web-features:page-breaks"
           ],
           "support": {
             "chrome": {
@@ -48,7 +51,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -56,13 +60,160 @@
             "deprecated": false
           }
         },
+        "auto": {
+          "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "50"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "65"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "10"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "avoid": {
+          "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "50"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "65"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "10"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "avoid-column": {
+          "__compat": {
+            "tags": [
+              "web-features:column-breaks"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "50"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "92"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "10"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "avoid-page": {
+          "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "50"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "92"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "10"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
         "multicol_context": {
           "__compat": {
             "description": "Supported in Multi-column Layout",
             "spec_url": [
-              "https://w3c.github.io/csswg-drafts/css-break/#break-within",
-              "https://w3c.github.io/csswg-drafts/css-regions/#region-flow-break",
-              "https://w3c.github.io/csswg-drafts/css-multicol/#break-before-break-after-break-inside"
+              "https://drafts.csswg.org/css-break/#break-within",
+              "https://drafts.csswg.org/css-regions/#region-flow-break",
+              "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
+            ],
+            "tags": [
+              "web-features:column-breaks"
             ],
             "support": {
               "chrome": {
@@ -103,7 +254,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -113,7 +265,9 @@
           },
           "avoid-column": {
             "__compat": {
-              "description": "<code>avoid-column</code>",
+              "tags": [
+                "web-features:column-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "50"
@@ -153,7 +307,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -167,9 +322,12 @@
           "__compat": {
             "description": "Supported in Paged Media",
             "spec_url": [
-              "https://w3c.github.io/csswg-drafts/css-break/#break-within",
-              "https://w3c.github.io/csswg-drafts/css-regions/#region-flow-break",
-              "https://w3c.github.io/csswg-drafts/css-multicol/#break-before-break-after-break-inside"
+              "https://drafts.csswg.org/css-break/#break-within",
+              "https://drafts.csswg.org/css-regions/#region-flow-break",
+              "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
+            ],
+            "tags": [
+              "web-features:page-breaks"
             ],
             "support": {
               "chrome": {
@@ -210,7 +368,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -220,7 +379,9 @@
           },
           "avoid-page": {
             "__compat": {
-              "description": "<code>avoid-page</code>",
+              "tags": [
+                "web-features:page-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "51"
@@ -260,7 +421,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,

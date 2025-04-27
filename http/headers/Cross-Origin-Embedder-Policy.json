@@ -3,8 +3,8 @@
     "headers": {
       "Cross-Origin-Embedder-Policy": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy",
-          "spec_url": "https://html.spec.whatwg.org/multipage/origin.html#coep",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy",
+          "spec_url": "https://html.spec.whatwg.org/multipage/browsers.html#coep",
           "support": {
             "chrome": {
               "version_added": "83"
@@ -28,7 +28,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "86"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -38,7 +39,7 @@
         },
         "credentialless": {
           "__compat": {
-            "spec_url": "https://html.spec.whatwg.org/multipage/origin.html#coep-credentialless",
+            "spec_url": "https://html.spec.whatwg.org/multipage/browsers.html#coep-credentialless",
             "support": {
               "chrome": {
                 "version_added": "96"
@@ -46,9 +47,11 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
+                "version_added": "119"
+              },
+              "firefox_android": {
                 "version_added": false
               },
-              "firefox_android": "mirror",
               "ie": {
                 "version_added": false
               },
@@ -62,10 +65,11 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }

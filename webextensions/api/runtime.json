@@ -2,6 +2,28 @@
   "webextensions": {
     "api": {
       "runtime": {
+        "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime",
+          "support": {
+            "chrome": {
+              "version_added": "22"
+            },
+            "edge": "mirror",
+            "firefox": {
+              "version_added": "45"
+            },
+            "firefox_android": {
+              "version_added": "48"
+            },
+            "opera": "mirror",
+            "safari": {
+              "version_added": "14"
+            },
+            "safari_ios": {
+              "version_added": "15"
+            }
+          }
+        },
         "MessageSender": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/MessageSender",
@@ -9,16 +31,14 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "Before version 54, 'id' was the add-on's internal UUID, not the add-on ID.",
-                "version_added": "45"
+                "version_added": "45",
+                "notes": "Before version 54, 'id' was the add-on's internal UUID, not the add-on ID."
               },
               "firefox_android": {
-                "notes": "Before version 54, 'id' was the add-on's internal UUID, not the add-on ID.",
-                "version_added": "48"
+                "version_added": "48",
+                "notes": "Before version 54, 'id' was the add-on's internal UUID, not the add-on ID."
               },
               "opera": "mirror",
               "safari": {
@@ -29,15 +49,116 @@
               }
             }
           },
+          "documentId": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "106"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "documentLifecycle": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "106"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
           "frameId": {
             "__compat": {
               "support": {
                 "chrome": {
                   "version_added": "41"
                 },
-                "edge": {
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "45"
+                },
+                "firefox_android": {
+                  "version_added": "48"
+                },
+                "opera": "mirror",
+                "safari": {
                   "version_added": "14"
                 },
+                "safari_ios": {
+                  "version_added": "15"
+                }
+              }
+            }
+          },
+          "id": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "26"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "45"
+                },
+                "firefox_android": {
+                  "version_added": "48"
+                },
+                "opera": "mirror",
+                "safari": {
+                  "version_added": "14"
+                },
+                "safari_ios": {
+                  "version_added": "15"
+                }
+              }
+            }
+          },
+          "origin": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "80"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "126"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
+          "tab": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "26"
+                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "45"
                 },
@@ -62,11 +183,9 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": "45"
+                  "version_added": false
                 },
-                "firefox_android": {
-                  "version_added": "48"
-                },
+                "firefox_android": "mirror",
                 "opera": "mirror",
                 "safari": {
                   "version_added": false
@@ -81,10 +200,7 @@
                 "chrome": {
                   "version_added": "28"
                 },
-                "edge": {
-                  "version_added": "14",
-                  "notes": "The <code>url</code> is missing when the message was sent by an extension view."
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": "45"
                 },
@@ -107,13 +223,10 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/OnInstalledReason",
             "support": {
               "chrome": {
-                "version_added": true,
+                "version_added": "≤58",
                 "notes": "Uses 'chrome_update' instead of 'browser_update'."
               },
-              "edge": {
-                "version_added": "14",
-                "notes": "Only supports 'install' and 'update'."
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -132,16 +245,54 @@
             }
           }
         },
+        "OnPerformanceWarningCategory": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/OnPerformanceWarningCategory",
+            "support": {
+              "chrome": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "124"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
+        "OnPerformanceWarningSeverity": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/OnPerformanceWarningSeverity",
+            "support": {
+              "chrome": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "124"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
         "OnRestartRequiredReason": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/OnRestartRequiredReason",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -161,11 +312,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/PlatformArch",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -187,11 +336,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/PlatformInfo",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -211,11 +358,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤58"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },
@@ -234,17 +379,13 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/PlatformNaclArch",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
-                "version_added": "45"
+                "version_added": false
               },
-              "firefox_android": {
-                "version_added": "48"
-              },
+              "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
                 "version_added": false
@@ -258,11 +399,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/PlatformOs",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -286,9 +425,7 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "15"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -317,7 +454,7 @@
                 "firefox_android": "mirror",
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
                 "safari_ios": "mirror"
               }
@@ -329,11 +466,9 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/RequestUpdateCheckStatus",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "≤58"
               },
-              "edge": {
-                "version_added": "79"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -353,9 +488,7 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -379,23 +512,22 @@
               "chrome": {
                 "version_added": "29"
               },
-              "edge": {
-                "version_added": "15"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "50"
               },
               "firefox_android": {
-                "version_added": false
+                "version_added": false,
+                "notes": "Only available to privileged extensions in [GeckoView](https://mozilla.github.io/geckoview/) 68 and later. See the [GeckoView Docs](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/web-extensions.html) for additional details."
               },
               "opera": "mirror",
               "safari": {
-                "notes": "See the documentation on developer.apple.com about native messaging in Safari.",
-                "version_added": "14"
+                "version_added": "14",
+                "notes": "See the [Apple Developer Documentation](https://developer.apple.com/documentation/safariservices/safari_web_extensions/messaging_between_the_app_and_javascript_in_a_safari_web_extension) for additional details."
               },
               "safari_ios": {
-                "notes": "See the documentation on developer.apple.com about native messaging in Safari.",
-                "version_added": "15"
+                "version_added": "15",
+                "notes": "See the [Apple Developer Documentation](https://developer.apple.com/documentation/safariservices/safari_web_extensions/messaging_between_the_app_and_javascript_in_a_safari_web_extension) for additional details."
               }
             }
           }
@@ -407,16 +539,14 @@
               "chrome": {
                 "version_added": "22"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "If this is called from a page that is part of a private browsing window, such as a sidebar in a private window or a popup opened from a private window, then it will always return <code>null</code>.",
-                "version_added": "45"
+                "version_added": "45",
+                "notes": "If this is called from a page that is part of a private browsing window, such as a sidebar in a private window or a popup opened from a private window, then it will always return `null`."
               },
               "firefox_android": {
-                "notes": "If this is called from a page that is part of a private browsing window, such as a sidebar in a private window or a popup opened from a private window, then it will always return <code>null</code>.",
-                "version_added": "48"
+                "version_added": "48",
+                "notes": "If this is called from a page that is part of a private browsing window, such as a sidebar in a private window or a popup opened from a private window, then it will always return `null`."
               },
               "opera": "mirror",
               "safari": {
@@ -438,6 +568,26 @@
               "edge": "mirror",
               "firefox": {
                 "version_added": "51"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
+        "getContexts": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/getContexts",
+            "support": {
+              "chrome": {
+                "version_added": "116"
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "127"
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -475,11 +625,10 @@
               "chrome": {
                 "version_added": "22"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
-                "version_added": "45"
+                "version_added": "45",
+                "notes": "Returns null for missing values, and removes unsupported keys."
               },
               "firefox_android": {
                 "version_added": "48"
@@ -545,9 +694,7 @@
               "chrome": {
                 "version_added": "22"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -571,9 +718,7 @@
               "chrome": {
                 "version_added": "22"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -595,12 +740,10 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/lastError",
             "support": {
               "chrome": {
-                "notes": "lastError is not an Error object. Instead, it is a plain Object with the error text as the string value of the 'message' property.",
-                "version_added": true
+                "version_added": "≤58",
+                "notes": "`lastError` is not an `Error` object. Instead, it is a plain `Object` with the error text as the string value of the `message` property."
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "47"
               },
@@ -609,12 +752,12 @@
               },
               "opera": "mirror",
               "safari": {
-                "notes": "<code>lastError</code> is only set if a callback is used. <code>Promise</code> results that fail will be rejected with an <code>Error</code> object.",
-                "version_added": "14"
+                "version_added": "14",
+                "notes": "`lastError` is only set if a callback is used. `Promise` results that fail will be rejected with an `Error` object."
               },
               "safari_ios": {
-                "notes": "<code>lastError</code> is only set if a callback is used. <code>Promise</code> results that fail will be rejected with an <code>Error</code> object.",
-                "version_added": "15"
+                "version_added": "15",
+                "notes": "`lastError` is only set if a callback is used. `Promise` results that fail will be rejected with an `Error` object."
               }
             }
           }
@@ -646,9 +789,7 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -679,7 +820,8 @@
               "firefox_android": "mirror",
               "opera": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "15.4",
+                "notes": "Only fired in response to connect from webpages allowed in [`externally_connectable`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/externally_connectable)."
               },
               "safari_ios": "mirror"
             }
@@ -692,12 +834,10 @@
               "chrome": {
                 "version_added": "22"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
-                "notes": "Before version 55, this event is not triggered for temporarily installed add-ons.",
-                "version_added": "52"
+                "version_added": "52",
+                "notes": "Before version 55, this event is not triggered for temporarily installed add-ons."
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -716,9 +856,7 @@
                   "chrome": {
                     "version_added": "22"
                   },
-                  "edge": {
-                    "version_added": "14"
-                  },
+                  "edge": "mirror",
                   "firefox": {
                     "version_added": false
                   },
@@ -739,9 +877,7 @@
                   "chrome": {
                     "version_added": "22"
                   },
-                  "edge": {
-                    "version_added": "14"
-                  },
+                  "edge": "mirror",
                   "firefox": {
                     "version_added": "55"
                   },
@@ -762,9 +898,7 @@
                   "chrome": {
                     "version_added": "22"
                   },
-                  "edge": {
-                    "version_added": "14"
-                  },
+                  "edge": "mirror",
                   "firefox": {
                     "version_added": "52"
                   },
@@ -807,9 +941,7 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "14"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -827,14 +959,14 @@
           },
           "return_promise": {
             "__compat": {
-              "description": "Respond with <code>Promise</code>",
+              "description": "Respond with `Promise`",
               "support": {
                 "chrome": {
                   "version_added": false
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": true
+                  "version_added": "≤62"
                 },
                 "firefox_android": "mirror",
                 "opera": "mirror",
@@ -863,38 +995,38 @@
                 {
                   "version_added": "15.4",
                   "partial_implementation": true,
-                  "notes": "Since Safari 15.4, this event is also fired in response to a message from webpages allowed in <a href='https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/externally_connectable'><code>externally_connectable</code></a>."
+                  "notes": "Also fired in response to a message from webpages allowed in [`externally_connectable`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/externally_connectable)."
                 },
                 {
                   "version_added": "14",
                   "partial_implementation": true,
-                  "notes": "This event is only fired in response to a message from an extension's containing app, not webpages nor other extensions."
+                  "notes": "Only fired in response to a message from an extension's containing app, not webpages and other extensions."
                 }
               ],
               "safari_ios": [
                 {
                   "version_added": "15.4",
                   "partial_implementation": true,
-                  "notes": "Since Safari 15.4, this event is also fired in response to a message from webpages allowed in <a href='https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/externally_connectable'><code>externally_connectable</code></a>."
+                  "notes": "Also fired in response to a message from webpages allowed in [`externally_connectable`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/externally_connectable)."
                 },
                 {
                   "version_added": "15",
                   "partial_implementation": true,
-                  "notes": "This event is only fired in response to a message from an extension's containing app, not webpages nor other extensions."
+                  "notes": "Only fired in response to a message from an extension's containing app, not webpages and other extensions."
                 }
               ]
             }
           },
           "return_promise": {
             "__compat": {
-              "description": "Respond with <code>Promise</code>",
+              "description": "Respond with `Promise`",
               "support": {
                 "chrome": {
                   "version_added": false
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": true
+                  "version_added": "≤62"
                 },
                 "firefox_android": "mirror",
                 "opera": "mirror",
@@ -903,6 +1035,26 @@
                 },
                 "safari_ios": "mirror"
               }
+            }
+          }
+        },
+        "onPerformanceWarning": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onPerformanceWarning",
+            "support": {
+              "chrome": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "124"
+              },
+              "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
             }
           }
         },
@@ -957,7 +1109,8 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "100",
+                "notes": "This event does not fire until Firefox 106, when event pages are available."
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -977,7 +1130,8 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "100",
+                "notes": "This event does not fire until Firefox 106, when event pages are available."
               },
               "firefox_android": "mirror",
               "opera": "mirror",
@@ -1000,6 +1154,66 @@
                 "version_added": "51"
               },
               "firefox_android": "mirror",
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
+        "onUserScriptConnect": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onUserScriptConnect",
+            "support": {
+              "chrome": {
+                "version_added": "120",
+                "notes": [
+                  "Available for use with Manifest V3 only.",
+                  "Always available, even if the extension has no way of firing the event."
+                ]
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "136",
+                "notes": [
+                  "Available for use with Manifest V3 only.",
+                  "Requires the [`userScripts` permission](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/userScripts#permissions)."
+                ]
+              },
+              "firefox_android": {
+                "version_added": false
+              },
+              "opera": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror"
+            }
+          }
+        },
+        "onUserScriptMessage": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onUserScriptMessage",
+            "support": {
+              "chrome": {
+                "version_added": "120",
+                "notes": [
+                  "Available for use with Manifest V3 only.",
+                  "Always available, even if the extension has no way of firing the event."
+                ]
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "136",
+                "notes": [
+                  "Available for use with Manifest V3 only.",
+                  "Requires the [`userScripts` permission](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/userScripts#permissions)."
+                ]
+              },
+              "firefox_android": {
+                "version_added": false
+              },
               "opera": "mirror",
               "safari": {
                 "version_added": false
@@ -1039,9 +1253,7 @@
               "chrome": {
                 "version_added": "25"
               },
-              "edge": {
-                "version_added": "15"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "51"
               },
@@ -1083,10 +1295,7 @@
               "chrome": {
                 "version_added": "26"
               },
-              "edge": {
-                "version_added": "14",
-                "notes": "<code>runtime.onMessage</code> listeners in extension views receive the messages they sent."
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "45"
               },
@@ -1152,23 +1361,22 @@
               "chrome": {
                 "version_added": "29"
               },
-              "edge": {
-                "version_added": "15"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "50"
               },
               "firefox_android": {
-                "version_added": false
+                "version_added": false,
+                "notes": "Only available to privileged extensions in [GeckoView](https://mozilla.github.io/geckoview/) 68 and later. See the [GeckoView Docs](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/web-extensions.html) for additional details."
               },
               "opera": "mirror",
               "safari": {
-                "notes": "See the documentation on developer.apple.com about native messaging in Safari.",
-                "version_added": "14"
+                "version_added": "14",
+                "notes": "See the [Apple Developer Documentation](https://developer.apple.com/documentation/safariservices/safari_web_extensions/messaging_between_the_app_and_javascript_in_a_safari_web_extension) for additional details."
               },
               "safari_ios": {
-                "notes": "See the documentation on developer.apple.com about native messaging in Safari.",
-                "version_added": "15"
+                "version_added": "15",
+                "notes": "See the [Apple Developer Documentation](https://developer.apple.com/documentation/safariservices/safari_web_extensions/messaging_between_the_app_and_javascript_in_a_safari_web_extension) for additional details."
               }
             }
           }
@@ -1177,28 +1385,50 @@
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/setUninstallURL",
             "support": {
-              "chrome": {
-                "version_added": "41"
-              },
-              "edge": {
-                "version_added": "15"
-              },
-              "firefox": {
-                "version_added": "47"
-              },
-              "firefox_android": {
-                "version_added": "48"
-              },
+              "chrome": [
+                {
+                  "version_added": "115",
+                  "notes": "The maximum length is 1023 characters."
+                },
+                {
+                  "version_added": "41",
+                  "version_removed": "115",
+                  "notes": "The maximum length is 255 characters."
+                }
+              ],
+              "edge": "mirror",
+              "firefox": [
+                {
+                  "version_added": "116",
+                  "notes": "The maximum length is 1023 characters."
+                },
+                {
+                  "version_added": "47",
+                  "version_removed": "116",
+                  "notes": "The maximum length is 255 characters."
+                }
+              ],
+              "firefox_android": [
+                {
+                  "version_added": "116",
+                  "notes": "The maximum length is 1023 characters."
+                },
+                {
+                  "version_added": "48",
+                  "version_removed": "116",
+                  "notes": "The maximum length is 255 characters."
+                }
+              ],
               "opera": "mirror",
               "safari": {
-                "notes": "API exists, but has no effect.",
+                "version_added": "14",
                 "partial_implementation": true,
-                "version_added": "14"
+                "notes": "API exists, but has no effect."
               },
               "safari_ios": {
-                "notes": "API exists, but has no effect.",
+                "version_added": "15",
                 "partial_implementation": true,
-                "version_added": "15"
+                "notes": "API exists, but has no effect."
               }
             }
           }

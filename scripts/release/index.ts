@@ -1,14 +1,16 @@
 /* This file is a part of @mdn/browser-compat-data
  * See LICENSE file for more information. */
 
-import fs from 'fs/promises';
-
 import chalk from 'chalk-template';
 import esMain from 'es-main';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { temporaryWriteTask } from 'tempy';
 
 import { getSemverBumpPulls } from './semver-pulls.js';
-import { getStats, formatStats, Stats } from './stats.js';
-import { getChanges, formatChanges, Changes } from './changes.js';
+import { getStats } from './stats.js';
+import { getChanges } from './changes.js';
+import { getNotes, addNotes } from './notes.js';
 import {
   exec,
   requireGitHubCLI,
@@ -16,79 +18,34 @@ import {
   getLatestTag,
   getRefDate,
   keypress,
+  spawn,
+  fetchMain,
 } from './utils.js';
-
-const dirname = new URL('.', import.meta.url);
-
-/**
- * Get the release notes to add
- *
- * @param {string} thisVersion The current version number
- * @param {Changes} changes The changes to format
- * @param {Stats} stats The statistics from the changes
- * @param {string} versionBump Which part of the semver has been bumped
- * @returns {string} The Markdown-formatted release notes
- */
-const getNotes = (
-  thisVersion: string,
-  changes: Changes,
-  stats: Stats,
-  versionBump: string,
-): string =>
-  [
-    `## [${thisVersion}](https://github.com/mdn/browser-compat-data/releases/tag/${thisVersion})`,
-    '',
-    `${new Date().toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric',
-    })}`,
-    '',
-    ...(versionBump !== 'patch'
-      ? [
-          '### Notable changes',
-          '',
-          '<!-- TODO: Fill me out with the appropriate information about breaking changes or new backwards-compatible additions! -->',
-          '',
-        ]
-      : []),
-    formatChanges(changes),
-    formatStats(stats),
-  ].join('\n');
-
-/**
- * Add new release notes to the file
- *
- * @param {string} notesToAdd The notes to add to the release notes
- */
-const addNotes = async (notesToAdd: string): Promise<void> => {
-  const notesFilepath = new URL('../../RELEASE_NOTES.md', dirname);
-  const currentNotes = (await fs.readFile(notesFilepath))
-    .toString()
-    .split('\n');
-  const newNotes = [
-    currentNotes[0],
-    currentNotes[1],
-    notesToAdd,
-    ...currentNotes.slice(2),
-  ].join('\n');
-  await fs.writeFile(notesFilepath, newNotes);
-};
 
 /**
  * Perform the commit and submit a pull request
- *
- * @param {string} thisVersion The current version number
- * @param {boolean} wait Whether to wait for user to update the release notes (used when semver bump is minor or major)
+ * @param message The commit message
+ * @param wait Whether to wait for user to update the release notes (used when semver bump is minor or major)
+ * @param options Commit options
+ * @param options.branch the branch to commit to
+ * @param options.pr PR options
+ * @param options.pr.title Title of the PR
+ * @param options.pr.body Body of the PR
  */
 const commitAndPR = async (
-  thisVersion: string,
+  message: string,
   wait: boolean,
+  {
+    branch,
+    pr,
+  }: {
+    branch: string;
+    pr: {
+      title: string;
+      body: string;
+    };
+  },
 ): Promise<void> => {
-  exec('git switch main');
-  exec('git switch -c release');
-  exec('git add package.json package-lock.json RELEASE_NOTES.md');
-
   if (wait) {
     console.log('');
     console.log(
@@ -99,19 +56,57 @@ const commitAndPR = async (
     console.log('');
   }
 
-  exec(`git commit -m "Release ${thisVersion}"`);
-  exec('git push --set-upstream origin release');
-  exec('gh pr create --fill');
-  exec('git switch main');
-  exec('git branch -d release');
+  console.log(chalk`{blue Preparing ${branch} branch...}`);
+  exec(`
+    git stash
+    git switch -C ${branch} origin/main
+    git stash pop
+    git add package.json package-lock.json RELEASE_NOTES.md release_notes/
+  `);
+
+  console.log(chalk`{blue Committing changes...}`);
+  await temporaryWriteTask(message, (commitFile) =>
+    exec(`git commit --file ${commitFile}`),
+  );
+
+  console.log(chalk`{blue Pushing ${branch} branch...}`);
+  exec(`git push --force --set-upstream origin ${branch}`);
+
+  console.log(chalk`{blue Creating/editing pull request...}`);
+  await temporaryWriteTask(pr.body, (bodyFile) => {
+    const commonArgs = ['--title', pr.title, '--body-file', bodyFile];
+    try {
+      const stdout = spawn('gh', ['pr', 'create', '--draft', ...commonArgs]);
+      console.log(stdout);
+    } catch (e) {
+      const stdout = spawn('gh', ['pr', 'edit', ...commonArgs]);
+      console.log(stdout);
+    }
+  });
+
+  exec(`
+    git switch -
+    git branch -d ${branch}
+  `);
 };
 
 /**
  * Perform the release
+ * @param options The release options
+ * @param options.dryRun Whether to simulate the release locally
  */
-const main = async () => {
+const main = async ({ dryRun }: { dryRun: boolean }) => {
+  if (dryRun) {
+    console.log(chalk`{green Simulating release...}`);
+  }
+
   requireGitHubCLI();
-  requireWriteAccess();
+  if (!dryRun) {
+    requireWriteAccess();
+  }
+
+  console.log(chalk`{blue Fetching main branch...}`);
+  fetchMain();
 
   console.log(chalk`{blue Getting last version...}`);
   const lastVersion = getLatestTag();
@@ -121,14 +116,12 @@ const main = async () => {
   console.log(
     chalk`{blue Checking merged PRs to determine semver bump level...}`,
   );
-  let versionBump: 'major' | 'minor' | 'patch' = 'patch';
   const semverBumpPulls = getSemverBumpPulls(lastVersionDate);
-
-  if (semverBumpPulls.major.length) {
-    versionBump = 'major';
-  } else if (semverBumpPulls.minor.length) {
-    versionBump = 'minor';
-  }
+  const versionBump: 'major' | 'minor' | 'patch' = semverBumpPulls.major.length
+    ? 'major'
+    : semverBumpPulls.minor.length
+      ? 'minor'
+      : 'patch';
 
   // Perform version bump
   exec(`npm version --no-git-tag-version ${versionBump}`);
@@ -145,16 +138,38 @@ const main = async () => {
   console.log(chalk`{blue Getting lists of added/removed features...}`);
   const changes = await getChanges(lastVersionDate);
 
-  console.log(chalk`{blue Applying changelog...}`);
+  console.log(chalk`{blue Updating release notes...}`);
   const notes = getNotes(thisVersion, changes, stats, versionBump);
-  await addNotes(notes);
+  await addNotes(notes, versionBump, lastVersion);
 
-  console.log(chalk`{blue Creating pull request...}`);
-  await commitAndPR(thisVersion, versionBump !== 'patch');
+  if (!dryRun) {
+    const title = `Release ${thisVersion}`;
+    const body = `(This release was generated by the project's release script.)\n\n${notes}`;
+    await commitAndPR(
+      title,
+      !process.env.GITHUB_ACTIONS && versionBump !== 'patch',
+      {
+        branch: 'release',
+        pr: { title, body },
+      },
+    );
+  }
 
   console.log(chalk`{blue {bold Done!}}`);
 };
 
 if (esMain(import.meta)) {
-  await main();
+  const { argv }: { argv } = yargs(hideBin(process.argv)).command(
+    '$0',
+    'Prepares a release by determining changes since the last release, and creating/updating a release PR',
+    (yargs) =>
+      yargs.option('dry-run', {
+        alias: 'n',
+        describe: "Don't commit, push or PR",
+        type: 'boolean',
+        default: false,
+      }),
+  );
+
+  await main({ dryRun: argv.dryRun });
 }
